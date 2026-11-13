@@ -1,0 +1,48 @@
+  16:33:35.850658  [INFO] pa-ipnet.   
+
+     <<   PA-IPNET   >>
+  16:33:35.851064  [INFO] pa-ipnet.   version V.3.402.0.70.  [IPNET] Build: Dec 19 2025 14:08:35
+  16:33:35.851179  [INFO] pa-ipnet.   App: start init. pid 1577
+  16:33:35.851437  [INFO] pa-ipnet.   IPNET. init: start init. dbg [0x0]
+  16:33:35.853014  [INFO] pa-ipnet.   consol task_wr: start. pid 1777
+  16:33:35.853163  [INFO] pa-ipnet.   consol task: start. pid 1776
+  16:33:35.860026  [INFO] pa-ipnet.   main task. pid: 1577
+  16:33:35.860310  [INFO] pa-ipnet.   pbxipc_task: pbxipc_6 started. pid: 1782
+  16:33:35.860485  [INFO] pa-ipnet.   timer task: start. pid 1783
+  16:34:04.570368  [INFO] pa-ipnet.   IPNET. Core-connection 'established'
+  16:34:04.570470  [INFO] pa-ipnet.   IPNET. Send restart
+  16:34:04.570594  [INFO] pa-ipnet.   IPNET. config init start
+  16:34:04.570652  [INFO] pa-ipnet.   IPNET. stopping
+  16:34:04.570746  [INFO] pa-ipnet.   IPNET. config init end
+  16:34:04.570834  [INFO] pa-ipnet.   IPNET. starting
+  16:34:04.570887  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  16:34:04.570934  [INFO] pa-ipnet.   IPNET. config init start
+  16:34:04.570975  [INFO] pa-ipnet.   IPNET. stopping
+  16:34:04.571051  [INFO] pa-ipnet.   IPNET. config init end
+  16:34:04.571106  [INFO] pa-ipnet.   IPNET. starting
+  16:34:04.571149  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  16:34:24.091063  [INFO] pa-ipnet.   IPNET. Core-connection 'lost'
+  16:34:50.220681  [INFO] pa-ipnet.   IPNET. Core-connection 'established'
+  16:34:50.220771  [INFO] pa-ipnet.   IPNET. Send restart
+  16:34:50.220877  [INFO] pa-ipnet.   IPNET. config init start
+  16:34:50.220971  [INFO] pa-ipnet.   IPNET. stopping
+  16:34:50.221071  [INFO] pa-ipnet.   IPNET. config init end
+  16:34:50.221127  [INFO] pa-ipnet.   IPNET. starting
+  16:34:50.221169  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  16:34:50.221218  [INFO] pa-ipnet.   IPNET. config init start
+  16:34:50.221261  [INFO] pa-ipnet.   IPNET. stopping
+  16:34:50.221329  [INFO] pa-ipnet.   IPNET. config init end
+  16:34:50.221376  [INFO] pa-ipnet.   IPNET. starting
+  16:34:50.221417  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  15:02:19.207852  [INFO] pa-ipnet.   pbx-ipc IPNET: TX (005)
+  15:02:19.207963  [INFO] pa-ipnet.   		 15 56 01 00 05                                  .V...
+  15:02:19.208017  [INFO] pa-ipnet.   PBXIPC-IPNET. TX. trace 
+  15:02:19.208065  [INFO] pa-ipnet.   		# trace-level [5] disk <no>
+  15:02:19.208146  [INFO] pa-ipnet.   IPNET. Process message 'trace' result [0]
+  15:05:14.125625  [INFO] pa-ipnet.   pbx-ipc IPNET: RX (005)
+  15:05:14.125749  [INFO] pa-ipnet.   		 15 56 01 00 00                                  .V...
+  15:05:14.125800  [INFO] pa-ipnet.   PBXIPC-IPNET. RX. trace 
+  15:05:14.125846  [INFO] pa-ipnet.   		# trace-level [0] disk <no>
+  15:05:14.125889  [INFO] pa-ipnet.   IPNET. Got message 'trace' len [5]
+  15:05:14.125951  [INFO] pa-ipnet.   IPNET. Process message 'trace'
+  15:05:14.126019  [INFO] pa-ipnet.   IPNET. Trace with level [0]

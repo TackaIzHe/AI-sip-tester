@@ -1,0 +1,27 @@
+  12:38:36.898989  [INFO] mod-rdn.   
+
+     <<   MOD-RDN   >>
+  12:38:36.899221  [INFO] mod-rdn.   version V.3.402.0.55.  Build: Oct 30 2026 18:09:31
+  12:38:36.899281  [INFO] mod-rdn.   App: start init. pid 1603
+  12:38:36.899449  [INFO] mod-rdn.   RDN. init: start init. dbg [0x0]
+  12:38:36.899853  [INFO] mod-rdn.   consol task_wr: start. pid 1607
+  12:38:36.899989  [INFO] mod-rdn.   consol task: start. pid 1606
+  12:38:37.099927  [????] mod-rdn.   peer: info: Moduleport[7021] kernel_port[7021] kernelhost[127.0.0.1] socket_file[/tmp/rdn.sock]
+  12:38:53.895186  [INFO] mod-rdn.   resolve_worker: worker[0] started.
+  12:38:53.896088  [INFO] mod-rdn.   rdn_init: Resolver started: GW '192.168.111.211' DNS0 '0.0.0.0'  DNS1 '0.0.0.0'; WORKERS [3]
+  12:38:53.896208  [INFO] mod-rdn.   resolve_worker: worker[1] started.
+  12:38:53.897103  [INFO] mod-rdn.   main task. pid: 1603
+  12:38:53.897112  [INFO] mod-rdn.   timer task: start. pid 2503
+  12:38:53.897254  [INFO] mod-rdn.   resolve_worker: worker[2] started.
+  12:39:05.299534  [INFO] mod-rdn.   shutting down
+  12:39:05.299615  [INFO] mod-rdn.   main task exit
+  12:39:05.299658  [    ] mod-rdn.   # App Close: proc
+  12:39:05.299698  [INFO] mod-rdn.   App. close enter
+  12:39:05.311242  [INFO] mod-rdn.   app_timer: thread closed
+  12:39:07.106596  [INFO] mod-rdn.   resolve_list_clear: domain list cleared
+  12:39:07.106997  [INFO] mod-rdn.   close exit
+  12:39:07.107401  [    ] mod-rdn.   # App Close: consol
+  12:39:07.107483  [INFO] mod-rdn.   consol close: kill consol_thread
+  12:39:07.107682  [INFO] mod-rdn.   consol close: kill consol_thread_wr
+  12:39:07.107792  [INFO] mod-rdn.   consol close: end
+  12:39:07.107851  [    ] mod-rdn.   # App Close: completed

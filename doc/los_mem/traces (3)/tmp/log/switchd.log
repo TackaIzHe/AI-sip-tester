@@ -1,0 +1,18 @@
+set port successed for devNum = 0, portNum = 12
+set port successed for devNum = 0, portNum = 16
+set port successed for devNum = 0, portNum = 20
+set port successed for devNum = 0, portNum = 24
+set port successed for devNum = 0, portNum = 25
+set port successed for devNum = 0, portNum = 26
+cpssDxChPortModeSpeedSet process port = 0
+cpssDxChPortModeSpeedSet process port = 4
+cpssDxChPortModeSpeedSet process port = 8
+cpssDxChPortModeSpeedSet process port = 9
+cpssDxChPortModeSpeedSet process port = 10
+cpssDxChPortModeSpeedSet process port = 11
+cpssDxChPortModeSpeedSet process port = 12
+cpssDxChPortModeSpeedSet process port = 16
+cpssDxChPortModeSpeedSet process port = 20
+cpssDxChPortModeSpeedSet process port = 24
+cpssDxChPortModeSpeedSet process port = 25
+cpssDxChPortModeSpeedSet process port = 26

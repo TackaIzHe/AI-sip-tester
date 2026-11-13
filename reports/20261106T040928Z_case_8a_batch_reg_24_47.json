@@ -1,0 +1,833 @@
+{
+  "id": "20261106T040928Z_case_8a_batch_reg_24_47",
+  "generated_at": "2026-11-06T04:09:28.547Z",
+  "meta": {
+    "case": "case_8a_batch_reg_24_47",
+    "verdict": "PASS",
+    "verdict_text": "пакетная регистрация 24..47: зарегистрировано 24 абонентов (REGISTER → 200 у каждого); регистрации оставлены живыми — снятие второстепенным кейсом batch24unreg (тот же процесс сервера)",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793938168019,
+      "session": "24",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168021,
+      "session": "24",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 24",
+      "call_id": "ruikkvsdd8mj2hb26vkt"
+    },
+    {
+      "ts": 1793938168033,
+      "session": "24",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "ruikkvsdd8mj2hb26vkt",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168038,
+      "session": "24",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168038,
+      "session": "25",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168041,
+      "session": "25",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 25",
+      "call_id": "6klj5l9q1n0l6s2bm0th"
+    },
+    {
+      "ts": 1793938168053,
+      "session": "25",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "6klj5l9q1n0l6s2bm0th",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168062,
+      "session": "25",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168062,
+      "session": "26",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168064,
+      "session": "26",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 26",
+      "call_id": "fhr1r75lgjesp28rjvu8"
+    },
+    {
+      "ts": 1793938168084,
+      "session": "26",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "fhr1r75lgjesp28rjvu8",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168091,
+      "session": "26",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168091,
+      "session": "27",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168094,
+      "session": "27",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 27",
+      "call_id": "5mu60fgrqva8ip6ggd3a"
+    },
+    {
+      "ts": 1793938168114,
+      "session": "27",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "5mu60fgrqva8ip6ggd3a",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168121,
+      "session": "27",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168121,
+      "session": "28",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168124,
+      "session": "28",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 28",
+      "call_id": "4dmigo7c9hapl2tv51b1"
+    },
+    {
+      "ts": 1793938168145,
+      "session": "28",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "4dmigo7c9hapl2tv51b1",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168151,
+      "session": "28",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168151,
+      "session": "29",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168153,
+      "session": "29",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 29",
+      "call_id": "v6portnjjnt0rkag2o1p"
+    },
+    {
+      "ts": 1793938168165,
+      "session": "29",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "v6portnjjnt0rkag2o1p",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168170,
+      "session": "29",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168170,
+      "session": "30",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168172,
+      "session": "30",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 30",
+      "call_id": "da847c171m49pk4k7lri"
+    },
+    {
+      "ts": 1793938168185,
+      "session": "30",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "da847c171m49pk4k7lri",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168191,
+      "session": "30",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168191,
+      "session": "31",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168193,
+      "session": "31",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 31",
+      "call_id": "lab5ubfgsiugl1ajhl0j"
+    },
+    {
+      "ts": 1793938168206,
+      "session": "31",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "lab5ubfgsiugl1ajhl0j",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168211,
+      "session": "31",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168212,
+      "session": "32",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168213,
+      "session": "32",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 32",
+      "call_id": "017t8be8eq3s1betb7bb"
+    },
+    {
+      "ts": 1793938168226,
+      "session": "32",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "017t8be8eq3s1betb7bb",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168231,
+      "session": "32",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168231,
+      "session": "33",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168233,
+      "session": "33",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 33",
+      "call_id": "1uteiq17ri0rg0ootlsv"
+    },
+    {
+      "ts": 1793938168246,
+      "session": "33",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "1uteiq17ri0rg0ootlsv",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168252,
+      "session": "33",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168252,
+      "session": "34",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168254,
+      "session": "34",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 34",
+      "call_id": "mne8n6lrch51e1me33rc"
+    },
+    {
+      "ts": 1793938168266,
+      "session": "34",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "mne8n6lrch51e1me33rc",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168272,
+      "session": "34",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168272,
+      "session": "35",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168275,
+      "session": "35",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 35",
+      "call_id": "311o9g9oij525qmsaigm"
+    },
+    {
+      "ts": 1793938168287,
+      "session": "35",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "311o9g9oij525qmsaigm",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168293,
+      "session": "35",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168293,
+      "session": "36",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168295,
+      "session": "36",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 36",
+      "call_id": "r2qm8k33d4uk1irb4al1"
+    },
+    {
+      "ts": 1793938168307,
+      "session": "36",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "r2qm8k33d4uk1irb4al1",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168313,
+      "session": "36",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168313,
+      "session": "37",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168315,
+      "session": "37",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 37",
+      "call_id": "oof6jc3tbiehbpqstm4v"
+    },
+    {
+      "ts": 1793938168327,
+      "session": "37",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "oof6jc3tbiehbpqstm4v",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168333,
+      "session": "37",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168333,
+      "session": "38",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168335,
+      "session": "38",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 38",
+      "call_id": "7nsksdmdhdqoqi14p02o"
+    },
+    {
+      "ts": 1793938168348,
+      "session": "38",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "7nsksdmdhdqoqi14p02o",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168353,
+      "session": "38",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168353,
+      "session": "39",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168355,
+      "session": "39",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 39",
+      "call_id": "u2blrm4gq4ki6ml2hmop"
+    },
+    {
+      "ts": 1793938168368,
+      "session": "39",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "u2blrm4gq4ki6ml2hmop",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168374,
+      "session": "39",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168374,
+      "session": "40",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168376,
+      "session": "40",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 40",
+      "call_id": "3d3baeufrv3k0tk69oiq"
+    },
+    {
+      "ts": 1793938168388,
+      "session": "40",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "3d3baeufrv3k0tk69oiq",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168395,
+      "session": "40",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168395,
+      "session": "41",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168396,
+      "session": "41",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 41",
+      "call_id": "j2ik3gbvk2f1toejndle"
+    },
+    {
+      "ts": 1793938168408,
+      "session": "41",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "j2ik3gbvk2f1toejndle",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168414,
+      "session": "41",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168414,
+      "session": "42",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168416,
+      "session": "42",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 42",
+      "call_id": "pbqefi85qc8d60bb2pre"
+    },
+    {
+      "ts": 1793938168429,
+      "session": "42",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "pbqefi85qc8d60bb2pre",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168434,
+      "session": "42",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168434,
+      "session": "43",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168437,
+      "session": "43",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 43",
+      "call_id": "t09frvk4s1t1gat98dav"
+    },
+    {
+      "ts": 1793938168449,
+      "session": "43",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "t09frvk4s1t1gat98dav",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168454,
+      "session": "43",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168454,
+      "session": "44",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168456,
+      "session": "44",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 44",
+      "call_id": "8f61ertk8dtmllt5juse"
+    },
+    {
+      "ts": 1793938168469,
+      "session": "44",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "8f61ertk8dtmllt5juse",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168474,
+      "session": "44",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168474,
+      "session": "45",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168477,
+      "session": "45",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 45",
+      "call_id": "ipc4mgk2k3cm65o92n4s"
+    },
+    {
+      "ts": 1793938168490,
+      "session": "45",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "ipc4mgk2k3cm65o92n4s",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168496,
+      "session": "45",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168496,
+      "session": "46",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168498,
+      "session": "46",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 46",
+      "call_id": "n3sjudnekof2sdlddr53"
+    },
+    {
+      "ts": 1793938168510,
+      "session": "46",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "n3sjudnekof2sdlddr53",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168518,
+      "session": "46",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168518,
+      "session": "47",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793938168520,
+      "session": "47",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 47",
+      "call_id": "4nun15fn22vdrt5us3le"
+    },
+    {
+      "ts": 1793938168540,
+      "session": "47",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "4nun15fn22vdrt5us3le",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793938168546,
+      "session": "47",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    }
+  ]
+}

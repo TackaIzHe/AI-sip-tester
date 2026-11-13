@@ -1,0 +1,2 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-06T11:57:54.881Z,1793966274881,t6,summary,"кадров subscribe(type 54) сгенерировано 1000, дамп: /home/tackaizhe/ai-tasks/task3/to/reports/los_t6_ipc_2026-11-06T11-57-54-880Z.hex; IPC-разъём app↔адаптер с этой машины недоступен — передайте кадры своим транспортом или запустите с --ipc-cmd"

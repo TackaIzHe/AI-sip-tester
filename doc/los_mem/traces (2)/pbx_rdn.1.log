@@ -1,0 +1,961 @@
+RDN. Version: V.3.402.0.70.  Build: Dec 19 2025 14:07:55
+Log started at:  15:02:19.215490
+=========================================================================
+
+	Network settings:
+		DNS0 address:    '0.0.0.0'
+		DNS1 address:    '0.0.0.0'
+		Gateway address: '192.168.111.211'
+
+	RDN settings: 
+		Worker count:        3
+		Address rotate ena:  yes
+		Initial worker port: 35876
+		Success ttl:         200 sec
+		Failed ttl:          10 sec
+		DNS reply timeout:   2 sec
+
+	Domain: 'cspgstend.main'
+		[type 1 ] [ttl: 0      sec] [attempts: 5 ] 
+		'192.168.111.211'
+		'192.168.111.213'
+		'192.168.60.11'
+
+=========================================================================
+  15:02:21.131664  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:21.262841  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:24.578969  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.293969  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.294150  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.295119  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.295373  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.296844  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.297787  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.298013  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.298307  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.304408  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.304582  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.305067  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.305973  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.307209  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.307954  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.308306  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.308681  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.308978  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.309375  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.310103  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.310299  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.310453  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.310779  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.311291  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.311447  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.311768  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.312011  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.312460  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.313027  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.322630  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.332819  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.343366  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.343994  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.353607  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.364495  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.385012  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.385590  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.385954  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.394857  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.435932  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.436412  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.436874  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:30.437301  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:02:45.606361  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:06.639252  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:27.675820  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.440505  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.732959  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.753016  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.853270  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.860224  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.921097  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:35.951918  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.073211  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.124031  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.134514  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.134884  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.186080  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.196891  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.197397  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:36.216931  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.313933  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.568777  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.649569  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.649981  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.659597  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.669935  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.670068  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.690733  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.691075  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.691949  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.692649  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.711073  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.793979  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.794783  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.795414  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.802470  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.812309  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.822841  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.903639  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.904248  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.974795  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:37.974959  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:38.005991  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:38.016026  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:48.713178  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.645839  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.646331  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.646728  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.647087  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.647443  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.648038  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.648416  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.648779  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.649133  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.649524  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.650477  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.650901  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.651298  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.651809  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.652215  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.652614  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.653226  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.663991  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.664422  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.665886  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.666023  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.675174  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.675750  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.686297  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.686902  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.687339  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.696886  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.697411  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.706709  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.717183  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.718201  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.718817  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:03:54.719510  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:04:09.737277  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:04:30.770257  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:04:51.805994  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:05:12.838193  [INFO] mod-rdn.   message_handler_resolve: cmd-resolve. domain '192.168.111.208' (src_mod 22)
+  15:05:14.133061  [INFO] mod-rdn.   message_handler_trace: cmd-trace. command 0
+=========================================================================
+
+	Domain: 'cspgstend.main'
+		[type 1 ] [ttl: 0      sec] [attempts: 5 ] 
+		'192.168.111.211'
+		'192.168.111.213'
+		'192.168.60.11'
+
+	REQ[000]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.311289
+		end time   15:02:30.311344
+
+	REQ[001]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.311446
+		end time   15:02:30.311484
+
+	REQ[002]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.311766
+		end time   15:02:30.311837
+
+	REQ[003]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.312009
+		end time   15:02:30.312062
+
+	REQ[004]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.312458
+		end time   15:02:30.312545
+
+	REQ[005]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.313025
+		end time   15:02:30.313074
+
+	REQ[006]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.322628
+		end time   15:02:30.322689
+
+	REQ[007]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.332817
+		end time   15:02:30.332883
+
+	REQ[008]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.343364
+		end time   15:02:30.343425
+
+	REQ[009]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.343993
+		end time   15:02:30.344035
+
+	REQ[010]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.353605
+		end time   15:02:30.353665
+
+	REQ[011]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.364493
+		end time   15:02:30.364559
+
+	REQ[012]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.385009
+		end time   15:02:30.385076
+
+	REQ[013]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.385589
+		end time   15:02:30.385634
+
+	REQ[014]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.385953
+		end time   15:02:30.385992
+
+	REQ[015]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.394855
+		end time   15:02:30.394914
+
+	REQ[016]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.435929
+		end time   15:02:30.435994
+
+	REQ[017]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.436411
+		end time   15:02:30.436453
+
+	REQ[018]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.436873
+		end time   15:02:30.436913
+
+	REQ[019]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:30.437300
+		end time   15:02:30.437338
+
+	REQ[020]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:02:45.606358
+		end time   15:02:45.606429
+
+	REQ[021]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:06.639250
+		end time   15:03:06.639315
+
+	REQ[022]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:27.675816
+		end time   15:03:27.675896
+
+	REQ[023]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.440503
+		end time   15:03:35.440595
+
+	REQ[024]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.732956
+		end time   15:03:35.733034
+
+	REQ[025]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.753015
+		end time   15:03:35.753066
+
+	REQ[026]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.853268
+		end time   15:03:35.853323
+
+	REQ[027]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.860222
+		end time   15:03:35.860273
+
+	REQ[028]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.921095
+		end time   15:03:35.921158
+
+	REQ[029]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:35.951916
+		end time   15:03:35.951967
+
+	REQ[030]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.073209
+		end time   15:03:36.073269
+
+	REQ[031]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.124029
+		end time   15:03:36.124092
+
+	REQ[032]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.134512
+		end time   15:03:36.134555
+
+	REQ[033]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.134883
+		end time   15:03:36.134925
+
+	REQ[034]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.186078
+		end time   15:03:36.186142
+
+	REQ[035]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.196889
+		end time   15:03:36.196943
+
+	REQ[036]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.197395
+		end time   15:03:36.197441
+
+	REQ[037]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:36.216929
+		end time   15:03:36.216980
+
+	REQ[038]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.313931
+		end time   15:03:37.314006
+
+	REQ[039]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.568774
+		end time   15:03:37.568845
+
+	REQ[040]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.649566
+		end time   15:03:37.649679
+
+	REQ[041]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.649980
+		end time   15:03:37.650013
+
+	REQ[042]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.659596
+		end time   15:03:37.659643
+
+	REQ[043]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.669934
+		end time   15:03:37.669978
+
+	REQ[044]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.670067
+		end time   15:03:37.670102
+
+	REQ[045]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.690731
+		end time   15:03:37.690791
+
+	REQ[046]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.691074
+		end time   15:03:37.691110
+
+	REQ[047]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.691948
+		end time   15:03:37.691989
+
+	REQ[048]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.692649
+		end time   15:03:37.692681
+
+	REQ[049]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.711071
+		end time   15:03:37.711129
+
+	REQ[050]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.793976
+		end time   15:03:37.794034
+
+	REQ[051]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.794782
+		end time   15:03:37.794822
+
+	REQ[052]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.795412
+		end time   15:03:37.795451
+
+	REQ[053]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.802469
+		end time   15:03:37.802516
+
+	REQ[054]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.812308
+		end time   15:03:37.812382
+
+	REQ[055]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.822839
+		end time   15:03:37.822882
+
+	REQ[056]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.903636
+		end time   15:03:37.903712
+
+	REQ[057]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.904247
+		end time   15:03:37.904290
+
+	REQ[058]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.974786
+		end time   15:03:37.974852
+
+	REQ[059]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:37.974958
+		end time   15:03:37.974999
+
+	REQ[060]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:38.005988
+		end time   15:03:38.006044
+
+	REQ[061]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:38.016024
+		end time   15:03:38.016071
+
+	REQ[062]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:48.713175
+		end time   15:03:48.713242
+
+	REQ[063]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.645836
+		end time   15:03:54.645894
+
+	REQ[064]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.646330
+		end time   15:03:54.646367
+
+	REQ[065]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.646727
+		end time   15:03:54.646760
+
+	REQ[066]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.647086
+		end time   15:03:54.647117
+
+	REQ[067]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.647442
+		end time   15:03:54.647475
+
+	REQ[068]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.648037
+		end time   15:03:54.648074
+
+	REQ[069]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.648415
+		end time   15:03:54.648448
+
+	REQ[070]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.648779
+		end time   15:03:54.648815
+
+	REQ[071]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.649132
+		end time   15:03:54.649169
+
+	REQ[072]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.649522
+		end time   15:03:54.649589
+
+	REQ[073]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.650476
+		end time   15:03:54.650530
+
+	REQ[074]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.650901
+		end time   15:03:54.650933
+
+	REQ[075]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.651297
+		end time   15:03:54.651327
+
+	REQ[076]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.651808
+		end time   15:03:54.651853
+
+	REQ[077]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.652214
+		end time   15:03:54.652244
+
+	REQ[078]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.652614
+		end time   15:03:54.652643
+
+	REQ[079]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.653226
+		end time   15:03:54.653255
+
+	REQ[080]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.663989
+		end time   15:03:54.664054
+
+	REQ[081]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.664421
+		end time   15:03:54.664455
+
+	REQ[082]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.665885
+		end time   15:03:54.665922
+
+	REQ[083]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.666022
+		end time   15:03:54.666052
+
+	REQ[084]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.675172
+		end time   15:03:54.675230
+
+	REQ[085]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.675749
+		end time   15:03:54.675797
+
+	REQ[086]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.686295
+		end time   15:03:54.686354
+
+	REQ[087]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.686901
+		end time   15:03:54.686946
+
+	REQ[088]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.687338
+		end time   15:03:54.687375
+
+	REQ[089]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.696884
+		end time   15:03:54.696949
+
+	REQ[090]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.697409
+		end time   15:03:54.697460
+
+	REQ[091]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.706707
+		end time   15:03:54.706760
+
+	REQ[092]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.717180
+		end time   15:03:54.717289
+
+	REQ[093]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.718198
+		end time   15:03:54.718271
+
+	REQ[094]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.718815
+		end time   15:03:54.718869
+
+	REQ[095]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:03:54.719508
+		end time   15:03:54.719556
+
+	REQ[096]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:04:09.737275
+		end time   15:04:09.737345
+
+	REQ[097]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:04:30.770253
+		end time   15:04:30.770406
+
+	REQ[098]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:04:51.805991
+		end time   15:04:51.806063
+
+	REQ[099]:
+		src mod   [22]
+		domain    '192.168.111.208'
+		address   '192.168.111.208'
+		result     Ok [0]
+		start time 15:05:12.838190
+		end time   15:05:12.838270
+
+=========================================================================
+RDN. Version: V.3.402.0.70.  Build: Dec 19 2025 14:07:55
+Log finished at:  15:05:14.135903

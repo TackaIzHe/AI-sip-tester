@@ -1,0 +1,4 @@
+2026-09-28 11:55:09.842              app.c     thread_0  Coral pa_sip 3.402.0.100. Log started
+2026-09-28 11:55:09.842              app.c     thread_0  Stand Alone mode: yes
+2026-09-28 11:55:09.842              app.c     thread_0  set log_level 5
+2026-09-28 11:57:14.660              app.c     thread_1  set log_level 0

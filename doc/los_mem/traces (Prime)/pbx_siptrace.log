@@ -1,0 +1,26 @@
+2026-09-28 11:54:59:086424 DEBUG <0.301.0> [isup_ss7:95] 
++------------------------
+| >>> SIP -> CNode: 
+| {mediaData,{32770,-1,[{119,1}]}} 
+|
+2026-09-28 11:55:04:089468 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:09:091616 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:14:095133 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:19:099852 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:24:103714 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:29:108879 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:34:112705 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:39:116223 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:44:120359 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:49:124722 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:54:127673 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:55:59:132948 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:04:137037 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:09:139692 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:14:143760 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:19:148981 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:24:151655 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:29:156077 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:34:159958 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:39:162959 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-09-28 11:56:44:167110 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}

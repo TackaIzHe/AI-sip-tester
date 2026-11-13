@@ -1,0 +1,4 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-05T06:04:35.247Z,1793858675247,t1,phase,"T1: register"
+2026-11-05T06:04:40.249Z,1793858680249,t1,phase,"T1: subscribe dialog"
+2026-11-05T06:04:45.250Z,1793858685250,t1,phase,"stim_start"

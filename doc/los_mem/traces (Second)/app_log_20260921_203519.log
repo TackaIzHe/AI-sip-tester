@@ -1,0 +1,60 @@
+Starting at Mon Sep 21 20:35:19 MSK 2026
+ 21/09/26  
+ 21/09/26  
+ 21/09/26       <<   MGAPP   >>
+ 21/09/26  20:35:19.737530  [INFO] # Software Version: CORAL 17.1.13.1.52 CSPG 3000/S/PBX/VAS/RES-E1 Build: Sep 10 2026 14:25:53
+ 21/09/26  20:35:19.737623  [INFO] App: start init. pid 23410
+ 21/09/26  20:35:19.737900  [INFO] app init: start init. dbg [0x0]
+ 21/09/26  20:35:20.246389  [INFO] net: init: if name: bond1.1. idx 0
+ 21/09/26  20:35:20.246469  [INFO] net: init: local IP: 192.168.111.212
+ 21/09/26  20:35:20.246487  [INFO] net: init: local MAC: e4:5a:d4:fa:96:5f
+ 21/09/26  20:35:20.247406  [INFO] net: init: if name: bond1.4094. idx 1
+ 21/09/26  20:35:20.247450  [INFO] net: init: local IP: 1.255.254.250
+ 21/09/26  20:35:20.247467  [INFO] net: init: local MAC: e4:5a:d4:fa:96:5f
+ 21/09/26  20:35:20.247499  [INFO] smvp: init. dbg [0x0]
+ 21/09/26  20:35:20.248016  [INFO] smvpc: init
+ 21/09/26  20:35:20.335705  [INFO] smvp: Firmware file '/usr/bin/smg/EltexPBX_C300_M823.axf' size [1990879]
+ 21/09/26  20:35:20.572862  [INFO] vapi: Version <VAPI Library Release 2.18.3-, API Version 8.0>
+ 21/09/26  20:35:20.572958  [INFO] smvp: vapi-init res (0)
+ 21/09/26  20:35:20.573892  [INFO] cfg: init
+ 21/09/26  20:35:20.575105  [INFO] pbxipc_task: pbxipc_0 started. pid: 23425
+killall: pa_sip: no process killed
+killall: pa_sip: no process killed
+ 21/09/26  20:35:23.348219  [INFO] pbxipc_task: pbxipc_3 started. pid: 23941
+ 21/09/26  20:35:23.382900  [INFO] UVM. inited
+ 21/09/26  20:35:23.388076  [INFO] snmp_cmd_task: start. pid 23947
+ 21/09/26  20:35:23.424185  [INFO] Erlang node[c3]: Accepted: fd [16]
+ 21/09/26  20:35:23.424453  [INFO] # Registration request from Erlang node
+ 21/09/26  20:35:23.649110  [INFO] CONF. Adapter-connection 'established'
+ 21/09/26  20:35:24.496399  [INFO] cfg: subsystem ready RESET [0/10]
+ 21/09/26  20:35:25.918709  [ERR ] [alarm_ind_cspg][2920] Failed to send alarm indication <(nil)> rcode [255]
+ 21/09/26  20:35:25.919051  [ERR ] [alarm_ind_cspg][2920] Failed to send alarm indication <(nil)> rcode [255]
+ 21/09/26  20:35:25.919427  [ERR ] [alarm_ind_cspg][2920] Failed to send alarm indication <(nil)> rcode [255]
+ 21/09/26  20:35:25.930754  [INFO] cfg: subsystem ready RESET [0/10]
+ 21/09/26  20:35:26.499118  [INFO] cfg: subsystem ready await [1/10]
+ 21/09/26  20:35:26.953300  [INFO] CONF. Adapter-connection 'lost'
+ 21/09/26  20:35:27.502795  [INFO] cfg: subsystem ready await [2/10]
+ 21/09/26  20:35:28.504150  [INFO] cfg: subsystem ready await [3/10]
+ 21/09/26  20:35:28.690899  [INFO] SIP. Adapter-connection 'established'
+ 21/09/26  20:35:29.505620  [INFO] cfg: subsystem ready await [4/10]
+ 21/09/26  20:35:30.506844  [INFO] cfg: subsystem ready await [5/10]
+ 21/09/26  20:35:31.508231  [INFO] cfg: subsystem ready await [6/10]
+ 21/09/26  20:35:32.509875  [INFO] cfg: subsystem ready await [7/10]
+ 21/09/26  20:35:33.511019  [INFO] cfg: subsystem ready await [8/10]
+ 21/09/26  20:35:34.512275  [INFO] cfg: subsystem ready await [9/10]
+ 21/09/26  20:35:35.513777  [INFO] cfg: subsystem ready await [10/10]
+ 21/09/26  20:35:35.513852  [INFO] cfg: subsystem ready, proceed
+ 21/09/26  20:35:37.467883  [INFO] CONF. Adapter-connection 'established'
+ 21/09/26  20:35:38.517514  [INFO] cfg: sip-adapter not ready.
+ 21/09/26  20:35:39.470279  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_srv_cfg_proc:2381>
+ 21/09/26  20:35:39.471729  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_srv_init_ext:2215>
+ 21/09/26  20:35:39.471805  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_srv_init_ext:2215>
+ 21/09/26  20:35:39.566828  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_apply_ext:665>
+ 21/09/26  20:35:39.569115  [INFO] SLOT Get [255:27]. CSPG is not configured <slot_srv_cfg_proc:2381>
+ 21/09/26  20:35:39.569206  [INFO] SLOT Get [255:27]. CSPG is not configured <slot_srv_init_ext:2215>
+ 21/09/26  20:35:39.569234  [INFO] SLOT Get [255:27]. CSPG is not configured <slot_srv_init_ext:2215>
+ 21/09/26  20:35:39.605438  [INFO] SLOT Get [255:27]. CSPG is not configured <slot_apply_ext:665>
+ 21/09/26  20:35:39.606078  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_srv_cfg_proc:2381>
+ 21/09/26  20:35:39.606201  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_srv_init_ext:2215>
+ 21/09/26  20:35:39.606231  [INFO] SLOT Get [255:00]. CSPG is not configured <slot_srv_init_ext:2215>
+Killed

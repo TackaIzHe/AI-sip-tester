@@ -1,0 +1,13 @@
+2026-10-28 15:02:19.200              app.c     thread_0 !Coral pa_sip 3.402.0.100. Log started
+2026-10-28 15:02:19.200              app.c     thread_0  Stand Alone mode: no
+2026-10-28 15:02:19.200              app.c     thread_0  set log_level 5
+2026-10-28 15:02:30.293              app.c     thread_3 !New SAS mode: 1
+2026-10-28 15:02:41.768              app.c     thread_1  New SAS mode: 1
+2026-10-28 15:02:45.616              app.c     thread_1  New SAS mode: 0
+2026-10-28 15:03:54.646              app.c     thread_0 !New SAS mode: 1
+2026-10-28 15:04:02.352              app.c     thread_2  New SAS mode: 1
+2026-10-28 15:04:09.747              app.c     thread_2  New SAS mode: 0
+2026-10-28 15:04:33.690              app.c     thread_0  New SAS mode: 1
+2026-10-28 15:04:42.870              app.c     thread_3  New SAS mode: 1
+2026-10-28 15:04:51.815              app.c     thread_0  New SAS mode: 0
+2026-10-28 15:05:14.118              app.c     thread_0  set log_level 0

@@ -1,0 +1,38 @@
+RDN. Version: V.3.402.0.48.  Build: Aug 26 2026 15:58:37
+Log started at:  11:55:09.858054
+=========================================================================
+
+	Network settings:
+		DNS0 address:    '0.0.0.0'
+		DNS1 address:    '0.0.0.0'
+		Gateway address: '192.168.111.212'
+
+	RDN settings: 
+		Worker count:        3
+		Address rotate ena:  yes
+		Initial worker port: 35876
+		Success ttl:         200 sec
+		Failed ttl:          10 sec
+		DNS reply timeout:   2 sec
+
+	Domain: 'cspgstend.main'
+		[type 1 ] [ttl: 0      sec] [attempts: 5 ] 
+		'192.168.111.212'
+		'192.168.111.213'
+		'192.168.60.12'
+
+=========================================================================
+  11:57:14.677273  [INFO] mod-rdn.   message_handler_trace: cmd-trace. command 0
+=========================================================================
+
+	Domain: 'cspgstend.main'
+		[type 1 ] [ttl: 0      sec] [attempts: 5 ] 
+		'192.168.111.212'
+		'192.168.111.213'
+		'192.168.60.12'
+
+	No one requests received
+
+=========================================================================
+RDN. Version: V.3.402.0.48.  Build: Aug 26 2026 15:58:37
+Log finished at:  11:57:14.677402

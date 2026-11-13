@@ -1,0 +1,5 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-09T04:30:02.488Z,1794198602488,t5,phase,"stim_start"
+2026-11-09T04:30:44.574Z,1794198644574,t5,phase,"stim_stop"
+2026-11-09T04:30:44.574Z,1794198644574,t5,phase,"observe_stop"
+2026-11-09T04:30:44.575Z,1794198644575,t5,summary,"раундов 84 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 252 сообщений @ 2/с на вариант; ответы станции: INVITE 403×646, SUBSCRIBE 489×84, INVITE 100×84, REGISTER 403×80, REGISTER 401×4; наблюдение 0 мин"

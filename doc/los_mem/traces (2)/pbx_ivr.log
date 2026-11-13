@@ -1,0 +1,2402 @@
+2026-10-28 15:02:27:719374 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:27:719705 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:27:719923 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:27:720088 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:27:720226 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:27:720361 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:27:720541 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188947,720084},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:27:720902 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188947,720084},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:27:721264 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,19,130,3,10,252,212>>} 
+|
+2026-10-28 15:02:27:721629 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,19,130,3,10,252,212>> was send to cnode
+2026-10-28 15:02:27:721933 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,19,130,1,0>>} 
+|
+2026-10-28 15:02:27:722252 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188947,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:27:722499 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188947,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:27:722874 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188947,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:27:723209 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188947,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:27:723565 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:32:722315 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:32:722772 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:02:32:722635 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:32:723040 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:32:723222 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:32:723331 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:32:723608 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:32:723788 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188952,723218},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:32:724158 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188952,723218},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:32:724797 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:02:32:725140 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,24,130,3,11,9,18>>} 
+|
+2026-10-28 15:02:32:725382 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,24,130,3,11,9,18>> was send to cnode
+2026-10-28 15:02:32:727698 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,24,130,1,0>>} 
+|
+2026-10-28 15:02:32:728050 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188952,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:32:728328 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188952,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:32:728702 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188952,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:32:729049 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188952,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:32:729408 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:37:724294 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:37:724642 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:37:724831 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:37:725018 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:37:725136 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:37:725287 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:37:725473 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188957,725014},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:37:725806 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188957,725014},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:37:726161 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,29,130,3,11,16,22>>} 
+|
+2026-10-28 15:02:37:726401 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,29,130,3,11,16,22>> was send to cnode
+2026-10-28 15:02:37:728389 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,29,130,1,0>>} 
+|
+2026-10-28 15:02:37:728697 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188957,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:37:728971 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188957,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:37:729348 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188957,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:37:729712 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188957,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:37:730087 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:42:726696 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:42:727021 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:42:727202 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:42:727398 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:42:727521 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:42:727694 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:42:727881 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188962,727394},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:42:728192 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188962,727394},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:42:728522 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,34,130,3,11,25,98>>} 
+|
+2026-10-28 15:02:42:728812 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,34,130,3,11,25,98>> was send to cnode
+2026-10-28 15:02:42:730241 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,34,130,1,0>>} 
+|
+2026-10-28 15:02:42:730555 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188962,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:42:730842 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188962,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:42:731210 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188962,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:42:731554 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188962,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:42:731938 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:47:730371 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:47:730775 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:47:731023 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:47:731207 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:47:731225 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:02:47:731319 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:47:731457 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:47:731671 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188967,731203},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:47:731993 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188967,731203},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:47:735633 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:02:47:735980 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,39,130,3,11,40,67>>} 
+|
+2026-10-28 15:02:47:736311 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,39,130,3,11,40,67>> was send to cnode
+2026-10-28 15:02:47:736946 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,39,130,1,0>>} 
+|
+2026-10-28 15:02:47:737239 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188967,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:47:737502 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188967,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:47:737872 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188967,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:47:738220 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188967,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:47:738623 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:52:732735 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:52:733039 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:52:733269 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:52:733447 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 3
+2026-10-28 15:02:52:733542 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:52:733728 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:52:733892 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:52:737261 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,3,alive,undefined}
+2026-10-28 15:02:52:737632 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:02:52:737487 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,3,alive,undefined}
+2026-10-28 15:02:52:737868 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,3,alive,undefined}
+2026-10-28 15:02:52:738043 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:52:738148 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:52:738388 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:52:738561 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188972,738040},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:52:738947 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188972,738040},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:52:739430 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:02:52:739761 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,44,130,3,11,66,248>>} 
+|
+2026-10-28 15:02:52:740192 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,44,130,3,11,66,248>> was send to cnode
+2026-10-28 15:02:52:740694 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,44,130,1,0>>} 
+|
+2026-10-28 15:02:52:741011 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188972,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:52:741232 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188972,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:52:741613 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188972,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:52:741943 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188972,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:52:742300 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:02:57:740974 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:02:57:741229 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:02:57:741263 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:57:741518 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:02:57:741705 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:02:57:741819 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:02:57:741991 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:02:57:742194 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188977,741701},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:02:57:742524 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188977,741701},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:02:57:742909 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:02:57:743245 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,49,130,3,11,81,69>>} 
+|
+2026-10-28 15:02:57:743495 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,49,130,3,11,81,69>> was send to cnode
+2026-10-28 15:02:57:747486 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,49,130,1,0>>} 
+|
+2026-10-28 15:02:57:747832 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188977,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:02:57:748099 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188977,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:02:57:748429 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188977,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:57:748760 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188977,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:02:57:749104 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:02:742302 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:02:742606 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:02:742808 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:02:742960 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:03:02:743078 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:02:743215 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:02:743396 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:02:745243 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:03:02:745460 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:02:745667 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:02:745835 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:02:745939 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:02:746073 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:02:746231 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188982,745832},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:02:746536 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188982,745832},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:02:746885 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,54,130,3,11,97,104>>} 
+|
+2026-10-28 15:03:02:747243 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,54,130,3,11,97,104>> was send to cnode
+2026-10-28 15:03:02:747524 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,54,130,1,0>>} 
+|
+2026-10-28 15:03:02:747829 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188982,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:02:748059 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188982,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:02:748406 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188982,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:02:748819 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188982,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:02:749230 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:07:746490 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:07:746828 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:07:747045 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:07:747213 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:07:747327 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:07:747459 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:07:747648 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188987,747210},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:07:748016 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188987,747210},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:07:748227 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:07:749489 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:07:749893 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,59,130,3,11,102,202>>} 
+|
+2026-10-28 15:03:07:750271 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,59,130,3,11,102,202>> was send to cnode
+2026-10-28 15:03:07:750621 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,59,130,1,0>>} 
+|
+2026-10-28 15:03:07:750969 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188987,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:07:751232 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188987,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:07:751644 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188987,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:07:752001 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188987,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:07:752378 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:12:748278 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:12:748635 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:12:748853 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:12:749016 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:03:12:749112 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:12:749293 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:12:749477 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:12:751248 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:03:12:751699 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:12:751464 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:12:752024 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:12:752234 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:12:752349 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:12:752466 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:12:752701 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188992,752230},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:12:753004 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188992,752230},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:12:753099 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:12:753414 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,64,130,3,11,122,102>>} 
+|
+2026-10-28 15:03:12:753766 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,64,130,3,11,122,102>> was send to cnode
+2026-10-28 15:03:12:754082 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,64,130,1,0>>} 
+|
+2026-10-28 15:03:12:754353 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188992,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:12:754630 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188992,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:12:754975 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188992,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:12:755306 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188992,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:12:755658 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:17:753290 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:17:753603 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:17:753793 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:17:753958 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:17:754100 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:17:754228 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:17:754407 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,188997,753955},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:17:754742 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,188997,753955},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:17:755123 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,69,130,3,11,129,35>>} 
+|
+2026-10-28 15:03:17:755359 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,69,130,3,11,129,35>> was send to cnode
+2026-10-28 15:03:17:756130 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,69,130,1,0>>} 
+|
+2026-10-28 15:03:17:756491 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,188997,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:17:756757 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,188997,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:17:757141 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188997,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:17:757507 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,188997,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:17:757955 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:22:755425 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:22:755731 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:22:755982 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:22:756175 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:22:756305 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:22:756425 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:22:756618 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189002,756172},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:22:756997 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189002,756172},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:22:757295 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:22:758818 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:22:759159 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,74,130,3,11,137,204>>} 
+|
+2026-10-28 15:03:22:759413 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,74,130,3,11,137,204>> was send to cnode
+2026-10-28 15:03:22:759797 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,74,130,1,0>>} 
+|
+2026-10-28 15:03:22:760082 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189002,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:22:760333 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189002,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:22:760706 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189002,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:22:761104 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189002,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:22:761514 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:27:757326 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:27:757645 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:27:757829 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:27:758011 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:03:27:758115 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:27:758265 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:27:758437 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:27:760244 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:03:27:760488 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:27:760463 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:27:760696 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:27:760873 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:27:761012 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:27:761143 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:27:761311 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189007,760869},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:27:761745 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189007,760869},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:27:761839 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:27:762164 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,79,130,3,11,156,37>>} 
+|
+2026-10-28 15:03:27:762553 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,79,130,3,11,156,37>> was send to cnode
+2026-10-28 15:03:27:763080 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,79,130,1,0>>} 
+|
+2026-10-28 15:03:27:763365 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189007,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:27:763636 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189007,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:27:764002 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189007,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:27:764344 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189007,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:27:764708 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:32:762271 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:32:762601 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:32:762792 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:32:762981 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:32:763099 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:32:763244 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:32:763487 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189012,762977},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:32:763868 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189012,762977},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:32:764259 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:32:765523 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:32:765901 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,84,130,3,11,164,97>>} 
+|
+2026-10-28 15:03:32:766145 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,84,130,3,11,164,97>> was send to cnode
+2026-10-28 15:03:32:766606 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,84,130,1,0>>} 
+|
+2026-10-28 15:03:32:766896 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189012,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:32:767138 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189012,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:32:767492 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189012,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:32:767834 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189012,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:32:768180 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:37:764346 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:37:764671 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:37:764872 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:37:765044 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:03:37:765137 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:37:765295 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:37:765461 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:37:767236 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:03:37:767559 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:37:767433 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:37:767803 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:03:37:767995 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:37:768106 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:37:768244 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:37:768418 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189017,767992},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:37:768805 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189017,767992},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:37:769080 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:37:769396 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,89,130,3,11,183,248>>} 
+|
+2026-10-28 15:03:37:769701 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,89,130,3,11,183,248>> was send to cnode
+2026-10-28 15:03:37:770279 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,89,130,1,0>>} 
+|
+2026-10-28 15:03:37:770591 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189017,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:37:770816 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189017,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:37:771184 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189017,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:37:771490 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189017,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:37:772037 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:42:770427 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:42:770726 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:42:770954 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:42:771111 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:42:771218 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:42:771427 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:42:771771 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:42:771713 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189022,771108},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:42:772197 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189022,771108},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:42:773399 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:42:773767 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,94,130,3,11,196,36>>} 
+|
+2026-10-28 15:03:42:774182 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,94,130,3,11,196,36>> was send to cnode
+2026-10-28 15:03:42:774450 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,94,130,1,0>>} 
+|
+2026-10-28 15:03:42:774761 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189022,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:42:775022 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189022,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:42:775356 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189022,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:42:775709 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189022,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:42:776059 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:47:774143 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:47:774438 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:47:774635 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:47:774800 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:47:775003 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:47:775130 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:47:775266 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:47:775312 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189027,774797},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:47:775654 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189027,774797},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:47:780120 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:47:780463 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,99,130,3,11,210,141>>} 
+|
+2026-10-28 15:03:47:780735 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,99,130,3,11,210,141>> was send to cnode
+2026-10-28 15:03:47:781079 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,99,130,1,0>>} 
+|
+2026-10-28 15:03:47:781342 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189027,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:47:781620 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189027,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:47:782107 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189027,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:47:782460 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189027,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:47:782889 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:52:776441 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:52:776783 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:52:776972 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:52:777168 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 4
+2026-10-28 15:03:52:777275 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:52:777415 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:52:777604 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:52:782265 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,4,alive,undefined}
+2026-10-28 15:03:52:782518 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:52:782497 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,4,alive,undefined}
+2026-10-28 15:03:52:782689 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,4,alive,undefined}
+2026-10-28 15:03:52:782843 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:52:782962 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:52:783137 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:52:783331 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189032,782840},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:52:783679 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189032,782840},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:52:783981 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:52:784305 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,104,130,3,11,241,248>>} 
+|
+2026-10-28 15:03:52:784599 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,104,130,3,11,241,248>> was send to cnode
+2026-10-28 15:03:52:784878 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,104,130,1,0>>} 
+|
+2026-10-28 15:03:52:785155 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189032,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:52:785402 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189032,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:52:785786 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189032,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:52:786132 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189032,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:52:786487 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:03:57:784300 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:03:57:784605 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:57:784831 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:03:57:784995 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:03:57:785111 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:03:57:785259 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:03:57:785316 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:03:57:785444 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189037,784991},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:03:57:785819 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189037,784991},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:03:57:786796 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:03:57:787135 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,109,130,3,11,250,95>>} 
+|
+2026-10-28 15:03:57:787380 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,109,130,3,11,250,95>> was send to cnode
+2026-10-28 15:03:57:787809 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,109,130,1,0>>} 
+|
+2026-10-28 15:03:57:788095 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189037,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:03:57:788348 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189037,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:03:57:788717 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189037,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:57:789073 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189037,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:03:57:789413 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:02:786295 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:02:786608 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:02:786812 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:02:786964 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:04:02:787080 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:02:787216 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:02:787389 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:02:788250 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:02:789315 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:04:02:789551 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:04:02:789756 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:04:02:789912 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:02:790017 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:02:790217 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:02:790382 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189042,789909},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:02:790697 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189042,789909},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:02:791058 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:02:791382 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,114,130,3,12,13,149>>} 
+|
+2026-10-28 15:04:02:791646 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,114,130,3,12,13,149>> was send to cnode
+2026-10-28 15:04:02:792124 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,114,130,1,0>>} 
+|
+2026-10-28 15:04:02:792392 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189042,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:02:792732 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189042,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:02:793122 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189042,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:02:793469 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189042,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:02:793868 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:07:791563 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:07:791855 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:07:792080 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:07:792238 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:07:792345 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:07:792493 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:07:792681 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189047,792235},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:07:792995 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189047,792235},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:07:793353 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:07:794660 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:07:794985 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,119,130,3,12,22,171>>} 
+|
+2026-10-28 15:04:07:795342 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,119,130,3,12,22,171>> was send to cnode
+2026-10-28 15:04:07:795842 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,119,130,1,0>>} 
+|
+2026-10-28 15:04:07:796128 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189047,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:07:796365 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189047,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:07:796736 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189047,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:07:797065 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189047,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:07:797504 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:12:794116 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:12:794421 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:12:794639 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:12:794807 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:04:12:794911 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:12:795058 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:12:795234 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:12:796237 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:12:796243 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:04:12:796431 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:04:12:796638 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:04:12:796807 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:12:796916 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:12:797037 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:12:797230 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189052,796804},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:12:797541 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189052,796804},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:12:797770 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:12:798057 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,124,130,3,12,40,132>>} 
+|
+2026-10-28 15:04:12:798402 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,124,130,3,12,40,132>> was send to cnode
+2026-10-28 15:04:12:799004 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,124,130,1,0>>} 
+|
+2026-10-28 15:04:12:799373 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189052,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:12:799652 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189052,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:12:800001 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189052,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:12:800330 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189052,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:12:800677 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:17:797389 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:17:797678 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:17:797879 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:17:798038 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:17:798170 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:17:798307 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:17:798475 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189057,798035},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:17:798811 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189057,798035},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:17:799158 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,129,130,3,12,45,83>>} 
+|
+2026-10-28 15:04:17:799420 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,129,130,3,12,45,83>> was send to cnode
+2026-10-28 15:04:17:800692 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,129,130,1,0>>} 
+|
+2026-10-28 15:04:17:801056 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189057,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:17:801304 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189057,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:17:801686 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189057,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:17:802005 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189057,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:17:802369 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:22:799553 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:22:799848 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:22:800116 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:22:800295 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:22:800454 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:22:800591 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:22:800770 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189062,800292},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:22:801230 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:22:801076 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189062,800292},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:22:802516 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:22:802868 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,134,130,3,12,54,36>>} 
+|
+2026-10-28 15:04:22:803172 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,134,130,3,12,54,36>> was send to cnode
+2026-10-28 15:04:22:804050 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,134,130,1,0>>} 
+|
+2026-10-28 15:04:22:804373 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189062,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:22:804645 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189062,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:22:805039 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189062,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:22:805423 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189062,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:22:805830 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:27:803453 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:27:803777 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:27:803978 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:27:804151 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:27:804258 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:27:804423 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:27:804606 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189067,804148},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:27:804920 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189067,804148},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:27:805270 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:27:806668 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:27:806983 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,139,130,3,12,69,52>>} 
+|
+2026-10-28 15:04:27:807387 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,139,130,3,12,69,52>> was send to cnode
+2026-10-28 15:04:27:807926 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,139,130,1,0>>} 
+|
+2026-10-28 15:04:27:808255 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189067,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:27:808494 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189067,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:27:808872 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189067,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:27:809221 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189067,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:27:809611 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:32:805298 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:32:805639 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:32:805824 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:32:806001 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 2
+2026-10-28 15:04:32:806102 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:32:806235 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:32:806407 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:32:808242 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:32:809334 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,2,alive,undefined}
+2026-10-28 15:04:32:809597 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,2,alive,undefined}
+2026-10-28 15:04:32:809781 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,2,alive,undefined}
+2026-10-28 15:04:32:809950 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:32:810056 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:32:810231 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:32:810398 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189072,809947},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:32:810736 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189072,809947},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:32:811076 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:32:811442 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,144,130,3,12,91,219>>} 
+|
+2026-10-28 15:04:32:811733 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,144,130,3,12,91,219>> was send to cnode
+2026-10-28 15:04:32:812435 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,144,130,1,0>>} 
+|
+2026-10-28 15:04:32:812804 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189072,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:32:813066 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189072,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:32:813428 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189072,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:32:813760 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189072,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:32:814194 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:37:811598 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:37:811911 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:37:812159 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:37:812319 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:37:812425 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:37:812568 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:37:812783 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189077,812316},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:37:813080 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189077,812316},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:37:813231 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:37:815302 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:37:815672 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,149,130,3,12,101,28>>} 
+|
+2026-10-28 15:04:37:815911 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,149,130,3,12,101,28>> was send to cnode
+2026-10-28 15:04:37:818284 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,149,130,1,0>>} 
+|
+2026-10-28 15:04:37:818610 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189077,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:37:818896 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189077,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:37:819250 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189077,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:37:819620 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189077,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:37:819958 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:42:814433 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:42:814756 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:42:814935 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:42:815093 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:04:42:815211 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:42:815337 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:42:815525 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:42:817256 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:04:42:817536 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:04:42:817778 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:04:42:817961 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:42:818075 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:42:818206 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:42:818390 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189082,817957},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:42:818683 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189082,817957},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:42:819004 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,154,130,3,12,123,37>>} 
+|
+2026-10-28 15:04:42:819324 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,154,130,3,12,123,37>> was send to cnode
+2026-10-28 15:04:42:819668 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,154,130,1,0>>} 
+|
+2026-10-28 15:04:42:819930 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189082,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:42:820191 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189082,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:42:820543 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189082,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:42:820882 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189082,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:42:821245 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:47:820344 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:47:820715 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:04:47:820675 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:47:820851 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:47:821010 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:47:821131 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:47:821295 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:47:821494 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189087,821006},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:47:821852 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189087,821006},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:47:822050 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:04:47:822408 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,159,130,3,12,135,14>>} 
+|
+2026-10-28 15:04:47:822701 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,159,130,3,12,135,14>> was send to cnode
+2026-10-28 15:04:47:824937 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,159,130,1,0>>} 
+|
+2026-10-28 15:04:47:825255 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189087,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:47:825523 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189087,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:47:825911 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189087,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:47:826232 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189087,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:47:826596 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:52:822499 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:52:822798 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:52:822995 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:52:823162 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:52:823305 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:52:823432 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:52:823629 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189092,823159},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:52:823950 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189092,823159},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:52:824280 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,164,130,3,12,143,119>>} 
+|
+2026-10-28 15:04:52:824513 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,164,130,3,12,143,119>> was send to cnode
+2026-10-28 15:04:52:827090 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,164,130,1,0>>} 
+|
+2026-10-28 15:04:52:827395 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189092,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:52:827629 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189092,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:52:827993 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189092,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:52:828312 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189092,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:52:828675 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:04:57:825770 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:04:57:826085 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:57:826258 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:04:57:826433 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:04:57:826544 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:04:57:826710 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:04:57:826882 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189097,826429},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:04:57:827196 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189097,826429},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:04:57:827535 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,169,130,3,12,156,61>>} 
+|
+2026-10-28 15:04:57:827784 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,169,130,3,12,156,61>> was send to cnode
+2026-10-28 15:04:57:828363 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,169,130,1,0>>} 
+|
+2026-10-28 15:04:57:828724 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189097,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:04:57:828970 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189097,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:04:57:829308 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189097,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:57:829644 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189097,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:04:57:830012 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:05:02:828214 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:05:02:828531 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:05:02:828738 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:05:02:828919 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:05:02:829027 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:05:02:829179 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:05:02:829314 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:05:02:829363 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189102,828916},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:05:02:829674 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189102,828916},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:05:02:830798 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:05:02:831176 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,174,130,3,12,165,244>>} 
+|
+2026-10-28 15:05:02:831419 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,174,130,3,12,165,244>> was send to cnode
+2026-10-28 15:05:02:831846 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,174,130,1,0>>} 
+|
+2026-10-28 15:05:02:832177 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189102,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:05:02:832438 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189102,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:05:02:832840 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189102,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:05:02:833214 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189102,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:05:02:833594 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:05:07:830309 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,5000,alive,undefined}
+2026-10-28 15:05:07:830614 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:05:07:830817 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,5000,alive,undefined}
+2026-10-28 15:05:07:830972 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:120] Arm timer connection_check to 1
+2026-10-28 15:05:07:831089 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:05:07:831226 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:05:07:831389 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []
+2026-10-28 15:05:07:832247 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-10-28 15:05:07:833262 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_timer_msg,connection_check,undefined,
+                             undefined,start,undefined,1,alive,undefined}
+2026-10-28 15:05:07:833543 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:178] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:05:07:833751 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:117] Process: {trike_timer_msg,connection_check,undefined,undefined,start,
+                          undefined,1,alive,undefined}
+2026-10-28 15:05:07:833929 DEBUG <0.169.0> [parker_gw_adapter_keep_alive_ffsm:128] Make request "0", arm timer connection_check to 5000
+2026-10-28 15:05:07:833892 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",27345},{"c3",3459}]}
+2026-10-28 15:05:07:834041 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:244] Erlang timer connection_check with TRef #Ref<0.0.0.785> not active (already sended)
+2026-10-28 15:05:07:834189 DEBUG <0.169.0> [parker_gw_adapter_connection_ffsm:255] Deleted 0 timers #trike_timer_msg with id connection_check in system queue
+2026-10-28 15:05:07:834370 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: [{'SmarTIMessage',1,
+                        {'LegId',"-1","-1"},
+                        {connectionUpdateRequest,
+                            {'ConnectionUpdateRequestType',"0",
+                                {'Timestamp',1793,189107,833925},
+                                asn1_NOVALUE}}}]
+2026-10-28 15:05:07:834710 TRACE <0.169.0> [parker_gw_adapter_trike_service:254] Incoming message for sending: {'SmarTIMessage',1,
+                               {'LegId',"-1","-1"},
+                               {connectionUpdateRequest,
+                                {'ConnectionUpdateRequestType',"0",
+                                 {'Timestamp',1793,189107,833925},
+                                 asn1_NOVALUE}}}
+2026-10-28 15:05:07:835060 DEBUG <0.301.0> [isup_ss7:86] 
++------------------------
+| >>> IVR -> CNode: 
+| {ivr_data,<<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,48,161,14,128,2,7,1,129,3,2,226,179,130,3,12,185,133>>} 
+|
+2026-10-28 15:05:07:835300 TRACE <0.169.0> [parker_gw_adapter_trike_service:258] Encode msg <<160,36,128,1,1,161,8,129,2,45,49,130,2,45,49,163,21,164,19,128,1,
+             48,161,14,128,2,7,1,129,3,2,226,179,130,3,12,185,133>> was send to cnode
+2026-10-28 15:05:07:835695 DEBUG <0.301.0> [isup_ss7:153] 
++------------------------
+| <<< IVR <- CNode: 
+| {ivr_data,<<160,34,128,1,1,161,8,129,2,45,49,130,2,45,49,163,19,165,17,128,1,48,161,12,128,2,7,1,129,3,2,226,179,130,1,0>>} 
+|
+2026-10-28 15:05:07:836009 DEBUG <0.169.0> [parker_gw_adapter_trike_service:344] Receive message from cnode:
+{'SmarTIMessage',1,
+    {'LegId',"-1","-1"},
+    {connectionUpdateResponse,
+        {'ConnectionUpdateResponseType',"0",
+            {'Timestamp',1793,189107,0},
+            asn1_NOVALUE}}}
+2026-10-28 15:05:07:836294 TRACE <0.169.0> [parker_gw_adapter_trike_service:215] Msg in logic_connection: {trike_msg,
+                          {trike_msg_header,'123','123',parker_gw_adapter,
+                           parker_gw_adapter,undefined,undefined,undefined,[]},
+                          {'SmarTIMessage',1,
+                           {'LegId',"-1","-1"},
+                           {connectionUpdateResponse,
+                            {'ConnectionUpdateResponseType',"0",
+                             {'Timestamp',1793,189107,0},
+                             asn1_NOVALUE}}}}
+2026-10-28 15:05:07:836675 TRACE <0.169.0> [parker_gw_adapter_connection_ffsm:169] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189107,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:05:07:837019 TRACE <0.169.0> [parker_gw_adapter_keep_alive_ffsm:110] Process: {trike_msg,
+             {trike_msg_header,'123','123',parker_gw_adapter,
+                 parker_gw_adapter,undefined,undefined,undefined,[]},
+             {'SmarTIMessage',1,
+                 {'LegId',"-1","-1"},
+                 {connectionUpdateResponse,
+                     {'ConnectionUpdateResponseType',"0",
+                         {'Timestamp',1793,189107,0},
+                         asn1_NOVALUE}}}}
+2026-10-28 15:05:07:837392 TRACE <0.169.0> [parker_gw_adapter_trike_service:221] PROCESS ok result: []

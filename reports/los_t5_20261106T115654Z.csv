@@ -1,0 +1,6 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-06T11:56:54.194Z,1793966214194,t5,phase,"stim_start"
+2026-11-06T11:57:53.817Z,1793966273817,t5,tick,"120"
+2026-11-06T11:57:54.318Z,1793966274318,t5,phase,"stim_stop"
+2026-11-06T11:57:54.318Z,1793966274318,t5,phase,"observe_stop"
+2026-11-06T11:57:54.318Z,1793966274318,t5,summary,"раундов 120 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 360 сообщений @ 2/с на вариант; ответы станции: INVITE 403×2958, SUBSCRIBE 489×360, INVITE 100×360, REGISTER 403×342, INVITE 401×159, REGISTER 401×18; наблюдение 0 мин"

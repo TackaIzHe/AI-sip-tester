@@ -1,0 +1,15 @@
+  12:38:41.881834  [INFO] pa-h323.   
+
+     <<   PA-H323   >>
+  12:38:41.882479  [INFO] pa-h323.   version V.3.402.0.55.  Build: Oct 30 2026 18:10:34
+  12:38:41.883413  [INFO] pa-h323.   App: start init. pid 1775
+  12:38:41.883917  [INFO] pa-h323.   init: start init. dbg [0x0]
+  12:38:41.888909  [INFO] pa-h323.   h323: lib trace level 0
+  12:38:41.888930  [INFO] pa-h323.   consol task_wr: start. pid 1777
+  12:38:41.885852  [INFO] pa-h323.   consol task: start. pid 1776
+  12:38:41.888980  [INFO] pa-h323.   pbxipc_task: pbxipc_1 started. pid: 1778
+  12:38:41.936287  [INFO] pa-h323.   init: stack version <v0.8.4n>
+  12:38:41.936522  [INFO] pa-h323.   h323: H323 Listener thread 1779
+  12:38:41.986571  [INFO] pa-h323.   H323: inited
+  12:38:41.987788  [INFO] pa-h323.   main task. pid: 1775
+  12:38:41.988042  [INFO] pa-h323.   timer task: start. pid 1780

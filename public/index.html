@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<!--
+  Веб-страница сервера SIP-автотестов (plan_2.md п.6): vanilla JS, без сборки.
+  Панель «Файлы»   — дерево от /api/files/tree (клик по каталогу — сворачивание,
+                      по файлу — содержимое через /api/files/content, скрытые с '.'
+                      подсвечены), просмотр содержимого с подсветкой .ts/.json/.md.
+  Панель «Тесты»   — список тест-кейсов от /api/test_runs (реестр CASES, тот же,
+                      что у терминала) и запуск: POST /api/test_runs ставит прогон
+                      в серверную очередь (202 {id}), опрос GET /api/test_runs/:id
+                      до вердикта; справа — вердикты PASS/FAIL, ссылки на отчёты и
+                      журнал событий прогона. «Запустить все» — кейс "all".
+  Панель «Отчёты»  — список от /api/reports, просмотр HTML-отчёта в iframe
+                      (/reports/<id>.html — статика из app.ts), удаление
+                      отмеченных чекбоксами отчётов (DELETE /api/reports/:id)
+                      и очистка всего каталога (DELETE /api/reports).
+  Панель «Станция» — эмулятор станции (plan_4.md): запуск/останов слушателя
+                      SIP-UAS кнопками (POST /api/station/start|stop), статус
+                      и счётчики (GET /api/station), журнал обращений
+                      (GET /api/station/events, опрос 2 с, пока вкладка
+                      открыта; останов — с подтверждением) и стимулы утечки
+                      памяти T1–T8 (doc/task_26): выбор из GET
+                      /api/station/stimulus, запуск/останов POST-ами, статус
+                      прогона и фазы — в блоке под статусом станции; SAS-режим
+                      (план 6): вкл/выкл POST /api/station/sas/enable|disable,
+                      SAS-подписки и журнал NOTIFY (GET /api/station/sas);
+                      галочка «не отвечать на вызовы (INVITE)» — POST
+                      /api/station/silent_invite (doc/task_29); галочка
+                      «перенаправлять INVITE по таблице регистраций» — POST
+                      /api/station/forward_invite (doc/task_34_plan_2.md):
+                      адресат и идентификаторы берутся из строки таблицы по
+                      номеру из R-URI (From/To/Contact — наш IP, второй Via
+                      — src входящего), ход ретрансляции — на вкладке «Вызов»;
+                      галочка «игнорировать Trying/Ringing после
+                      перенаправленного INVITE» — POST
+                      /api/station/ignore_provisional (doc/task_36_plan_2.md):
+                      движок вызова не замечает 100/180 на перенаправленный
+                      INVITE; галочка «умножать перенаправляемый INVITE ×10»
+                      — POST /api/station/multiply_invite
+                      (doc/task_37_plan_2.md): перенаправление уходит
+                      десятью копиями разом (главный вызов + девять
+                      теневых, ход — на вкладке «Вызов»).
+  Панель «Вызов»   — исходящий вызов со станции на нижестоящую станцию
+                      (doc/task_30_plan_2.md): INVITE номером из формы на
+                      адрес последнего обращения пира (переопределяется
+                      полем «адрес»), отбой CANCEL/BYE; статус движка и
+                      ответы — GET /api/station/call (опрос 2 с, пока
+                      вкладка открыта), POST /api/station/call|call/cancel|
+                      call/hangup.
+  Панель «Регистрации» — таблица регистраций нижестоящей станции
+                      (doc/task_33_plan_2.md, будущая маршрутизация в SAS):
+                      строки добавляются автоматически из REGISTER станции в
+                      SAS-режиме (identifier u00s00p00 + адрес прихода) и
+                      вручную формой слева; номер телефона вводит оператор —
+                      правка в таблице применяется к хранилищу сразу (POST
+                      /:id/update по событию change). Справочник в памяти
+                      сервера; опрос GET /api/station/registrations 2 с.
+  Статус-строка    — health + адрес/протокол АТС из /api/health (п.6.2) +
+                      пилюля состояния станции (блок station ответа health).
+  Страница — чистый потребитель wire-up-а из server/app.ts (статика `/` →
+  public/); запись — удаление отчётов (с подтверждением), запуск прогонов
+  из вкладки «Тесты» и запуск/останов станции.
+  related: server/routes.ts, doc/task_6_plan_2.md, doc/task_16_plan_2.md,
+  doc/task_17_plan_2.md, doc/task_24_plan_2.md, doc/task_26_plan_2.md,
+  doc/task_29_plan_2.md, doc/task_30_plan_2.md, doc/task_33_plan_2.md.
+-->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIP-автотесты — панель</title>
+<style>
+  :root {
+    --bg: #f7f9fb; --panel: #fff; --line: #d7e0e8; --line-soft: #e7eef4;
+    --ink: #1c2733; --ink-soft: #5b6b7b; --link: #0b57a4; --accent: #8a4b00;
+    --ok: #147d3c; --bad: #b3261e; --dot: #8250df;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: system-ui, sans-serif; color: var(--ink);
+    background: var(--bg); font-size: 14px;
+  }
+  /* ---------- статус-строка ---------- */
+  #status {
+    display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center;
+    padding: 8px 16px; background: #10263c; color: #e8eef5; font-size: 13px;
+  }
+  #status .brand { font-weight: 700; margin-right: 8px; }
+  #status .kv { color: #b9c9d8; }
+  #status .kv b { color: #fff; font-weight: 600; }
+  #status .pill { padding: 1px 9px; border-radius: 10px; font-weight: 600; }
+  #status .pill.ok { background: #147d3c; color: #fff; }
+  #status .pill.bad { background: #b3261e; color: #fff; }
+  #status .pill.unknown { background: #4a5a6b; color: #dfe7ee; }
+  /* ---------- вкладки ---------- */
+  nav { display: flex; gap: 4px; padding: 10px 16px 0; background: var(--panel); border-bottom: 1px solid var(--line); }
+  nav button {
+    border: 1px solid var(--line); border-bottom: none; background: #eef3f7;
+    padding: 8px 18px; font-size: 14px; cursor: pointer; color: var(--ink-soft);
+    border-radius: 8px 8px 0 0;
+  }
+  nav button.active { background: var(--panel); color: var(--ink); font-weight: 600; position: relative; top: 1px; }
+  /* ---------- каркас двух панелей ---------- */
+  main { display: flex; height: calc(100vh - 41px - 47px); min-height: 320px; }
+  section.pane { display: none; flex: 1; min-width: 0; }
+  section.pane.active { display: flex; }
+  .side { width: 46%; max-width: 620px; min-width: 260px; overflow: auto; border-right: 1px solid var(--line); background: var(--panel); }
+  .viewer { flex: 1; min-width: 0; overflow: auto; background: var(--panel); }
+  .side-head { position: sticky; top: 0; background: #eef3f7; border-bottom: 1px solid var(--line);
+    padding: 6px 12px; font-size: 12px; color: var(--ink-soft); display: flex; justify-content: space-between; align-items: center; }
+  .side-head button { border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 2px 8px; cursor: pointer; font-size: 12px; color: var(--link); }
+  .side-head .actions { display: flex; gap: 6px; }
+  .side-head button.danger { color: var(--bad); }
+  .side-head button:disabled { color: var(--ink-soft); opacity: .55; cursor: default; }
+  /* ---------- дерево файлов ---------- */
+  ul.tree, ul.tree ul { list-style: none; margin: 0; padding-left: 16px; }
+  ul.tree { padding: 6px 8px; }
+  li .row { display: flex; align-items: center; gap: 6px; padding: 1px 4px; border-radius: 4px; cursor: pointer; white-space: nowrap; }
+  li .row:hover { background: var(--line-soft); }
+  li .row.selected { background: #dbe9f7; }
+  .tw { width: 12px; display: inline-block; text-align: center; color: var(--ink-soft); font-size: 10px; user-select: none; }
+  .ico { width: 15px; display: inline-block; text-align: center; }
+  .name { overflow: hidden; text-overflow: ellipsis; }
+  li.dotfile > .row .name, li.dotdir > .row .name { color: var(--dot); }
+  li.dotfile > .row .name::after, li.dotdir > .row .name::after { content: " ·скрытый"; color: var(--dot); font-size: 11px; opacity: .75; }
+  li.collapsed > ul { display: none; }
+  /* ---------- список тест-кейсов ---------- */
+  ul.cases { list-style: none; margin: 0; padding: 6px; }
+  ul.cases li { padding: 8px 10px; border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+  ul.cases li:hover { background: var(--line-soft); }
+  ul.cases li.selected { background: #dbe9f7; border-color: #b6d2ee; }
+  ul.cases .case-row { display: flex; align-items: center; gap: 8px; }
+  .case-id { font-family: monospace; font-size: 12px; background: #eef3f7;
+    border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; flex: none; }
+  .case-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  .badge { font-size: 11px; font-weight: 600; border-radius: 10px; padding: 1px 8px;
+    background: #e7eef4; color: var(--ink-soft); flex: none; }
+  .badge.running { background: #fdf3e4; color: var(--accent); }
+  .badge.pass { background: var(--ok); color: #fff; }
+  .badge.fail { background: var(--bad); color: #fff; }
+  ul.cases button.run { border: 1px solid var(--line); background: #fff; border-radius: 6px;
+    padding: 2px 10px; cursor: pointer; font-size: 12px; color: var(--link); flex: none; }
+  ul.cases button.run:disabled { color: var(--ink-soft); opacity: .55; cursor: default; }
+  /* ---------- результат прогона ---------- */
+  .run-verdict { border-bottom: 1px solid var(--line-soft); padding: 10px 14px; }
+  .run-verdict .pill { padding: 1px 9px; border-radius: 10px; font-weight: 700; font-size: 12px; color: #fff; }
+  .run-verdict .pill.pass { background: var(--ok); }
+  .run-verdict .pill.fail { background: var(--bad); }
+  .run-verdict .vcase { font-family: monospace; font-size: 12px; margin-left: 8px; }
+  .run-verdict .vtext { margin-top: 4px; color: var(--ink-soft); }
+  .run-verdict a { color: var(--link); }
+  .run-error { padding: 10px 14px; color: var(--bad); font-weight: 600; }
+  pre.events { margin: 0; padding: 10px 14px; color: var(--ink-soft);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+  /* ---------- список отчётов ---------- */
+  ul.reports { list-style: none; margin: 0; padding: 6px; }
+  ul.reports li { padding: 8px 10px; border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+  ul.reports li:hover { background: var(--line-soft); }
+  ul.reports li.selected { background: #dbe9f7; border-color: #b6d2ee; }
+  ul.reports li.checked { background: #fdf3e4; }
+  ul.reports li .rep-row { display: flex; align-items: flex-start; gap: 8px; }
+  ul.reports li .rep-body { flex: 1; min-width: 0; }
+  ul.reports li input[type=checkbox] { margin: 2px 0 0; cursor: pointer; flex: none; }
+  .rep-id { font-family: monospace; font-size: 12px; word-break: break-all; }
+  .rep-meta { color: var(--ink-soft); font-size: 12px; margin-top: 2px; }
+  /* ---------- просмотр ---------- */
+  .viewer .empty { padding: 24px; color: var(--ink-soft); }
+  pre.content { margin: 0; padding: 14px 18px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+  .viewer-head { position: sticky; top: 0; background: #eef3f7; border-bottom: 1px solid var(--line); padding: 6px 12px; font-size: 12px; color: var(--ink-soft); word-break: break-all; }
+  .viewer-head .err { color: var(--bad); font-weight: 600; }
+  iframe.report { width: 100%; height: 100%; border: none; display: block; background: #fff; }
+  .hint { padding: 10px 12px; color: var(--ink-soft); font-size: 12px; }
+  /* ---------- синтаксическая подсветка (токены мини-лексера страницы) ---------- */
+  .tok-com { color: #7d8b99; font-style: italic; }
+  .tok-str { color: #0a7d33; }
+  .tok-kw { color: #8250df; font-weight: 600; }
+  .tok-num { color: #b35c00; }
+  .tok-fn { color: var(--link); }
+  .tok-key { color: var(--link); font-weight: 600; }
+  .tok-lit { color: var(--bad); font-weight: 600; }
+  .tok-hd { color: var(--accent); font-weight: 700; }
+  .tok-code { color: #0a7d33; background: #eef6ef; border-radius: 3px; }
+  .tok-lnk { color: var(--link); text-decoration: underline; }
+  .tok-b { font-weight: 700; }
+  .tok-i { color: var(--ink-soft); font-style: italic; }
+  .tok-quote { color: var(--ink-soft); font-style: italic; }
+  .tok-bullet { color: var(--dot); font-weight: 700; }
+  /* ---------- панель «Станция» (plan_4.md) ---------- */
+  .st-box { padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+  .st-box .pill { align-self: flex-start; padding: 2px 10px; border-radius: 10px;
+    font-weight: 600; color: #fff; background: #4a5a6b; }
+  .st-box .pill.running { background: var(--ok); }
+  .st-box .kv { color: var(--ink-soft); }
+  .st-box .kv b { color: var(--ink); font-weight: 600; }
+  .st-box .err { color: var(--bad); font-weight: 600; }
+  /* Галочка режима «не отвечать на вызовы» (doc/task_29) под статусом. */
+  .st-check { display: flex; align-items: center; gap: 6px;
+    padding: 2px 12px 8px; font-size: 13px; color: var(--ink); cursor: pointer; }
+  .st-check input { margin: 0; accent-color: var(--accent); }
+  /* Блок стимулов: вторая шапка в .side не залипает (иначе легла бы на первую). */
+  .side-head.plain { position: static; }
+  .side-head select { font: inherit; font-size: 13px; color: var(--ink);
+    background: #fff; border: 1px solid var(--line); border-radius: 4px;
+    padding: 2px 6px; max-width: 240px; }
+  #stim-log { margin: 0 12px 12px; }
+  /* ---------- панель «Вызов» (doc/task_30_plan_2.md) ---------- */
+  .call-form { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 12px 0; }
+  .call-form label { display: flex; align-items: center; gap: 4px;
+    font-size: 13px; color: var(--ink-soft); }
+  .call-form input { font: inherit; font-size: 13px; color: var(--ink);
+    background: #fff; border: 1px solid var(--line); border-radius: 4px;
+    padding: 2px 6px; min-width: 0; }
+  #call-log { margin: 0 12px 12px; }
+  /* ---------- панель «Регистрации» (doc/task_33_plan_2.md) ---------- */
+  .reg-form { display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    padding: 8px 12px 0; }
+  .reg-form label { display: flex; align-items: center; gap: 4px;
+    font-size: 13px; color: var(--ink-soft); }
+  .reg-form input { font: inherit; font-size: 13px; color: var(--ink);
+    background: #fff; border: 1px solid var(--line); border-radius: 4px;
+    padding: 2px 6px; min-width: 0; }
+  .reg-form button { border: 1px solid var(--line); background: #fff;
+    border-radius: 6px; padding: 2px 10px; cursor: pointer; font-size: 13px;
+    color: var(--link); }
+  table.reg { border-collapse: collapse; width: 100%; }
+  table.reg th, table.reg td { border-bottom: 1px solid var(--line-soft);
+    padding: 4px 10px; text-align: left; font-size: 13px;
+    white-space: nowrap; }
+  table.reg th { color: var(--ink-soft); font-weight: 600; font-size: 12px; }
+  table.reg input { font: inherit; font-size: 13px; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 4px; padding: 2px 6px;
+    width: 14ch; background: #fff; }
+  table.reg input:disabled { opacity: .55; }
+  table.reg button { border: 1px solid var(--line); background: #fff;
+    border-radius: 6px; padding: 1px 8px; cursor: pointer; font-size: 12px;
+    color: var(--bad); }
+</style>
+</head>
+<body>
+<div id="status"><span class="brand">SIP-автотесты</span><span class="pill unknown">соединение…</span></div>
+
+<nav>
+  <button data-pane="files" class="active">Файлы</button>
+  <button data-pane="tests">Тесты</button>
+  <button data-pane="reports">Отчёты</button>
+  <button data-pane="station">Станция</button>
+  <button data-pane="call">Вызов</button>
+  <button data-pane="registrations">Регистрации</button>
+</nav>
+
+<main>
+  <!-- Панель «Файлы»: дерево (слева) + содержимое (справа). -->
+  <section class="pane files active">
+    <div class="side">
+      <div class="side-head"><span>Дерево проекта</span><button id="reload-tree">обновить</button></div>
+      <ul class="tree" id="tree"><li class="hint">загрузка…</li></ul>
+    </div>
+    <div class="viewer" id="file-viewer"><div class="empty">Выберите файл слева, чтобы увидеть содержимое.</div></div>
+  </section>
+
+  <!-- Панель «Тесты»: список кейсов + запуск (слева) + результат прогона (справа). -->
+  <section class="pane tests">
+    <div class="side">
+      <div class="side-head"><span>Тест-кейсы</span>
+        <span class="actions">
+          <button id="run-all" title="Прогнать все кейсы последовательно (очередь на сервере)">запустить все</button>
+          <button id="reload-cases">обновить</button>
+        </span>
+      </div>
+      <ul class="cases" id="cases"><li class="hint">загрузка…</li></ul>
+    </div>
+    <div class="viewer" id="run-viewer"><div class="empty">Запустите кейс слева — здесь появятся вердикты и журнал прогона.</div></div>
+  </section>
+
+  <!-- Панель «Отчёты»: список (слева) + HTML-отчёт в iframe (справа). -->
+  <section class="pane reports">
+    <div class="side">
+      <div class="side-head"><span>Отчёты прогонов</span>
+        <span class="actions">
+          <button id="del-selected" class="danger" disabled title="Удалить отчёты, отмеченные чекбоксами">удалить выбранные</button>
+          <button id="del-all" class="danger" title="Удалить все отчёты из каталога reports/">удалить все</button>
+          <button id="reload-reports">обновить</button>
+        </span>
+      </div>
+      <ul class="reports" id="reports"><li class="hint">загрузка…</li></ul>
+    </div>
+    <div class="viewer" id="report-viewer"><div class="empty">Выберите отчёт слева, чтобы открыть его HTML.</div></div>
+  </section>
+
+  <!-- Панель «Станция»: статус/кнопки (слева) + журнал обращений (справа). -->
+  <section class="pane station">
+    <div class="side">
+      <div class="side-head"><span>Станция (SIP-UAS)</span>
+        <span class="actions">
+          <button id="station-start" title="Поднять слушатель station_host:station_port">запустить</button>
+          <button id="station-stop" class="danger" title="Снять слушатели (подтверждение)">остановить</button>
+          <button id="reload-station">обновить</button>
+        </span>
+      </div>
+      <div id="station-status" class="st-box"><span class="kv">загрузка…</span></div>
+      <!-- Режим «не отвечать на вызовы» (doc/task_29): INVITE от нижестоящей
+           станции остаётся без ответа (тишина вместо 405 — как зависший
+           терминал); прочие методы отвечаются как раньше. -->
+      <label class="st-check" title="INVITE от пира не получит никакого ответа (вместо 405); OPTIONS и прочее — как обычно">
+        <input type="checkbox" id="station-silent-invite"> не отвечать на вызовы (INVITE)
+      </label>
+      <!-- Перенаправление INVITE (doc/task_32_plan_2.md): INVITE от пира не
+           отвечает мимикрией, а ретранслируется движком вызова на host:порт
+           из R-URI этого INVITE (From и второй Via — от отправителя);
+           ход ретрансляции виден на вкладке «Вызов». -->
+      <label class="st-check" title="INVITE ретранслируется на адрес из его R-URI: номер — из R-URI, вызывающий — из From, «откуда пришёл» — адрес пира; мимикрия INVITE не отвечает; при перенаправлении галочка молчания не нужна">
+        <input type="checkbox" id="station-forward-invite"> перенаправлять INVITE по таблице регистраций
+      </label>
+      <!-- Игнорирование Trying/Ringing (doc/task_36_plan_2.md): 100/180 на
+           INVITE, поднятый перенаправлением, не замечаются движком вызова —
+           без перехода в «звонит» и без счётчиков; прямой вызов не затрагивается. -->
+      <label class="st-check" title="100 Trying/180 Ringing на перенаправленный INVITE игнорируются: ни состояния «звонит», ни счётчиков; прямой вызов с вкладки «Вызов» не затрагивается">
+        <input type="checkbox" id="station-ignore-provisional"> игнорировать Trying/Ringing после перенаправленного INVITE
+      </label>
+      <!-- Умножение INVITE ×10 (doc/task_37_plan_2.md): при включённом
+           перенаправлении входящий INVITE ретранслируется десятью копиями
+           разом (разные Call-ID/branch, байты образца); первая — главный
+           вызов (кнопки «отбой» гасят все), остальные — теневые диалоги. -->
+      <label class="st-check" title="При включённом перенаправлении входящий INVITE уходит на адресат десятью копиями разом (разные Call-ID); без перенаправления галочка ни на что не влияет">
+        <input type="checkbox" id="station-multiply-invite"> умножать перенаправляемый INVITE ×10
+      </label>
+      <!-- Стимулы утечки T1–T8 (doc/task_26): короткий прогон от адреса
+           станции; фазы прогона — под статусом, журнал обращений справа. -->
+      <div class="side-head plain"><span>Стимулы T1–T8 (утечка памяти)</span>
+        <span class="actions">
+          <select id="stim-case" title="Стимул из реестра генератора los_mem"></select>
+          <button id="stim-start" disabled title="Короткий прогон (~1 мин) через сокет станции">запустить</button>
+          <button id="stim-stop" class="danger" disabled title="Досрочная остановка (graceful-зачистка)">остановить</button>
+        </span>
+      </div>
+      <div id="stim-status" class="st-box"><span class="kv">загрузка…</span></div>
+      <pre class="events" id="stim-log"></pre>
+      <!-- SAS-режим (план 6): роль SAS/SSW-сервера для станции-пира —
+           REGISTER/SUBSCRIBE→200 и периодические SSInfo NOTIFY в принятые
+           подписки; подписки и журнал NOTIFY — под кнопкой. -->
+      <div class="side-head plain"><span>SAS-режим (SSW)</span>
+        <span class="actions">
+          <button id="sas-enable" disabled title="REGISTER→200, SUBSCRIBE любого Event→200, NOTIFY по подпискам">включить</button>
+          <button id="sas-disable" class="danger" disabled title="Снять таймер NOTIFY и SAS-флаг">выключить</button>
+        </span>
+      </div>
+      <div id="sas-status" class="st-box"><span class="kv">загрузка…</span></div>
+      <div class="hint">В SAS-режиме доступен исходящий вызов (вкладка «Вызов»):
+        с полем «откуда пришёл» он уходит как ретрансляция с этого адреса.</div>
+      <pre class="events" id="sas-log"></pre>
+    </div>
+    <div class="viewer" id="station-viewer"><div class="empty">Журнал обращений станции пуст.</div></div>
+  </section>
+
+  <!-- Панель «Вызов» (doc/task_30_plan_2.md): исходящий INVITE со станции на
+       нижестоящую станцию. Адрес пира — откуда она последний раз обращалась
+       (last_downstream из статуса станции, в placeholder-е), переопределяется
+       полем «адрес». Отбой — CANCEL до финального ответа, BYE после 200. -->
+  <section class="pane call">
+    <div class="side">
+      <div class="side-head"><span>Исходящий вызов (INVITE)</span>
+        <span class="actions">
+          <button id="call-dial" disabled title="INVITE сокетом станции на адрес пира">позвонить</button>
+          <button id="call-off" class="danger" disabled title="Отбой: CANCEL до ответа, BYE после 200">отбой</button>
+          <button id="reload-call">обновить</button>
+        </span>
+      </div>
+      <div class="call-form">
+        <label>номер <input id="call-callee" type="text" inputmode="numeric"
+          placeholder="вызываемый" title="Номер (цифры, опционально «+», до 24)" size="8"></label>
+        <label>вызывающий <input id="call-caller" type="text"
+          placeholder="необязательно" title="From-номер (пусто — первый абонент конфига)" size="8"></label>
+        <label>адрес <input id="call-target" type="text"
+          placeholder="host:порт" title="Куда слать INVITE; пусто — адрес последнего обращения нижестоящей станции" size="18"></label>
+        <label>откуда пришёл <input id="call-origin" type="text"
+          placeholder="host:порт (ретрансляция)" title="Адрес «откуда пришёл вызов»: From и второй Via от него (ответы — на станцию); пусто — прямой вызов. Работает и в SAS-режиме" size="18"></label>
+      </div>
+      <div id="call-status" class="st-box"><span class="kv">загрузка…</span></div>
+      <pre class="events" id="call-log"></pre>
+    </div>
+    <div class="viewer" id="call-viewer"><div class="empty">Журнал вызова пуст — позвоните с формы.</div></div>
+  </section>
+
+  <!-- Панель «Регистрации» (doc/task_33_plan_2.md): таблица регистраций
+       нижестоящей станции (справочник для будущей маршрутизации в SAS).
+       Строка: identifier (u00s00p00 — приходит от станции в REGISTER или
+       вводится вручную), номер (вводит оператор — применяется при правке),
+       адрес прихода REGISTER и время обновления. Строки из REGISTER авто-
+       добавляются только в SAS-режиме; ручные — формой ниже. -->
+  <section class="pane registrations">
+    <div class="side">
+      <div class="side-head"><span>Регистрации (справочник линий)</span>
+        <span class="actions">
+          <button id="reload-reg">обновить</button>
+        </span>
+      </div>
+      <div class="reg-form">
+        <label>identifier <input id="reg-new-identifier" type="text"
+          placeholder="u00s00p00" title="Идентификатор линии: u00s00p00, приходит от станции в REGISTER" size="10"></label>
+        <label>номер <input id="reg-new-phone" type="text"
+          placeholder="необязательно" title="Номер телефона (цифры, опционально «+», до 24)" size="8"></label>
+        <button id="reg-add" title="Добавить строку в таблицу регистраций">добавить</button>
+      </div>
+      <div class="hint">В SAS-режиме REGISTER нижестоящей станции добавляет
+        строку сам (identifier и адрес прихода). Номер телефона вводится прямо
+        в таблице и применяется к хранилищу при изменении; удаление — кнопкой
+        строки. Хранилище — память сервера: перезапуск очищает.</div>
+    </div>
+    <div class="viewer" id="reg-viewer"><div class="empty">Таблица регистраций пуста.</div></div>
+  </section>
+</main>
+
+<script>
+'use strict';
+// Клиент страницы (vanilla JS). Наблюдатель rails-style API сервера с тремя
+// записями: удаление отчётов, запуск прогонов (вкладка «Тесты») и запуск/
+// останов станции (вкладка «Станция»). Состояние — только отображение +
+// прогоны, запущенные этой сессией страницы. Ответы — см. контракты
+// контроллеров (server/controllers/*).
+
+// ---------- статус-строка (п.6.2): health + адрес/протокол АТС ----------
+async function load_status() {
+  const el = document.getElementById('status');
+  try {
+    const r = await fetch('/api/health');
+    const h = await r.json();
+    const subs = (h.subscribers || [])
+      .map((s) => `${s.number}${s.can_register ? '' : ' (только цель)'}`).join(', ');
+    el.innerHTML =
+      '<span class="brand">SIP-автотесты</span>' +
+      `<span class="pill ${h.status === 'ok' ? 'ok' : 'bad'}">${esc(h.status)}</span>` +
+      kv('АТС', `${h.pbx_host}:${h.pbx_port}`) +
+      kv('протокол', h.sip_protocol) +
+      kv('мост', h.bridge) +
+      kv('аптайм', fmt_uptime(h.uptime_s)) +
+      (h.station
+        ? `<span class="pill ${h.station.state === 'running' ? 'ok' : 'unknown'}">` +
+          `станция: ${esc(h.station.state)}</span>` +
+          kv('станция', `${h.station.host}:${h.station.port}`)
+        : '') +
+      kv('абоненты', subs || '—');
+  } catch (e) {
+    el.innerHTML = '<span class="brand">SIP-автотесты</span>' +
+      '<span class="pill bad">нет связи с сервером</span>';
+  }
+}
+function kv(k, v) { return `<span class="kv">${esc(k)}: <b>${esc(String(v))}</b></span>`; }
+function fmt_uptime(s) {
+  if (typeof s !== 'number') return '—';
+  if (s < 60) return `${s} с`;
+  if (s < 3600) return `${Math.floor(s / 60)} мин`;
+  return `${Math.floor(s / 3600)} ч ${Math.floor((s % 3600) / 60)} мин`;
+}
+
+// ---------- панель «Файлы» (п.6.1) ----------
+// TreeNode: {name, dir, children?}. Собираем полный rel-путь при рекурсии.
+async function load_tree() {
+  const ul = document.getElementById('tree');
+  ul.replaceChildren(hint('загрузка…'));
+  try {
+    const r = await fetch('/api/files/tree');
+    if (!r.ok) throw new Error(String(r.status));
+    const nodes = await r.json();
+    ul.replaceChildren();
+    if (!Array.isArray(nodes) || nodes.length === 0) { ul.replaceChildren(hint('дерево пусто')); return; }
+    for (const n of nodes) ul.appendChild(render_tree_node(n, ''));
+  } catch (e) {
+    ul.replaceChildren(hint('не удалось загрузить дерево: ' + e.message));
+  }
+}
+
+function render_tree_node(node, parent_path) {
+  const li = document.createElement('li');
+  const name = node.name || '';
+  const path = parent_path ? `${parent_path}/${name}` : name;
+  if (name.startsWith('.')) li.className = node.dir ? 'dotdir collapsed' : 'dotfile';
+  else if (node.dir) li.className = 'collapsed';
+
+  const row = document.createElement('div');
+  row.className = 'row';
+  row.dataset.path = path;
+
+  const tw = document.createElement('span');
+  tw.className = 'tw';
+  const ico = document.createElement('span');
+  ico.className = 'ico';
+  const lbl = document.createElement('span');
+  lbl.className = 'name';
+  lbl.textContent = name;
+  row.append(tw, ico, lbl);
+  li.appendChild(row);
+
+  if (node.dir) {
+    tw.textContent = '▶';
+    ico.textContent = '📁';
+    const kids = Array.isArray(node.children) ? node.children : [];
+    const ul = document.createElement('ul');
+    for (const c of kids) ul.appendChild(render_tree_node(c, path));
+    li.appendChild(ul);
+    // Клик по каталогу — сворачивание/разворачивание (п.6.1).
+    row.addEventListener('click', () => {
+      const open = li.classList.toggle('collapsed');
+      tw.textContent = open ? '▶' : '▼';
+    });
+  } else {
+    tw.textContent = '';
+    ico.textContent = '📄';
+    row.addEventListener('click', () => open_file(path, row));
+  }
+  return li;
+}
+
+async function open_file(path, row) {
+  document.querySelectorAll('.row.selected').forEach((r) => r.classList.remove('selected'));
+  if (row) row.classList.add('selected');
+  const viewer = document.getElementById('file-viewer');
+  viewer.replaceChildren(vhead(path, ''), hint('загрузка…'));
+  try {
+    const r = await fetch('/api/files/content?path=' + encodeURIComponent(path));
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      viewer.replaceChildren(vhead(path, data.error || ('HTTP ' + r.status)) );
+      return;
+    }
+    const pre = document.createElement('pre');
+    pre.className = 'content';
+    render_content(pre, path, data.content ?? '');
+    viewer.replaceChildren(vhead(path, ''), pre);
+  } catch (e) {
+    viewer.replaceChildren(vhead(path, 'ошибка запроса: ' + e.message));
+  }
+}
+
+function vhead(path, err) {
+  const d = document.createElement('div');
+  d.className = 'viewer-head';
+  d.textContent = path;
+  if (err) { const s = document.createElement('span'); s.className = 'err'; s.textContent = ' — ' + err; d.appendChild(s); }
+  return d;
+}
+
+// ---------- подсветка кода (мини-лексер страницы) ----------
+// Внешних библиотек страница не грузит (стенд без интернета): для .ts/.json —
+// регулярковый лексер по содержимому, для .md — построчный разбор с inline-
+// токенами, остальные расширения — plain text. Токены — span'ы через DOM API
+// (textContent): содержимое файла не попадает в innerHTML.
+
+const TS_KEYWORDS =
+  'const|let|var|function|return|if|else|for|while|do|switch|case|break|continue|' +
+  'new|class|extends|implements|interface|type|enum|import|export|from|default|' +
+  'async|await|try|catch|finally|throw|typeof|instanceof|public|private|protected|' +
+  'readonly|static|abstract|as|is|declare|namespace|in|of|this|super|yield|delete|' +
+  'void|null|undefined|true|false|any|unknown|string|number|boolean|object|never';
+
+// Группы RE_TS: 1 — комментарий, 2 — строка, 3 — ключевое слово,
+// 4 — число, 5 — имя вызова (идентификатор перед «(»).
+const RE_TS = new RegExp(
+  [
+    /(\/\/[^\n]*|\/\*[\s\S]*?\*\/)/.source,
+    /('(?:\\.|[^'\\\n])*'|"(?:\\.|[^"\\\n])*"|`(?:\\.|[^`\\])*`?)/.source,
+    RegExp('\\b(' + TS_KEYWORDS + ')\\b').source,
+    /(0[xX][\da-fA-F_]+|\d[\d_]*(?:\.\d+)?(?:[eE][+-]?\d+)?)/.source,
+    /([A-Za-z_$][\w$]*(?=\s*\())/.source,
+  ].join('|'),
+  'g',
+);
+
+// Группы RE_JSON: 1 — ключ (строка перед «:»), 2 — строка-значение,
+// 3 — число, 4 — literal true/false/null.
+const RE_JSON = new RegExp(
+  [
+    /("(?:\\.|[^"\\])*")(?=\s*:)/.source,
+    /("(?:\\.|[^"\\])*")/.source,
+    /(-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)/.source,
+    /(\btrue\b|\bfalse\b|\bnull\b)/.source,
+  ].join('|'),
+  'g',
+);
+
+// Группы RE_MD_INLINE: 1 — `код`, 2 — **жирный**, 3 — *курсив* (кавычки для
+// слов вида snake_case — Lookaround не даёт захватить подчёркивание внутри),
+// 4 — [текст](ссылка).
+const RE_MD_INLINE = new RegExp(
+  [
+    /(`[^`\n]+`)/.source,
+    /(\*\*[^*\n]+\*\*)/.source,
+    /(?<!\w)(\*[^*\n]+\*|_[^_\n]+_)(?!\w)/.source,
+    /(\[[^\]\n]*\]\([^)\n]*\))/.source,
+  ].join('|'),
+  'g',
+);
+
+function file_ext(path) {
+  const m = /\.([A-Za-z0-9]+)$/.exec(path);
+  return m ? m[1].toLowerCase() : '';
+}
+
+// Просмотр содержимого: лексер по расширению файла, остальное — как есть.
+function render_content(pre, path, text) {
+  const ext = file_ext(path);
+  if (ext === 'ts') push_tokens(pre, text, RE_TS, ts_class);
+  else if (ext === 'json') push_tokens(pre, text, RE_JSON, json_class);
+  else if (ext === 'md') render_md(pre, text);
+  else pre.textContent = text;
+}
+
+function ts_class(m) {
+  if (m[1]) return 'tok-com';
+  if (m[2]) return 'tok-str';
+  if (m[3]) return 'tok-kw';
+  if (m[4]) return 'tok-num';
+  return 'tok-fn';
+}
+function json_class(m) {
+  return m[1] ? 'tok-key' : m[2] ? 'tok-str' : m[3] ? 'tok-num' : 'tok-lit';
+}
+function md_inline_class(m) {
+  return m[1] ? 'tok-code' : m[2] ? 'tok-b' : m[3] ? 'tok-i' : 'tok-lnk';
+}
+
+// Общий лексер: текст между совпадениями — обычными узлами, совпадения —
+// span'ами; matchAll не мутирует lastIndex регулярки (внутренний клон).
+function push_tokens(el, text, re, class_of) {
+  let last = 0;
+  for (const m of text.matchAll(re)) {
+    if (m.index > last) el.appendChild(document.createTextNode(text.slice(last, m.index)));
+    const cls = class_of(m);
+    el.appendChild(cls ? span(cls, m[0]) : document.createTextNode(m[0]));
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) el.appendChild(document.createTextNode(text.slice(last)));
+}
+
+function span(cls, text) {
+  const s = document.createElement('span');
+  s.className = cls;
+  s.textContent = text;
+  return s;
+}
+
+// Markdown — построчно: fences (``` / ~~~), заголовки, цитаты, маркеры
+// списков; остальной текст — inline-разбор (код/жирный/курсив/ссылки).
+function render_md(pre, text) {
+  const lines = String(text).split('\n');
+  let in_fence = false;
+  lines.forEach((line, i) => {
+    if (/^\s*(```|~~~)/.test(line)) {
+      in_fence = !in_fence;
+      pre.appendChild(span('tok-code', line));
+    } else if (in_fence) {
+      pre.appendChild(span('tok-code', line));
+    } else if (/^\s{0,3}#{1,6} /.test(line)) {
+      pre.appendChild(span('tok-hd', line));
+    } else if (/^\s*>/.test(line)) {
+      pre.appendChild(span('tok-quote', line));
+    } else {
+      render_md_inline(pre, line);
+    }
+    if (i < lines.length - 1) pre.appendChild(document.createTextNode('\n'));
+  });
+}
+
+function render_md_inline(pre, line) {
+  const m = /^(\s*)([-*+]|\d+[.)])(?=\s)/.exec(line);
+  let rest = line;
+  if (m) {
+    pre.appendChild(document.createTextNode(m[1]));
+    pre.appendChild(span('tok-bullet', m[2]));
+    rest = line.slice(m[0].length);
+  }
+  push_tokens(pre, rest, RE_MD_INLINE, md_inline_class);
+}
+
+// ---------- панель «Отчёты» (п.6.1) ----------
+// ReportEntry: {id, json, md, html, size}. Открытие — HTML-отчёт в iframe.
+async function load_reports() {
+  const ul = document.getElementById('reports');
+  ul.replaceChildren(hint('загрузка…'));
+  try {
+    const r = await fetch('/api/reports');
+    const data = await r.json();
+    const list = (data && data.reports) || [];
+    ul.replaceChildren();
+    if (list.length === 0) {
+      ul.replaceChildren(hint('отчётов пока нет — запустите тест-кейс'));
+      update_del_state();
+      return;
+    }
+    for (const rep of list) ul.appendChild(render_report_item(rep));
+    update_del_state(); // после перерисовки чекбоксов новые — кнопка гаснет
+  } catch (e) {
+    ul.replaceChildren(hint('не удалось загрузить отчёты: ' + e.message));
+    update_del_state();
+  }
+}
+
+function render_report_item(rep) {
+  const li = document.createElement('li');
+  li.dataset.id = rep.id;
+  // Чекбокс — выбор для «удалить выбранные»; клик по нему не открывает iframe.
+  const cb = document.createElement('input');
+  cb.type = 'checkbox';
+  cb.title = 'отметить для удаления';
+  cb.addEventListener('click', (e) => e.stopPropagation());
+  cb.addEventListener('change', () => {
+    li.classList.toggle('checked', cb.checked);
+    update_del_state();
+  });
+  const id = document.createElement('div');
+  id.className = 'rep-id';
+  id.textContent = rep.id;
+  const meta = document.createElement('div');
+  meta.className = 'rep-meta';
+  meta.textContent = `${fmt_size(rep.size)} · ${fmt_rep_ts(rep.id)} · `;
+  // Ссылка строится DOM-API: текст с разметкой через textContent не парсится,
+  // и meta.querySelector('a') на таком узле давал null → TypeError на весь список.
+  const link = document.createElement('a');
+  link.href = rep.html;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.textContent = 'новая вкладка';
+  link.addEventListener('click', (e) => e.stopPropagation()); // не открывать iframe
+  meta.appendChild(link);
+  const body = document.createElement('div');
+  body.className = 'rep-body';
+  body.append(id, meta);
+  const row = document.createElement('div');
+  row.className = 'rep-row';
+  row.append(cb, body);
+  li.append(row);
+  li.addEventListener('click', () => open_report(rep, li));
+  return li;
+}
+
+function open_report(rep, li) {
+  document.querySelectorAll('.reports li.selected').forEach((x) => x.classList.remove('selected'));
+  if (li) li.classList.add('selected');
+  const viewer = document.getElementById('report-viewer');
+  viewer.dataset.open_id = rep.id; // чтобы удаление снятого отчёта очистило вьювер
+  const frame = document.createElement('iframe');
+  frame.className = 'report';
+  frame.src = rep.html; // /reports/<id>.html — статика из app.ts
+  viewer.replaceChildren(frame);
+}
+
+// ---------- удаление отчётов ----------
+// Выбранное (чекбоксы) снимается по одному через DELETE /api/reports/:id,
+// «удалить все» — одним DELETE /api/reports. Оба с confirm: отчёты — боевые
+// артефакты прогонов, удаление необратимо.
+function checked_ids() {
+  return [...document.querySelectorAll('#reports li input:checked')]
+    .map((cb) => cb.closest('li').dataset.id);
+}
+
+function update_del_state() {
+  const btn = document.getElementById('del-selected');
+  const n = checked_ids().length;
+  btn.disabled = n === 0;
+  btn.textContent = n ? `удалить выбранные (${n})` : 'удалить выбранные';
+}
+
+async function delete_selected() {
+  const ids = checked_ids();
+  if (ids.length === 0) return;
+  if (!confirm(`Удалить выбранные отчёты (${ids.length} шт.)? Это необратимо.`)) return;
+  const failed = [];
+  for (const id of ids) {
+    try {
+      const r = await fetch('/api/reports/' + encodeURIComponent(id), { method: 'DELETE' });
+      if (!r.ok) {
+        const d = await r.json().catch(() => ({}));
+        failed.push(`${id}: ${d.error || 'HTTP ' + r.status}`);
+      }
+    } catch (e) {
+      failed.push(`${id}: ${e.message}`);
+    }
+  }
+  clear_report_viewer(ids);
+  await load_reports();
+  if (failed.length) alert('Не удалось удалить:\n' + failed.join('\n'));
+}
+
+async function delete_all() {
+  const n = document.querySelectorAll('#reports li[data-id]').length;
+  if (n === 0) { alert('Отчётов нет — удалять нечего.'); return; }
+  if (!confirm(`Удалить ВСЕ отчёты (${n} шт.)? Это необратимо.`)) return;
+  try {
+    const r = await fetch('/api/reports', { method: 'DELETE' });
+    if (!r.ok) {
+      const d = await r.json().catch(() => ({}));
+      alert('Не удалось удалить отчёты: ' + (d.error || 'HTTP ' + r.status));
+      return;
+    }
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+    return;
+  }
+  clear_report_viewer(null); // null — каталог пуст, снимается любой открытый id
+  await load_reports();
+}
+
+// Если удалённый отчёт сейчас открыт в iframe — вернуть вьювер в исходное состояние.
+function clear_report_viewer(deleted_ids) {
+  const viewer = document.getElementById('report-viewer');
+  const open_id = viewer.dataset.open_id;
+  if (!open_id) return;
+  if (deleted_ids === null || deleted_ids.includes(open_id)) {
+    delete viewer.dataset.open_id;
+    viewer.replaceChildren(empty_div('Выберите отчёт слева, чтобы открыть его HTML.'));
+  }
+}
+
+function empty_div(text) { const d = document.createElement('div'); d.className = 'empty'; d.textContent = text; return d; }
+
+function fmt_size(n) {
+  if (typeof n !== 'number') return '';
+  if (n < 1024) return n + ' Б';
+  if (n < 1024 * 1024) return (n / 1024).toFixed(1) + ' КБ';
+  return (n / 1048576).toFixed(1) + ' МБ';
+}
+// Из имени отчёта (UTC-метка 20261027T153000Z_case) — читаемая дата.
+function fmt_rep_ts(id) {
+  const m = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z/.exec(id);
+  if (!m) return id;
+  return `${m[3]}.${m[2]}.${m[1]} ${m[4]}:${m[5]}:${m[6]}Z`;
+}
+
+// ---------- панель «Тесты» (doc/task_16_plan_2.md) ----------
+// Список кейсов приходит с сервера (GET /api/test_runs — реестр CASES, тот же,
+// что у терминала): хардкод списка на странице расходился бы с раннером.
+// POST /api/test_runs → 202 {id}: очередь прогонов на сервере (общий пул
+// абонентов), страница только опрашивает GET /:id до 'done'. Отслеживаются
+// прогоны, запущенные этой сессией страницы (хранилище прогонов — память
+// сервера, но GET есть только по id).
+const cases_meta = new Map();  // id кейса → {id, name} из реестра
+const case_status = new Map(); // id кейса → {state, run_id, verdict} — состояние строки
+const active_runs = new Map(); // run id → {id, case, status, record}
+let cases_loaded = false;
+let current_run_id = null;
+let poll_timer = null;
+
+async function load_cases() {
+  const ul = document.getElementById('cases');
+  ul.replaceChildren(hint('загрузка…'));
+  try {
+    const r = await fetch('/api/test_runs');
+    if (!r.ok) throw new Error(String(r.status));
+    const data = await r.json();
+    const list = (data && data.cases) || [];
+    cases_meta.clear();
+    for (const c of list) cases_meta.set(c.id, c);
+    cases_loaded = true;
+    ul.replaceChildren();
+    if (list.length === 0) { ul.replaceChildren(hint('реализованных кейсов нет')); return; }
+    for (const c of list) ul.appendChild(render_case_item(c));
+    update_case_rows();
+  } catch (e) {
+    ul.replaceChildren(hint('не удалось загрузить список кейсов: ' + e.message));
+  }
+}
+
+function render_case_item(c) {
+  const li = document.createElement('li');
+  li.dataset.case = c.id;
+  const id = document.createElement('span');
+  id.className = 'case-id';
+  id.textContent = c.id;
+  const name = document.createElement('span');
+  name.className = 'case-name';
+  name.textContent = c.name;
+  const badge = document.createElement('span');
+  badge.className = 'badge';
+  badge.hidden = true;
+  const btn = document.createElement('button');
+  btn.className = 'run';
+  btn.textContent = 'запустить';
+  btn.addEventListener('click', (e) => { e.stopPropagation(); start_run(c.id); });
+  const row = document.createElement('div');
+  row.className = 'case-row';
+  row.append(id, name, badge, btn);
+  li.appendChild(row);
+  // Клик по строке — показать результат последнего прогона этого кейса.
+  li.addEventListener('click', () => {
+    const st = case_status.get(c.id);
+    if (st && st.run_id && active_runs.has(st.run_id)) select_run(st.run_id);
+  });
+  return li;
+}
+
+// Бейдж/кнопка каждой строки — по состоянию последнего прогона кейса.
+function update_case_rows() {
+  document.querySelectorAll('#cases li[data-case]').forEach((li) => {
+    const st = case_status.get(li.dataset.case);
+    const badge = li.querySelector('.badge');
+    const btn = li.querySelector('button.run');
+    badge.classList.remove('running', 'pass', 'fail');
+    if (!st) { badge.hidden = true; btn.disabled = false; return; }
+    badge.hidden = false;
+    if (st.state === 'running') {
+      badge.textContent = 'выполняется…';
+      badge.classList.add('running');
+      btn.disabled = true;
+      return;
+    }
+    badge.textContent = st.verdict;
+    badge.classList.add(st.verdict === 'PASS' ? 'pass' : 'fail');
+    btn.disabled = false;
+  });
+}
+
+async function start_run(case_id) {
+  try {
+    const r = await fetch('/api/test_runs', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ case: case_id }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) { alert('Не удалось запустить прогон: ' + (d.error || 'HTTP ' + r.status)); return; }
+    active_runs.set(d.id, { id: d.id, case: case_id, status: 'running', record: null });
+    case_status.set(case_id, { state: 'running', run_id: d.id });
+    update_case_rows();
+    select_run(d.id);
+    ensure_polling();
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+}
+
+function select_run(run_id) {
+  current_run_id = run_id;
+  document.querySelectorAll('#cases li.selected').forEach((x) => x.classList.remove('selected'));
+  const rec = active_runs.get(run_id);
+  if (rec && rec.case !== 'all') {
+    const li = document.querySelector(`#cases li[data-case="${CSS.escape(rec.case)}"]`);
+    if (li) li.classList.add('selected');
+  }
+  render_run(rec);
+}
+
+function ensure_polling() {
+  if (!poll_timer) poll_timer = setInterval(poll_runs, 1500);
+}
+
+async function poll_runs() {
+  let still_active = false;
+  for (const rec of active_runs.values()) {
+    if (rec.status === 'done') continue;
+    still_active = true;
+    try {
+      const r = await fetch('/api/test_runs/' + encodeURIComponent(rec.id));
+      if (!r.ok) continue; // сервер перезапускался (хранилище — память) — ждём молча
+      rec.record = await r.json();
+      rec.status = rec.record.status;
+    } catch (e) { continue; }
+    if (rec.status === 'done') on_run_done(rec);
+  }
+  if (!still_active && poll_timer) { clearInterval(poll_timer); poll_timer = null; }
+}
+
+function on_run_done(rec) {
+  const verdicts = (rec.record && rec.record.verdicts) || [];
+  // В вердикте — имя кейса (case_1), в строке — id реестра ('1'); у одиночного
+  // прогона id известен сразу, прогон "all" маппится по имени.
+  const id_by_name = new Map([...cases_meta.values()].map((c) => [c.name, c.id]));
+  for (const v of verdicts) {
+    const cid = rec.case !== 'all' ? rec.case : id_by_name.get(v.case);
+    if (cid) case_status.set(cid, { state: 'done', run_id: rec.id, verdict: v.verdict });
+  }
+  update_case_rows();
+  if (current_run_id === rec.id) render_run(rec);
+}
+
+function render_run(rec) {
+  const viewer = document.getElementById('run-viewer');
+  if (!rec) { viewer.replaceChildren(empty_div('Результат прогона ещё не получен.')); return; }
+  viewer.replaceChildren(vhead('Прогон ' + rec.id, ''));
+  if (rec.status !== 'done') { viewer.appendChild(hint_div('прогон выполняется в серверной очереди…')); return; }
+  const data = rec.record;
+  if (data.error) {
+    const e = document.createElement('div');
+    e.className = 'run-error';
+    e.textContent = 'Ошибка прогона: ' + data.error;
+    viewer.appendChild(e);
+  }
+  for (const v of data.verdicts || []) viewer.appendChild(render_verdict(v));
+  const events = data.events || [];
+  if (events.length) viewer.appendChild(render_events(events));
+}
+
+function render_verdict(v) {
+  const d = document.createElement('div');
+  d.className = 'run-verdict';
+  const pill = document.createElement('span');
+  pill.className = 'pill ' + (v.verdict === 'PASS' ? 'pass' : 'fail');
+  pill.textContent = v.verdict;
+  const cname = document.createElement('span');
+  cname.className = 'vcase';
+  cname.textContent = v.case;
+  const text = document.createElement('div');
+  text.className = 'vtext';
+  text.textContent = v.verdict_text || '';
+  if (v.report && v.report.id) {
+    text.appendChild(document.createTextNode(' · '));
+    const link = document.createElement('a');
+    // URL — из id: `report.html_path` — путь на диске процесса (абсолютный,
+    // path.resolve('reports') в server/journal.ts), '/'+он давал бы //home/… —
+    // protocol-relative ссылку в никуда. Статика см. server/app.ts:68.
+    link.href = '/reports/' + encodeURIComponent(v.report.id) + '.html';
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.textContent = 'HTML-отчёт';
+    text.appendChild(link);
+  }
+  d.append(pill, cname, text);
+  return d;
+}
+
+function render_events(events) {
+  const pre = document.createElement('pre');
+  pre.className = 'events';
+  pre.textContent = events.map((e) => {
+    const t = new Date(e.ts).toISOString().slice(11, 19);
+    const code = e.sip_code ? ' ' + e.sip_code : '';
+    return `${t} ${e.session} ${e.direction} ${e.kind}${code} — ${e.detail}`;
+  }).join('\n');
+  return pre;
+}
+
+// ---------- панель «Станция» (plan_4.md п.4) ----------
+// Опрос статуса/журнала — только пока вкладка активна (2 с; таймер снимается
+// при уходе в обработчике nav). Останов работающей станции — с confirm:
+// пиры перестают получать 200 на keep-alive (период ~21 с, doc/los_mem).
+let station_timer = null;
+let station_running = false;
+
+async function load_station() {
+  let st = null, evs = [];
+  try {
+    const rs = await fetch('/api/station');
+    if (!rs.ok) throw new Error('HTTP ' + rs.status);
+    st = await rs.json();
+    const re = await fetch('/api/station/events');
+    if (re.ok) evs = (await re.json()).events || [];
+  } catch (e) {
+    const box = document.getElementById('station-status');
+    box.replaceChildren(st_kv('Станция недоступна: ' + e.message, true));
+    return;
+  }
+  station_running = st.state === 'running';
+  render_station_status(st);
+  render_station_events(evs);
+  document.getElementById('station-start').disabled = station_running;
+  document.getElementById('station-stop').disabled = !station_running;
+  // Галочка «не отвечать на вызовы» — состояние с сервера; во время своего
+  // POST чекбокс disabled и не перезаписывается опросом (иначе галочка
+  // мигала бы до ответа сервера).
+  const silent_cb = document.getElementById('station-silent-invite');
+  if (!silent_cb.disabled) silent_cb.checked = !!st.silent_invite;
+  const fwd_cb = document.getElementById('station-forward-invite');
+  if (!fwd_cb.disabled) fwd_cb.checked = !!st.forward_invite;
+  const ign_cb = document.getElementById('station-ignore-provisional');
+  if (!ign_cb.disabled) ign_cb.checked = !!st.ignore_provisional;
+  const mul_cb = document.getElementById('station-multiply-invite');
+  if (!mul_cb.disabled) mul_cb.checked = !!st.multiply_invite;
+  void load_stimulus(); // тот же такт опроса (прогон фазится на сервере)
+  void load_sas(); // SAS-подписки/NOTIFY — тем же тактом (план 6)
+}
+
+function st_kv(text, err) {
+  const s = document.createElement('span');
+  s.className = err ? 'err' : 'kv';
+  s.textContent = text;
+  return s;
+}
+
+function render_station_status(st) {
+  const box = document.getElementById('station-status');
+  const pill = document.createElement('span');
+  pill.className = 'pill' + (st.state === 'running' ? ' running' : '');
+  pill.textContent = st.state;
+  const req = (st.counters && st.counters.requests_in) || {};
+  const ans = (st.counters && st.counters.answered) || {};
+  box.replaceChildren(
+    pill,
+    st_kv(`адрес: ${st.host}:${st.port} (${st.proto})`),
+    st_kv(`uptime: ${fmt_uptime(st.uptime_s)} · OPTIONS принято: ${req.OPTIONS || 0}, отвечено 200: ${ans['200'] || 0}`),
+    st_kv(`игнорировано мусора: ${(st.counters && st.counters.ignored) || 0} · пиров: ${(st.counters && st.counters.peers || []).length}`),
+    st_kv(`последний keep-alive: ${st.last_keepalive_at ? st.last_keepalive_at.replace('T', ' ').slice(0, 19) : '—'}`),
+  );
+  if (st.error) box.appendChild(st_kv('ошибка: ' + st.error, true));
+}
+
+// Строки журнала — newest first (порядок отдаёт сервер), формат — как render_events.
+function render_station_events(list) {
+  const viewer = document.getElementById('station-viewer');
+  if (!list.length) { viewer.replaceChildren(empty_div('Журнал обращений станции пуст.')); return; }
+  const pre = document.createElement('pre');
+  pre.className = 'events';
+  pre.textContent = list.map((e) => {
+    const t = String(e.ts).slice(11, 19);
+    const ans = e.code ? '→ ' + e.code : '→ игнор';
+    const ev = e.event ? ' event=' + e.event : ''; // SAS-пакет виден в журнале
+    return `${t} ${e.peer} ${e.proto} ${e.method} ${e.ruri} [${e.cseq}] ` +
+      `cid=${(e.call_id || '—').slice(0, 24)}${ev} ${ans}`;
+  }).join('\n');
+  viewer.replaceChildren(vhead('Журнал обращений (сверху свежие)', ''), pre);
+}
+
+async function station_action(action) {
+  if (action === 'stop' && station_running &&
+      !confirm('Остановить станцию? Пир перестанет получать ответы на keep-alive.')) return;
+  try {
+    const r = await fetch('/api/station/' + action, { method: 'POST' });
+    const d = await r.json().catch(() => ({}));
+    // 409 — гонка с другой вкладкой: актуальное состояние покажет перечитывание.
+    if (!r.ok && r.status !== 409) {
+      alert('Не удалось ' + (action === 'start' ? 'запустить' : 'остановить') +
+        ' станцию: ' + (d.error || 'HTTP ' + r.status));
+    }
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  await load_station();
+}
+
+// Режим «не отвечать на вызовы (INVITE)» — галочка под статусом (doc/task_29):
+// флаг — настройка станции (переживает stop/start), POST возвращает полный
+// статус; на время запроса чекбокс глушим, чтобы опрос 2 с не перебил клик.
+async function silent_invite_set(on) {
+  const cb = document.getElementById('station-silent-invite');
+  cb.disabled = true;
+  try {
+    const r = await fetch('/api/station/silent_invite', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ on: on }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) alert('Не переключить режим: ' + (d.error || 'HTTP ' + r.status));
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  cb.disabled = false;
+  await load_station();
+}
+
+// Режим «перенаправлять INVITE по таблице регистраций» — галочка под
+// status_2 (doc/task_34_plan_2.md): тот же контракт, что у silent_invite
+// (флаг станции, POST возвращает полный статус); разбор INVITE и набор
+// делает движок вызова по таблице, его журнал — на вкладке «Вызов».
+async function forward_invite_set(on) {
+  const cb = document.getElementById('station-forward-invite');
+  cb.disabled = true;
+  try {
+    const r = await fetch('/api/station/forward_invite', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ on: on }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) alert('Не переключить режим: ' + (d.error || 'HTTP ' + r.status));
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  cb.disabled = false;
+  await load_station();
+}
+
+// Игнорирование Trying/Ringing после перенаправленного INVITE — галочка под
+// status_2 (doc/task_36_plan_2.md): тот же контракт, что у silent_invite
+// (флаг станции, POST возвращает полный статус); 100/180 фильтрует движок
+// вызова, его журнал («игнорирован») — на вкладке «Вызов».
+async function ignore_provisional_set(on) {
+  const cb = document.getElementById('station-ignore-provisional');
+  cb.disabled = true;
+  try {
+    const r = await fetch('/api/station/ignore_provisional', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ on: on }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) alert('Не переключить режим: ' + (d.error || 'HTTP ' + r.status));
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  cb.disabled = false;
+  await load_station();
+}
+
+// Умножение перенаправляемого INVITE ×10 — галочка под status_2
+// (doc/task_37_plan_2.md): тот же контракт, что у silent_invite (флаг
+// станции, POST возвращает полный статус); фан-аут делает движок вызова —
+// его журнал («×10 (умножение)», строки «(копия)») на вкладке «Вызов».
+async function multiply_invite_set(on) {
+  const cb = document.getElementById('station-multiply-invite');
+  cb.disabled = true;
+  try {
+    const r = await fetch('/api/station/multiply_invite', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ on: on }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) alert('Не переключить режим: ' + (d.error || 'HTTP ' + r.status));
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  cb.disabled = false;
+  await load_station();
+}
+
+function set_station_polling(on) {
+  if (station_timer) { clearInterval(station_timer); station_timer = null; }
+  if (on) station_timer = setInterval(load_station, 2000);
+}
+
+// ---------- стимулы утечки T1–T8 (doc/task_26) ----------
+// Прогон живёт на сервере (движок при станции): странице остаётся показывать
+// статус/фазы — опрос тем же 2-с циклом, что и статус станции (load_station
+// дергает load_stimulus). «запустить» активна только на работающей станции:
+// стимул уходит через её сокет (:5060), иначе сервер ответит 409.
+let stim_cases_loaded = false;
+
+async function load_stimulus() {
+  let d = null;
+  try {
+    const r = await fetch('/api/station/stimulus');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    d = await r.json();
+  } catch (e) {
+    // 404 — приложение без стимульного движка в DI (api-тесты); честно в блок.
+    document.getElementById('stim-status')
+      .replaceChildren(st_kv('стимулы недоступны: ' + e.message, true));
+    document.getElementById('stim-start').disabled = true;
+    document.getElementById('stim-stop').disabled = true;
+    return;
+  }
+  const sel = document.getElementById('stim-case');
+  if (!stim_cases_loaded) {
+    for (const c of d.cases) {
+      const o = document.createElement('option');
+      o.value = c.id;
+      o.textContent = c.id + ' — ' + c.title;
+      sel.appendChild(o);
+    }
+    stim_cases_loaded = true;
+  }
+  const st = d.status;
+  render_stim_status(st);
+  document.getElementById('stim-log').textContent = (st.log || []).slice(0, 15).join('\n');
+  document.getElementById('stim-start').disabled = !station_running || st.state !== 'idle';
+  document.getElementById('stim-stop').disabled = st.state === 'idle';
+}
+
+function render_stim_status(st) {
+  const box = document.getElementById('stim-status');
+  const pill = document.createElement('span');
+  pill.className = 'pill' + (st.state === 'running' ? ' running' : '');
+  pill.textContent = st.state === 'idle'
+    ? (st.id ? st.id + ' завершён' : 'ожидание')
+    : st.state;
+  box.replaceChildren(pill);
+  if (st.state !== 'idle') box.appendChild(st_kv(`прогон: ${st.id}, ${st.uptime_s} с`));
+  if (st.summary) box.appendChild(st_kv('итог: ' + st.summary));
+  if (st.error) box.appendChild(st_kv('ошибка: ' + st.error, true));
+  if (st.csv) box.appendChild(st_kv('CSV: ' + st.csv));
+}
+
+// ---------- SAS-режим (план 6) ----------
+// Роль SAS/SSW-сервера для станции-пира: REGISTER/SUBSCRIBE→200 и
+// периодические SSInfo NOTIFY в принятые подписки. Опрос — тем же 2-с
+// циклом (load_station дергает load_sas). «включить» активна только на
+// работающей станции и при простое стимула (сервер разводит их 409).
+async function load_sas() {
+  let d = null;
+  try {
+    const r = await fetch('/api/station/sas');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    d = await r.json();
+  } catch (e) {
+    // 404 — приложение без SAS-движка в DI; или станция без SAS-блока.
+    document.getElementById('sas-status')
+      .replaceChildren(st_kv('SAS-режим недоступен: ' + e.message, true));
+    document.getElementById('sas-enable').disabled = true;
+    document.getElementById('sas-disable').disabled = true;
+    return;
+  }
+  render_sas_status(d);
+  document.getElementById('sas-log').textContent = (d.log || []).slice(0, 15).join('\n');
+  document.getElementById('sas-enable').disabled = !station_running || d.state === 'on';
+  document.getElementById('sas-disable').disabled = d.state !== 'on';
+}
+
+function render_sas_status(d) {
+  const box = document.getElementById('sas-status');
+  const pill = document.createElement('span');
+  pill.className = 'pill' + (d.state === 'on' ? ' running' : '');
+  pill.textContent = d.state;
+  box.replaceChildren(pill);
+  const ans = d.answered || {};
+  const codes = Object.keys(ans).map((c) => `${c}:${ans[c]}`).join(' ') || '—';
+  box.appendChild(st_kv(`NOTIFY отправлено: ${d.sent} · ответы: ${codes}`));
+  for (const s of d.subs || []) {
+    box.appendChild(st_kv(
+      `подписка ${s.event} ${s.number || '—'} → ${s.remote.host}:${s.remote.port} ` +
+      `(NOTIFY ${s.sent}, ответ ${s.last_response || '—'})`,
+    ));
+  }
+  if (!(d.subs || []).length) box.appendChild(st_kv('SAS-подписок нет — ждём SUBSCRIBE станции'));
+}
+
+async function sas_action(action) {
+  try {
+    const r = await fetch('/api/station/sas/' + action, { method: 'POST' });
+    const d = await r.json().catch(() => ({}));
+    // 409 — гонка/няня (stimulus, останов): состояние перечитается опросом.
+    if (!r.ok && r.status !== 409) {
+      alert('SAS-режим не переключён: ' + (d.error || 'HTTP ' + r.status));
+    }
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  await load_sas();
+}
+
+async function stim_action(action) {
+  try {
+    const r = action === 'start'
+      ? await fetch('/api/station/stimulus', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: document.getElementById('stim-case').value }),
+        })
+      : await fetch('/api/station/stimulus/stop', { method: 'POST' });
+    const d = await r.json().catch(() => ({}));
+    // 409 — гонка (движок занят/станция остановлена): состояние перечитается.
+    if (!r.ok && r.status !== 409) {
+      alert('Стимул не выполнен: ' + (d.error || 'HTTP ' + r.status));
+    }
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  await load_stimulus();
+}
+
+// ---------- исходящий вызов (doc/task_30_plan_2.md) ----------
+// Движок вызова живёт на сервере при станции: INVITE/UAC идёт её UDP-сокетом,
+// адрес пира — адрес последнего обращения нижестоящей станции (поле
+// last_downstream статуса станции, в placeholder-е поля «адрес»),
+// переопределяется формой. Опрос 2 с только на активной вкладке (по образцу
+// set_station_polling); «позвонить» активна на работающей станции и в простое
+// движка — вызов, стимул и SAS делят сокет/хук, сервер разводит их 409.
+let call_timer = null;
+let call_state = 'idle';
+
+async function load_call() {
+  let d = null, st = null;
+  try {
+    const r = await fetch('/api/station/call');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    d = await r.json();
+    const rs = await fetch('/api/station'); // running + last_downstream
+    if (rs.ok) st = await rs.json();
+  } catch (e) {
+    // 404 — приложение без движка вызова в DI (api-тесты); честно в блок.
+    document.getElementById('call-status')
+      .replaceChildren(st_kv('исходящий вызов недоступен: ' + e.message, true));
+    document.getElementById('call-dial').disabled = true;
+    document.getElementById('call-off').disabled = true;
+    return;
+  }
+  call_state = d.state;
+  render_call_status(d);
+  render_call_viewer(d);
+  if (st) {
+    // placeholder — адрес пира с сервера; value не трогаем (не перетирать ввод).
+    document.getElementById('call-target').placeholder =
+      st.last_downstream || 'host:порт (пир ещё не обращался)';
+  }
+  const running = !!st && st.state === 'running';
+  document.getElementById('call-dial').disabled = !running || d.state !== 'idle';
+  // Отбой — из calling/ringing (CANCEL) и answered (BYE); в cancelling/
+  // terminating движок уже сам доводит до финала — кнопка гаснет.
+  document.getElementById('call-off').disabled =
+    !['calling', 'ringing', 'answered'].includes(d.state);
+}
+
+function render_call_status(d) {
+  const box = document.getElementById('call-status');
+  const pill = document.createElement('span');
+  const active = d.state !== 'idle';
+  pill.className = 'pill' + (active ? ' running' : '');
+  pill.textContent = d.state;
+  box.replaceChildren(pill);
+  if (active || d.callee) {
+    // origin («откуда пришёл», ретрансляция) показываем у caller-а.
+    const from = d.origin ? `${d.caller || '—'}@${d.origin}` : (d.caller || '—');
+    box.appendChild(st_kv(
+      `вызов: ${d.callee || '—'} ← ${from} → ${d.target || '—'}`,
+    ));
+    box.appendChild(st_kv(`Call-ID: ${(d.call_id || '—').slice(0, 40)}`));
+  }
+  const ans = d.answered || {};
+  const codes = Object.keys(ans).map((c) => `${c}:${ans[c]}`).join(' ') || '—';
+  box.appendChild(st_kv(`послано: ${d.sent} · ответы: ${codes}`));
+  if (d.last_code) box.appendChild(st_kv(`последний ответ: ${d.last_code} ${d.last_reason || ''}`));
+  if (d.error) box.appendChild(st_kv('ошибка: ' + d.error, true));
+  document.getElementById('call-log').textContent = (d.log || []).slice(0, 15).join('\n');
+}
+
+function render_call_viewer(d) {
+  const viewer = document.getElementById('call-viewer');
+  const log = d.log || [];
+  if (!log.length) {
+    viewer.replaceChildren(empty_div('Журнал вызова пуст — позвоните с формы.'));
+    return;
+  }
+  const pre = document.createElement('pre');
+  pre.className = 'events';
+  pre.textContent = log.join('\n');
+  viewer.replaceChildren(vhead('Журнал вызова (сверху свежие)', ''), pre);
+}
+
+// POST-запись: текст ошибки движка (409 — состояния/адресат) показываем
+// честно, гонка с опросом перечитает актуальное состояние.
+async function call_post(path, body) {
+  try {
+    const r = await fetch(path, body
+      ? {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+        }
+      : { method: 'POST' });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) return 'Не выполнено: ' + (d.error || 'HTTP ' + r.status);
+  } catch (e) {
+    return 'Ошибка запроса: ' + e.message;
+  }
+  await load_call();
+  return '';
+}
+
+async function call_dial() {
+  const body = { callee: document.getElementById('call-callee').value.trim() };
+  const caller = document.getElementById('call-caller').value.trim();
+  const target = document.getElementById('call-target').value.trim();
+  const origin = document.getElementById('call-origin').value.trim();
+  if (caller) body.caller = caller;
+  if (target) body.target = target;
+  if (origin) body.origin = origin; // ретрансляция «от другого адреса» (task_31)
+  const err = await call_post('/api/station/call', body);
+  if (err) alert('Вызов не отправлен: ' + err.replace('Не выполнено: ', ''));
+}
+
+async function call_off() {
+  // фаза на момент клика: до 2xx — CANCEL, после 200 — BYE (409 при гонке
+  // фаз покажет текст движка).
+  const action = call_state === 'answered' ? 'hangup' : 'cancel';
+  const err = await call_post('/api/station/call/' + action);
+  if (err) alert('Отбой не выполнен: ' + err.replace('Не выполнено: ', ''));
+}
+
+function set_call_polling(on) {
+  if (call_timer) { clearInterval(call_timer); call_timer = null; }
+  if (on) call_timer = setInterval(load_call, 2000);
+}
+
+// ---------- таблица регистраций (doc/task_33_plan_2.md) ----------
+// Хранилище — на сервере (память процесса): авто-строки из REGISTER нижестоящей
+// станции (только в SAS-режиме, identifier u00sXXpXX + адрес прихода) и ручные
+// из формы. Правка номера/identifier применяется к массиву по 'change' input'а
+// (POST /:id/update). Опрос 2 с — только на активной вкладке; защита от
+// перетирания ввода: при неизменном JSON ответа рендер пропускается целиком,
+// а при изменении значение присваивается input'у только если он не в фокусе
+// (иначе опрос затрёт набираемый текст и сбросит каретку).
+
+let reg_timer = null;
+let reg_last_json = '';
+
+async function load_registrations(force) {
+  const viewer = document.getElementById('reg-viewer');
+  let list = null;
+  try {
+    const r = await fetch('/api/station/registrations');
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    list = (await r.json()).registrations || [];
+  } catch (e) {
+    // 404 — приложение без хранилища регистраций в DI: честное «недоступно».
+    viewer.replaceChildren(vhead('registrations', 'недоступно: ' + e.message));
+    return;
+  }
+  const json = JSON.stringify(list);
+  if (!force && json === reg_last_json) return;
+  reg_last_json = json;
+  render_reg_table(list);
+}
+
+function render_reg_table(list) {
+  const viewer = document.getElementById('reg-viewer');
+  if (!list.length) {
+    viewer.replaceChildren(empty_div(
+      'Таблица регистраций пуста — добавьте строку вручную или дождитесь REGISTER в SAS-режиме.'));
+    return;
+  }
+  let table = document.getElementById('reg-table');
+  if (!table || !viewer.contains(table)) {
+    // Каркас строится один раз и живёт между опросами: пересоздание table
+    // на каждый ответ сбрасывало бы фокус и набор в input'ах.
+    table = document.createElement('table');
+    table.className = 'reg';
+    table.id = 'reg-table';
+    const tr = document.createElement('tr');
+    for (const t of ['identifier', 'номер', 'адрес прихода', 'обновлён', '']) {
+      const th = document.createElement('th');
+      th.textContent = t;
+      tr.appendChild(th);
+    }
+    const thead = document.createElement('thead');
+    thead.appendChild(tr);
+    table.replaceChildren(thead, document.createElement('tbody'));
+    viewer.replaceChildren(vhead(
+      'Регистрации: identifier — из REGISTER станции, номер — вводит оператор', ''), table);
+  }
+  sync_reg_rows(table.querySelector('tbody'), list);
+}
+
+function sync_reg_rows(tbody, list) {
+  const alive = new Set();
+  for (const entry of list) {
+    alive.add(String(entry.id));
+    let tr = tbody.querySelector(`tr[data-id="${CSS.escape(String(entry.id))}"]`);
+    if (!tr) {
+      tr = reg_row(entry);
+      tbody.appendChild(tr);
+    }
+    fill_reg_row(tr, entry);
+  }
+  // строки, снятые на сервере (DELETE/перезапуск), — убрать
+  for (const tr of Array.from(tbody.querySelectorAll('tr'))) {
+    if (!alive.has(tr.dataset.id)) tr.remove();
+  }
+}
+
+function reg_row(entry) {
+  const tr = document.createElement('tr');
+  tr.dataset.id = String(entry.id);
+  for (const field of ['identifier', 'phone']) {
+    const td = document.createElement('td');
+    const inp = document.createElement('input');
+    inp.type = 'text';
+    inp.dataset.field = field;
+    // правка применяется к массиву хранилища по событию 'change'
+    inp.addEventListener('change', () => {
+      void reg_update(entry.id, field, inp.value.trim(), inp);
+    });
+    td.appendChild(inp);
+    tr.appendChild(td);
+  }
+  const addr = document.createElement('td');
+  addr.dataset.cell = 'address';
+  const ts = document.createElement('td');
+  ts.dataset.cell = 'ts';
+  const del = document.createElement('td');
+  const btn = document.createElement('button');
+  btn.textContent = 'удалить';
+  btn.title = 'Снять строку из таблицы регистраций';
+  btn.addEventListener('click', () => { void reg_remove(entry.id, entry.identifier); });
+  del.appendChild(btn);
+  tr.append(addr, ts, del);
+  return tr;
+}
+
+function fill_reg_row(tr, entry) {
+  for (const field of ['identifier', 'phone']) {
+    const inp = tr.querySelector(`input[data-field="${field}"]`);
+    if (inp && inp !== document.activeElement) inp.value = entry[field] || '';
+  }
+  const addr = tr.querySelector('td[data-cell="address"]');
+  if (addr) addr.textContent = entry.address || '—';
+  const ts = tr.querySelector('td[data-cell="ts"]');
+  if (ts) ts.textContent = reg_time(entry.last_seen_at);
+}
+
+function reg_time(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? iso : d.toLocaleString('ru-RU');
+}
+
+async function reg_update(id, field, value, inp) {
+  inp.disabled = true; // пока POST в пути — правку не наслаивать
+  let err = '';
+  try {
+    const r = await fetch('/api/station/registrations/' + id + '/update', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ [field]: value }),
+    });
+    if (!r.ok) {
+      const d = await r.json().catch(() => ({}));
+      err = d.error || 'HTTP ' + r.status;
+    }
+  } catch (e) {
+    err = e.message;
+  }
+  inp.disabled = false;
+  if (err) alert('Правка не применена: ' + err);
+  await load_registrations(true); // перечитать: сервер подтвердил или отверг
+}
+
+async function reg_add() {
+  const id_inp = document.getElementById('reg-new-identifier');
+  const phone_inp = document.getElementById('reg-new-phone');
+  const identifier = id_inp.value.trim();
+  const phone = phone_inp.value.trim();
+  if (!identifier) {
+    alert('Укажите identifier — напр. u00s00p00 (приходит от станции в REGISTER)');
+    return;
+  }
+  const body = { identifier };
+  if (phone) body.phone = phone;
+  try {
+    const r = await fetch('/api/station/registrations', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) { alert('Строка не добавлена: ' + (d.error || 'HTTP ' + r.status)); return; }
+    id_inp.value = '';
+    phone_inp.value = '';
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+    return;
+  }
+  await load_registrations(true);
+}
+
+async function reg_remove(id, identifier) {
+  if (!confirm(`Снять регистрацию ${identifier} из таблицы?`)) return;
+  try {
+    const r = await fetch('/api/station/registrations/' + id, { method: 'DELETE' });
+    if (!r.ok) {
+      const d = await r.json().catch(() => ({}));
+      alert('Строка не снята: ' + (d.error || 'HTTP ' + r.status));
+    }
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  await load_registrations(true);
+}
+
+function set_registrations_polling(on) {
+  if (reg_timer) { clearInterval(reg_timer); reg_timer = null; }
+  if (on) reg_timer = setInterval(() => { void load_registrations(); }, 2000);
+}
+
+// ---------- вкладки и утилиты ----------
+function hint(text) { const d = document.createElement('li'); d.className = 'hint'; d.textContent = text; return d; }
+function hint_div(text) { const d = document.createElement('div'); d.className = 'hint'; d.textContent = text; return d; }
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+
+document.querySelectorAll('nav button').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('nav button').forEach((b) => b.classList.toggle('active', b === btn));
+    const pane = btn.dataset.pane;
+    document.querySelectorAll('section.pane').forEach((s) => s.classList.toggle('active', s.classList.contains(pane)));
+    if (pane === 'reports') load_reports(); // обновить при входе (провгон мог добавить отчёт)
+    if (pane === 'tests' && !cases_loaded) load_cases(); // список кейсов — при первом входе
+    // Станция: опрос 2 с только на активной вкладке, при уходе — снять таймер.
+    if (pane === 'station') { set_station_polling(true); load_station(); }
+    else set_station_polling(false);
+    // Вызов: свой 2-с опрос только на активной вкладке (doc/task_30_plan_2.md).
+    if (pane === 'call') { set_call_polling(true); load_call(); }
+    else set_call_polling(false);
+    // Регистрации: свой 2-с опрос только на активной вкладке
+    // (doc/task_33_plan_2.md); при входе — немедленная перезагрузка.
+    if (pane === 'registrations') { set_registrations_polling(true); load_registrations(true); }
+    else set_registrations_polling(false);
+  });
+});
+document.getElementById('reload-tree').addEventListener('click', load_tree);
+document.getElementById('reload-reports').addEventListener('click', load_reports);
+document.getElementById('reload-cases').addEventListener('click', load_cases);
+document.getElementById('run-all').addEventListener('click', () => start_run('all'));
+document.getElementById('del-selected').addEventListener('click', delete_selected);
+document.getElementById('del-all').addEventListener('click', delete_all);
+document.getElementById('reload-station').addEventListener('click', load_station);
+document.getElementById('station-start').addEventListener('click', () => station_action('start'));
+document.getElementById('station-stop').addEventListener('click', () => station_action('stop'));
+document.getElementById('station-silent-invite').addEventListener('change', (e) => {
+  void silent_invite_set(e.target.checked);
+});
+document.getElementById('station-forward-invite').addEventListener('change', (e) => {
+  void forward_invite_set(e.target.checked);
+});
+document.getElementById('station-ignore-provisional').addEventListener('change', (e) => {
+  void ignore_provisional_set(e.target.checked);
+});
+document.getElementById('station-multiply-invite').addEventListener('change', (e) => {
+  void multiply_invite_set(e.target.checked);
+});
+document.getElementById('stim-start').addEventListener('click', () => stim_action('start'));
+document.getElementById('stim-stop').addEventListener('click', () => stim_action('stop'));
+document.getElementById('sas-enable').addEventListener('click', () => sas_action('enable'));
+document.getElementById('sas-disable').addEventListener('click', () => sas_action('disable'));
+document.getElementById('reload-call').addEventListener('click', load_call);
+document.getElementById('call-dial').addEventListener('click', call_dial);
+document.getElementById('call-off').addEventListener('click', call_off);
+document.getElementById('reload-reg').addEventListener('click', () => { void load_registrations(true); });
+document.getElementById('reg-add').addEventListener('click', () => { void reg_add(); });
+
+// Первичная загрузка.
+load_status();
+load_tree();
+setInterval(load_status, 15000); // статус-строка обновляется сама
+</script>
+</body>
+</html>

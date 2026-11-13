@@ -1,0 +1,78 @@
+{
+  "id": "20261103T084609Z_case_1",
+  "generated_at": "2026-11-03T08:46:10.000Z",
+  "meta": {
+    "case": "case_1",
+    "verdict": "PASS",
+    "verdict_text": "регистрация 9404 подтверждена: REGISTER → (без challenge) → 200",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793695569966,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793695569974,
+      "session": "9404",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 9404",
+      "call_id": "jis1a1afrrc8gf7coav2"
+    },
+    {
+      "ts": 1793695569981,
+      "session": "9404",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "jis1a1afrrc8gf7coav2",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793695569987,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793695569988,
+      "session": "9404",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 9404",
+      "call_id": "jis1a1afrrc8gf7coav2"
+    },
+    {
+      "ts": 1793695569997,
+      "session": "9404",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "jis1a1afrrc8gf7coav2",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793695569999,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+2026-11-03 10:28:41: start checking. period: 30:0
+2026-11-03 10:28:41: keeptime: 2592000 sec
+2026-11-03 10:28:41: call records path: 'off/call_records'
+2026-11-03 10:28:41: call records path: 'off/call_records' does not exists! nothing to check
+2026-11-03 10:28:41: disk: check usage
+2026-11-03 10:28:41: disk: disk is not available!

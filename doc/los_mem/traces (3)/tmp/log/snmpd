@@ -1,0 +1,20 @@
+netsnmp_subtree_load: MIB_DUPLICATE_REGISTRATION  next .0
+netsnmp_subtree_load: MIB_DUPLICATE_REGISTRATION  new_sub .0
+netsnmp_subtree_load: MIB_DUPLICATE_REGISTRATION  next .1
+netsnmp_subtree_load: MIB_DUPLICATE_REGISTRATION  new_sub .1
+netsnmp_subtree_load: MIB_DUPLICATE_REGISTRATION  next .2
+netsnmp_subtree_load: MIB_DUPLICATE_REGISTRATION  new_sub .2
+****************************************************
+You can configure traces via /etc/config/snmpd.conf
+String 1: enableStdoutDebug {1-on, other-off}
+String 2: enableFileDebug {1-on, other-off} {fileSizeInByte, default 1000000} {fileCount, default 10}
+For example:
+enableStdoutDebug 1
+enableFileDebug 1 1000000 10
+****************************************************
+traceStdOutOn=0
+traceFileOn=0 (1000000 bytes, 10 files)
+INFO: SNMP license: OK
+/etc/config/snmpd.conf: line 6: Error: Blank line following trapcommunity token.
+/etc/config/snmpd.conf: line 6: Error: Blank line following trapcommunity token.
+NET-SNMP version 5.4.2.1

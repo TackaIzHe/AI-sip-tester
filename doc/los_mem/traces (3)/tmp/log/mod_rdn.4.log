@@ -1,0 +1,17 @@
+  12:39:28.369514  [    ] mod-rdn.   AppInit: kill prev instance by PID 2830
+  12:39:28.369691  [INFO] mod-rdn.   
+
+     <<   MOD-RDN   >>
+  12:39:28.369743  [INFO] mod-rdn.   version V.3.402.0.55.  Build: Oct 30 2026 18:09:31
+  12:39:28.369791  [INFO] mod-rdn.   App: start init. pid 2913
+  12:39:28.369956  [INFO] mod-rdn.   RDN. init: start init. dbg [0x0]
+  12:39:28.369970  [INFO] mod-rdn.   consol task_wr: start. pid 2915
+  12:39:28.369957  [INFO] mod-rdn.   consol task: start. pid 2914
+  12:39:28.570344  [????] mod-rdn.   peer: info: Moduleport[7021] kernel_port[7021] kernelhost[127.0.0.1] socket_file[/tmp/rdn.sock]
+  12:39:28.613402  [INFO] mod-rdn.   resolve_worker: worker[1] started.
+  12:39:28.613311  [INFO] mod-rdn.   rdn_init: Resolver started: GW '192.168.111.211' DNS0 '0.0.0.0'  DNS1 '0.0.0.0'; WORKERS [3]
+  12:39:28.613299  [INFO] mod-rdn.   resolve_worker: worker[0] started.
+  12:39:28.614387  [INFO] mod-rdn.   main task. pid: 2913
+  12:39:28.614395  [INFO] mod-rdn.   timer task: start. pid 2942
+  12:39:28.614579  [INFO] mod-rdn.   resolve_worker: worker[2] started.
+  12:40:53.786672  [WARN] mod-rdn.   Worker[1]: Resolve domain 'main' failed! No more attempts, domain will be deleted

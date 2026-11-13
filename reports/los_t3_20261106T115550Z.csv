@@ -1,0 +1,3 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-06T11:55:50.445Z,1793966150445,t3,phase,"T3: cycle 1/1"
+2026-11-06T11:55:50.515Z,1793966150515,t3,summary,"циклов 1, SUBSCRIBE отправлено 4 (дубли активных подписок); ответы станции: REGISTER 200×2, SUBSCRIBE 401×2, SUBSCRIBE 403×2, SUBSCRIBE 489×2"

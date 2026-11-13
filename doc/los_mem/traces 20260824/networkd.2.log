@@ -1,0 +1,6 @@
+ 11:46:41.625328  [INFO] networkd:  [InterfaceStateChanged][375] nlmsg_type: NEWLINK label eth0 ifi_index: 8 ifi_type: 1 ifi_flags: 11843
+ 11:46:41.725718  [INFO] networkd:  [InterfaceStateChanged][375] nlmsg_type: NEWLINK label eth1 ifi_index: 9 ifi_type: 1 ifi_flags: 11843
+ 11:46:41.825958  [INFO] networkd:  [InterfaceStateChanged][375] nlmsg_type: NEWLINK label bond1 ifi_index: 10 ifi_type: 1 ifi_flags: 11443
+ 11:51:50.189091  [INFO] networkd:  [InterfaceStateChanged][375] nlmsg_type: NEWLINK label eth0 ifi_index: 8 ifi_type: 1 ifi_flags: 11843
+ 11:51:50.289340  [INFO] networkd:  [InterfaceStateChanged][375] nlmsg_type: NEWLINK label eth1 ifi_index: 9 ifi_type: 1 ifi_flags: 11843
+ 11:51:50.389554  [INFO] networkd:  [InterfaceStateChanged][375] nlmsg_type: NEWLINK label bond1 ifi_index: 10 ifi_type: 1 ifi_flags: 11443

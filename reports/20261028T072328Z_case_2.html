@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Отчёт 20261028T072328Z_case_2</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; color: #1c2733; background: #f7f9fb; }
+  h1 { font-size: 20px; }
+  .meta { background: #fff; border: 1px solid #d7e0e8; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+  .meta div { margin: 2px 0; }
+  .verdict { font-weight: 700; }
+  .PASS { color: #147d3c; }
+  .FAIL { color: #b3261e; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: 13px; }
+  th, td { border: 1px solid #d7e0e8; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #eef3f7; }
+  tr.d-out td.stage { color: #0b57a4; }
+  tr.d-in  td.stage { color: #8a4b00; }
+  .cid { font-family: monospace; font-size: 11px; color: #5b6b7b; word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>Отчёт прогона: 20261028T072328Z_case_2</h1>
+  <div class="meta">
+    <div>Сгенерирован: 2026-10-28T07:23:28.708Z</div>
+    <div>АТС: 192.168.80.157:5060 (udp)</div>
+    <div>Номера: 9404, 52, 3203</div>
+    <div>Вызов (исходящий): от 9404 → кому 52</div>
+    <div>Кейс: case_2</div>
+    <div>Вердикт: PASS — вызов 9404→52: принят (IN_CALL у обоих), завершён BYE; цепочка INVITE/180/200/ACK/BYE в отчёте</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Время (UTC)</th><th>Абонент</th><th>Напр.</th><th>Этап</th><th>SIP</th><th>Call-ID</th><th>Детали</th></tr>
+    </thead>
+    <tbody>
+      <tr class="d-internal k-state"><td>1</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>2</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">u3f0kfjkej7bq2tdvkv6</td><td>REGISTER от 9404</td></tr>
+      <tr class="d-in k-register"><td>3</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">u3f0kfjkej7bq2tdvkv6</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>4</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>5</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>6</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">lc11qj6n98rrsp8am7i9</td><td>REGISTER от 52</td></tr>
+      <tr class="d-in k-register"><td>7</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">lc11qj6n98rrsp8am7i9</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>8</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>9</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние CALL_OUT, собеседник 52</td></tr>
+      <tr class="d-out k-invite"><td>10</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>→ АТС</td><td class="stage">invite</td><td></td><td class="cid">u3f0kospj50cn95iio6d</td><td>INVITE → 52 от 9404</td></tr>
+      <tr class="d-in k-invite"><td>11</td><td>2026-10-28 07:23:27Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 100</td><td>100</td><td class="cid">u3f0kospj50cn95iio6d</td><td>100 Trying для INVITE</td></tr>
+      <tr class="d-in k-invite"><td>12</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>← АТС</td><td class="stage">invite</td><td></td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>INVITE → 52 от 9404</td></tr>
+      <tr class="d-out k-invite"><td>13</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>→ АТС</td><td class="stage">invite 100</td><td>100</td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>100 Trying для INVITE</td></tr>
+      <tr class="d-out k-invite"><td>14</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>→ АТС</td><td class="stage">invite 180</td><td>180</td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>180 Ringing для INVITE</td></tr>
+      <tr class="d-in k-call-in"><td>15</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>← АТС</td><td class="stage">call-in</td><td></td><td class="cid"></td><td>INVITE от 9404 — входящий вызов</td></tr>
+      <tr class="d-internal k-state"><td>16</td><td>2026-10-28 07:23:27Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние CALL_IN, собеседник 9404</td></tr>
+      <tr class="d-in k-invite"><td>17</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 180</td><td>180</td><td class="cid">u3f0kospj50cn95iio6d</td><td>180 Ringing для INVITE</td></tr>
+      <tr class="d-in k-ringing"><td>18</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>← АТС</td><td class="stage">ringing 180</td><td>180</td><td class="cid"></td><td>180 Ringing</td></tr>
+      <tr class="d-out k-invite"><td>19</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>→ АТС</td><td class="stage">invite 200</td><td>200</td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>200 OK для INVITE</td></tr>
+      <tr class="d-in k-call-established"><td>20</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>← АТС</td><td class="stage">call-established 200</td><td>200</td><td class="cid"></td><td>200 OK + ACK — вызов принят</td></tr>
+      <tr class="d-internal k-state"><td>21</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние IN_CALL, собеседник 9404</td></tr>
+      <tr class="d-in k-ack"><td>22</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>← АТС</td><td class="stage">ack</td><td></td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>ACK → 52 от 9404</td></tr>
+      <tr class="d-in k-invite"><td>23</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 200</td><td>200</td><td class="cid">u3f0kospj50cn95iio6d</td><td>200 OK для INVITE</td></tr>
+      <tr class="d-out k-ack"><td>24</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>→ АТС</td><td class="stage">ack</td><td></td><td class="cid">u3f0kospj50cn95iio6d</td><td>ACK → 52 от 9404</td></tr>
+      <tr class="d-in k-call-established"><td>25</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>← АТС</td><td class="stage">call-established 200</td><td>200</td><td class="cid"></td><td>200 OK + ACK — вызов принят</td></tr>
+      <tr class="d-internal k-state"><td>26</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние IN_CALL, собеседник 52</td></tr>
+      <tr class="d-out k-bye"><td>27</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>→ АТС</td><td class="stage">bye</td><td></td><td class="cid">u3f0kospj50cn95iio6d</td><td>BYE → 52 от 9404</td></tr>
+      <tr class="d-internal k-call-ended"><td>28</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>·</td><td class="stage">call-ended</td><td></td><td class="cid"></td><td>завершён (BYE)</td></tr>
+      <tr class="d-internal k-state"><td>29</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED</td></tr>
+      <tr class="d-in k-bye"><td>30</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>← АТС</td><td class="stage">bye 200</td><td>200</td><td class="cid">u3f0kospj50cn95iio6d</td><td>200 OK для BYE</td></tr>
+      <tr class="d-in k-bye"><td>31</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>← АТС</td><td class="stage">bye</td><td></td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>BYE → 52 от 9404</td></tr>
+      <tr class="d-out k-bye"><td>32</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>→ АТС</td><td class="stage">bye 200</td><td>200</td><td class="cid">-YnAf..vRveULxdBpJBozUYwUPgkm.2s</td><td>200 OK для BYE</td></tr>
+      <tr class="d-internal k-call-ended"><td>33</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>·</td><td class="stage">call-ended</td><td></td><td class="cid"></td><td>завершён (BYE)</td></tr>
+      <tr class="d-internal k-state"><td>34</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED</td></tr>
+      <tr class="d-out k-register"><td>35</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">u3f0kfjkej7bq2tdvkv6</td><td>REGISTER от 9404</td></tr>
+      <tr class="d-in k-register"><td>36</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">u3f0kfjkej7bq2tdvkv6</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>37</td><td>2026-10-28 07:23:28Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>38</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">lc11qj6n98rrsp8am7i9</td><td>REGISTER от 52</td></tr>
+      <tr class="d-in k-register"><td>39</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">lc11qj6n98rrsp8am7i9</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>40</td><td>2026-10-28 07:23:28Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+    </tbody>
+  </table>
+  <p class="verdict PASS">Вердикт: PASS — вызов 9404→52: принят (IN_CALL у обоих), завершён BYE; цепочка INVITE/180/200/ACK/BYE в отчёте</p>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Отчёт 20261106T040928Z_case_8a_batch_reg_24_47</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; color: #1c2733; background: #f7f9fb; }
+  h1 { font-size: 20px; }
+  .meta { background: #fff; border: 1px solid #d7e0e8; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+  .meta div { margin: 2px 0; }
+  .verdict { font-weight: 700; }
+  .PASS { color: #147d3c; }
+  .FAIL { color: #b3261e; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: 13px; }
+  th, td { border: 1px solid #d7e0e8; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #eef3f7; }
+  tr.d-out td.stage { color: #0b57a4; }
+  tr.d-in  td.stage { color: #8a4b00; }
+  .cid { font-family: monospace; font-size: 11px; color: #5b6b7b; word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>Отчёт прогона: 20261106T040928Z_case_8a_batch_reg_24_47</h1>
+  <div class="meta">
+    <div>Сгенерирован: 2026-11-06T04:09:28.547Z</div>
+    <div>АТС: 192.168.80.157:5060 (udp)</div>
+    <div>Номера: 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47</div>
+    <div>Кейс: case_8a_batch_reg_24_47</div>
+    <div>Вердикт: PASS — пакетная регистрация 24..47: зарегистрировано 24 абонентов (REGISTER → 200 у каждого); регистрации оставлены живыми — снятие второстепенным кейсом batch24unreg (тот же процесс сервера)</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Время (UTC)</th><th>Абонент</th><th>Напр.</th><th>Этап</th><th>SIP</th><th>Call-ID</th><th>Детали</th></tr>
+    </thead>
+    <tbody>
+      <tr class="d-internal k-state"><td>1</td><td>2026-11-06 04:09:28Z</td><td>24</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>2</td><td>2026-11-06 04:09:28Z</td><td>24</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">ruikkvsdd8mj2hb26vkt</td><td>REGISTER от 24</td></tr>
+      <tr class="d-in k-register"><td>3</td><td>2026-11-06 04:09:28Z</td><td>24</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">ruikkvsdd8mj2hb26vkt</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>4</td><td>2026-11-06 04:09:28Z</td><td>24</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>5</td><td>2026-11-06 04:09:28Z</td><td>25</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>6</td><td>2026-11-06 04:09:28Z</td><td>25</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">6klj5l9q1n0l6s2bm0th</td><td>REGISTER от 25</td></tr>
+      <tr class="d-in k-register"><td>7</td><td>2026-11-06 04:09:28Z</td><td>25</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">6klj5l9q1n0l6s2bm0th</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>8</td><td>2026-11-06 04:09:28Z</td><td>25</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>9</td><td>2026-11-06 04:09:28Z</td><td>26</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>10</td><td>2026-11-06 04:09:28Z</td><td>26</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">fhr1r75lgjesp28rjvu8</td><td>REGISTER от 26</td></tr>
+      <tr class="d-in k-register"><td>11</td><td>2026-11-06 04:09:28Z</td><td>26</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">fhr1r75lgjesp28rjvu8</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>12</td><td>2026-11-06 04:09:28Z</td><td>26</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>13</td><td>2026-11-06 04:09:28Z</td><td>27</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>14</td><td>2026-11-06 04:09:28Z</td><td>27</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">5mu60fgrqva8ip6ggd3a</td><td>REGISTER от 27</td></tr>
+      <tr class="d-in k-register"><td>15</td><td>2026-11-06 04:09:28Z</td><td>27</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">5mu60fgrqva8ip6ggd3a</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>16</td><td>2026-11-06 04:09:28Z</td><td>27</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>17</td><td>2026-11-06 04:09:28Z</td><td>28</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>18</td><td>2026-11-06 04:09:28Z</td><td>28</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">4dmigo7c9hapl2tv51b1</td><td>REGISTER от 28</td></tr>
+      <tr class="d-in k-register"><td>19</td><td>2026-11-06 04:09:28Z</td><td>28</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">4dmigo7c9hapl2tv51b1</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>20</td><td>2026-11-06 04:09:28Z</td><td>28</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>21</td><td>2026-11-06 04:09:28Z</td><td>29</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>22</td><td>2026-11-06 04:09:28Z</td><td>29</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">v6portnjjnt0rkag2o1p</td><td>REGISTER от 29</td></tr>
+      <tr class="d-in k-register"><td>23</td><td>2026-11-06 04:09:28Z</td><td>29</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">v6portnjjnt0rkag2o1p</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>24</td><td>2026-11-06 04:09:28Z</td><td>29</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>25</td><td>2026-11-06 04:09:28Z</td><td>30</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>26</td><td>2026-11-06 04:09:28Z</td><td>30</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">da847c171m49pk4k7lri</td><td>REGISTER от 30</td></tr>
+      <tr class="d-in k-register"><td>27</td><td>2026-11-06 04:09:28Z</td><td>30</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">da847c171m49pk4k7lri</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>28</td><td>2026-11-06 04:09:28Z</td><td>30</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>29</td><td>2026-11-06 04:09:28Z</td><td>31</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>30</td><td>2026-11-06 04:09:28Z</td><td>31</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">lab5ubfgsiugl1ajhl0j</td><td>REGISTER от 31</td></tr>
+      <tr class="d-in k-register"><td>31</td><td>2026-11-06 04:09:28Z</td><td>31</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">lab5ubfgsiugl1ajhl0j</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>32</td><td>2026-11-06 04:09:28Z</td><td>31</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>33</td><td>2026-11-06 04:09:28Z</td><td>32</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>34</td><td>2026-11-06 04:09:28Z</td><td>32</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">017t8be8eq3s1betb7bb</td><td>REGISTER от 32</td></tr>
+      <tr class="d-in k-register"><td>35</td><td>2026-11-06 04:09:28Z</td><td>32</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">017t8be8eq3s1betb7bb</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>36</td><td>2026-11-06 04:09:28Z</td><td>32</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>37</td><td>2026-11-06 04:09:28Z</td><td>33</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>38</td><td>2026-11-06 04:09:28Z</td><td>33</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">1uteiq17ri0rg0ootlsv</td><td>REGISTER от 33</td></tr>
+      <tr class="d-in k-register"><td>39</td><td>2026-11-06 04:09:28Z</td><td>33</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">1uteiq17ri0rg0ootlsv</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>40</td><td>2026-11-06 04:09:28Z</td><td>33</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>41</td><td>2026-11-06 04:09:28Z</td><td>34</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>42</td><td>2026-11-06 04:09:28Z</td><td>34</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">mne8n6lrch51e1me33rc</td><td>REGISTER от 34</td></tr>
+      <tr class="d-in k-register"><td>43</td><td>2026-11-06 04:09:28Z</td><td>34</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">mne8n6lrch51e1me33rc</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>44</td><td>2026-11-06 04:09:28Z</td><td>34</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>45</td><td>2026-11-06 04:09:28Z</td><td>35</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>46</td><td>2026-11-06 04:09:28Z</td><td>35</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">311o9g9oij525qmsaigm</td><td>REGISTER от 35</td></tr>
+      <tr class="d-in k-register"><td>47</td><td>2026-11-06 04:09:28Z</td><td>35</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">311o9g9oij525qmsaigm</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>48</td><td>2026-11-06 04:09:28Z</td><td>35</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>49</td><td>2026-11-06 04:09:28Z</td><td>36</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>50</td><td>2026-11-06 04:09:28Z</td><td>36</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">r2qm8k33d4uk1irb4al1</td><td>REGISTER от 36</td></tr>
+      <tr class="d-in k-register"><td>51</td><td>2026-11-06 04:09:28Z</td><td>36</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">r2qm8k33d4uk1irb4al1</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>52</td><td>2026-11-06 04:09:28Z</td><td>36</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>53</td><td>2026-11-06 04:09:28Z</td><td>37</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>54</td><td>2026-11-06 04:09:28Z</td><td>37</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">oof6jc3tbiehbpqstm4v</td><td>REGISTER от 37</td></tr>
+      <tr class="d-in k-register"><td>55</td><td>2026-11-06 04:09:28Z</td><td>37</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">oof6jc3tbiehbpqstm4v</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>56</td><td>2026-11-06 04:09:28Z</td><td>37</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>57</td><td>2026-11-06 04:09:28Z</td><td>38</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>58</td><td>2026-11-06 04:09:28Z</td><td>38</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">7nsksdmdhdqoqi14p02o</td><td>REGISTER от 38</td></tr>
+      <tr class="d-in k-register"><td>59</td><td>2026-11-06 04:09:28Z</td><td>38</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">7nsksdmdhdqoqi14p02o</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>60</td><td>2026-11-06 04:09:28Z</td><td>38</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>61</td><td>2026-11-06 04:09:28Z</td><td>39</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>62</td><td>2026-11-06 04:09:28Z</td><td>39</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">u2blrm4gq4ki6ml2hmop</td><td>REGISTER от 39</td></tr>
+      <tr class="d-in k-register"><td>63</td><td>2026-11-06 04:09:28Z</td><td>39</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">u2blrm4gq4ki6ml2hmop</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>64</td><td>2026-11-06 04:09:28Z</td><td>39</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>65</td><td>2026-11-06 04:09:28Z</td><td>40</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>66</td><td>2026-11-06 04:09:28Z</td><td>40</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">3d3baeufrv3k0tk69oiq</td><td>REGISTER от 40</td></tr>
+      <tr class="d-in k-register"><td>67</td><td>2026-11-06 04:09:28Z</td><td>40</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">3d3baeufrv3k0tk69oiq</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>68</td><td>2026-11-06 04:09:28Z</td><td>40</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>69</td><td>2026-11-06 04:09:28Z</td><td>41</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>70</td><td>2026-11-06 04:09:28Z</td><td>41</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">j2ik3gbvk2f1toejndle</td><td>REGISTER от 41</td></tr>
+      <tr class="d-in k-register"><td>71</td><td>2026-11-06 04:09:28Z</td><td>41</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">j2ik3gbvk2f1toejndle</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>72</td><td>2026-11-06 04:09:28Z</td><td>41</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>73</td><td>2026-11-06 04:09:28Z</td><td>42</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>74</td><td>2026-11-06 04:09:28Z</td><td>42</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">pbqefi85qc8d60bb2pre</td><td>REGISTER от 42</td></tr>
+      <tr class="d-in k-register"><td>75</td><td>2026-11-06 04:09:28Z</td><td>42</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">pbqefi85qc8d60bb2pre</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>76</td><td>2026-11-06 04:09:28Z</td><td>42</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>77</td><td>2026-11-06 04:09:28Z</td><td>43</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>78</td><td>2026-11-06 04:09:28Z</td><td>43</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">t09frvk4s1t1gat98dav</td><td>REGISTER от 43</td></tr>
+      <tr class="d-in k-register"><td>79</td><td>2026-11-06 04:09:28Z</td><td>43</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">t09frvk4s1t1gat98dav</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>80</td><td>2026-11-06 04:09:28Z</td><td>43</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>81</td><td>2026-11-06 04:09:28Z</td><td>44</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>82</td><td>2026-11-06 04:09:28Z</td><td>44</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">8f61ertk8dtmllt5juse</td><td>REGISTER от 44</td></tr>
+      <tr class="d-in k-register"><td>83</td><td>2026-11-06 04:09:28Z</td><td>44</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">8f61ertk8dtmllt5juse</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>84</td><td>2026-11-06 04:09:28Z</td><td>44</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>85</td><td>2026-11-06 04:09:28Z</td><td>45</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>86</td><td>2026-11-06 04:09:28Z</td><td>45</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">ipc4mgk2k3cm65o92n4s</td><td>REGISTER от 45</td></tr>
+      <tr class="d-in k-register"><td>87</td><td>2026-11-06 04:09:28Z</td><td>45</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">ipc4mgk2k3cm65o92n4s</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>88</td><td>2026-11-06 04:09:28Z</td><td>45</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>89</td><td>2026-11-06 04:09:28Z</td><td>46</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>90</td><td>2026-11-06 04:09:28Z</td><td>46</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">n3sjudnekof2sdlddr53</td><td>REGISTER от 46</td></tr>
+      <tr class="d-in k-register"><td>91</td><td>2026-11-06 04:09:28Z</td><td>46</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">n3sjudnekof2sdlddr53</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>92</td><td>2026-11-06 04:09:28Z</td><td>46</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>93</td><td>2026-11-06 04:09:28Z</td><td>47</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>94</td><td>2026-11-06 04:09:28Z</td><td>47</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">4nun15fn22vdrt5us3le</td><td>REGISTER от 47</td></tr>
+      <tr class="d-in k-register"><td>95</td><td>2026-11-06 04:09:28Z</td><td>47</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">4nun15fn22vdrt5us3le</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>96</td><td>2026-11-06 04:09:28Z</td><td>47</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+    </tbody>
+  </table>
+  <p class="verdict PASS">Вердикт: PASS — пакетная регистрация 24..47: зарегистрировано 24 абонентов (REGISTER → 200 у каждого); регистрации оставлены живыми — снятие второстепенным кейсом batch24unreg (тот же процесс сервера)</p>
+</body>
+</html>

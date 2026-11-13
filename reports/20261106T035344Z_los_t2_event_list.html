@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Отчёт 20261106T035344Z_los_t2_event_list</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; color: #1c2733; background: #f7f9fb; }
+  h1 { font-size: 20px; }
+  .meta { background: #fff; border: 1px solid #d7e0e8; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+  .meta div { margin: 2px 0; }
+  .verdict { font-weight: 700; }
+  .PASS { color: #147d3c; }
+  .FAIL { color: #b3261e; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: 13px; }
+  th, td { border: 1px solid #d7e0e8; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #eef3f7; }
+  tr.d-out td.stage { color: #0b57a4; }
+  tr.d-in  td.stage { color: #8a4b00; }
+  .cid { font-family: monospace; font-size: 11px; color: #5b6b7b; word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>Отчёт прогона: 20261106T035344Z_los_t2_event_list</h1>
+  <div class="meta">
+    <div>Сгенерирован: 2026-11-06T03:53:44.523Z</div>
+    <div>АТС: 192.168.80.157:5060 (udp)</div>
+    <div>Номера: 9404, 52, 3203</div>
+    <div>Кейс: los_t2_event_list</div>
+    <div>Вердикт: PASS — T2 — event-list NOTIFY oversized property (кандидат B) (короткая версия): NOTIFY отправлено 60 (kind=hybrid, props=100; свойств всего 6000), тело 23224 байт, в диалоги станции 0 (её подписок: 0, пакеты: —); ответы станции: нет; итог 70 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t2_20261106T035234Z.csv</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Время (UTC)</th><th>Абонент</th><th>Напр.</th><th>Этап</th><th>SIP</th><th>Call-ID</th><th>Детали</th></tr>
+    </thead>
+    <tbody>
+      <tr class="d-out k-los-start"><td>1</td><td>2026-11-06 03:52:34Z</td><td>t2</td><td>→ АТС</td><td class="stage">los-start</td><td></td><td class="cid"></td><td>T2 — event-list NOTIFY oversized property (кандидат B); цель 192.168.80.157:5060</td></tr>
+      <tr class="d-out k-los-phase"><td>2</td><td>2026-11-06 03:52:34Z</td><td>t2</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>T2: register</td></tr>
+      <tr class="d-out k-los-phase"><td>3</td><td>2026-11-06 03:52:39Z</td><td>t2</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>T2: subscribe event-list</td></tr>
+      <tr class="d-out k-los-phase"><td>4</td><td>2026-11-06 03:52:44Z</td><td>t2</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>stim_start</td></tr>
+      <tr class="d-out k-los-phase"><td>5</td><td>2026-11-06 03:53:44Z</td><td>t2</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>stim_stop</td></tr>
+      <tr class="d-out k-los-summary"><td>6</td><td>2026-11-06 03:53:44Z</td><td>t2</td><td>→ АТС</td><td class="stage">los-summary</td><td></td><td class="cid"></td><td>NOTIFY отправлено 60 (kind=hybrid, props=100; свойств всего 6000), тело 23224 байт, в диалоги станции 0 (её подписок: 0, пакеты: —); ответы станции: нет</td></tr>
+    </tbody>
+  </table>
+  <p class="verdict PASS">Вердикт: PASS — T2 — event-list NOTIFY oversized property (кандидат B) (короткая версия): NOTIFY отправлено 60 (kind=hybrid, props=100; свойств всего 6000), тело 23224 байт, в диалоги станции 0 (её подписок: 0, пакеты: —); ответы станции: нет; итог 70 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t2_20261106T035234Z.csv</p>
+</body>
+</html>

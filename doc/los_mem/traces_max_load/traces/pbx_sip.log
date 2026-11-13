@@ -1,0 +1,81 @@
+2026-08-19 10:46:48:149019 INFO  <0.300.0> [apply_config:48] Log has been cleared
+2026-08-19 10:46:48:149132 DEBUG <0.300.0> [store_config:106] Reply by config, Msg:[{119,1}]
+2026-08-19 10:46:48:149275 DEBUG <0.301.0> [isup_ss7:95] 
++------------------------
+| >>> SIP -> CNode: 
+| {mediaData,{32770,-1,[{119,1}]}} 
+|
+2026-08-19 10:46:53:150142 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:46:53:151571 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:46:53:152092 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:46:58:152995 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:46:58:154833 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:46:58:155460 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:03:157644 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:03:159793 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:03:160479 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:08:161690 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:08:163485 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:08:164114 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:13:166407 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:13:167849 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:13:168384 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:18:168685 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:18:170124 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:18:170657 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:23:171686 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:23:173054 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:23:173599 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:28:174744 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:28:176169 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:28:176714 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:33:179832 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:33:181194 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:33:181758 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:38:182687 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:38:184786 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:38:185532 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:43:188608 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:43:190369 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:43:190897 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:48:191688 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:48:193219 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:48:193781 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:53:195021 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:53:196408 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:53:196938 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:58:197688 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:47:58:199417 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:47:58:200004 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:03:201173 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:03:202592 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:03:203171 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:08:203686 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:08:205184 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:08:205715 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:13:206684 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:13:208102 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:13:208635 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:18:209685 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:18:211071 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:18:211673 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:23:213165 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:23:214581 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:23:215097 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:28:215688 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:28:217071 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:28:217620 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:33:220581 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:33:222124 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:33:222828 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:38:223696 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:38:225279 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:38:226041 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:43:226694 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:43:228102 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:43:228630 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:48:231040 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:48:234322 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg_pa_sip@127.0.0.1', NodeNames:{ok,[{"smg_pa_sip",29679},{"c3",3459}]}
+2026-08-19 10:48:48:235156 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:53:236779 DEBUG <0.301.0> [isup_ss7:125] Timeout
+2026-08-19 10:48:53:241391 DEBUG <0.301.0> [isup_ss7:116] Check cnode, CNode:'c3@127.0.0.1', MyNode:'smg

@@ -1,0 +1,12 @@
+  10:46:47.499722  [INFO] pa-ipnet.   pbx-ipc IPNET: TX (005)
+  10:46:47.499823  [INFO] pa-ipnet.   		 15 56 01 00 05                                  .V...
+  10:46:47.499872  [INFO] pa-ipnet.   PBXIPC-IPNET. TX. trace 
+  10:46:47.499938  [INFO] pa-ipnet.   		# trace-level [5] disk <no>
+  10:46:47.499998  [INFO] pa-ipnet.   IPNET. Process message 'trace' result [0]
+  11:00:05.426386  [INFO] pa-ipnet.   pbx-ipc IPNET: RX (005)
+  11:00:05.426735  [INFO] pa-ipnet.   		 15 56 01 00 00                                  .V...
+  11:00:05.426777  [INFO] pa-ipnet.   PBXIPC-IPNET. RX. trace 
+  11:00:05.426809  [INFO] pa-ipnet.   		# trace-level [0] disk <no>
+  11:00:05.426838  [INFO] pa-ipnet.   IPNET. Got message 'trace' len [5]
+  11:00:05.426899  [INFO] pa-ipnet.   IPNET. Process message 'trace'
+  11:00:05.426962  [INFO] pa-ipnet.   IPNET. Trace with level [0]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Отчёт 20261106T035602Z_los_t5_flood</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; color: #1c2733; background: #f7f9fb; }
+  h1 { font-size: 20px; }
+  .meta { background: #fff; border: 1px solid #d7e0e8; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+  .meta div { margin: 2px 0; }
+  .verdict { font-weight: 700; }
+  .PASS { color: #147d3c; }
+  .FAIL { color: #b3261e; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: 13px; }
+  th, td { border: 1px solid #d7e0e8; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #eef3f7; }
+  tr.d-out td.stage { color: #0b57a4; }
+  tr.d-in  td.stage { color: #8a4b00; }
+  .cid { font-family: monospace; font-size: 11px; color: #5b6b7b; word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>Отчёт прогона: 20261106T035602Z_los_t5_flood</h1>
+  <div class="meta">
+    <div>Сгенерирован: 2026-11-06T03:56:02.820Z</div>
+    <div>АТС: 192.168.80.157:5060 (udp)</div>
+    <div>Номера: 9404, 52, 3203</div>
+    <div>Кейс: los_t5_flood</div>
+    <div>Вердикт: PASS — T5 — flood «не от транка» REGISTER/SUBSCRIBE/INVITE (кандидат F) (короткая версия): раундов 120 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 360 сообщений @ 2/с на вариант; ответы станции: нет; наблюдение 0 мин; итог 60 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t5_20261106T035502Z.csv</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Время (UTC)</th><th>Абонент</th><th>Напр.</th><th>Этап</th><th>SIP</th><th>Call-ID</th><th>Детали</th></tr>
+    </thead>
+    <tbody>
+      <tr class="d-out k-los-start"><td>1</td><td>2026-11-06 03:55:02Z</td><td>t5</td><td>→ АТС</td><td class="stage">los-start</td><td></td><td class="cid"></td><td>T5 — flood «не от транка» REGISTER/SUBSCRIBE/INVITE (кандидат F); цель 192.168.80.157:5060</td></tr>
+      <tr class="d-out k-los-phase"><td>2</td><td>2026-11-06 03:55:02Z</td><td>t5</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>stim_start</td></tr>
+      <tr class="d-out k-los-phase"><td>3</td><td>2026-11-06 03:56:02Z</td><td>t5</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>stim_stop</td></tr>
+      <tr class="d-out k-los-phase"><td>4</td><td>2026-11-06 03:56:02Z</td><td>t5</td><td>→ АТС</td><td class="stage">los-phase</td><td></td><td class="cid"></td><td>observe_stop</td></tr>
+      <tr class="d-out k-los-summary"><td>5</td><td>2026-11-06 03:56:02Z</td><td>t5</td><td>→ АТС</td><td class="stage">los-summary</td><td></td><td class="cid"></td><td>раундов 120 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 360 сообщений @ 2/с на вариант; ответы станции: нет; наблюдение 0 мин</td></tr>
+    </tbody>
+  </table>
+  <p class="verdict PASS">Вердикт: PASS — T5 — flood «не от транка» REGISTER/SUBSCRIBE/INVITE (кандидат F) (короткая версия): раундов 120 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 360 сообщений @ 2/с на вариант; ответы станции: нет; наблюдение 0 мин; итог 60 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t5_20261106T035502Z.csv</p>
+</body>
+</html>

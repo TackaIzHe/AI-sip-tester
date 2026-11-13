@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Отчёт 20261028T072034Z_case_7_caller_number</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 24px; color: #1c2733; background: #f7f9fb; }
+  h1 { font-size: 20px; }
+  .meta { background: #fff; border: 1px solid #d7e0e8; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; }
+  .meta div { margin: 2px 0; }
+  .verdict { font-weight: 700; }
+  .PASS { color: #147d3c; }
+  .FAIL { color: #b3261e; }
+  table { border-collapse: collapse; width: 100%; background: #fff; font-size: 13px; }
+  th, td { border: 1px solid #d7e0e8; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #eef3f7; }
+  tr.d-out td.stage { color: #0b57a4; }
+  tr.d-in  td.stage { color: #8a4b00; }
+  .cid { font-family: monospace; font-size: 11px; color: #5b6b7b; word-break: break-all; }
+</style>
+</head>
+<body>
+  <h1>Отчёт прогона: 20261028T072034Z_case_7_caller_number</h1>
+  <div class="meta">
+    <div>Сгенерирован: 2026-10-28T07:20:34.255Z</div>
+    <div>АТС: 192.168.80.157:5060 (udp)</div>
+    <div>Номера: 9404, 52, 3203</div>
+    <div>Вызов (исходящий): от 9404 → кому 3203</div>
+    <div>Кейс: case_7_caller_number</div>
+    <div>Вердикт: FAIL — таймаут 15000 мс: входящий у 52 после INVITE на 3203 — сейчас REGISTERED</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Время (UTC)</th><th>Абонент</th><th>Напр.</th><th>Этап</th><th>SIP</th><th>Call-ID</th><th>Детали</th></tr>
+    </thead>
+    <tbody>
+      <tr class="d-internal k-state"><td>1</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>2</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">i9b44utame4s954rbct9</td><td>REGISTER от 9404</td></tr>
+      <tr class="d-in k-register"><td>3</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">i9b44utame4s954rbct9</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>4</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>5</td><td>2026-10-28 07:20:19Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>6</td><td>2026-10-28 07:20:19Z</td><td>52</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">pqe11d3l6pbu7639bc8h</td><td>REGISTER от 52</td></tr>
+      <tr class="d-in k-register"><td>7</td><td>2026-10-28 07:20:19Z</td><td>52</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">pqe11d3l6pbu7639bc8h</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>8</td><td>2026-10-28 07:20:19Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, REGISTER отправлен</td></tr>
+      <tr class="d-internal k-state"><td>9</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние CALL_OUT, собеседник 3203</td></tr>
+      <tr class="d-out k-invite"><td>10</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>→ АТС</td><td class="stage">invite</td><td></td><td class="cid">i9b443hed0v9udn06auk</td><td>INVITE → 3203 от 9404</td></tr>
+      <tr class="d-in k-invite"><td>11</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 100</td><td>100</td><td class="cid">i9b443hed0v9udn06auk</td><td>100 Trying для INVITE</td></tr>
+      <tr class="d-in k-invite"><td>12</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 183</td><td>183</td><td class="cid">i9b443hed0v9udn06auk</td><td>183 Session Progress для INVITE</td></tr>
+      <tr class="d-in k-ringing"><td>13</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>← АТС</td><td class="stage">ringing 180</td><td>180</td><td class="cid"></td><td>180 Ringing</td></tr>
+      <tr class="d-in k-invite"><td>14</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 180</td><td>180</td><td class="cid">i9b443hed0v9udn06auk</td><td>180 Ringing для INVITE</td></tr>
+      <tr class="d-in k-ringing"><td>15</td><td>2026-10-28 07:20:19Z</td><td>9404</td><td>← АТС</td><td class="stage">ringing 180</td><td>180</td><td class="cid"></td><td>180 Ringing</td></tr>
+      <tr class="d-in k-invite"><td>16</td><td>2026-10-28 07:20:20Z</td><td>9404</td><td>← АТС</td><td class="stage">invite 480</td><td>480</td><td class="cid">i9b443hed0v9udn06auk</td><td>480 Temporarily Unavailable для INVITE</td></tr>
+      <tr class="d-out k-ack"><td>17</td><td>2026-10-28 07:20:20Z</td><td>9404</td><td>→ АТС</td><td class="stage">ack</td><td></td><td class="cid">i9b443hed0v9udn06auk</td><td>ACK → 3203 от 9404</td></tr>
+      <tr class="d-in k-call-ended"><td>18</td><td>2026-10-28 07:20:20Z</td><td>9404</td><td>← АТС</td><td class="stage">call-ended 480</td><td>480</td><td class="cid"></td><td>завершён с кодом 480</td></tr>
+      <tr class="d-internal k-state"><td>19</td><td>2026-10-28 07:20:20Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние REGISTERED, ошибка: 480 — Абонент недоступен</td></tr>
+      <tr class="d-out k-register"><td>20</td><td>2026-10-28 07:20:34Z</td><td>9404</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">i9b44utame4s954rbct9</td><td>REGISTER от 9404</td></tr>
+      <tr class="d-in k-register"><td>21</td><td>2026-10-28 07:20:34Z</td><td>9404</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">i9b44utame4s954rbct9</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>22</td><td>2026-10-28 07:20:34Z</td><td>9404</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+      <tr class="d-out k-register"><td>23</td><td>2026-10-28 07:20:34Z</td><td>52</td><td>→ АТС</td><td class="stage">register</td><td></td><td class="cid">pqe11d3l6pbu7639bc8h</td><td>REGISTER от 52</td></tr>
+      <tr class="d-in k-register"><td>24</td><td>2026-10-28 07:20:34Z</td><td>52</td><td>← АТС</td><td class="stage">register 200</td><td>200</td><td class="cid">pqe11d3l6pbu7639bc8h</td><td>200 OK для REGISTER</td></tr>
+      <tr class="d-internal k-state"><td>25</td><td>2026-10-28 07:20:34Z</td><td>52</td><td>·</td><td class="stage">state</td><td></td><td class="cid"></td><td>состояние UNREGISTERED</td></tr>
+    </tbody>
+  </table>
+  <p class="verdict FAIL">Вердикт: FAIL — таймаут 15000 мс: входящий у 52 после INVITE на 3203 — сейчас REGISTERED</p>
+</body>
+</html>

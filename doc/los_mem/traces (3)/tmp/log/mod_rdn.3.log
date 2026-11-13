@@ -1,0 +1,16 @@
+  12:39:08.761637  [    ] mod-rdn.   AppInit: kill prev instance by PID 2800
+  12:39:08.761817  [INFO] mod-rdn.   
+
+     <<   MOD-RDN   >>
+  12:39:08.761894  [INFO] mod-rdn.   version V.3.402.0.55.  Build: Oct 30 2026 18:09:31
+  12:39:08.761943  [INFO] mod-rdn.   App: start init. pid 2830
+  12:39:08.762099  [INFO] mod-rdn.   RDN. init: start init. dbg [0x0]
+  12:39:08.762121  [INFO] mod-rdn.   consol task_wr: start. pid 2833
+  12:39:08.762465  [INFO] mod-rdn.   consol task: start. pid 2832
+  12:39:08.962465  [????] mod-rdn.   peer: info: Moduleport[7021] kernel_port[7021] kernelhost[127.0.0.1] socket_file[/tmp/rdn.sock]
+  12:39:09.005574  [INFO] mod-rdn.   resolve_worker: worker[0] started.
+  12:39:09.005633  [INFO] mod-rdn.   resolve_worker: worker[1] started.
+  12:39:09.005576  [INFO] mod-rdn.   rdn_init: Resolver started: GW '192.168.111.211' DNS0 '0.0.0.0'  DNS1 '0.0.0.0'; WORKERS [3]
+  12:39:09.005794  [INFO] mod-rdn.   resolve_worker: worker[2] started.
+  12:39:09.006714  [INFO] mod-rdn.   main task. pid: 2830
+  12:39:09.006720  [INFO] mod-rdn.   timer task: start. pid 2840

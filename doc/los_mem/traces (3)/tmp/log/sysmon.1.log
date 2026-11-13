@@ -1,0 +1,222 @@
+12:38:36.915434 th1628 [????] SYSMON:<lib_IPC_init> /tmp/sysmonmod.sock
+12:38:37.115978 th1630 [INFO] SYSMON:peer: info: Moduleport[7015] kernel_port[7015] kernelhost[127.0.0.1] socket_file[/tmp/sysmonmod.sock]
+12:38:37.200235 th1628 [INFO] SYSMON:hw: devices opened
+12:38:37.701716 th1628 [INFO] SYSMON:Start with: [CORAL]
+12:38:37.702173 th1628 [ERR ] SYSMON:config is not ready
+12:38:37.701740 th1743 [INFO] SYSMON:hw task: start. pid 1743
+12:38:38.702508 th1628 [ERR ] SYSMON:config is not ready
+12:38:39.703012 th1628 [ERR ] SYSMON:config is not ready
+12:38:40.703434 th1628 [ERR ] SYSMON:config is not ready
+12:38:41.703857 th1628 [ERR ] SYSMON:config is not ready
+12:38:42.704486 th1628 [ERR ] SYSMON:config is not ready
+12:38:43.705132 th1628 [ERR ] SYSMON:config is not ready
+12:38:44.706054 th1628 [ERR ] SYSMON:config is not ready
+12:38:45.706415 th1628 [ERR ] SYSMON:config is not ready
+12:38:46.706750 th1628 [ERR ] SYSMON:config is not ready
+12:38:47.707075 th1628 [ERR ] SYSMON:config is not ready
+12:38:47.956899 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO MASTER]: (69), external, state OK, param1=0, param2=0, param3=0, desc= (i 1; h 0; t 0)
+12:38:47.957112 th1631 [INFO] SYSMON:* TRAP * [0000] alarm-id[69] state 'OK' [0] params [0] [0] [0] desc []
+12:38:47.957402 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO SLAVE]: (129), external, state OK, param1=0, param2=0, param3=0, desc= (i 2; h 1; t 0)
+12:38:47.957549 th1631 [INFO] SYSMON:* TRAP * [0001] alarm-id[129] state 'OK' [0] params [0] [0] [0] desc []
+12:38:47.957837 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO LOCK]: (130), external, state OK, param1=0, param2=0, param3=0, desc= (i 3; h 2; t 0)
+12:38:47.957974 th1631 [INFO] SYSMON:* TRAP * [0002] alarm-id[130] state 'OK' [0] params [0] [0] [0] desc []
+12:38:50.458783 th1628 [ERR ] SYSMON:config is ready
+12:38:50.459118 th1628 [INFO] SYSMON:alarm: global mask updated
+12:38:50.459206 th1628 [INFO] SYSMON:alarm: alam path updated: 'off' -> 'off'
+12:38:50.459251 th1628 [INFO] SYSMON:alarm: inited
+12:38:50.459679 th1628 [INFO] SYSMON:SECURITY: security path updated: '' -> 'off'
+12:38:50.460979 th2466 [INFO] SYSMON:monitor thread: start. pid 2466
+12:38:55.066526 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 1; h 0; t 0)
+12:38:55.066654 th1631 [INFO] SYSMON:* TRAP * [0000] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+12:39:00.465433 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.465638 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.465778 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.465936 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.466077 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.466225 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.466352 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.466477 th2466 [ERR ] SYSMON:Can't get data for: 'DeviceInfo'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [1912]
+12:39:00.466601 th2466 [ERR ] SYSMON:Can't get data for: 'CDR: INFO'[0] err: 'cfgmngr is not ready yet'. Rsz [0], Wsz [722]
+12:39:00.467006 th2466 [INFO] SYSMON:Module CONF is not running, clearing alarms
+12:39:00.467072 th2466 [INFO] SYSMON:put unnormalized 0: CSPG_SAS_MODE (55), state CRIT, param1=0, param2=0, param3=0, desc=
+12:39:05.299873 th1631 [INFO] SYSMON:alarm: global mask updated
+12:39:05.299978 th1631 [INFO] SYSMON:alarm: alam path updated: 'off' -> 'off'
+12:39:05.301041 th1631 [INFO] SYSMON:SECURITY: security path updated: 'off' -> 'off'
+12:39:11.687973 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 2; h 1; t 0)
+12:39:11.688134 th1631 [INFO] SYSMON:* TRAP * [0001] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+12:39:11.720812 th1631 [INFO] SYSMON:alarm[SMG_REBOOT]: (15), external, state OK, param1=16780545, param2=55, param3=3, desc= (i 3; h 2; t 0)
+12:39:11.720954 th1631 [INFO] SYSMON:* TRAP * [0002] alarm-id[15] state 'OK' [0] params [16780545] [55] [3] desc []
+12:39:11.721010 th1631 [INFO] SYSMON:alarm[CONFIG]: (1), external, state OK, param1=0, param2=0, param3=0, desc= (i 4; h 3; t 0)
+12:39:11.721065 th1631 [INFO] SYSMON:* TRAP * [0003] alarm-id[1] state 'OK' [0] params [0] [0] [0] desc []
+12:39:11.738369 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 00 alarms - done
+12:39:11.877500 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO LOCK]: (130), external, state ALARM, param1=0, param2=0, param3=0, desc= (i 5; h 4; t 0)
+12:39:11.877675 th1631 [INFO] SYSMON:* TRAP * [0004] alarm-id[130] state 'ALARM' [1] params [0] [0] [0] desc []
+12:39:16.292152 th1631 [INFO] SYSMON:alarm[MSP_DEV]: (3), external, state OK, param1=1, param2=0, param3=0, desc= (i 6; h 5; t 0)
+12:39:16.292267 th1631 [INFO] SYSMON:* TRAP * [0005] alarm-id[3] state 'OK' [0] params [1] [0] [0] desc []
+12:39:18.053034 th1631 [INFO] SYSMON:alarm[STACK_STATE_CHANGED]: (128), external, state WARN, param1=0, param2=0, param3=0, desc=undef   (i 7; h 6; t 0)
+12:39:18.053178 th1631 [INFO] SYSMON:* TRAP * [0006] alarm-id[128] state 'WARN' [2] params [0] [0] [0] desc [undef  ]
+12:39:27.818294 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO LOCK]: (130), external, state OK, param1=0, param2=0, param3=0, desc= (i 8; h 7; t 0)
+12:39:27.818441 th1631 [INFO] SYSMON:* TRAP * [0007] alarm-id[130] state 'OK' [0] params [0] [0] [0] desc []
+12:39:28.376930 th1631 [INFO] SYSMON:alarm[STACK_STATE_CHANGED]: (128), external, state WARN, param1=0, param2=0, param3=0, desc=master  (i 9; h 8; t 0)
+12:39:28.377030 th1631 [INFO] SYSMON:* TRAP * [0008] alarm-id[128] state 'WARN' [2] params [0] [0] [0] desc [master ]
+12:39:30.483129 th2466 [INFO] SYSMON:Module CHIP is not running, clearing alarms
+12:39:30.483218 th2466 [INFO] SYSMON:put unnormalized 0: STACK_STATE_CHANGED (128), state WARN, param1=0, param2=0, param3=0, desc=undef  
+12:39:30.483263 th2466 [INFO] SYSMON:put unnormalized 1: STACK_STATE_CHANGED (128), state WARN, param1=0, param2=0, param3=0, desc=master 
+12:39:36.474710 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO MASTER]: (69), external, state OK, param1=0, param2=0, param3=0, desc= (i 10; h 9; t 0)
+12:39:36.474917 th1631 [INFO] SYSMON:* TRAP * [0009] alarm-id[69] state 'OK' [0] params [0] [0] [0] desc []
+12:39:36.475115 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO SLAVE]: (129), external, state OK, param1=0, param2=0, param3=0, desc= (i 11; h 10; t 0)
+12:39:36.475202 th1631 [INFO] SYSMON:* TRAP * [0010] alarm-id[129] state 'OK' [0] params [0] [0] [0] desc []
+12:39:36.475392 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO LOCK]: (130), external, state OK, param1=0, param2=0, param3=0, desc= (i 12; h 11; t 0)
+12:39:36.475471 th1631 [INFO] SYSMON:* TRAP * [0011] alarm-id[130] state 'OK' [0] params [0] [0] [0] desc []
+12:39:38.932551 th1631 [INFO] SYSMON:alarm[CONF_NODE]: (23), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 13; h 12; t 0)
+12:39:38.932668 th1631 [INFO] SYSMON:* TRAP * [0012] alarm-id[23] state 'CRIT' [3] params [0] [0] [0] desc []
+12:39:40.633548 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 14; h 13; t 0)
+12:39:40.633667 th1631 [INFO] SYSMON:* TRAP * [0013] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+12:39:48.844076 th1631 [INFO] SYSMON:alarm[CONF_NODE]: (23), external, state OK, param1=0, param2=0, param3=0, desc= (i 15; h 14; t 0)
+12:39:48.844220 th1631 [INFO] SYSMON:* TRAP * [0014] alarm-id[23] state 'OK' [0] params [0] [0] [0] desc []
+12:39:53.384567 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state ALARM, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 16; h 15; t 0)
+12:39:53.384714 th1631 [INFO] SYSMON:* TRAP * [0015] alarm-id[131] state 'ALARM' [1] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+12:39:57.160043 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 17; h 16; t 0)
+12:39:57.160228 th1631 [INFO] SYSMON:* TRAP * [0016] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+12:39:57.335738 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO LOCK]: (130), external, state ALARM, param1=0, param2=0, param3=0, desc= (i 18; h 17; t 0)
+12:39:57.335954 th1631 [INFO] SYSMON:* TRAP * [0017] alarm-id[130] state 'ALARM' [1] params [0] [0] [0] desc []
+12:39:57.486181 th1631 [INFO] SYSMON:alarm[SMG_REBOOT]: (15), external, state OK, param1=16780545, param2=55, param3=3, desc= (i 19; h 18; t 0)
+12:39:57.486319 th1631 [INFO] SYSMON:* TRAP * [0018] alarm-id[15] state 'OK' [0] params [16780545] [55] [3] desc []
+12:39:57.486377 th1631 [INFO] SYSMON:alarm[CONFIG]: (1), external, state OK, param1=0, param2=0, param3=0, desc= (i 20; h 19; t 0)
+12:39:57.486436 th1631 [INFO] SYSMON:* TRAP * [0019] alarm-id[1] state 'OK' [0] params [0] [0] [0] desc []
+12:40:01.562534 th1631 [INFO] SYSMON:alarm[CSPG STACK SYNC NO LOCK]: (130), external, state OK, param1=0, param2=0, param3=0, desc= (i 21; h 20; t 0)
+12:40:01.562724 th1631 [INFO] SYSMON:* TRAP * [0020] alarm-id[130] state 'OK' [0] params [0] [0] [0] desc []
+12:40:02.367360 th1631 [INFO] SYSMON:alarm[MSP_DEV]: (3), external, state OK, param1=1, param2=0, param3=0, desc= (i 22; h 21; t 0)
+12:40:02.367482 th1631 [INFO] SYSMON:* TRAP * [0021] alarm-id[3] state 'OK' [0] params [1] [0] [0] desc []
+12:40:02.518333 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 00 alarms - done
+12:40:05.777652 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 23; h 22; t 0)
+12:40:05.777804 th1631 [INFO] SYSMON:* TRAP * [0022] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+12:40:07.521466 th1631 [INFO] SYSMON:alarm[CSPG PM ALARM]: (114), external, state ALARM, param1=1, param2=2, param3=1, desc= (i 24; h 23; t 0)
+12:40:07.521628 th1631 [INFO] SYSMON:* TRAP * [0023] alarm-id[114] state 'ALARM' [1] params [1] [2] [1] desc []
+12:40:12.460739 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state OK, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 25; h 24; t 0)
+12:40:12.460894 th1631 [INFO] SYSMON:* TRAP * [0024] alarm-id[131] state 'OK' [0] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+12:40:15.794646 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state WARN, param1=1, param2=0, param3=0, desc= (i 26; h 25; t 0)
+12:40:15.794970 th1631 [INFO] SYSMON:* TRAP * [0025] alarm-id[111] state 'WARN' [2] params [1] [0] [0] desc []
+12:40:15.795518 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 27; h 26; t 0)
+12:40:15.795630 th1631 [INFO] SYSMON:* TRAP * [0026] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+12:40:16.512703 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state ALARM, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 28; h 27; t 0)
+12:40:16.512810 th1631 [INFO] SYSMON:* TRAP * [0027] alarm-id[131] state 'ALARM' [1] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+12:40:31.661977 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state OK, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 29; h 28; t 0)
+12:40:31.662107 th1631 [INFO] SYSMON:* TRAP * [0028] alarm-id[131] state 'OK' [0] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+12:40:37.519481 th1631 [INFO] SYSMON:alarm[SYNC_SOURCE]: (7), external, state OK, param1=0, param2=4095, param3=0, desc= (i 30; h 29; t 0)
+12:40:37.519596 th1631 [INFO] SYSMON:* TRAP * [0029] alarm-id[7] state 'OK' [0] params [0] [4095] [0] desc []
+12:41:13.682678 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 31; h 30; t 0)
+12:41:13.682876 th1631 [INFO] SYSMON:* TRAP * [0030] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+12:41:23.699078 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state WARN, param1=2, param2=0, param3=0, desc= (i 32; h 31; t 0)
+12:41:23.699252 th1631 [INFO] SYSMON:* TRAP * [0031] alarm-id[111] state 'WARN' [2] params [2] [0] [0] desc []
+12:41:23.699313 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 33; h 32; t 0)
+12:41:23.699370 th1631 [INFO] SYSMON:* TRAP * [0032] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+12:41:37.381318 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 17 alarms - done
+17:14:22.130175 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 14 alarms - done
+17:14:22.132598 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 15 alarms - done
+17:14:22.134196 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 17 alarms - done
+17:14:22.135489 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 18 alarms - done
+17:14:22.135929 th1631 [INFO] SYSMON:alarm[CSPG PM ALARM]: (114), external, state OK, param1=1, param2=2, param3=1, desc= (i 34; h 33; t 0)
+17:14:22.136006 th1631 [INFO] SYSMON:* TRAP * [0033] alarm-id[114] state 'OK' [0] params [1] [2] [1] desc []
+17:14:30.412150 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 35; h 34; t 0)
+17:14:30.412272 th1631 [INFO] SYSMON:* TRAP * [0034] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:14:30.499287 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 36; h 35; t 0)
+17:14:30.499541 th1631 [INFO] SYSMON:* TRAP * [0035] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:15:26.897554 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 37; h 36; t 0)
+17:15:26.897667 th1631 [INFO] SYSMON:* TRAP * [0036] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+17:15:26.898453 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 14 alarms - done
+17:15:26.898956 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 15 alarms - done
+17:15:26.899568 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 17 alarms - done
+17:15:26.899963 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 18 alarms - done
+17:15:35.023761 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 38; h 37; t 0)
+17:15:35.023928 th1631 [INFO] SYSMON:* TRAP * [0037] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+17:15:35.435723 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 39; h 38; t 0)
+17:15:35.435899 th1631 [INFO] SYSMON:* TRAP * [0038] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:15:35.521365 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 40; h 39; t 0)
+17:15:35.521510 th1631 [INFO] SYSMON:* TRAP * [0039] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:16:11.541022 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 41; h 40; t 0)
+17:16:11.541214 th1631 [INFO] SYSMON:* TRAP * [0040] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:16:12.455817 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 42; h 41; t 0)
+17:16:12.455987 th1631 [INFO] SYSMON:* TRAP * [0041] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:16:24.444279 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 43; h 42; t 0)
+17:16:24.444410 th1631 [INFO] SYSMON:* TRAP * [0042] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+17:16:32.558911 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 44; h 43; t 0)
+17:16:32.559059 th1631 [INFO] SYSMON:* TRAP * [0043] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:16:33.474128 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 45; h 44; t 0)
+17:16:33.474264 th1631 [INFO] SYSMON:* TRAP * [0044] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:16:38.127498 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 46; h 45; t 0)
+17:16:38.127641 th1631 [INFO] SYSMON:* TRAP * [0045] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+17:17:11.494855 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 47; h 46; t 0)
+17:17:11.494995 th1631 [INFO] SYSMON:* TRAP * [0046] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:17:11.578508 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 48; h 47; t 0)
+17:17:11.578664 th1631 [INFO] SYSMON:* TRAP * [0047] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:17:35.560493 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 49; h 48; t 0)
+17:17:35.560610 th1631 [INFO] SYSMON:* TRAP * [0048] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+17:17:41.236932 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 50; h 49; t 0)
+17:17:41.237121 th1631 [INFO] SYSMON:* TRAP * [0049] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+17:17:44.514122 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 51; h 50; t 0)
+17:17:44.514260 th1631 [INFO] SYSMON:* TRAP * [0050] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:17:44.597490 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 52; h 51; t 0)
+17:17:44.597641 th1631 [INFO] SYSMON:* TRAP * [0051] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:17:59.531326 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 53; h 52; t 0)
+17:17:59.531498 th1631 [INFO] SYSMON:* TRAP * [0052] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:17:59.614738 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 54; h 53; t 0)
+17:17:59.614906 th1631 [INFO] SYSMON:* TRAP * [0053] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:18:02.414503 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 55; h 54; t 0)
+17:18:02.414701 th1631 [INFO] SYSMON:* TRAP * [0054] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+17:18:10.548483 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 56; h 55; t 0)
+17:18:10.548638 th1631 [INFO] SYSMON:* TRAP * [0055] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+17:18:10.631669 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 57; h 56; t 0)
+17:18:10.631840 th1631 [INFO] SYSMON:* TRAP * [0056] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+17:18:23.308681 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 58; h 57; t 0)
+17:18:23.308828 th1631 [INFO] SYSMON:* TRAP * [0057] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+08:48:44.002690 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state ALARM, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 59; h 58; t 0)
+08:48:44.002806 th1631 [INFO] SYSMON:* TRAP * [0058] alarm-id[131] state 'ALARM' [1] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+08:48:49.009581 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state OK, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 60; h 59; t 0)
+08:48:49.009704 th1631 [INFO] SYSMON:* TRAP * [0059] alarm-id[131] state 'OK' [0] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+08:49:06.031687 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state ALARM, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 61; h 60; t 0)
+08:49:06.031836 th1631 [INFO] SYSMON:* TRAP * [0060] alarm-id[131] state 'ALARM' [1] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+08:49:29.680478 th1631 [INFO] SYSMON:alarm[STACK_CONNECTION_LOST]: (131), external, state OK, param1=1, param2=0, param3=0, desc=SN: VI96000022; IP: 192.168.60.12 (i 62; h 61; t 0)
+08:49:29.680612 th1631 [INFO] SYSMON:* TRAP * [0061] alarm-id[131] state 'OK' [0] params [1] [0] [0] desc [SN: VI96000022; IP: 192.168.60.12]
+08:49:48.191177 th1631 [INFO] SYSMON:alarm[SIP_ACCESS]: (19), external, state CRIT, param1=7, param2=0, param3=0, desc=Interface 'CSS_test' (i 63; h 62; t 0)
+08:49:48.191359 th1631 [INFO] SYSMON:* TRAP * [0062] alarm-id[19] state 'CRIT' [3] params [7] [0] [0] desc [Interface 'CSS_test']
+08:49:48.191488 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 64; h 63; t 0)
+08:49:48.191588 th1631 [INFO] SYSMON:* TRAP * [0063] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+08:50:12.340167 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 65; h 64; t 0)
+08:50:12.340320 th1631 [INFO] SYSMON:* TRAP * [0064] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+08:50:20.741438 th1631 [INFO] SYSMON:alarm[SIP_ACCESS]: (19), external, state OK, param1=7, param2=0, param3=0, desc=Interface 'CSS_test' (i 66; h 65; t 0)
+08:50:20.741601 th1631 [INFO] SYSMON:* TRAP * [0065] alarm-id[19] state 'OK' [0] params [7] [0] [0] desc [Interface 'CSS_test']
+08:50:20.741700 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 67; h 66; t 0)
+08:50:20.741786 th1631 [INFO] SYSMON:* TRAP * [0066] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+08:50:22.357439 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state WARN, param1=2, param2=0, param3=0, desc= (i 68; h 67; t 0)
+08:50:22.357612 th1631 [INFO] SYSMON:* TRAP * [0067] alarm-id[111] state 'WARN' [2] params [2] [0] [0] desc []
+08:50:22.358073 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 69; h 68; t 0)
+08:50:22.358169 th1631 [INFO] SYSMON:* TRAP * [0068] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+10:19:14.152632 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 14 alarms - done
+10:19:14.153875 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 15 alarms - done
+10:19:14.155236 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 17 alarms - done
+10:19:14.156335 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 18 alarms - done
+10:19:22.931590 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 70; h 69; t 0)
+10:19:22.931760 th1631 [INFO] SYSMON:* TRAP * [0069] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+10:19:22.991079 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 71; h 70; t 0)
+10:19:22.991418 th1631 [INFO] SYSMON:* TRAP * [0070] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+10:19:54.610449 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state CRIT, param1=0, param2=0, param3=0, desc= (i 72; h 71; t 0)
+10:19:54.610575 th1631 [INFO] SYSMON:* TRAP * [0071] alarm-id[55] state 'CRIT' [3] params [0] [0] [0] desc []
+10:19:54.611028 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 14 alarms - done
+10:19:54.611602 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 15 alarms - done
+10:19:54.612085 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 18 alarms - done
+10:20:02.951472 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=2, param2=0, param3=0, desc= (i 73; h 72; t 0)
+10:20:02.951623 th1631 [INFO] SYSMON:* TRAP * [0072] alarm-id[111] state 'OK' [0] params [2] [0] [0] desc []
+10:20:03.010614 th1631 [INFO] SYSMON:alarm[CSPG START]: (111), external, state OK, param1=1, param2=0, param3=0, desc= (i 74; h 73; t 0)
+10:20:03.010764 th1631 [INFO] SYSMON:* TRAP * [0073] alarm-id[111] state 'OK' [0] params [1] [0] [0] desc []
+10:20:03.628798 th1631 [INFO] SYSMON:alarm[CSPG NO CARD]: (54), external, state ALARM, param1=1, param2=17, param3=0, desc= (i 75; h 74; t 0)
+10:20:03.628969 th1631 [INFO] SYSMON:* TRAP * [0074] alarm-id[54] state 'ALARM' [1] params [1] [17] [0] desc []
+10:20:03.629027 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 17 alarms - done
+10:20:14.657433 th1631 [INFO] SYSMON:alarm[CSPG_SAS_MODE]: (55), external, state OK, param1=0, param2=0, param3=0, desc= (i 76; h 75; t 0)
+10:20:14.657554 th1631 [INFO] SYSMON:* TRAP * [0075] alarm-id[55] state 'OK' [0] params [0] [0] [0] desc []
+10:20:33.286470 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 18 alarms - done
+10:20:36.342178 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 17 alarms - done
+10:20:37.679582 th1631 [INFO] SYSMON:alarm[CSPG NO CARD]: (54), external, state OK, param1=1, param2=17, param3=0, desc=  (i 77; h 76; t 0)
+10:20:37.679834 th1631 [INFO] SYSMON:* TRAP * [0076] alarm-id[54] state 'OK' [0] params [1] [17] [0] desc [ ]
+10:20:38.909427 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 14 alarms - done
+10:20:42.022773 th1631 [INFO] SYSMON:reset CSPG ID 01 slot 15 alarms - done

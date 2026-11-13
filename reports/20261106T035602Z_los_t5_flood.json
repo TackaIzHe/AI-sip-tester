@@ -1,0 +1,60 @@
+{
+  "id": "20261106T035602Z_los_t5_flood",
+  "generated_at": "2026-11-06T03:56:02.820Z",
+  "meta": {
+    "case": "los_t5_flood",
+    "verdict": "PASS",
+    "verdict_text": "T5 — flood «не от транка» REGISTER/SUBSCRIBE/INVITE (кандидат F) (короткая версия): раундов 120 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 360 сообщений @ 2/с на вариант; ответы станции: нет; наблюдение 0 мин; итог 60 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t5_20261106T035502Z.csv",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793937302654,
+      "session": "t5",
+      "direction": "out",
+      "kind": "los-start",
+      "detail": "T5 — flood «не от транка» REGISTER/SUBSCRIBE/INVITE (кандидат F); цель 192.168.80.157:5060",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937302656,
+      "session": "t5",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_start",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937362820,
+      "session": "t5",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_stop",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937362820,
+      "session": "t5",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "observe_stop",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937362820,
+      "session": "t5",
+      "direction": "out",
+      "kind": "los-summary",
+      "detail": "раундов 120 × 3 варианта (REGISTER/SUBSCRIBE/INVITE cseq=1 с чужих портов) = 360 сообщений @ 2/с на вариант; ответы станции: нет; наблюдение 0 мин",
+      "call_id": ""
+    }
+  ]
+}

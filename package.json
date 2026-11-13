@@ -1,0 +1,36 @@
+{
+  "name": "sip-atc-test-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Сервер SIP-автестов с веб-интерфейсом (Express, rails-style API) против живой АТС",
+  "scripts": {
+    "start": "tsx server/main.ts",
+    "build": "tsc --noEmit",
+    "format": "prettier --write server tests bridge_main.ts e2e_runner.ts los_mem_main.ts",
+    "format:check": "prettier --check server tests bridge_main.ts e2e_runner.ts los_mem_main.ts",
+    "test": "vitest run tests/unit tests/api",
+    "test:unit": "vitest run tests/unit",
+    "test:api": "vitest run tests/api",
+    "test:e2e": "vitest run tests/e2e --no-file-parallelism",
+    "test:losmem": "tsx los_mem_main.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "sip.js": "^0.21.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^18.19.130",
+    "@types/supertest": "^6.0.2",
+    "@types/ws": "^8.5.13",
+    "prettier": "^3.9.10",
+    "prettier-plugin-brace-style": "^0.10.4",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

@@ -1,0 +1,145 @@
+2026-08-19 10:46:47.469              app.c     thread_0 !Coral pa_sip 3.402.0.100. Log started
+2026-08-19 10:46:47.469              app.c     thread_0  Stand Alone mode: no
+2026-08-19 10:46:47.469              app.c     thread_0  set log_level 5
+2026-08-19 10:46:59.470     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:46:59.470     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:47:04.377     mod_pa_pjsip.c     thread_3  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:47:04.377     mod_pa_pjsip.c     thread_3  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:47:05.197 mod_pa_subscriptio     thread_0  sub_create_uac: SSW_SRVM sub 073c already active
+2026-08-19 10:47:05.773          ss_info.c     thread_3  .....ss_on_rx_notify: SSW_SRVM sub 073c bad property list: value 0x7f7eae37c8 ({&quot;prefix&quot;:&quot;67805&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:05.773          ss_info.c     thread_3  .....ss_on_rx_notify: SSW_SRVM sub 073c bad property list: value 0x7f7eae3868 ({&quot;prefix&quot;:&quot;67031&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:05.773          ss_info.c     thread_3  .....ss_on_rx_notify: SSW_SRVM sub 073c bad property list: value 0x7f7eae3908 ({&quot;prefix&quot;:&quot;67215&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:06.973 mod_pa_subscriptio     thread_1  sub_create_uac: BLF sub 0732 already active
+2026-08-19 10:47:06.974 mod_pa_subscriptio     thread_1  sub_create_uac: BLF sub 0733 already active
+2026-08-19 10:47:06.975 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0734 already active
+2026-08-19 10:47:06.978 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0735 already active
+2026-08-19 10:47:06.979 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0736 already active
+2026-08-19 10:47:06.980 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0737 already active
+2026-08-19 10:47:06.980 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0738 already active
+2026-08-19 10:47:06.981 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0739 already active
+2026-08-19 10:47:06.982 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 073a already active
+2026-08-19 10:47:06.984 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 073b already active
+2026-08-19 10:47:06.984 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 073c already active
+2026-08-19 10:47:06.986 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 073d already active
+2026-08-19 10:47:06.986 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 073e already active
+2026-08-19 10:47:06.987 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 073f already active
+2026-08-19 10:47:06.988 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0740 already active
+2026-08-19 10:47:06.990 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0741 already active
+2026-08-19 10:47:06.992 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0742 already active
+2026-08-19 10:47:06.994 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0743 already active
+2026-08-19 10:47:06.996 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0744 already active
+2026-08-19 10:47:06.997 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0745 already active
+2026-08-19 10:47:06.998 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0746 already active
+2026-08-19 10:47:06.999 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0747 already active
+2026-08-19 10:47:07.000 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0748 already active
+2026-08-19 10:47:07.002 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 074d already active
+2026-08-19 10:47:07.003 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 074e already active
+2026-08-19 10:47:07.003 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 074f already active
+2026-08-19 10:47:07.004 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0750 already active
+2026-08-19 10:47:07.005 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0752 already active
+2026-08-19 10:47:07.006 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0753 already active
+2026-08-19 10:47:07.006 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0754 already active
+2026-08-19 10:47:07.007 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0755 already active
+2026-08-19 10:47:07.008 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0756 already active
+2026-08-19 10:47:07.008 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0757 already active
+2026-08-19 10:47:07.009 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0758 already active
+2026-08-19 10:47:07.010 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0759 already active
+2026-08-19 10:47:07.010 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 075a already active
+2026-08-19 10:47:07.011 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 075b already active
+2026-08-19 10:47:07.012 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 075c already active
+2026-08-19 10:47:07.013 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 075d already active
+2026-08-19 10:47:07.014 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 075f already active
+2026-08-19 10:47:07.015 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0761 already active
+2026-08-19 10:47:07.016 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0762 already active
+2026-08-19 10:47:07.016 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0763 already active
+2026-08-19 10:47:07.017 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0764 already active
+2026-08-19 10:47:07.017 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0765 already active
+2026-08-19 10:47:07.018 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0766 already active
+2026-08-19 10:47:07.019 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0767 already active
+2026-08-19 10:47:07.019 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0768 already active
+2026-08-19 10:47:07.020 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0769 already active
+2026-08-19 10:47:07.021 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 076a already active
+2026-08-19 10:47:07.021 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 076b already active
+2026-08-19 10:47:07.023 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 076c already active
+2026-08-19 10:47:07.023 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 076d already active
+2026-08-19 10:47:07.024 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 076e already active
+2026-08-19 10:47:07.025 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 076f already active
+2026-08-19 10:47:12.010     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:47:12.010     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:47:17.994 mod_pa_subscriptio     thread_1  sub_create_uac: SSW_SRVM sub 0294 already active
+2026-08-19 10:47:25.768          ss_info.c     thread_3  .....ss_on_rx_notify: SSW_SRVM sub 072d bad property: name 0x7f7eca4f98 (replace_category_from_redirection, len 33, allowed 32)
+2026-08-19 10:47:25.768          ss_info.c     thread_3  .....    bad property: value 0x7f7eca4ff8 (false, 5, 41)
+2026-08-19 10:47:32.198             call.c     thread_1  call_answer: Added 'Allow-Events' header to msg
+2026-08-19 10:47:39.263             call.c     thread_3  call_answer: Added 'Allow-Events' header to msg
+2026-08-19 10:47:53.100     mod_pa_pjsip.c     thread_2  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:47:53.100     mod_pa_pjsip.c     thread_2  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:47:55.857 mod_pa_subscriptio     thread_0  sub_create_uac: SSW_SRVM sub 06e4 already active
+2026-08-19 10:47:56.458          ss_info.c     thread_2  .....ss_on_rx_notify: SSW_SRVM sub 06e4 bad property list: value 0x7f6cef19c8 ({&quot;prefix&quot;:&quot;67805&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:56.458          ss_info.c     thread_2  .....ss_on_rx_notify: SSW_SRVM sub 06e4 bad property list: value 0x7f6cef1a68 ({&quot;prefix&quot;:&quot;67031&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:56.458          ss_info.c     thread_2  .....ss_on_rx_notify: SSW_SRVM sub 06e4 bad property list: value 0x7f6cef1b08 ({&quot;prefix&quot;:&quot;67807&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:56.458          ss_info.c     thread_2  .....ss_on_rx_notify: SSW_SRVM sub 06e4 bad property list: value 0x7f6cef1ba8 ({&quot;prefix&quot;:&quot;67822&quot;,&quot;media&quot;:&quot;system://sounds/ring/default.wav&quot;,&quot;ring&quot;:&quot;ring03&quot;}, len 137, allowed 32)
+2026-08-19 10:47:56.459          ss_info.c     thread_2  .....ss_on_rx_notify: SSW_SRVM sub 06e4 bad property: name 0x7f86cfe2b8 (replace_category_from_redirection, len 33, allowed 32)
+2026-08-19 10:47:56.459          ss_info.c     thread_2  .....    bad property: value 0x7f86cfe318 (false, 5, 41)
+2026-08-19 10:47:57.056 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0273 already active
+2026-08-19 10:47:57.057 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0274 already active
+2026-08-19 10:47:57.057 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0275 already active
+2026-08-19 10:47:57.058 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0276 already active
+2026-08-19 10:47:57.059 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0277 already active
+2026-08-19 10:47:57.060 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0279 already active
+2026-08-19 10:47:57.060 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 027a already active
+2026-08-19 10:47:57.061 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 027b already active
+2026-08-19 10:47:57.062 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 027c already active
+2026-08-19 10:47:57.063 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 027d already active
+2026-08-19 10:47:57.064 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 027e already active
+2026-08-19 10:47:57.064 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 027f already active
+2026-08-19 10:47:57.065 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0280 already active
+2026-08-19 10:47:57.065 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0281 already active
+2026-08-19 10:47:57.066 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0282 already active
+2026-08-19 10:47:57.066 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0283 already active
+2026-08-19 10:47:57.067 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0284 already active
+2026-08-19 10:47:57.067 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0285 already active
+2026-08-19 10:47:57.068 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0287 already active
+2026-08-19 10:47:57.068 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0288 already active
+2026-08-19 10:47:59.490     mod_pa_pjsip.c     thread_2  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:47:59.490     mod_pa_pjsip.c     thread_2  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:48:04.398     mod_pa_pjsip.c     thread_0  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:48:04.398     mod_pa_pjsip.c     thread_0  keep_alive_reply: Added 'Allow-Events' heade2026-08-19 10:50:26.731 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0687 already active
+2026-08-19 10:50:26.732 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0688 already active
+2026-08-19 10:50:26.733 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 068a already active
+2026-08-19 10:50:26.733 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 068c already active
+2026-08-19 10:50:26.734 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 068d already active
+2026-08-19 10:50:26.734 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 068e already active
+2026-08-19 10:50:26.735 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 068f already active
+2026-08-19 10:50:26.736 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0690 already active
+2026-08-19 10:50:26.737 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0691 already active
+2026-08-19 10:50:26.737 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0692 already active
+2026-08-19 10:50:26.738 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0693 already active
+2026-08-19 10:50:26.738 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0694 already active
+2026-08-19 10:50:26.739 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0695 already active
+2026-08-19 10:50:26.739 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0696 already active
+2026-08-19 10:50:26.740 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0697 already active
+2026-08-19 10:50:26.740 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0698 already active
+2026-08-19 10:50:26.741 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 069a already active
+2026-08-19 10:50:26.742 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 069b already active
+2026-08-19 10:50:26.742 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 069c already active
+2026-08-19 10:50:26.743 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 069d already active
+2026-08-19 10:50:31.794 mod_pa_subscriptio     thread_3  sub_create_uac: SSW_SRVM sub 0487 already active
+2026-08-19 10:50:37.353     mod_pa_pjsip.c     thread_3  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:50:37.353     mod_pa_pjsip.c     thread_3  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:50:57.170 mod_pa_subscriptio     thread_2 !sub_create_uac: SSW_SRVM sub 0294 already active
+2026-08-19 10:50:59.554     mod_pa_pjsip.c     thread_3  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:50:59.554     mod_pa_pjsip.c     thread_3  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:51:04.458     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:51:04.458     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:51:06.254 mod_pa_subscriptio     thread_0  sub_create_uac: SSW_SRVM sub 0294 already active
+2026-08-19 10:51:18.412     mod_pa_pjsip.c     thread_0  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:51:18.412     mod_pa_pjsip.c     thread_0  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:51:27.816             call.c     thread_3  call_answer: Added 'Allow-Events' header to msg
+2026-08-19 10:51:38.378 mod_pa_subscriptio     thread_1 !sub_create_uac: SSW_SRVM sub 0487 already active
+2026-08-19 10:51:59.486     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:51:59.486     mod_pa_pjsip.c     thread_1  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:51:59.578     mod_pa_pjsip.c     thread_0  keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:51:59.578     mod_pa_pjsip.c     thread_0  keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:52:04.485     mod_pa_pjsip.c     thread_0 !keep_alive_reply: Added 'Allow' header to msg
+2026-08-19 10:52:04.485     mod_pa_pjsip.c     thread_0 !keep_alive_reply: Added 'Allow-Events' header to msg
+2026-08-19 10:52:12.820 mod_pa_subscriptio     thread_1 

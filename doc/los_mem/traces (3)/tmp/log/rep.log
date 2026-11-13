@@ -1,0 +1,6 @@
+2026-11-03 10:28:41: start checking. period: 183:0
+2026-11-03 10:28:41: keeptime: 15811200 sec
+2026-11-03 10:28:41: sgo reports path: 'off/reports/sgo'
+2026-11-03 10:28:41: sgo reports path: 'off/reports/sgo' does not exists! nothing to check
+2026-11-03 10:28:41: disk: check usage
+2026-11-03 10:28:41: disk: disk is not available!

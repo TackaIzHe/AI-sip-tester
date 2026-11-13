@@ -1,0 +1,68 @@
+{
+  "id": "20261106T035234Z_los_t1_dialog_info",
+  "generated_at": "2026-11-06T03:52:34.439Z",
+  "meta": {
+    "case": "los_t1_dialog_info",
+    "verdict": "PASS",
+    "verdict_text": "T1 — NOTIFY с битым dialog-info (кандидат A, blf_on_rx_notify) (короткая версия): NOTIFY отправлено 90 (variant=all, 1 мин @ 1.5/с), из них в диалоги станции 0 (её подписок: 0, пакеты: —); ответы станции: нет; итог 70 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t1_20261106T035124Z.csv",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793937084338,
+      "session": "t1",
+      "direction": "out",
+      "kind": "los-start",
+      "detail": "T1 — NOTIFY с битым dialog-info (кандидат A, blf_on_rx_notify); цель 192.168.80.157:5060",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937084339,
+      "session": "t1",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "T1: register",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937089342,
+      "session": "t1",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "T1: subscribe dialog",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937094344,
+      "session": "t1",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_start",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937154437,
+      "session": "t1",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_stop",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937154438,
+      "session": "t1",
+      "direction": "out",
+      "kind": "los-summary",
+      "detail": "NOTIFY отправлено 90 (variant=all, 1 мин @ 1.5/с), из них в диалоги станции 0 (её подписок: 0, пакеты: —); ответы станции: нет",
+      "call_id": ""
+    }
+  ]
+}

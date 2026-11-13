@@ -1,0 +1,4 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-09T04:38:16.156Z,1794199096156,t7,phase,"stim_start"
+2026-11-09T04:38:51.072Z,1794199131072,t7,phase,"stim_stop"
+2026-11-09T04:38:51.072Z,1794199131072,t7,summary,"запросов на доменные RURI отправлено 1183 @ 35/с (domain=losmem-storm.invalid); ответы станции: OPTIONS 404×592, SUBSCRIBE 404×591"

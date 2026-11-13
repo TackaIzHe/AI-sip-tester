@@ -1,0 +1,38 @@
+2026-09-28 11:54:58.497              app.c     thread_3 !Coral pa_sip 3.402.0.100. Log started
+2026-09-28 11:54:58.497              app.c     thread_3  Stand Alone mode: no
+2026-09-28 11:54:58.497              app.c     thread_3  set log_level 5
+2026-09-28 11:55:45.568 mod_pa_subscriptio     thread_3  sub_create_uac: SSW_SRVM sub 0000 already active
+2026-09-28 11:55:47.117 mod_pa_subscriptio     thread_1  sub_create_uac: BLF sub 0004 already active
+2026-09-28 11:55:47.118 mod_pa_subscriptio     thread_1  sub_create_uac: BLF sub 0005 already active
+2026-09-28 11:55:47.118 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0006 already active
+2026-09-28 11:55:47.119 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0007 already active
+2026-09-28 11:55:47.119 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0008 already active
+2026-09-28 11:55:47.120 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0009 already active
+2026-09-28 11:55:50.124 mod_pa_subscriptio     thread_0  sub_create_uac: SSW_SRVM sub 0001 already active
+2026-09-28 11:55:52.128 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 000a already active
+2026-09-28 11:55:52.129 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 000d already active
+2026-09-28 11:55:52.130 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 000f already active
+2026-09-28 11:55:52.132 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0010 already active
+2026-09-28 11:55:52.133 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0011 already active
+2026-09-28 11:55:52.134 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0012 already active
+2026-09-28 11:55:52.135 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0013 already active
+2026-09-28 11:55:52.135 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0014 already active
+2026-09-28 11:55:52.136 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0015 already active
+2026-09-28 11:55:53.722 mod_pa_subscriptio     thread_1  sub_create_uac: SSW_SRVM sub 0000 already active
+2026-09-28 11:55:55.125 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0004 already active
+2026-09-28 11:55:55.126 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0005 already active
+2026-09-28 11:55:55.127 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0006 already active
+2026-09-28 11:55:55.128 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0007 already active
+2026-09-28 11:55:55.129 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0008 already active
+2026-09-28 11:55:55.130 mod_pa_subscriptio     thread_2  sub_create_uac: BLF sub 0009 already active
+2026-09-28 11:55:57.653 mod_pa_subscriptio     thread_1  sub_create_uac: SSW_SRVM sub 0001 already active
+2026-09-28 11:55:59.135 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 000a already active
+2026-09-28 11:55:59.136 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 000d already active
+2026-09-28 11:55:59.137 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 000f already active
+2026-09-28 11:55:59.138 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0010 already active
+2026-09-28 11:55:59.138 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0011 already active
+2026-09-28 11:55:59.139 mod_pa_subscriptio     thread_3 !sub_create_uac: BLF sub 0012 already active
+2026-09-28 11:55:59.139 mod_pa_subscriptio     thread_1 !sub_create_uac: BLF sub 0013 already active
+2026-09-28 11:55:59.140 mod_pa_subscriptio     thread_2 !sub_create_uac: BLF sub 0014 already active
+2026-09-28 11:55:59.141 mod_pa_subscriptio     thread_0 !sub_create_uac: BLF sub 0015 already active
+2026-09-28 11:56:47.645              app.c     thread_2  set log_level 0

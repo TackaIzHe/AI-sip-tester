@@ -1,0 +1,52 @@
+{
+  "id": "20261106T035502Z_los_t4_provider_401",
+  "generated_at": "2026-11-06T03:55:02.652Z",
+  "meta": {
+    "case": "los_t4_provider_401",
+    "verdict": "PASS",
+    "verdict_text": "T4 — 401 с неизвестным realm GUmvd (кандидат D, sip_auth_client) (короткая версия): OPTIONS к станции отправлено 120 (ответы: нет); «провайдеру-401» станция прислала запросов: нет, 401 отвечено 0 (0 входящих — транк АТС на нас не настроен); итог 60 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t4_20261106T035402Z.csv",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793937242531,
+      "session": "t4",
+      "direction": "out",
+      "kind": "los-start",
+      "detail": "T4 — 401 с неизвестным realm GUmvd (кандидат D, sip_auth_client); цель 192.168.80.157:5060",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937242533,
+      "session": "t4",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_start",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937302651,
+      "session": "t4",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_stop",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937302652,
+      "session": "t4",
+      "direction": "out",
+      "kind": "los-summary",
+      "detail": "OPTIONS к станции отправлено 120 (ответы: нет); «провайдеру-401» станция прислала запросов: нет, 401 отвечено 0 (0 входящих — транк АТС на нас не настроен)",
+      "call_id": ""
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+2026-11-02 12:39:06
+on-boot 'no', period '10', tries '3', list '', command 'stop'
+run '0'
+

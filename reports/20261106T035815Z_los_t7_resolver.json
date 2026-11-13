@@ -1,0 +1,52 @@
+{
+  "id": "20261106T035815Z_los_t7_resolver",
+  "generated_at": "2026-11-06T03:58:15.950Z",
+  "meta": {
+    "case": "los_t7_resolver",
+    "verdict": "PASS",
+    "verdict_text": "T7 — resolver-шторм на доменные RURI (ext_domain_resolver) (короткая версия): запросов на доменные RURI отправлено 2028 @ 35/с (domain=losmem-storm.invalid); ответы станции: нет; итог 60 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t7_20261106T035715Z.csv",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793937435923,
+      "session": "t7",
+      "direction": "out",
+      "kind": "los-start",
+      "detail": "T7 — resolver-шторм на доменные RURI (ext_domain_resolver); цель 192.168.80.157:5060",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937435923,
+      "session": "t7",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_start",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937495949,
+      "session": "t7",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_stop",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937495949,
+      "session": "t7",
+      "direction": "out",
+      "kind": "los-summary",
+      "detail": "запросов на доменные RURI отправлено 2028 @ 35/с (domain=losmem-storm.invalid); ответы станции: нет",
+      "call_id": ""
+    }
+  ]
+}

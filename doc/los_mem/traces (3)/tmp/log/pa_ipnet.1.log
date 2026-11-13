@@ -1,0 +1,36 @@
+  12:38:41.877704  [INFO] pa-ipnet.   
+
+     <<   PA-IPNET   >>
+  12:38:41.878146  [INFO] pa-ipnet.   version V.3.402.0.55.  [IPNET] Build: Oct 30 2026 18:10:12
+  12:38:41.878240  [INFO] pa-ipnet.   App: start init. pid 1582
+  12:38:41.878499  [INFO] pa-ipnet.   IPNET. init: start init. dbg [0x0]
+  12:38:41.882269  [INFO] pa-ipnet.   main task. pid: 1582
+  12:38:41.882461  [INFO] pa-ipnet.   consol task_wr: start. pid 1772
+  12:38:41.882589  [INFO] pa-ipnet.   consol task: start. pid 1771
+  12:38:41.882911  [INFO] pa-ipnet.   timer task: start. pid 1774
+  12:38:41.883090  [INFO] pa-ipnet.   pbxipc_task: pbxipc_6 started. pid: 1773
+  12:39:11.865898  [INFO] pa-ipnet.   IPNET. Core-connection 'established'
+  12:39:11.866044  [INFO] pa-ipnet.   IPNET. Send restart
+  12:39:11.866137  [INFO] pa-ipnet.   IPNET. config init start
+  12:39:11.866241  [INFO] pa-ipnet.   IPNET. stopping
+  12:39:11.866401  [INFO] pa-ipnet.   IPNET. config init end
+  12:39:11.866476  [INFO] pa-ipnet.   IPNET. starting
+  12:39:11.866525  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  12:39:11.866704  [INFO] pa-ipnet.   IPNET. config init start
+  12:39:11.866787  [INFO] pa-ipnet.   IPNET. stopping
+  12:39:11.866922  [INFO] pa-ipnet.   IPNET. config init end
+  12:39:11.867008  [INFO] pa-ipnet.   IPNET. starting
+  12:39:11.867056  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  12:39:31.389265  [INFO] pa-ipnet.   IPNET. Core-connection 'lost'
+  12:39:57.518187  [INFO] pa-ipnet.   IPNET. Core-connection 'established'
+  12:39:57.518286  [INFO] pa-ipnet.   IPNET. Send restart
+  12:39:57.518369  [INFO] pa-ipnet.   IPNET. config init start
+  12:39:57.518424  [INFO] pa-ipnet.   IPNET. stopping
+  12:39:57.518591  [INFO] pa-ipnet.   IPNET. config init end
+  12:39:57.518669  [INFO] pa-ipnet.   IPNET. starting
+  12:39:57.518716  [ERR ] pa-ipnet.   IPNET. interfaces not configured
+  12:39:57.518761  [INFO] pa-ipnet.   IPNET. config init start
+  12:39:57.518804  [INFO] pa-ipnet.   IPNET. stopping
+  12:39:57.518904  [INFO] pa-ipnet.   IPNET. config init end
+  12:39:57.518964  [INFO] pa-ipnet.   IPNET. starting
+  12:39:57.519005  [ERR ] pa-ipnet.   IPNET. interfaces not configured

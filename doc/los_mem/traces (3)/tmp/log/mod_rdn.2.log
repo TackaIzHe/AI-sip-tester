@@ -1,0 +1,10 @@
+  12:39:07.761084  [INFO] mod-rdn.   
+
+     <<   MOD-RDN   >>
+  12:39:07.761263  [INFO] mod-rdn.   version V.3.402.0.55.  Build: Oct 30 2026 18:09:31
+  12:39:07.761312  [INFO] mod-rdn.   App: start init. pid 2800
+  12:39:07.761484  [INFO] mod-rdn.   consol task: start. pid 2801
+  12:39:07.761495  [INFO] mod-rdn.   RDN. init: start init. dbg [0x0]
+  12:39:07.761529  [INFO] mod-rdn.   consol task_wr: start. pid 2802
+  12:39:07.962564  [????] mod-rdn.   peer: info: Moduleport[7021] kernel_port[7021] kernelhost[127.0.0.1] socket_file[/tmp/rdn.sock]
+  12:39:08.007305  [INFO] mod-rdn.   rdn_init: Resolver started: GW '192.168.111.211' DNS0 '0.0.0.0'  DNS1 '0.0.0.0'; WORKERS [3]

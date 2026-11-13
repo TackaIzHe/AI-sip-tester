@@ -1,0 +1,143 @@
+{
+  "id": "20261103T084611Z_case_6_noanswer",
+  "generated_at": "2026-11-03T08:46:11.012Z",
+  "meta": {
+    "case": "case_6_noanswer",
+    "verdict": "PASS",
+    "verdict_text": "не-ответ 9404→52: финальный отказ станции 502 (станция не прислала 180)",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": [
+      {
+        "from": "9404",
+        "to": "52",
+        "direction": "out"
+      }
+    ]
+  },
+  "events": [
+    {
+      "ts": 1793695570463,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793695570470,
+      "session": "9404",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 9404",
+      "call_id": "ej2bll3vd51tem3me759"
+    },
+    {
+      "ts": 1793695570480,
+      "session": "9404",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "ej2bll3vd51tem3me759",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793695570485,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793695570486,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние CALL_OUT, собеседник 52",
+      "call_id": ""
+    },
+    {
+      "ts": 1793695570488,
+      "session": "9404",
+      "direction": "out",
+      "kind": "invite",
+      "detail": "INVITE → 52 от 9404",
+      "call_id": "ej2bl1b9gv9kiptot2el"
+    },
+    {
+      "ts": 1793695570491,
+      "session": "9404",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "100 Trying для INVITE",
+      "call_id": "ej2bl1b9gv9kiptot2el",
+      "sip_code": 100
+    },
+    {
+      "ts": 1793695570496,
+      "session": "9404",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "502 Bad Gateway для INVITE",
+      "call_id": "ej2bl1b9gv9kiptot2el",
+      "sip_code": 502
+    },
+    {
+      "ts": 1793695570498,
+      "session": "9404",
+      "direction": "out",
+      "kind": "ack",
+      "detail": "ACK → 52 от 9404",
+      "call_id": "ej2bl1b9gv9kiptot2el"
+    },
+    {
+      "ts": 1793695570499,
+      "session": "9404",
+      "direction": "in",
+      "kind": "call-ended",
+      "detail": "завершён с кодом 502",
+      "call_id": "",
+      "sip_code": 502
+    },
+    {
+      "ts": 1793695570499,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, ошибка: Ошибка SIP 502",
+      "call_id": ""
+    },
+    {
+      "ts": 1793695570991,
+      "session": "9404",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 9404",
+      "call_id": "ej2bll3vd51tem3me759"
+    },
+    {
+      "ts": 1793695571000,
+      "session": "9404",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "ej2bll3vd51tem3me759",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793695571011,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    }
+  ]
+}

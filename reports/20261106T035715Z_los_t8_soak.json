@@ -1,0 +1,52 @@
+{
+  "id": "20261106T035715Z_los_t8_soak",
+  "generated_at": "2026-11-06T03:57:15.922Z",
+  "meta": {
+    "case": "los_t8_soak",
+    "verdict": "PASS",
+    "verdict_text": "T8 — комбинированный продакшен-реплей (soak до деградации) (короткая версия): soak 1 мин: dialog-info NOTIFY 90, event-list NOTIFY 2, чужих REGISTER 60; диалогов станции: 0+0, пакеты: —; ответы станции: нет; итог 73 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t8_20261106T035602Z.csv",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793937362825,
+      "session": "t8",
+      "direction": "out",
+      "kind": "los-start",
+      "detail": "T8 — комбинированный продакшен-реплей (soak до деградации); цель 192.168.80.157:5060",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937375831,
+      "session": "t8",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_start",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937435920,
+      "session": "t8",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "stim_stop",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937435921,
+      "session": "t8",
+      "direction": "out",
+      "kind": "los-summary",
+      "detail": "soak 1 мин: dialog-info NOTIFY 90, event-list NOTIFY 2, чужих REGISTER 60; диалогов станции: 0+0, пакеты: —; ответы станции: нет",
+      "call_id": ""
+    }
+  ]
+}

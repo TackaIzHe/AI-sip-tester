@@ -1,0 +1,44 @@
+{
+  "id": "20261105T055524Z_los_t3_dup_subscribes",
+  "generated_at": "2026-11-05T05:55:24.174Z",
+  "meta": {
+    "case": "los_t3_dup_subscribes",
+    "verdict": "PASS",
+    "verdict_text": "T3 — дубли подписок / повторный Total config (кандидат C) (короткая версия): циклов 1, SUBSCRIBE отправлено 4 (дубли активных подписок); ответы станции: нет; итог 18 с, CSV: /home/tackaizhe/ai-tasks/task3/to/reports/los_t3_20261105T055506Z.csv",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793858106165,
+      "session": "t3",
+      "direction": "out",
+      "kind": "los-start",
+      "detail": "T3 — дубли подписок / повторный Total config (кандидат C); цель 192.168.80.157:5060",
+      "call_id": ""
+    },
+    {
+      "ts": 1793858106165,
+      "session": "t3",
+      "direction": "out",
+      "kind": "los-phase",
+      "detail": "T3: cycle 1/1",
+      "call_id": ""
+    },
+    {
+      "ts": 1793858124174,
+      "session": "t3",
+      "direction": "out",
+      "kind": "los-summary",
+      "detail": "циклов 1, SUBSCRIBE отправлено 4 (дубли активных подписок); ответы станции: нет",
+      "call_id": ""
+    }
+  ]
+}

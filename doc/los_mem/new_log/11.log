@@ -1,0 +1,1151 @@
+2025-12-22 12:29:09.554 mod_pa_subscriptio     thread_3  sub_usage_inc_ext: SSW_SRVM sub 0001. usage inc [1] (sub_delayed_start_timer_cb:510)
+2025-12-22 12:29:09.554           endpoint     thread_3  Request msg SUBSCRIBE/cseq=22543 (tdta0x7f6c002160) created.
+2025-12-22 12:29:09.554    dlg0x7f6c003228     thread_3  .Sending Request msg SUBSCRIBE/cseq=22543 (tdta0x7f6c002160)
+2025-12-22 12:29:09.555    tsx0x7f6c0062e8     thread_3  ..Transaction created for Request msg SUBSCRIBE/cseq=22542 (tdta0x7f6c002160)
+2025-12-22 12:29:09.555    tsx0x7f6c0062e8     thread_3  .Sending Request msg SUBSCRIBE/cseq=22542 (tdta0x7f6c002160) in state Null
+2025-12-22 12:29:09.555            utils.c     thread_3  ..ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:09.555            utils.c     thread_3  ..ext_domain_resolver: transport type 1
+2025-12-22 12:29:09.555            utils.c     thread_3  ..ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:09.555    tsx0x7f6c0062e8     thread_3  ..State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:09.555    dlg0x7f6c003228     thread_3  ...Transaction tsx0x7f6c0062e8 state changed to Calling
+2025-12-22 12:29:09.555  evsub0x7f6c004678     thread_3  ....Subscription state changed NULL --> SENT
+2025-12-22 12:29:09.555 mod_pa_subscriptio     thread_3  .....sub_usage_inc_ext: SSW_SRVM sub 0001. usage inc [2] (sub_on_evsub_state_uac:563)
+2025-12-22 12:29:09.555 mod_pa_subscriptio     thread_3  .....sub_usage_dec_ext: SSW_SRVM sub 0001. usage dec [1] (sub_on_evsub_state_uac:602)
+2025-12-22 12:29:09.555 mod_pa_subscriptio     thread_3  sub_usage_dec_ext: SSW_SRVM sub 0001. usage dec [0] (sub_delayed_start_timer_cb:534)
+2025-12-22 12:29:09.559     sip_endpoint.c     thread_1 !Processing incoming message: Response msg 405/SUBSCRIBE/cseq=22542 (rdata0x7f6c009218)
+2025-12-22 12:29:09.559    tsx0x7f6c0062e8     thread_1  .Incoming Response msg 405/SUBSCRIBE/cseq=22542 (rdata0x7f6c009218) in state Calling
+2025-12-22 12:29:09.559    tsx0x7f6c0062e8     thread_1  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:09.559    dlg0x7f6c003228     thread_1  ...Received Response msg 405/SUBSCRIBE/cseq=22542 (rdata0x7f6c009218)
+2025-12-22 12:29:09.559    dlg0x7f6c003228     thread_1  ...Transaction tsx0x7f6c0062e8 state changed to Completed
+2025-12-22 12:29:09.559  evsub0x7f6c004678     thread_1  ....Subscription state changed SENT --> TERMINATED
+2025-12-22 12:29:09.559 mod_pa_subscriptio     thread_1  .....sub_usage_inc_ext: SSW_SRVM sub 0001. usage inc [1] (sub_on_evsub_state_uac:563)
+2025-12-22 12:29:09.559 mod_pa_subscriptio     thread_1  .....sub_on_evsub_state_uac: sub 0001 terminated
+2025-12-22 12:29:09.559 mod_pa_subscriptio     thread_1  .....sub_free_ext: SSW_SRVM sub 0001. Free is pended (usage: 1) 
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....pbx-ipc SIP: TX (020)
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....       37 44 01 00 02 43 02 00 01 00 32 02 00 01 00 16 7D...C....2.....
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....       02 00 95 01                                     ....
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....PBXIPC-SIP. TX. subscribe-status 
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....      # SUB type <SSW_SRVM>
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....      # subref 0001
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....      # Status NOK[1]
+2025-12-22 12:29:09.559              ipc.c     thread_1  .....      # cause 405
+2025-12-22 12:29:09.559 mod_pa_subscriptio     thread_1  .....sub_usage_dec_ext: SSW_SRVM sub 0001. usage dec [0] (sub_on_evsub_state_uac:602)
+2025-12-22 12:29:09.559 mod_pa_subscriptio     thread_1  .....sub_usage_dec_ext: SSW_SRVM sub 0001. aquire pended free
+2025-12-22 12:29:09.559 mod_pa_subscriptio     thread_1  .....sub_free_ext: SSW_SRVM sub 0001 freed 
+2025-12-22 12:29:09.619    tsx0x7f64006358     thread_1  Timeout timer event
+2025-12-22 12:29:09.619    tsx0x7f64006358     thread_1  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:09.619    dlg0x7f64004668     thread_1  ..Transaction tsx0x7f64006358 state changed to Terminated
+2025-12-22 12:29:09.619  evsub0x7f64005698     thread_1  ...Subscription destroyed
+2025-12-22 12:29:09.619    dlg0x7f64004668     thread_1  ....Session count dec to 1 by mod-evsub
+2025-12-22 12:29:09.619    dlg0x7f64004668     thread_1  ...Dialog destroyed!
+2025-12-22 12:29:09.619    tsx0x7f64006358     thread_1  Timeout timer event
+2025-12-22 12:29:09.619    tsx0x7f64006358     thread_1  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:09.619   tdta0x7f640008c0     thread_1  ..Destroying txdata Request msg SUBSCRIBE/cseq=24322 (tdta0x7f640008c0)
+2025-12-22 12:29:09.619    tsx0x7f64006358     thread_1  Transaction destroyed!
+2025-12-22 12:29:12.386    tsx0x7f80002b98     thread_2 !Timeout timer event
+2025-12-22 12:29:12.386    tsx0x7f80002b98     thread_2  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:12.386    dlg0x7f80000b08     thread_2  ..Transaction tsx0x7f80002b98 state changed to Terminated
+2025-12-22 12:29:12.386  evsub0x7f800043d8     thread_2  ...Subscription destroyed
+2025-12-22 12:29:12.386    dlg0x7f80000b08     thread_2  ....Session count dec to 1 by mod-evsub
+2025-12-22 12:29:12.387    dlg0x7f80000b08     thread_2  ...Dialog destroyed!
+2025-12-22 12:29:12.387    tsx0x7f80002b98     thread_2  Timeout timer event
+2025-12-22 12:29:12.387    tsx0x7f80002b98     thread_2  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:12.387   tdta0x7f640025a0     thread_2  ..Destroying txdata Response msg 404/SUBSCRIBE/cseq=432950 (tdta0x7f640025a0)
+2025-12-22 12:29:12.387    tsx0x7f80002b98     thread_2  Transaction destroyed!
+2025-12-22 12:29:12.907              ipc.c pbxipcthread !pbx-ipc SIP: RX (006)
+2025-12-22 12:29:12.907              ipc.c pbxipcthread          48 32 02 00 01 00                               H2....
+2025-12-22 12:29:12.907              ipc.c pbxipcthread  PBXIPC-SIP. RX. SAS-Status 
+2025-12-22 12:29:12.907              ipc.c pbxipcthread         # Status NOK[1]
+2025-12-22 12:29:12.912          ipc_msg.c     thread_1 !ipc_msg_parse: msg type = SAS-Status [72]
+2025-12-22 12:29:12.912          ipc_msg.c     thread_1  get_ie: ie [50][status] size [2]
+2025-12-22 12:29:12.912              ipc.c     thread_1  ipc_process: msg ptr = 0x7f640008c0. type [72]
+2025-12-22 12:29:12.912              app.c     thread_1  New SAS mode: 1
+2025-12-22 12:29:14.563    tsx0x7f6c0062e8     thread_1  Timeout timer event
+2025-12-22 12:29:14.563    tsx0x7f6c0062e8     thread_1  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:14.563    dlg0x7f6c003228     thread_1  ..Transaction tsx0x7f6c0062e8 state changed to Terminated
+2025-12-22 12:29:14.563  evsub0x7f6c004678     thread_1  ...Subscription destroyed
+2025-12-22 12:29:14.563    dlg0x7f6c003228     thread_1  ....Session count dec to 1 by mod-evsub
+2025-12-22 12:29:14.563    dlg0x7f6c003228     thread_1  ...Dialog destroyed!
+2025-12-22 12:29:14.563    tsx0x7f6c0062e8     thread_1  Timeout timer event
+2025-12-22 12:29:14.563    tsx0x7f6c0062e8     thread_1  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:14.563   tdta0x7f6c002160     thread_1  ..Destroying txdata Request msg SUBSCRIBE/cseq=22542 (tdta0x7f6c002160)
+2025-12-22 12:29:14.563    tsx0x7f6c0062e8     thread_1  Transaction destroyed!
+2025-12-22 12:29:14.864              ipc.c pbxipcthread !pbx-ipc SIP: RX (006)
+2025-12-22 12:29:14.864              ipc.c pbxipcthread          48 32 02 00 01 00                               H2....
+2025-12-22 12:29:14.864              ipc.c pbxipcthread  PBXIPC-SIP. RX. SAS-Status 
+2025-12-22 12:29:14.864              ipc.c pbxipcthread         # Status NOK[1]
+2025-12-22 12:29:14.865          ipc_msg.c     thread_1 !ipc_msg_parse: msg type = SAS-Status [72]
+2025-12-22 12:29:14.865          ipc_msg.c     thread_1  get_ie: ie [50][status] size [2]
+2025-12-22 12:29:14.865              ipc.c     thread_1  ipc_process: msg ptr = 0x7f64000bd0. type [72]
+2025-12-22 12:29:14.865              app.c     thread_1  New SAS mode: 1
+2025-12-22 12:29:21.186              ipc.c pbxipcthread !pbx-ipc SIP: RX (033)
+2025-12-22 12:29:21.186              ipc.c pbxipcthread          0F 54 02 00 2F 05 03 02 00 02 00 55 0E 00 31 39 .T../......U..19
+2025-12-22 12:29:21.186              ipc.c pbxipcthread          32 2E 31 36 38 2E 38 30 2E 31 35 39 05 02 00 C4 2.168.80.159....
+2025-12-22 12:29:21.186              ipc.c pbxipcthread          13                                              .
+2025-12-22 12:29:21.186              ipc.c pbxipcthread  PBXIPC-SIP. RX. keep-alive-req 
+2025-12-22 12:29:21.186              ipc.c pbxipcthread         # requestID 052f
+2025-12-22 12:29:21.186              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:21.186              ipc.c pbxipcthread         # Hostname '192.168.80.159'
+2025-12-22 12:29:21.186              ipc.c pbxipcthread         # port 5060
+2025-12-22 12:29:21.187          ipc_msg.c     thread_3 !ipc_msg_parse: msg type = keep-alive-req [15]
+2025-12-22 12:29:21.187          ipc_msg.c     thread_3  get_ie: ie [84][request-id] size [2]
+2025-12-22 12:29:21.187          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:21.187          ipc_msg.c     thread_3  get_ie: ie [85][hostname] size [14]
+2025-12-22 12:29:21.187          ipc_msg.c     thread_3  get_ie: ie [5][port] size [2]
+2025-12-22 12:29:21.187              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c010db0. type [15]
+2025-12-22 12:29:21.187     mod_pa_pjsip.c     thread_3  keep_alive_request: Sending OPTIONS msg. Proto: UDP
+2025-12-22 12:29:21.187           endpoint     thread_3  Request msg OPTIONS/cseq=24737 (tdta0x7f6c0125e0) created.
+2025-12-22 12:29:21.187    tsx0x7f6c013698     thread_3  .Transaction created for Request msg OPTIONS/cseq=24737 (tdta0x7f6c0125e0)
+2025-12-22 12:29:21.187    tsx0x7f6c013698     thread_3  Sending Request msg OPTIONS/cseq=24737 (tdta0x7f6c0125e0) in state Null
+2025-12-22 12:29:21.187            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:21.187            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:21.187            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:21.187    tsx0x7f6c013698     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:21.189     sip_endpoint.c     thread_1 !Processing incoming message: Response msg 200/OPTIONS/cseq=24737 (rdata0x7f64016a78)
+2025-12-22 12:29:21.189    tsx0x7f6c013698     thread_1  .Incoming Response msg 200/OPTIONS/cseq=24737 (rdata0x7f64016a78) in state Calling
+2025-12-22 12:29:21.189    tsx0x7f6c013698     thread_1  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:21.189     mod_pa_pjsip.c     thread_1  ...on_tsx_state_changed: reqid 052f reply 200
+2025-12-22 12:29:21.189              ipc.c     thread_1  ...pbx-ipc SIP: TX (011)
+2025-12-22 12:29:21.189              ipc.c     thread_1  ...         10 54 02 00 2F 05 16 02 00 C8 00                .T../......
+2025-12-22 12:29:21.189              ipc.c     thread_1  ...PBXIPC-SIP. TX. keep-alive-rsp 
+2025-12-22 12:29:21.189              ipc.c     thread_1  ...        # requestID 052f
+2025-12-22 12:29:21.189              ipc.c     thread_1  ...        # cause 200
+2025-12-22 12:29:21.191              ipc.c pbxipcthread !pbx-ipc SIP: RX (006)
+2025-12-22 12:29:21.191              ipc.c pbxipcthread          48 32 02 00 00 00                               H2....
+2025-12-22 12:29:21.191              ipc.c pbxipcthread  PBXIPC-SIP. RX. SAS-Status 
+2025-12-22 12:29:21.191              ipc.c pbxipcthread         # Status OK[0]
+2025-12-22 12:29:21.198          ipc_msg.c     thread_3 !ipc_msg_parse: msg type = SAS-Status [72]
+2025-12-22 12:29:21.198          ipc_msg.c     thread_3  get_ie: ie [50][status] size [2]
+2025-12-22 12:29:21.198              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c010db0. type [72]
+2025-12-22 12:29:21.198              app.c     thread_3  New SAS mode: 0
+2025-12-22 12:29:26.192    tsx0x7f6c013698     thread_3  Timeout timer event
+2025-12-22 12:29:26.192    tsx0x7f6c013698     thread_3  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:26.192    tsx0x7f6c013698     thread_3  Timeout timer event
+2025-12-22 12:29:26.192    tsx0x7f6c013698     thread_3  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:26.192   tdta0x7f6c0125e0     thread_3  ..Destroying txdata Request msg OPTIONS/cseq=24737 (tdta0x7f6c0125e0)
+2025-12-22 12:29:26.192    tsx0x7f6c013698     thread_3  Transaction destroyed!
+2025-12-22 12:29:28.997              ipc.c pbxipcthread !pbx-ipc SIP: RX (071)
+2025-12-22 12:29:28.997              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:28.997              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 30 30 70 30 ../b....u00s00p0
+2025-12-22 12:29:28.997              ipc.c pbxipcthread          30 00 52 02 68 7F 00 00 00 07 00 00 00 00 00 00 0.R.h...........
+2025-12-22 12:29:28.997              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:28.997              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:28.997              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:28.997              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:28.997              ipc.c pbxipcthread         # cgpn <u00s00p00> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:28.997              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:29.003          ipc_msg.c     thread_2 !ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:29.003          ipc_msg.c     thread_2  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:29.003          ipc_msg.c     thread_2  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:29.003          ipc_msg.c     thread_2  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:29.003              ipc.c     thread_2  ipc_process: msg ptr = 0x7f780008c0. type [57]
+2025-12-22 12:29:29.003         reg_port.c     thread_2  int_create_reg: reg 1387.
+
+R-URI   <sip:u00s00p00@192.168.80.159:5060>
+To      <sip:u00s00p00@192.168.80.159:5060>
+Contact <sip:u00s00p00@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:29.003          sip_reg.c     thread_2  regc0x7f78497a08 created
+2025-12-22 12:29:29.339           endpoint     thread_3 !Request msg REGISTER/cseq=28232 (tdta0x7f6c010db0) created.
+2025-12-22 12:29:29.339    tsx0x7f6c012e18     thread_3  .Transaction created for Request msg REGISTER/cseq=28233 (tdta0x7f6c010db0)
+2025-12-22 12:29:29.339    tsx0x7f6c012e18     thread_3  Sending Request msg REGISTER/cseq=28233 (tdta0x7f6c010db0) in state Null
+2025-12-22 12:29:29.339            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:29.339            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:29.339            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:29.339    tsx0x7f6c012e18     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:29.345     sip_endpoint.c     thread_0 !Processing incoming message: Response msg 405/REGISTER/cseq=28233 (rdata0x7f640045e8)
+2025-12-22 12:29:29.345    tsx0x7f6c012e18     thread_0  .Incoming Response msg 405/REGISTER/cseq=28233 (rdata0x7f640045e8) in state Calling
+2025-12-22 12:29:29.345    tsx0x7f6c012e18     thread_0  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:29.345          sip_reg.c     thread_0  ...regc0x7f78497a08: Transaction tsx0x7f6c012e18 state changed to Completed
+2025-12-22 12:29:29.345         reg_port.c     thread_0  ...regc_cb: reg 1387 error: code 405
+2025-12-22 12:29:29.345          sip_reg.c     thread_0  ...regc0x7f78497a08 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 30 30 70 30 ../b....u00s00p0
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...         30 00 52 02 68 7F 00 00 00 07 00 00 00 00 00 00 0.R.h...........
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...        # trunkID 02
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...        # cgpn <u00s00p00> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:29.345              ipc.c     thread_0  ...        # Status NOK[1]
+2025-12-22 12:29:29.345          sip_reg.c     thread_0  ...regc0x7f78497a08 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:30.297              ipc.c pbxipcthread !pbx-ipc SIP: RX (092)
+2025-12-22 12:29:30.297              ipc.c pbxipcthread          0F 54 02 00 30 05 03 02 00 03 00 55 0D 00 31 39 .T..0......U..19
+2025-12-22 12:29:30.297              ipc.c pbxipcthread          32 2E 31 36 38 2E 38 33 2E 38 35 05 02 00 C4 13 2.168.83.85.....
+2025-12-22 12:29:30.297              ipc.c pbxipcthread          0B 39 00 E1 FC 5F E6 7F 00 00 00 2C 94 73 04 00 .9..._.....,.s..
+2025-12-22 12:29:30.297              ipc.c pbxipcthread          00 00 31 30 30 35 00 00 00 00 00 08 00 00 00 00 ..1005..........
+2025-12-22 12:29:30.297              ipc.c pbxipcthread          00 00 00 60 02 60 E6 7F 00 00 00 28 B3 50 97 7F ...`.`.....(.P..
+2025-12-22 12:29:30.297              ipc.c pbxipcthread          00 00 00 B0 03 60 E6 7F 00 00 00 11             .....`......
+2025-12-22 12:29:30.297              ipc.c pbxipcthread  PBXIPC-SIP. RX. keep-alive-req 
+2025-12-22 12:29:30.297              ipc.c pbxipcthread         # requestID 0530
+2025-12-22 12:29:30.297              ipc.c pbxipcthread         # trunkID 03
+2025-12-22 12:29:30.297              ipc.c pbxipcthread         # Hostname '192.168.83.85'
+2025-12-22 12:29:30.297              ipc.c pbxipcthread         # port 5060
+2025-12-22 12:29:30.297              ipc.c pbxipcthread         # cdpn <1005> (4) cat 0xe6 _undef_0x5f _undef_0x7f
+2025-12-22 12:29:30.299          ipc_msg.c     thread_1 !ipc_msg_parse: msg type = keep-alive-req [15]
+2025-12-22 12:29:30.299          ipc_msg.c     thread_1  get_ie: ie [84][request-id] size [2]
+2025-12-22 12:29:30.299          ipc_msg.c     thread_1  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:30.299          ipc_msg.c     thread_1  get_ie: ie [85][hostname] size [13]
+2025-12-22 12:29:30.299          ipc_msg.c     thread_1  get_ie: ie [5][port] size [2]
+2025-12-22 12:29:30.299          ipc_msg.c     thread_1  get_ie: ie [11][cdpn] size [57]
+2025-12-22 12:29:30.299              ipc.c     thread_1  ipc_process: msg ptr = 0x7f640008c0. type [15]
+2025-12-22 12:29:30.299     mod_pa_pjsip.c     thread_1  keep_alive_request: Sending OPTIONS msg. Proto: UDP
+2025-12-22 12:29:30.299           endpoint     thread_1  Request msg OPTIONS/cseq=1076 (tdta0x7f64002480) created.
+2025-12-22 12:29:30.299    tsx0x7f64004668     thread_1  .Transaction created for Request msg OPTIONS/cseq=1076 (tdta0x7f64002480)
+2025-12-22 12:29:30.299    tsx0x7f64004668     thread_1  Sending Request msg OPTIONS/cseq=1076 (tdta0x7f64002480) in state Null
+2025-12-22 12:29:30.299            utils.c     thread_1  .ext_domain_resolver: target host 192.168.83.85:5060
+2025-12-22 12:29:30.299            utils.c     thread_1  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:30.299            utils.c     thread_1  .ext_domain_resolver: resolved address[0] 192.168.83.85:5060
+2025-12-22 12:29:30.299    tsx0x7f64004668     thread_1  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:30.302     sip_endpoint.c     thread_0 !Processing incoming message: Response msg 200/OPTIONS/cseq=1076 (rdata0x7f80000c18)
+2025-12-22 12:29:30.302    tsx0x7f64004668     thread_0  .Incoming Response msg 200/OPTIONS/cseq=1076 (rdata0x7f80000c18) in state Calling
+2025-12-22 12:29:30.302    tsx0x7f64004668     thread_0  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:30.302     mod_pa_pjsip.c     thread_0  ...on_tsx_state_changed: reqid 0530 reply 200
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...pbx-ipc SIP: TX (571)
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         10 54 02 00 30 05 16 02 00 C8 00 14 2D 02 76 3D .T..0.......-.v=
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 0D 0A 6F 3D 2D 20 35 38 30 34 39 33 38 35 37 0..o=- 580493857
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         37 37 34 36 32 34 31 39 37 20 38 33 33 32 38 35 774624197 833285
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         35 32 33 34 33 39 35 30 31 38 32 31 36 20 49 4E 5234395018216 IN
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         20 49 50 34 20 31 39 32 2E 31 36 38 2E 38 33 2E  IP4 192.168.83.
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         38 35 0D 0A 73 3D 53 65 73 73 69 6F 6E 20 53 44 85..s=Session SD
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         50 0D 0A 63 3D 49 4E 20 49 50 34 20 31 39 32 2E P..c=IN IP4 192.
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         31 36 38 2E 38 33 2E 38 35 0D 0A 74 3D 30 20 30 168.83.85..t=0 0
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         0D 0A 6D 3D 61 75 64 69 6F 20 30 20 52 54 50 2F ..m=audio 0 RTP/
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         41 56 50 20 38 20 31 38 20 30 20 31 30 33 20 31 AVP 8 18 0 103 1
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 34 20 31 31 34 20 39 20 39 36 0D 0A 61 3D 72 04 114 9 96..a=r
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         74 70 6D 61 70 3A 38 20 50 43 4D 41 2F 38 30 30 tpmap:8 PCMA/800
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 0D 0A 61 3D 72 74 70 6D 61 70 3A 31 38 20 47 0..a=rtpmap:18 G
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         37 32 39 2F 38 30 30 30 0D 0A 61 3D 66 6D 74 70 729/8000..a=fmtp
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         3A 31 38 20 61 6E 6E 65 78 62 3D 6E 6F 0D 0A 61 :18 annexb=no..a
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         3D 72 74 70 6D 61 70 3A 30 20 50 43 4D 55 2F 38 =rtpmap:0 PCMU/8
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 30 30 0D 0A 61 3D 72 74 70 6D 61 70 3A 31 30 000..a=rtpmap:10
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         33 20 47 37 32 36 2D 32 34 2F 38 30 30 30 0D 0A 3 G726-24/8000..
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         61 3D 72 74 70 6D 61 70 3A 31 30 34 20 47 37 32 a=rtpmap:104 G72
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         36 2D 33 32 2F 38 30 30 30 0D 0A 61 3D 72 74 70 6-32/8000..a=rtp
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         6D 61 70 3A 31 31 34 20 6F 70 75 73 2F 34 38 30 map:114 opus/480
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 30 2F 32 0D 0A 61 3D 66 6D 74 70 3A 31 31 34 00/2..a=fmtp:114
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         20 63 62 72 3D 31 3B 20 6D 61 78 70 6C 61 79 62  cbr=1; maxplayb
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         61 63 6B 72 61 74 65 3D 31 36 30 30 30 3B 20 6D ackrate=16000; m
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         61 78 61 76 65 72 61 67 65 62 69 74 72 61 74 65 axaveragebitrate
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         3D 32 30 30 30 30 3B 20 73 70 72 6F 70 2D 6D 61 =20000; sprop-ma
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         78 63 61 70 74 75 72 65 72 61 74 65 3D 31 36 30 xcapturerate=160
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 30 0D 0A 61 3D 72 74 70 6D 61 70 3A 39 20 47 00..a=rtpmap:9 G
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         37 32 32 2F 38 30 30 30 0D 0A 61 3D 66 6D 74 70 722/8000..a=fmtp
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         3A 39 20 62 69 74 72 61 74 65 3D 36 34 30 30 30 :9 bitrate=64000
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         0D 0A 61 3D 72 74 70 6D 61 70 3A 39 36 20 74 65 ..a=rtpmap:96 te
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         6C 65 70 68 6F 6E 65 2D 65 76 65 6E 74 2F 38 30 lephone-event/80
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         30 30 0D 0A 61 3D 66 6D 74 70 3A 39 36 20 30 2D 00..a=fmtp:96 0-
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         31 35 0D 0A 61 3D 69 6E 61 63 74 69 76 65 0D 0A 15..a=inactive..
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         61 3D 73 69 6C 65 6E 63 65 53 75 70 70 3A 6F 66 a=silenceSupp:of
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...         66 20 2D 20 2D 20 2D 20 2D 0D 0A                f - - - -..
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...PBXIPC-SIP. TX. keep-alive-rsp 
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...        # requestID 0530
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...        # cause 200
+2025-12-22 12:29:30.302              ipc.c     thread_0  ...        # SDP len (557): 'v=0
+o=- 580493857774624197 8332855234395018216 IN IP4 192.168.83.85
+s=Session SDP
+c=IN IP4 192.168.83.85
+t=0 0
+m=audio 0 RTP/AVP 8 18 0 103 104 114 9 96
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:0 PCMU/8000
+a=rtpmap:103 G726-24/8000
+a=rtpmap:104 G726-32/8000
+a=rtpmap:114 opus/48000/2
+a=fmtp:114 cbr=1; maxplaybackrate=16000; maxaveragebitrate=20000; sprop-maxcapturerate=16000
+a=rtpmap:9 G722/8000
+a=fmtp:9 bitrate=64000
+a=rtpmap:96 telephone-event/8000
+a=fmtp:96 0-15
+a=inactive
+'=silenceSupp:off - - - -
+2025-12-22 12:29:31.407     sip_endpoint.c     thread_1 !Processing incoming message: Request msg SUBSCRIBE/cseq=432976 (rdata0x7f80000bf8)
+2025-12-22 12:29:31.408 mod_pa_transit_ab.     thread_1  .Request msg SUBSCRIBE/cseq=432976 (rdata0x7f80000bf8) request not from trunk
+2025-12-22 12:29:31.408            utils.c     thread_1  .ab 1005 info 0x7f7849d7c0
+2025-12-22 12:29:31.408            utils.c     thread_1  .ab 1005 wrong src 192.168.83.85:5060 (expected 192.168.80.157:5060)
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_lock_ext: BLF (sub_subscribe_proc_sip:1740)
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_alloc: BLF sub 2716 allocated
+2025-12-22 12:29:31.408    tsx0x7f6400a358     thread_1  ..Transaction created for Request msg SUBSCRIBE/cseq=432976 (rdata0x7f80000bf8)
+2025-12-22 12:29:31.408    tsx0x7f6400a358     thread_1  .Incoming Request msg SUBSCRIBE/cseq=432976 (rdata0x7f80000bf8) in state Null
+2025-12-22 12:29:31.408    tsx0x7f6400a358     thread_1  ..State changed from Null to Trying, event=RX_MSG
+2025-12-22 12:29:31.408    dlg0x7f64000968     thread_1  ...Transaction tsx0x7f6400a358 state changed to Trying
+2025-12-22 12:29:31.408    dlg0x7f64000968     thread_1  .UAS dialog created
+2025-12-22 12:29:31.408    dlg0x7f64000968     thread_1  .Module mod-evsub added as dialog usage, data=0x7f64010f28
+2025-12-22 12:29:31.408  evsub0x7f6400b9c8     thread_1  .UAS subscription created, using dialog dlg0x7f64000968
+2025-12-22 12:29:31.408    dlg0x7f64000968     thread_1  ..Session count inc to 3 by mod-evsub
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_processing_request_store: BLF sub 2716 new processing request rdata0x7f80000bf8 stored as rdata0x7f64012878
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_subscribe_proc_sip: new BLF sub 2716 created:
+     src:     192.168.83.85:5060
+     domain:  192.168.80.133
+     caller:  1005
+     callee:  27084957213668
+     contact: 1005
+     expires: 300
+
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_usage_inc_ext: BLF sub 2716. usage inc [1] (sub_send_subscribe:435)
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_usage_dec_ext: BLF sub 2716. usage dec [0] (sub_send_subscribe:458)
+2025-12-22 12:29:31.408              ipc.c     thread_1  .pbx-ipc SIP: TX (692)
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       36 44 01 00 01 43 02 00 16 27 0C 39 00 00 00 00 6D...C...'.9....
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 04 00 00 00 31 30 30 35 ............1005
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 0B 39 00 00 00 00 00 00 00 00 .......9........
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 0E 00 00 00 32 37 30 38 34 39 35 37 ........27084957
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       32 31 33 36 36 38 00 00 00 00 00 00 00 00 00 00 213668..........
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 0E 39 00 00 00 00 00 00 00 00 00 00 00 00 ...9............
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 31 30 30 35 00 00 00 00 00 00 00 00 ....1005........
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 0D ..............U.
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 31 39 32 2E 31 36 38 2E 38 33 2E 38 35 05 02 .192.168.83.85..
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 C4 13 65 0E 00 31 39 32 2E 31 36 38 2E 38 30 ...e..192.168.80
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       2E 31 33 33 2F 02 00 2C 01 25 24 00 64 61 63 36 .133/..,.%$.dac6
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       34 34 38 33 2D 32 33 33 32 2D 31 32 33 65 2D 37 4483-2332-123e-7
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       33 39 62 2D 65 34 35 61 64 34 66 61 35 65 66 38 39b-e45ad4fa5ef8
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       6A 04 00 50 9B 06 00 24 9A 01 53 55 42 53 43 52 j..P...$..SUBSCR
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       49 42 45 00 00 00 31 39 32 2E 31 36 38 2E 38 30 IBE...192.168.80
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       2E 31 33 33 00 00 00 00 00 00 00 00 00 00 00 00 .133............
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 64 34 37 64 35 35 30 33 30 66 ......d47d55030f
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       30 35 33 34 36 35 31 64 65 61 38 31 37 66 32 64 0534651dea817f2d
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       64 62 37 36 36 65 00 00 00 00 00 00 00 00 00 00 db766e..........
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 37 61 62 30 39 66 31 33 66 65 ......7ab09f13fe
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       32 62 34 32 62 66 31 33 35 63 37 38 39 63 37 36 2b42bf135c789c76
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       61 31 35 62 33 36 00 00 00 00 00 00 00 00 00 00 a15b36..........
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 31 30 30 35 00 00 00 00 00 00 ......1005......
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 4D 44 35 00 00 00 00 00 73 69 ......MD5.....si
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       70 3A 32 37 30 38 34 39 35 37 32 31 33 36 36 38 p:27084957213668
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       40 31 39 32 2E 31 36 38 2E 38 30 2E 31 33 33 00 @192.168.80.133.
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:31.408              ipc.c     thread_1  .       00 00 00 00                                     ....
+2025-12-22 12:29:31.408              ipc.c     thread_1  .PBXIPC-SIP. TX. subscribe 
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # SUB type <BLF>
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # subref 2716
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # cgpn <1005> (4) cat 00 <unknown> <no-change>
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # cdpn <27084957213668> (14) cat 00 <unknown> <no-change>
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # contact <1005> (0) cat 00 <unknown> <no-change>
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # Hostname '192.168.83.85'
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # port 5060
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # SIPDomain '192.168.80.133' len (14)
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # expires 300
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # Call-ID <dac64483-2332-123e-739b-e45ad4fa5ef8> len (36)
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # CSeq 432976
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # AuthInfo:
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # # Username:    '1005'
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # # Realm:       '192.168.80.133'
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # # Method:      'SUBSCRIBE'
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # # Algorithm:   'MD5'
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # # nonce:       '7ab09f13fe2b42bf135c789c76a15b36'
+2025-12-22 12:29:31.408              ipc.c     thread_1  .      # # stale:       ''
+2025-12-22 12:29:31.408 mod_pa_subscriptio     thread_1  .sub_unlock_ext: BLF (sub_subscribe_proc_sip:1842)
+2025-12-22 12:29:31.408              ipc.c pbxipcthread !pbx-ipc SIP: RX (020)
+2025-12-22 12:29:31.408              ipc.c pbxipcthread          37 44 01 00 01 43 02 00 16 27 32 02 00 01 00 16 7D...C...'2.....
+2025-12-22 12:29:31.408              ipc.c pbxipcthread          02 00 94 01                                     ....
+2025-12-22 12:29:31.408              ipc.c pbxipcthread  PBXIPC-SIP. RX. subscribe-status 
+2025-12-22 12:29:31.408              ipc.c pbxipcthread         # SUB type <BLF>
+2025-12-22 12:29:31.408              ipc.c pbxipcthread         # subref 2716
+2025-12-22 12:29:31.408              ipc.c pbxipcthread         # Status NOK[1]
+2025-12-22 12:29:31.408              ipc.c pbxipcthread         # cause 404
+2025-12-22 12:29:31.409          ipc_msg.c     thread_2 !ipc_msg_parse: msg type = subscribe-status [55]
+2025-12-22 12:29:31.409          ipc_msg.c     thread_2  get_ie: ie [68][sub-type] size [1]
+2025-12-22 12:29:31.409          ipc_msg.c     thread_2  get_ie: ie [67][sub-ref] size [2]
+2025-12-22 12:29:31.409          ipc_msg.c     thread_2  get_ie: ie [50][status] size [2]
+2025-12-22 12:29:31.409          ipc_msg.c     thread_2  get_ie: ie [22][cause] size [2]
+2025-12-22 12:29:31.409              ipc.c     thread_2  ipc_process: msg ptr = 0x7f780008c0. type [55]
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_usage_inc_ext: BLF sub 2716. usage inc [1] (sub_subscribe_status_proc_ipc:1308)
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_processing_request_restore: BLF sub 2716 processing request rdata0x7f64012878 restored
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_status_proc_ipc_initial: BLF sub 2716 proc status NOK for initial request (Request msg SUBSCRIBE/cseq=432976 (rdata0x7f64012878))
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_status_proc_ipc_initial: BLF sub 2716 is not accepted by app
+2025-12-22 12:29:31.409           endpoint     thread_2  Response msg 404/SUBSCRIBE/cseq=432976 (tdta0x7f784976d0) created
+2025-12-22 12:29:31.409    dlg0x7f64000968     thread_2  .Sending Response msg 404/SUBSCRIBE/cseq=432976 (tdta0x7f784976d0)
+2025-12-22 12:29:31.409    tsx0x7f6400a358     thread_2  .Sending Response msg 404/SUBSCRIBE/cseq=432976 (tdta0x7f784976d0) in state Trying
+2025-12-22 12:29:31.409    tsx0x7f6400a358     thread_2  ..State changed from Trying to Completed, event=TX_MSG
+2025-12-22 12:29:31.409    dlg0x7f64000968     thread_2  ...Transaction tsx0x7f6400a358 state changed to Completed
+2025-12-22 12:29:31.409  evsub0x7f6400b9c8     thread_2  Subscription state changed NULL --> TERMINATED
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_free_ext: BLF sub 2716. Free is pended (usage: 1) 
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_usage_dec_ext: BLF sub 2716. usage dec [0] (sub_subscribe_status_proc_ipc:1319)
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_usage_dec_ext: BLF sub 2716. aquire pended free
+2025-12-22 12:29:31.409 mod_pa_subscriptio     thread_2  sub_free_ext: BLF sub 2716 freed 
+2025-12-22 12:29:33.393    tsx0x7f6c00e508     thread_2  Timeout timer event
+2025-12-22 12:29:33.393    tsx0x7f6c00e508     thread_2  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:33.393    dlg0x7f6c000c88     thread_2  ..Transaction tsx0x7f6c00e508 state changed to Terminated
+2025-12-22 12:29:33.393  evsub0x7f6c00fd88     thread_2  ...Subscription destroyed
+2025-12-22 12:29:33.393    dlg0x7f6c000c88     thread_2  ....Session count dec to 1 by mod-evsub
+2025-12-22 12:29:33.393    dlg0x7f6c000c88     thread_2  ...Dialog destroyed!
+2025-12-22 12:29:33.393    tsx0x7f6c00e508     thread_2  Timeout timer event
+2025-12-22 12:29:33.393    tsx0x7f6c00e508     thread_2  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:33.393   tdta0x7f640035b0     thread_2  ..Destroying txdata Response msg 404/SUBSCRIBE/cseq=432961 (tdta0x7f640035b0)
+2025-12-22 12:29:33.393    tsx0x7f6c00e508     thread_2  Transaction destroyed!
+2025-12-22 12:29:34.348    tsx0x7f6c012e18     thread_3 !Timeout timer event
+2025-12-22 12:29:34.348    tsx0x7f6c012e18     thread_3  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:34.350    tsx0x7f6c012e18     thread_2 !Timeout timer event
+2025-12-22 12:29:34.350    tsx0x7f6c012e18     thread_2  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:34.350   tdta0x7f6c010db0     thread_2  ..Destroying txdata Request msg REGISTER/cseq=28233 (tdta0x7f6c010db0)
+2025-12-22 12:29:34.350    tsx0x7f6c012e18     thread_2  Transaction destroyed!
+2025-12-22 12:29:35.005              ipc.c pbxipcthread !pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 00 00 00 09 00 00 00 75 30 30 73 33 30 70 30 ........u00s30p0
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          30 00 D1 63 00 00 00 00 00 C0 D1 18 68 7F 00 00 0..c........h...
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 C0 D1 18 68 7F 00 00 00 20 04 60 E6 7F 00 00 ....h.... .`....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 30 2F 02 00 10 0E                            .0/....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # cgpn <u00s30p00> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          31 00 52 02 68 7F 00 00 00 00 00 00 00 00 00 00 1.R.h...........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # cgpn <u00s30p01> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          32 00 52 02 68 7F 00 00 00 01 00 00 00 00 00 00 2.R.h...........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # cgpn <u00s30p02> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          33 00 52 02 68 7F 00 00 00 02 00 00 00 00 00 00 3.R.h...........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # cgpn <u00s30p03> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          34 00 52 02 68 7F 00 00 00 03 00 00 00 00 00 00 4.R.h...........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # cgpn <u00s30p04> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          35 00 52 02 68 7F 00 00 00 04 00 00 00 00 00 00 5.R.h...........
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # cgpn <u00s30p05> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.005              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.005              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.005              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          36 00 52 02 68 7F 00 00 00 05 00 00 00 00 00 00 6.R.h...........
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.006              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.006              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.006              ipc.c pbxipcthread         # cgpn <u00s30p06> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.006              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.006              ipc.c pbxipcthread  pbx-ipc SIP: RX (071)
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          39 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 9......9........
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          37 00 52 02 68 7F 00 00 00 06 00 00 00 00 00 00 7.R.h...........
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.006              ipc.c pbxipcthread          00 00 2F 02 00 10 0E                            ../....
+2025-12-22 12:29:35.006              ipc.c pbxipcthread  PBXIPC-SIP. RX. port-register 
+2025-12-22 12:29:35.006              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:35.006              ipc.c pbxipcthread         # cgpn <u00s30p07> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.006              ipc.c pbxipcthread         # expires 3600
+2025-12-22 12:29:35.012          ipc_msg.c     thread_3 !ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.012          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.012          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.012          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.012              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.013         reg_port.c     thread_3  int_create_reg: reg 1387.
+
+R-URI   <sip:u00s30p00@192.168.80.159:5060>
+To      <sip:u00s30p00@192.168.80.159:5060>
+Contact <sip:u00s30p00@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.013          sip_reg.c     thread_3  regc0x7f6c002168 created
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.013              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.013         reg_port.c     thread_3  int_create_reg: reg 1386.
+
+R-URI   <sip:u00s30p01@192.168.80.159:5060>
+To      <sip:u00s30p01@192.168.80.159:5060>
+Contact <sip:u00s30p01@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.013          sip_reg.c     thread_3  regc0x7f6c003658 created
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.013              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.013         reg_port.c     thread_3  int_create_reg: reg 1385.
+
+R-URI   <sip:u00s30p02@192.168.80.159:5060>
+To      <sip:u00s30p02@192.168.80.159:5060>
+Contact <sip:u00s30p02@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.013          sip_reg.c     thread_3  regc0x7f6c004b48 created
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.013              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.013         reg_port.c     thread_3  int_create_reg: reg 1384.
+
+R-URI   <sip:u00s30p03@192.168.80.159:5060>
+To      <sip:u00s30p03@192.168.80.159:5060>
+Contact <sip:u00s30p03@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.013          sip_reg.c     thread_3  regc0x7f6c006038 created
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.013              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.013         reg_port.c     thread_3  int_create_reg: reg 1383.
+
+R-URI   <sip:u00s30p04@192.168.80.159:5060>
+To      <sip:u00s30p04@192.168.80.159:5060>
+Contact <sip:u00s30p04@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.013          sip_reg.c     thread_3  regc0x7f6c007528 created
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.013              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.013         reg_port.c     thread_3  int_create_reg: reg 1382.
+
+R-URI   <sip:u00s30p05@192.168.80.159:5060>
+To      <sip:u00s30p05@192.168.80.159:5060>
+Contact <sip:u00s30p05@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.013          sip_reg.c     thread_3  regc0x7f6c008a18 created
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.013          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.013              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.014         reg_port.c     thread_3  int_create_reg: reg 1381.
+
+R-URI   <sip:u00s30p06@192.168.80.159:5060>
+To      <sip:u00s30p06@192.168.80.159:5060>
+Contact <sip:u00s30p06@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.014          sip_reg.c     thread_3  regc0x7f6c009f08 created
+2025-12-22 12:29:35.014          ipc_msg.c     thread_3  ipc_msg_parse: msg type = port-register [57]
+2025-12-22 12:29:35.014          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:35.014          ipc_msg.c     thread_3  get_ie: ie [12][cgpn] size [57]
+2025-12-22 12:29:35.014          ipc_msg.c     thread_3  get_ie: ie [47][expires] size [2]
+2025-12-22 12:29:35.014              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [57]
+2025-12-22 12:29:35.014         reg_port.c     thread_3  int_create_reg: reg 1380.
+
+R-URI   <sip:u00s30p07@192.168.80.159:5060>
+To      <sip:u00s30p07@192.168.80.159:5060>
+Contact <sip:u00s30p07@192.168.80.133:5060;extensions="answermode">
+
+2025-12-22 12:29:35.014          sip_reg.c     thread_3  regc0x7f6c00b3f8 created
+2025-12-22 12:29:35.225           endpoint     thread_3  Request msg REGISTER/cseq=53947 (tdta0x7f6c0008c0) created.
+2025-12-22 12:29:35.225    tsx0x7f6c00d138     thread_3  .Transaction created for Request msg REGISTER/cseq=53948 (tdta0x7f6c0008c0)
+2025-12-22 12:29:35.225    tsx0x7f6c00d138     thread_3  Sending Request msg REGISTER/cseq=53948 (tdta0x7f6c0008c0) in state Null
+2025-12-22 12:29:35.225            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.225            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.225            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.226    tsx0x7f6c00d138     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.226           endpoint     thread_3  Request msg REGISTER/cseq=45706 (tdta0x7f6c012e00) created.
+2025-12-22 12:29:35.226    tsx0x7f6c014ee8     thread_3  .Transaction created for Request msg REGISTER/cseq=45707 (tdta0x7f6c012e00)
+2025-12-22 12:29:35.226    tsx0x7f6c014ee8     thread_3  Sending Request msg REGISTER/cseq=45707 (tdta0x7f6c012e00) in state Null
+2025-12-22 12:29:35.226            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.226            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.226            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.226    tsx0x7f6c014ee8     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.236     sip_endpoint.c     thread_3  Processing incoming message: Response msg 405/REGISTER/cseq=53948 (rdata0x7f640199e8)
+2025-12-22 12:29:35.236    tsx0x7f6c00d138     thread_3  .Incoming Response msg 405/REGISTER/cseq=53948 (rdata0x7f640199e8) in state Calling
+2025-12-22 12:29:35.236    tsx0x7f6c00d138     thread_3  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.236          sip_reg.c     thread_3  ...regc0x7f6c007528: Transaction tsx0x7f6c00d138 state changed to Completed
+2025-12-22 12:29:35.236         reg_port.c     thread_3  ...regc_cb: reg 1383 error: code 405
+2025-12-22 12:29:35.236          sip_reg.c     thread_3  ...regc0x7f6c007528 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         34 00 52 02 68 7F 00 00 00 03 00 00 00 00 00 00 4.R.h...........
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...        # trunkID 02
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...        # cgpn <u00s30p04> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...        # Status NOK[1]
+2025-12-22 12:29:35.236          sip_reg.c     thread_3  ...regc0x7f6c007528 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.236     sip_endpoint.c     thread_3  Processing incoming message: Response msg 405/REGISTER/cseq=45707 (rdata0x7f6c01c268)
+2025-12-22 12:29:35.236    tsx0x7f6c014ee8     thread_3  .Incoming Response msg 405/REGISTER/cseq=45707 (rdata0x7f6c01c268) in state Calling
+2025-12-22 12:29:35.236    tsx0x7f6c014ee8     thread_3  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.236          sip_reg.c     thread_3  ...regc0x7f6c002168: Transaction tsx0x7f6c014ee8 state changed to Completed
+2025-12-22 12:29:35.236         reg_port.c     thread_3  ...regc_cb: reg 1387 error: code 405
+2025-12-22 12:29:35.236          sip_reg.c     thread_3  ...regc0x7f6c002168 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         00 00 00 00 09 00 00 00 75 30 30 73 33 30 70 30 ........u00s30p0
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         30 00 D1 63 00 00 00 00 00 C0 D1 18 68 7F 00 00 0..c........h...
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         00 C0 D1 18 68 7F 00 00 00 20 04 60 E6 7F 00 00 ....h.... .`....
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...         00 30 32 02 00 01 00                            .02....
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...        # trunkID 02
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...        # cgpn <u00s30p00> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.236              ipc.c     thread_3  ...        # Status NOK[1]
+2025-12-22 12:29:35.236          sip_reg.c     thread_3  ...regc0x7f6c002168 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.307    tsx0x7f64004668     thread_1 !Timeout timer event
+2025-12-22 12:29:35.307    tsx0x7f64004668     thread_1  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:35.307    tsx0x7f64004668     thread_1  Timeout timer event
+2025-12-22 12:29:35.307    tsx0x7f64004668     thread_1  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:35.307   tdta0x7f64002480     thread_1  ..Destroying txdata Request msg OPTIONS/cseq=1076 (tdta0x7f64002480)
+2025-12-22 12:29:35.307    tsx0x7f64004668     thread_1  Transaction destroyed!
+2025-12-22 12:29:35.327           endpoint     thread_1  Request msg REGISTER/cseq=59817 (tdta0x7f6400bdb0) created.
+2025-12-22 12:29:35.327    tsx0x7f6400de18     thread_1  .Transaction created for Request msg REGISTER/cseq=59818 (tdta0x7f6400bdb0)
+2025-12-22 12:29:35.327    tsx0x7f6400de18     thread_1  Sending Request msg REGISTER/cseq=59818 (tdta0x7f6400bdb0) in state Null
+2025-12-22 12:29:35.327            utils.c     thread_1  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.327            utils.c     thread_1  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.327            utils.c     thread_1  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.327    tsx0x7f6400de18     thread_1  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.337     sip_endpoint.c     thread_0 !Processing incoming message: Response msg 405/REGISTER/cseq=59818 (rdata0x7f6c01c268)
+2025-12-22 12:29:35.337    tsx0x7f6400de18     thread_0  .Incoming Response msg 405/REGISTER/cseq=59818 (rdata0x7f6c01c268) in state Calling
+2025-12-22 12:29:35.337    tsx0x7f6400de18     thread_0  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.337          sip_reg.c     thread_0  ...regc0x7f6c003658: Transaction tsx0x7f6400de18 state changed to Completed
+2025-12-22 12:29:35.337         reg_port.c     thread_0  ...regc_cb: reg 1386 error: code 405
+2025-12-22 12:29:35.337          sip_reg.c     thread_0  ...regc0x7f6c003658 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...         31 00 52 02 68 7F 00 00 00 00 00 00 00 00 00 00 1.R.h...........
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...        # trunkID 02
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...        # cgpn <u00s30p01> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.337              ipc.c     thread_0  ...        # Status NOK[1]
+2025-12-22 12:29:35.337          sip_reg.c     thread_0  ...regc0x7f6c003658 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.347           endpoint     thread_2 !Request msg REGISTER/cseq=28537 (tdta0x7f780008c0) created.
+2025-12-22 12:29:35.347    tsx0x7f78499738     thread_2  .Transaction created for Request msg REGISTER/cseq=28538 (tdta0x7f780008c0)
+2025-12-22 12:29:35.347    tsx0x7f78499738     thread_2  Sending Request msg REGISTER/cseq=28538 (tdta0x7f780008c0) in state Null
+2025-12-22 12:29:35.347            utils.c     thread_2  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.347            utils.c     thread_2  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.347            utils.c     thread_2  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.347    tsx0x7f78499738     thread_2  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.357     sip_endpoint.c     thread_3 !Processing incoming message: Response msg 405/REGISTER/cseq=28538 (rdata0x7f800009d8)
+2025-12-22 12:29:35.357    tsx0x7f78499738     thread_3  .Incoming Response msg 405/REGISTER/cseq=28538 (rdata0x7f800009d8) in state Calling
+2025-12-22 12:29:35.357    tsx0x7f78499738     thread_3  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.357          sip_reg.c     thread_3  ...regc0x7f6c00b3f8: Transaction tsx0x7f78499738 state changed to Completed
+2025-12-22 12:29:35.357         reg_port.c     thread_3  ...regc_cb: reg 1380 error: code 405
+2025-12-22 12:29:35.357          sip_reg.c     thread_3  ...regc0x7f6c00b3f8 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...         37 00 52 02 68 7F 00 00 00 06 00 00 00 00 00 00 7.R.h...........
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...        # trunkID 02
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...        # cgpn <u00s30p07> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.357              ipc.c     thread_3  ...        # Status NOK[1]
+2025-12-22 12:29:35.357          sip_reg.c     thread_3  ...regc0x7f6c00b3f8 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.367           endpoint     thread_3  Request msg REGISTER/cseq=59100 (tdta0x7f6c021070) created.
+2025-12-22 12:29:35.367    tsx0x7f6c00b068     thread_3  .Transaction created for Request msg REGISTER/cseq=59101 (tdta0x7f6c021070)
+2025-12-22 12:29:35.367    tsx0x7f6c00b068     thread_3  Sending Request msg REGISTER/cseq=59101 (tdta0x7f6c021070) in state Null
+2025-12-22 12:29:35.367            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.368            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.368            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.368    tsx0x7f6c00b068     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.378           endpoint     thread_0 !Request msg REGISTER/cseq=32515 (tdta0x7f80007250) created.
+2025-12-22 12:29:35.378    tsx0x7f80001a08     thread_0  .Transaction created for Request msg REGISTER/cseq=32516 (tdta0x7f80007250)
+2025-12-22 12:29:35.378    tsx0x7f80001a08     thread_0  Sending Request msg REGISTER/cseq=32516 (tdta0x7f80007250) in state Null
+2025-12-22 12:29:35.378            utils.c     thread_0  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.378            utils.c     thread_0  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.378     sip_endpoint.c     thread_1 !Processing incoming message: Response msg 405/REGISTER/cseq=59101 (rdata0x7f6c01c268)
+2025-12-22 12:29:35.378    tsx0x7f6c00b068     thread_1  .Incoming Response msg 405/REGISTER/cseq=59101 (rdata0x7f6c01c268) in state Calling
+2025-12-22 12:29:35.378    tsx0x7f6c00b068     thread_1  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.378          sip_reg.c     thread_1  ...regc0x7f6c004b48: Transaction tsx0x7f6c00b068 state changed to Completed
+2025-12-22 12:29:35.378            utils.c     thread_0 !.ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.378    tsx0x7f80001a08     thread_0  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.378         reg_port.c     thread_1 !...regc_cb: reg 1385 error: code 405
+2025-12-22 12:29:35.378          sip_reg.c     thread_1  ...regc0x7f6c004b48 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...         32 00 52 02 68 7F 00 00 00 01 00 00 00 00 00 00 2.R.h...........
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...        # trunkID 02
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...        # cgpn <u00s30p02> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.378              ipc.c     thread_1  ...        # Status NOK[1]
+2025-12-22 12:29:35.378          sip_reg.c     thread_1  ...regc0x7f6c004b48 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.388     sip_endpoint.c     thread_2 !Processing incoming message: Response msg 405/REGISTER/cseq=32516 (rdata0x7f64011868)
+2025-12-22 12:29:35.388    tsx0x7f80001a08     thread_2  .Incoming Response msg 405/REGISTER/cseq=32516 (rdata0x7f64011868) in state Calling
+2025-12-22 12:29:35.388    tsx0x7f80001a08     thread_2  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.388          sip_reg.c     thread_2  ...regc0x7f6c009f08: Transaction tsx0x7f80001a08 state changed to Completed
+2025-12-22 12:29:35.388         reg_port.c     thread_2  ...regc_cb: reg 1381 error: code 405
+2025-12-22 12:29:35.388          sip_reg.c     thread_2  ...regc0x7f6c009f08 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...         36 00 52 02 68 7F 00 00 00 05 00 00 00 00 00 00 6.R.h...........
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...        # trunkID 02
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...        # cgpn <u00s30p06> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.388              ipc.c     thread_2  ...        # Status NOK[1]
+2025-12-22 12:29:35.388          sip_reg.c     thread_2  ...regc0x7f6c009f08 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.398           endpoint     thread_3 !Request msg REGISTER/cseq=35993 (tdta0x7f6c01c240) created.
+2025-12-22 12:29:35.398    tsx0x7f6c009b78     thread_3  .Transaction created for Request msg REGISTER/cseq=35994 (tdta0x7f6c01c240)
+2025-12-22 12:29:35.398    tsx0x7f6c009b78     thread_3  Sending Request msg REGISTER/cseq=35994 (tdta0x7f6c01c240) in state Null
+2025-12-22 12:29:35.398            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.398            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.398            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.398    tsx0x7f6c009b78     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.408     sip_endpoint.c     thread_0 !Processing incoming message: Response msg 405/REGISTER/cseq=35994 (rdata0x7f784a8278)
+2025-12-22 12:29:35.408    tsx0x7f6c009b78     thread_0  .Incoming Response msg 405/REGISTER/cseq=35994 (rdata0x7f784a8278) in state Calling
+2025-12-22 12:29:35.408    tsx0x7f6c009b78     thread_0  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.408          sip_reg.c     thread_0  ...regc0x7f6c008a18: Transaction tsx0x7f6c009b78 state changed to Completed
+2025-12-22 12:29:35.408         reg_port.c     thread_0  ...regc_cb: reg 1382 error: code 405
+2025-12-22 12:29:35.408          sip_reg.c     thread_0  ...regc0x7f6c008a18 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...         35 00 52 02 68 7F 00 00 00 04 00 00 00 00 00 00 5.R.h...........
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...        # trunkID 02
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...        # cgpn <u00s30p05> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.408              ipc.c     thread_0  ...        # Status NOK[1]
+2025-12-22 12:29:35.408          sip_reg.c     thread_0  ...regc0x7f6c008a18 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:35.418           endpoint     thread_2 !Request msg REGISTER/cseq=9597 (tdta0x7f7849a9b0) created.
+2025-12-22 12:29:35.418    tsx0x7f784a92a8     thread_2  .Transaction created for Request msg REGISTER/cseq=9598 (tdta0x7f7849a9b0)
+2025-12-22 12:29:35.418    tsx0x7f784a92a8     thread_2  Sending Request msg REGISTER/cseq=9598 (tdta0x7f7849a9b0) in state Null
+2025-12-22 12:29:35.418            utils.c     thread_2  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:35.418            utils.c     thread_2  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:35.418            utils.c     thread_2  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:35.418    tsx0x7f784a92a8     thread_2  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:35.428     sip_endpoint.c     thread_1 !Processing incoming message: Response msg 405/REGISTER/cseq=9598 (rdata0x7f8000d3a8)
+2025-12-22 12:29:35.428    tsx0x7f784a92a8     thread_1  .Incoming Response msg 405/REGISTER/cseq=9598 (rdata0x7f8000d3a8) in state Calling
+2025-12-22 12:29:35.428    tsx0x7f784a92a8     thread_1  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:35.428          sip_reg.c     thread_1  ...regc0x7f6c006038: Transaction tsx0x7f784a92a8 state changed to Completed
+2025-12-22 12:29:35.428         reg_port.c     thread_1  ...regc_cb: reg 1384 error: code 405
+2025-12-22 12:29:35.428          sip_reg.c     thread_1  ...regc0x7f6c006038 try destroy (has tsx 0, busy 1)
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...pbx-ipc SIP: TX (071)
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...         3A 03 02 00 02 00 0C 39 00 C1 03 01 E6 7F 00 00 :......9........
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...         00 9C 2F 62 09 00 00 00 75 30 30 73 33 30 70 30 ../b....u00s30p0
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...         33 00 52 02 68 7F 00 00 00 02 00 00 00 00 00 00 3.R.h...........
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...         00 80 2F 62 00 00 00 00 00 1E 00 00 00 00 00 00 ../b............
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...         00 00 32 02 00 01 00                            ..2....
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...PBXIPC-SIP. TX. port-register-status 
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...        # trunkID 02
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...        # cgpn <u00s30p03> (9) cat 0xe6 <subscriber> _undef_0x7f
+2025-12-22 12:29:35.428              ipc.c     thread_1  ...        # Status NOK[1]
+2025-12-22 12:29:35.428          sip_reg.c     thread_1  ...regc0x7f6c006038 try destroy (has tsx 0, busy 0)
+2025-12-22 12:29:40.242    tsx0x7f6c014ee8     thread_3 !Timeout timer event
+2025-12-22 12:29:40.242    tsx0x7f6c00d138     thread_2 !Timeout timer event
+2025-12-22 12:29:40.242    tsx0x7f6c014ee8     thread_3 !.State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.242    tsx0x7f6c00d138     thread_2 !.State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.242    tsx0x7f6c014ee8     thread_3 !Timeout timer event
+2025-12-22 12:29:40.242    tsx0x7f6c00d138     thread_2 !Timeout timer event
+2025-12-22 12:29:40.242    tsx0x7f6c014ee8     thread_3 !.State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.242    tsx0x7f6c00d138     thread_2 !.State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.242   tdta0x7f6c0008c0     thread_2  ..Destroying txdata Request msg REGISTER/cseq=53948 (tdta0x7f6c0008c0)
+2025-12-22 12:29:40.242   tdta0x7f6c012e00     thread_3 !..Destroying txdata Request msg REGISTER/cseq=45707 (tdta0x7f6c012e00)
+2025-12-22 12:29:40.242    tsx0x7f6c00d138     thread_2 !Transaction destroyed!
+2025-12-22 12:29:40.242    tsx0x7f6c014ee8     thread_3 !Transaction destroyed!
+2025-12-22 12:29:40.343    tsx0x7f6400de18     thread_0 !Timeout timer event
+2025-12-22 12:29:40.343    tsx0x7f6400de18     thread_0  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.343    tsx0x7f6400de18     thread_0  Timeout timer event
+2025-12-22 12:29:40.343    tsx0x7f6400de18     thread_0  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.343   tdta0x7f6400bdb0     thread_0  ..Destroying txdata Request msg REGISTER/cseq=59818 (tdta0x7f6400bdb0)
+2025-12-22 12:29:40.343    tsx0x7f6400de18     thread_0  Transaction destroyed!
+2025-12-22 12:29:40.363    tsx0x7f78499738     thread_3 !Timeout timer event
+2025-12-22 12:29:40.363    tsx0x7f78499738     thread_3  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.363    tsx0x7f78499738     thread_3  Timeout timer event
+2025-12-22 12:29:40.363    tsx0x7f78499738     thread_3  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.363   tdta0x7f780008c0     thread_3  ..Destroying txdata Request msg REGISTER/cseq=28538 (tdta0x7f780008c0)
+2025-12-22 12:29:40.363    tsx0x7f78499738     thread_3  Transaction destroyed!
+2025-12-22 12:29:40.383    tsx0x7f6c00b068     thread_1 !Timeout timer event
+2025-12-22 12:29:40.383    tsx0x7f6c00b068     thread_1  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.383    tsx0x7f6c00b068     thread_1  Timeout timer event
+2025-12-22 12:29:40.383    tsx0x7f6c00b068     thread_1  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.383   tdta0x7f6c021070     thread_1  ..Destroying txdata Request msg REGISTER/cseq=59101 (tdta0x7f6c021070)
+2025-12-22 12:29:40.383    tsx0x7f6c00b068     thread_1  Transaction destroyed!
+2025-12-22 12:29:40.393    tsx0x7f80001a08     thread_2 !Timeout timer event
+2025-12-22 12:29:40.393    tsx0x7f80001a08     thread_2  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.393    tsx0x7f80001a08     thread_2  Timeout timer event
+2025-12-22 12:29:40.393    tsx0x7f80001a08     thread_2  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.393   tdta0x7f80007250     thread_2  ..Destroying txdata Request msg REGISTER/cseq=32516 (tdta0x7f80007250)
+2025-12-22 12:29:40.393    tsx0x7f80001a08     thread_2  Transaction destroyed!
+2025-12-22 12:29:40.413    tsx0x7f6c009b78     thread_2  Timeout timer event
+2025-12-22 12:29:40.413    tsx0x7f6c009b78     thread_2  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.413    tsx0x7f6c009b78     thread_2  Timeout timer event
+2025-12-22 12:29:40.413    tsx0x7f6c009b78     thread_2  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.413   tdta0x7f6c01c240     thread_2  ..Destroying txdata Request msg REGISTER/cseq=35994 (tdta0x7f6c01c240)
+2025-12-22 12:29:40.413    tsx0x7f6c009b78     thread_2  Transaction destroyed!
+2025-12-22 12:29:40.433    tsx0x7f784a92a8     thread_3 !Timeout timer event
+2025-12-22 12:29:40.433    tsx0x7f784a92a8     thread_3  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:40.433    tsx0x7f784a92a8     thread_3  Timeout timer event
+2025-12-22 12:29:40.433    tsx0x7f784a92a8     thread_3  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:40.433   tdta0x7f7849a9b0     thread_3  ..Destroying txdata Request msg REGISTER/cseq=9598 (tdta0x7f7849a9b0)
+2025-12-22 12:29:40.433    tsx0x7f784a92a8     thread_3  Transaction destroyed!
+2025-12-22 12:29:42.216              ipc.c pbxipcthread !pbx-ipc SIP: RX (033)
+2025-12-22 12:29:42.217              ipc.c pbxipcthread          0F 54 02 00 31 05 03 02 00 02 00 55 0E 00 31 39 .T..1......U..19
+2025-12-22 12:29:42.217              ipc.c pbxipcthread          32 2E 31 36 38 2E 38 30 2E 31 35 39 05 02 00 C4 2.168.80.159....
+2025-12-22 12:29:42.217              ipc.c pbxipcthread          13                                              .
+2025-12-22 12:29:42.217              ipc.c pbxipcthread  PBXIPC-SIP. RX. keep-alive-req 
+2025-12-22 12:29:42.217              ipc.c pbxipcthread         # requestID 0531
+2025-12-22 12:29:42.217              ipc.c pbxipcthread         # trunkID 02
+2025-12-22 12:29:42.217              ipc.c pbxipcthread         # Hostname '192.168.80.159'
+2025-12-22 12:29:42.217              ipc.c pbxipcthread         # port 5060
+2025-12-22 12:29:42.225          ipc_msg.c     thread_3 !ipc_msg_parse: msg type = keep-alive-req [15]
+2025-12-22 12:29:42.225          ipc_msg.c     thread_3  get_ie: ie [84][request-id] size [2]
+2025-12-22 12:29:42.225          ipc_msg.c     thread_3  get_ie: ie [3][trunk-id] size [2]
+2025-12-22 12:29:42.225          ipc_msg.c     thread_3  get_ie: ie [85][hostname] size [14]
+2025-12-22 12:29:42.225          ipc_msg.c     thread_3  get_ie: ie [5][port] size [2]
+2025-12-22 12:29:42.225              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c0008c0. type [15]
+2025-12-22 12:29:42.225     mod_pa_pjsip.c     thread_3  keep_alive_request: Sending OPTIONS msg. Proto: UDP
+2025-12-22 12:29:42.225           endpoint     thread_3  Request msg OPTIONS/cseq=31943 (tdta0x7f6c002410) created.
+2025-12-22 12:29:42.225    tsx0x7f6c003548     thread_3  .Transaction created for Request msg OPTIONS/cseq=31943 (tdta0x7f6c002410)
+2025-12-22 12:29:42.225    tsx0x7f6c003548     thread_3  Sending Request msg OPTIONS/cseq=31943 (tdta0x7f6c002410) in state Null
+2025-12-22 12:29:42.225            utils.c     thread_3  .ext_domain_resolver: target host 192.168.80.159:5060
+2025-12-22 12:29:42.225            utils.c     thread_3  .ext_domain_resolver: transport type 1
+2025-12-22 12:29:42.226            utils.c     thread_3  .ext_domain_resolver: resolved address[0] 192.168.80.159:5060
+2025-12-22 12:29:42.226    tsx0x7f6c003548     thread_3  .State changed from Null to Calling, event=TX_MSG
+2025-12-22 12:29:42.235     sip_endpoint.c     thread_1 !Processing incoming message: Response msg 200/OPTIONS/cseq=31943 (rdata0x7f64011868)
+2025-12-22 12:29:42.235    tsx0x7f6c003548     thread_1  .Incoming Response msg 200/OPTIONS/cseq=31943 (rdata0x7f64011868) in state Calling
+2025-12-22 12:29:42.235    tsx0x7f6c003548     thread_1  ..State changed from Calling to Completed, event=RX_MSG
+2025-12-22 12:29:42.235     mod_pa_pjsip.c     thread_1  ...on_tsx_state_changed: reqid 0531 reply 200
+2025-12-22 12:29:42.236              ipc.c     thread_1  ...pbx-ipc SIP: TX (011)
+2025-12-22 12:29:42.236              ipc.c     thread_1  ...         10 54 02 00 31 05 16 02 00 C8 00                .T..1......
+2025-12-22 12:29:42.236              ipc.c     thread_1  ...PBXIPC-SIP. TX. keep-alive-rsp 
+2025-12-22 12:29:42.236              ipc.c     thread_1  ...        # requestID 0531
+2025-12-22 12:29:42.236              ipc.c     thread_1  ...        # cause 200
+2025-12-22 12:29:47.239    tsx0x7f6c003548     thread_2 !Timeout timer event
+2025-12-22 12:29:47.240    tsx0x7f6c003548     thread_2  .State changed from Completed to Terminated, event=TIMER
+2025-12-22 12:29:47.240    tsx0x7f6c003548     thread_2  Timeout timer event
+2025-12-22 12:29:47.240    tsx0x7f6c003548     thread_2  .State changed from Terminated to Destroyed, event=TIMER
+2025-12-22 12:29:47.240   tdta0x7f6c002410     thread_2  ..Destroying txdata Request msg OPTIONS/cseq=31943 (tdta0x7f6c002410)
+2025-12-22 12:29:47.240    tsx0x7f6c003548     thread_2  Transaction destroyed!
+2025-12-22 12:29:48.457              app.c     thread_2  Memory trim
+trace 2025-12-22 12:29:52.418     sip_endpoint.c     thread_3 !Processing incoming message: Request msg SUBSCRIBE/cseq=432986 (rdata0x7f64002478)
+2025-12-22 12:29:52.419 mod_pa_transit_ab.     thread_3  .Request msg SUBSCRIBE/cseq=432986 (rdata0x7f64002478) request not from trunk
+2025-12-22 12:29:52.419            utils.c     thread_3  .ab 1005 info 0x7f7849d7c0
+2025-12-22 12:29:52.419            utils.c     thread_3  .ab 1005 wrong src 192.168.83.85:5060 (expected 192.168.80.157:5060)
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_lock_ext: BLF (sub_subscribe_proc_sip:1740)
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_alloc: BLF sub 2717 allocated
+2025-12-22 12:29:52.419    tsx0x7f6c0021f8     thread_3  ..Transaction created for Request msg SUBSCRIBE/cseq=432986 (rdata0x7f64002478)
+2025-12-22 12:29:52.419    tsx0x7f6c0021f8     thread_3  .Incoming Request msg SUBSCRIBE/cseq=432986 (rdata0x7f64002478) in state Null
+2025-12-22 12:29:52.419    tsx0x7f6c0021f8     thread_3  ..State changed from Null to Trying, event=RX_MSG
+2025-12-22 12:29:52.419    dlg0x7f6c000d88     thread_3  ...Transaction tsx0x7f6c0021f8 state changed to Trying
+2025-12-22 12:29:52.419    dlg0x7f6c000d88     thread_3  .UAS dialog created
+2025-12-22 12:29:52.419    dlg0x7f6c000d88     thread_3  .Module mod-evsub added as dialog usage, data=0x7f6c004378
+2025-12-22 12:29:52.419  evsub0x7f6c003c68     thread_3  .UAS subscription created, using dialog dlg0x7f6c000d88
+2025-12-22 12:29:52.419    dlg0x7f6c000d88     thread_3  ..Session count inc to 3 by mod-evsub
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_processing_request_store: BLF sub 2717 new processing request rdata0x7f64002478 stored as rdata0x7f6c005e38
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_subscribe_proc_sip: new BLF sub 2717 created:
+     src:     192.168.83.85:5060
+     domain:  192.168.80.133
+     caller:  1005
+     callee:  27084957213668
+     contact: 1005
+     expires: 300
+
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_usage_inc_ext: BLF sub 2717. usage inc [1] (sub_send_subscribe:435)
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_usage_dec_ext: BLF sub 2717. usage dec [0] (sub_send_subscribe:458)
+2025-12-22 12:29:52.419              ipc.c     thread_3  .pbx-ipc SIP: TX (692)
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       36 44 01 00 01 43 02 00 17 27 0C 39 00 00 00 00 6D...C...'.9....
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 04 00 00 00 31 30 30 35 ............1005
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 0B 39 00 00 00 00 00 00 00 00 .......9........
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 0E 00 00 00 32 37 30 38 34 39 35 37 ........27084957
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       32 31 33 36 36 38 00 00 00 00 00 00 00 00 00 00 213668..........
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 0E 39 00 00 00 00 00 00 00 00 00 00 00 00 ...9............
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 31 30 30 35 00 00 00 00 00 00 00 00 ....1005........
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 0D ..............U.
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 31 39 32 2E 31 36 38 2E 38 33 2E 38 35 05 02 .192.168.83.85..
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 C4 13 65 0E 00 31 39 32 2E 31 36 38 2E 38 30 ...e..192.168.80
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       2E 31 33 33 2F 02 00 2C 01 25 24 00 65 37 34 63 .133/..,.%$.e74c
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       35 31 65 30 2D 32 33 33 32 2D 31 32 33 65 2D 37 51e0-2332-123e-7
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       33 39 62 2D 65 34 35 61 64 34 66 61 35 65 66 38 39b-e45ad4fa5ef8
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       6A 04 00 5A 9B 06 00 24 9A 01 53 55 42 53 43 52 j..Z...$..SUBSCR
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       49 42 45 00 00 00 31 39 32 2E 31 36 38 2E 38 30 IBE...192.168.80
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       2E 31 33 33 00 00 00 00 00 00 00 00 00 00 00 00 .133............
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 64 34 37 64 35 35 30 33 30 66 ......d47d55030f
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       30 35 33 34 36 35 31 64 65 61 38 31 37 66 32 64 0534651dea817f2d
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       64 62 37 36 36 65 00 00 00 00 00 00 00 00 00 00 db766e..........
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 37 61 62 30 39 66 31 33 66 65 ......7ab09f13fe
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       32 62 34 32 62 66 31 33 35 63 37 38 39 63 37 36 2b42bf135c789c76
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       61 31 35 62 33 36 00 00 00 00 00 00 00 00 00 00 a15b36..........
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 31 30 30 35 00 00 00 00 00 00 ......1005......
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 4D 44 35 00 00 00 00 00 73 69 ......MD5.....si
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       70 3A 32 37 30 38 34 39 35 37 32 31 33 36 36 38 p:27084957213668
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       40 31 39 32 2E 31 36 38 2E 38 30 2E 31 33 33 00 @192.168.80.133.
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:52.419              ipc.c     thread_3  .       00 00 00 00                                     ....
+2025-12-22 12:29:52.419              ipc.c     thread_3  .PBXIPC-SIP. TX. subscribe 
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # SUB type <BLF>
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # subref 2717
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # cgpn <1005> (4) cat 00 <unknown> <no-change>
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # cdpn <27084957213668> (14) cat 00 <unknown> <no-change>
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # contact <1005> (0) cat 00 <unknown> <no-change>
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # Hostname '192.168.83.85'
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # port 5060
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # SIPDomain '192.168.80.133' len (14)
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # expires 300
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # Call-ID <e74c51e0-2332-123e-739b-e45ad4fa5ef8> len (36)
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # CSeq 432986
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # AuthInfo:
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # # Username:    '1005'
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # # Realm:       '192.168.80.133'
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # # Method:      'SUBSCRIBE'
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # # Algorithm:   'MD5'
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # # nonce:       '7ab09f13fe2b42bf135c789c76a15b36'
+2025-12-22 12:29:52.419              ipc.c     thread_3  .      # # stale:       ''
+2025-12-22 12:29:52.419 mod_pa_subscriptio     thread_3  .sub_unlock_ext: BLF (sub_subscribe_proc_sip:1842)
+2025-12-22 12:29:52.419              ipc.c pbxipcthread !pbx-ipc SIP: RX (020)
+2025-12-22 12:29:52.419              ipc.c pbxipcthread          37 44 01 00 01 43 02 00 17 27 32 02 00 01 00 16 7D...C...'2.....
+2025-12-22 12:29:52.419              ipc.c pbxipcthread          02 00 94 01                                     ....
+2025-12-22 12:29:52.419              ipc.c pbxipcthread  PBXIPC-SIP. RX. subscribe-status 
+2025-12-22 12:29:52.419              ipc.c pbxipcthread         # SUB type <BLF>
+2025-12-22 12:29:52.419              ipc.c pbxipcthread         # subref 2717
+2025-12-22 12:29:52.419              ipc.c pbxipcthread         # Status NOK[1]
+2025-12-22 12:29:52.419              ipc.c pbxipcthread         # cause 404
+2025-12-22 12:29:52.425          ipc_msg.c     thread_2 !ipc_msg_parse: msg type = subscribe-status [55]
+2025-12-22 12:29:52.425          ipc_msg.c     thread_2  get_ie: ie [68][sub-type] size [1]
+2025-12-22 12:29:52.425          ipc_msg.c     thread_2  get_ie: ie [67][sub-ref] size [2]
+2025-12-22 12:29:52.425          ipc_msg.c     thread_2  get_ie: ie [50][status] size [2]
+2025-12-22 12:29:52.425          ipc_msg.c     thread_2  get_ie: ie [22][cause] size [2]
+2025-12-22 12:29:52.425              ipc.c     thread_2  ipc_process: msg ptr = 0x7f780008c0. type [55]
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_usage_inc_ext: BLF sub 2717. usage inc [1] (sub_subscribe_status_proc_ipc:1308)
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_processing_request_restore: BLF sub 2717 processing request rdata0x7f6c005e38 restored
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_status_proc_ipc_initial: BLF sub 2717 proc status NOK for initial request (Request msg SUBSCRIBE/cseq=432986 (rdata0x7f6c005e38))
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_status_proc_ipc_initial: BLF sub 2717 is not accepted by app
+2025-12-22 12:29:52.425           endpoint     thread_2  Response msg 404/SUBSCRIBE/cseq=432986 (tdta0x7f784986e0) created
+2025-12-22 12:29:52.425    dlg0x7f6c000d88     thread_2  .Sending Response msg 404/SUBSCRIBE/cseq=432986 (tdta0x7f784986e0)
+2025-12-22 12:29:52.425    tsx0x7f6c0021f8     thread_2  .Sending Response msg 404/SUBSCRIBE/cseq=432986 (tdta0x7f784986e0) in state Trying
+2025-12-22 12:29:52.425    tsx0x7f6c0021f8     thread_2  ..State changed from Trying to Completed, event=TX_MSG
+2025-12-22 12:29:52.425    dlg0x7f6c000d88     thread_2  ...Transaction tsx0x7f6c0021f8 state changed to Completed
+2025-12-22 12:29:52.425  evsub0x7f6c003c68     thread_2  Subscription state changed NULL --> TERMINATED
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_free_ext: BLF sub 2717. Free is pended (usage: 1) 
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_usage_dec_ext: BLF sub 2717. usage dec [0] (sub_subscribe_status_proc_ipc:1319)
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_usage_dec_ext: BLF sub 2717. aquire pended free
+2025-12-22 12:29:52.425 mod_pa_subscriptio     thread_2  sub_free_ext: BLF sub 2717 freed 
+app 2025-12-22 12:29:53.462     sip_endpoint.c     thread_2  Processing incoming message: Request msg REGISTER/cseq=310495 (rdata0x7f6c00d0c8)
+2025-12-22 12:29:53.462 mod_pa_transit_ab.     thread_2  .Request msg REGISTER/cseq=310495 (rdata0x7f6c00d0c8) request not from trunk
+2025-12-22 12:29:53.462            utils.c     thread_2  .ab 1005 info 0x7f7849d7c0
+2025-12-22 12:29:53.462            utils.c     thread_2  .ab 1005 wrong src 192.168.83.85:5060 (expected 192.168.80.157:5060)
+2025-12-22 12:29:53.462    tsx0x7f78001178     thread_2  ..Transaction created for Request msg REGISTER/cseq=310495 (rdata0x7f6c00d0c8)
+2025-12-22 12:29:53.462    tsx0x7f78001178     thread_2  .Incoming Request msg REGISTER/cseq=310495 (rdata0x7f6c00d0c8) in state Null
+2025-12-22 12:29:53.462    tsx0x7f78001178     thread_2  ..State changed from Null to Trying, event=RX_MSG
+2025-12-22 12:29:53.462 mod_pa_sip_users.c     thread_2  ...on_tsx_state_changed: tsx 'tsx0x7f78001178', role UAS, method REGISTER, event TSX_STATE, tsx-state: Trying
+2025-12-22 12:29:53.462           endpoint     thread_2  .Response msg 200/REGISTER/cseq=310495 (tdta0x7f78499b50) created
+2025-12-22 12:29:53.462              ipc.c     thread_2  .pbx-ipc SIP: TX (221)
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       4A 54 02 00 01 00 55 0D 00 31 39 32 2E 31 36 38 JT....U..192.168
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       2E 38 33 2E 38 35 05 02 00 C4 13 25 24 00 64 32 .83.85.....%$.d2
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       63 64 62 32 38 62 2D 32 30 66 30 2D 31 32 33 65 cdb28b-20f0-123e
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       2D 37 33 39 62 2D 65 34 35 61 64 34 66 61 35 65 -739b-e45ad4fa5e
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       66 38 6A 04 00 DF BC 04 00 64 04 00 31 30 30 35 f8j......d..1005
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       65 0E 00 31 39 32 2E 31 36 38 2E 38 30 2E 31 33 e..192.168.80.13
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       33 85 04 00 01 00 00 00 66 72 00 C4 13 31 39 32 3.......fr...192
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       2E 31 36 38 2E 38 33 2E 38 35 00 00 00 00 00 00 .168.83.85......
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 31 30 ..............10
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       30 35 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05..............
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.462              ipc.c     thread_2  .       00 00 00 00 00 00 00 00 00 2C 01 00 00          .........,...
+2025-12-22 12:29:53.462              ipc.c     thread_2  .PBXIPC-SIP. TX. user-register 
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # requestID 0001
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # Hostname '192.168.83.85'
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # port 5060
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # Call-ID <d2cdb28b-20f0-123e-739b-e45ad4fa5ef8> len (36)
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # CSeq 310495
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # Username '1005' len (4)
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # SIPDomain '192.168.80.133' len (14)
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # TP-Proto <UDP>
+2025-12-22 12:29:53.462              ipc.c     thread_2  .      # RegContact <sip:1005@192.168.83.85> port <5060> expires <300> len (114)
+2025-12-22 12:29:53.462              ipc.c pbxipcthread !pbx-ipc SIP: RX (128)
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          4A 54 02 00 01 00 16 02 00 C8 00 66 72 00 C4 13 JT.........fr...
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          31 39 32 2E 31 36 38 2E 38 33 2E 38 35 00 70 02 192.168.83.85.p.
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          60 E6 7F 00 00 00 D0 FF FF FF 80 FF FF FF 00 02 `...............
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          60 E6 7F 00 00 00 AC 51 50 97 7F 00 00 00 50 02 `......QP.....P.
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          60 E6 7F 00 00 00 50 03 60 E6 7F 00 00 00 E8 E3 `.....P.`.......
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          5B 31 30 30 35 00 7D 55 70 4B 00 00 00 00 40 03 [1005.}UpK....@.
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          60 E6 7F 00 00 00 2C F8 4F 97 7F 00 00 00 00 00 `.....,.O.......
+2025-12-22 12:29:53.462              ipc.c pbxipcthread          00 00 00 00 00 00 7D 55 70 4B 00 00 2C 01 00 00 ......}UpK..,...
+2025-12-22 12:29:53.462              ipc.c pbxipcthread  PBXIPC-SIP. RX. user-register 
+2025-12-22 12:29:53.462              ipc.c pbxipcthread         # requestID 0001
+2025-12-22 12:29:53.462              ipc.c pbxipcthread         # cause 200
+2025-12-22 12:29:53.462              ipc.c pbxipcthread         # RegContact <sip:1005@192.168.83.85> port <5060> expires <300> len (114)
+2025-12-22 12:29:53.463          ipc_msg.c     thread_0 !ipc_msg_parse: msg type = user-register [74]
+2025-12-22 12:29:53.463          ipc_msg.c     thread_0  get_ie: ie [84][request-id] size [2]
+2025-12-22 12:29:53.463          ipc_msg.c     thread_0  get_ie: ie [22][cause] size [2]
+2025-12-22 12:29:53.463          ipc_msg.c     thread_0  get_ie: ie [102][reg-contact] size [114]
+2025-12-22 12:29:53.463              ipc.c     thread_0  ipc_process: msg ptr = 0x7f800008c0. type [74]
+2025-12-22 12:29:53.463 mod_pa_sip_users.c     thread_0  user_register_reply: cause = 200
+2025-12-22 12:29:53.463    tsx0x7f78001178     thread_0  Sending Response msg 200/REGISTER/cseq=310495 (tdta0x7f78499b50) in state Trying
+2025-12-22 12:29:53.463    tsx0x7f78001178     thread_0  .State changed from Trying to Completed, event=TX_MSG
+2025-12-22 12:29:53.463 mod_pa_sip_users.c     thread_0  ..on_tsx_state_changed: tsx 'tsx0x7f78001178', role UAS, method REGISTER, event TSX_STATE, tsx-state: Completed
+2025-12-22 12:29:53.472     sip_endpoint.c     thread_1 !Processing incoming message: Request msg SUBSCRIBE/cseq=432987 (rdata0x7f784a8278)
+2025-12-22 12:29:53.472 mod_pa_transit_ab.     thread_1  .Request msg SUBSCRIBE/cseq=432987 (rdata0x7f784a8278) request not from trunk
+2025-12-22 12:29:53.472            utils.c     thread_1  .ab 1005 info 0x7f7849d7c0
+2025-12-22 12:29:53.472            utils.c     thread_1  .ab 1005 wrong src 192.168.83.85:5060 (expected 192.168.80.157:5060)
+2025-12-22 12:29:53.472 mod_pa_subscriptio     thread_1  .sub_lock_ext: BLF (sub_subscribe_proc_sip:1740)
+2025-12-22 12:29:53.472 mod_pa_subscriptio     thread_1  .sub_alloc: BLF sub 2718 allocated
+2025-12-22 12:29:53.473    tsx0x7f6400d2c8     thread_1  ..Transaction created for Request msg SUBSCRIBE/cseq=432987 (rdata0x7f784a8278)
+2025-12-22 12:29:53.473    tsx0x7f6400d2c8     thread_1  .Incoming Request msg SUBSCRIBE/cseq=432987 (rdata0x7f784a8278) in state Null
+2025-12-22 12:29:53.473    tsx0x7f6400d2c8     thread_1  ..State changed from Null to Trying, event=RX_MSG
+2025-12-22 12:29:53.473    dlg0x7f6400be58     thread_1  ...Transaction tsx0x7f6400d2c8 state changed to Trying
+2025-12-22 12:29:53.473    dlg0x7f6400be58     thread_1  .UAS dialog created
+2025-12-22 12:29:53.473    dlg0x7f6400be58     thread_1  .Module mod-evsub added as dialog usage, data=0x7f6400f2b8
+2025-12-22 12:29:53.473  evsub0x7f6400eba8     thread_1  .UAS subscription created, using dialog dlg0x7f6400be58
+2025-12-22 12:29:53.473    dlg0x7f6400be58     thread_1  ..Session count inc to 3 by mod-evsub
+2025-12-22 12:29:53.473 mod_pa_subscriptio     thread_1  .sub_processing_request_store: BLF sub 2718 new processing request rdata0x7f784a8278 stored as rdata0x7f64003488
+2025-12-22 12:29:53.473 mod_pa_subscriptio     thread_1  .sub_subscribe_proc_sip: new BLF sub 2718 created:
+     src:     192.168.83.85:5060
+     domain:  192.168.80.133
+     caller:  1005
+     callee:  27084957213668
+     contact: 1005
+     expires: 300
+
+2025-12-22 12:29:53.473 mod_pa_subscriptio     thread_1  .sub_usage_inc_ext: BLF sub 2718. usage inc [1] (sub_send_subscribe:435)
+2025-12-22 12:29:53.473 mod_pa_subscriptio     thread_1  .sub_usage_dec_ext: BLF sub 2718. usage dec [0] (sub_send_subscribe:458)
+2025-12-22 12:29:53.473              ipc.c     thread_1  .pbx-ipc SIP: TX (692)
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       36 44 01 00 01 43 02 00 18 27 0C 39 00 00 00 00 6D...C...'.9....
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 04 00 00 00 31 30 30 35 ............1005
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 0B 39 00 00 00 00 00 00 00 00 .......9........
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 0E 00 00 00 32 37 30 38 34 39 35 37 ........27084957
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       32 31 33 36 36 38 00 00 00 00 00 00 00 00 00 00 213668..........
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 0E 39 00 00 00 00 00 00 00 00 00 00 00 00 ...9............
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 31 30 30 35 00 00 00 00 00 00 00 00 ....1005........
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 0D ..............U.
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 31 39 32 2E 31 36 38 2E 38 33 2E 38 35 05 02 .192.168.83.85..
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 C4 13 65 0E 00 31 39 32 2E 31 36 38 2E 38 30 ...e..192.168.80
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       2E 31 33 33 2F 02 00 2C 01 25 24 00 65 37 65 64 .133/..,.%$.e7ed
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       32 61 31 64 2D 32 33 33 32 2D 31 32 33 65 2D 37 2a1d-2332-123e-7
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       33 39 62 2D 65 34 35 61 64 34 66 61 35 65 66 38 39b-e45ad4fa5ef8
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       6A 04 00 5B 9B 06 00 24 9A 01 53 55 42 53 43 52 j..[...$..SUBSCR
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       49 42 45 00 00 00 31 39 32 2E 31 36 38 2E 38 30 IBE...192.168.80
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       2E 31 33 33 00 00 00 00 00 00 00 00 00 00 00 00 .133............
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 64 34 37 64 35 35 30 33 30 66 ......d47d55030f
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       30 35 33 34 36 35 31 64 65 61 38 31 37 66 32 64 0534651dea817f2d
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       64 62 37 36 36 65 00 00 00 00 00 00 00 00 00 00 db766e..........
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 37 61 62 30 39 66 31 33 66 65 ......7ab09f13fe
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       32 62 34 32 62 66 31 33 35 63 37 38 39 63 37 36 2b42bf135c789c76
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       61 31 35 62 33 36 00 00 00 00 00 00 00 00 00 00 a15b36..........
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 31 30 30 35 00 00 00 00 00 00 ......1005......
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 4D 44 35 00 00 00 00 00 73 69 ......MD5.....si
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       70 3A 32 37 30 38 34 39 35 37 32 31 33 36 36 38 p:27084957213668
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       40 31 39 32 2E 31 36 38 2E 38 30 2E 31 33 33 00 @192.168.80.133.
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+2025-12-22 12:29:53.473              ipc.c     thread_1  .       00 00 00 00                                     ....
+2025-12-22 12:29:53.473              ipc.c     thread_1  .PBXIPC-SIP. TX. subscribe 
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # SUB type <BLF>
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # subref 2718
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # cgpn <1005> (4) cat 00 <unknown> <no-change>
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # cdpn <27084957213668> (14) cat 00 <unknown> <no-change>
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # contact <1005> (0) cat 00 <unknown> <no-change>
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # Hostname '192.168.83.85'
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # port 5060
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # SIPDomain '192.168.80.133' len (14)
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # expires 300
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # Call-ID <e7ed2a1d-2332-123e-739b-e45ad4fa5ef8> len (36)
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # CSeq 432987
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # AuthInfo:
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # # Username:    '1005'
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # # Realm:       '192.168.80.133'
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # # Method:      'SUBSCRIBE'
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # # Algorithm:   'MD5'
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # # nonce:       '7ab09f13fe2b42bf135c789c76a15b36'
+2025-12-22 12:29:53.473              ipc.c     thread_1  .      # # stale:       ''
+2025-12-22 12:29:53.473 mod_pa_subscriptio     thread_1  .sub_unlock_ext: BLF (sub_subscribe_proc_sip:1842)
+2025-12-22 12:29:53.473              ipc.c pbxipcthread !pbx-ipc SIP: RX (020)
+2025-12-22 12:29:53.473              ipc.c pbxipcthread          37 44 01 00 01 43 02 00 18 27 32 02 00 01 00 16 7D...C...'2.....
+2025-12-22 12:29:53.473              ipc.c pbxipcthread          02 00 94 01                                     ....
+2025-12-22 12:29:53.473              ipc.c pbxipcthread  PBXIPC-SIP. RX. subscribe-status 
+2025-12-22 12:29:53.473              ipc.c pbxipcthread         # SUB type <BLF>
+2025-12-22 12:29:53.473              ipc.c pbxipcthread         # subref 2718
+2025-12-22 12:29:53.473              ipc.c pbxipcthread         # Status NOK[1]
+2025-12-22 12:29:53.473              ipc.c pbxipcthread         # cause 404
+2025-12-22 12:29:53.476          ipc_msg.c     thread_3 !ipc_msg_parse: msg type = subscribe-status [55]
+2025-12-22 12:29:53.476          ipc_msg.c     thread_3  get_ie: ie [68][sub-type] size [1]
+2025-12-22 12:29:53.476          ipc_msg.c     thread_3  get_ie: ie [67][sub-ref] size [2]
+2025-12-22 12:29:53.476          ipc_msg.c     thread_3  get_ie: ie [50][status] size [2]
+2025-12-22 12:29:53.476          ipc_msg.c     thread_3  get_ie: ie [22][cause] size [2]
+2025-12-22 12:29:53.476              ipc.c     thread_3  ipc_process: msg ptr = 0x7f6c004e00. type [55]
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_usage_inc_ext: BLF sub 2718. usage inc [1] (sub_subscribe_status_proc_ipc:1308)
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_processing_request_restore: BLF sub 2718 processing request rdata0x7f64003488 restored
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_status_proc_ipc_initial: BLF sub 2718 proc status NOK for initial request (Request msg SUBSCRIBE/cseq=432987 (rdata0x7f64003488))
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_status_proc_ipc_initial: BLF sub 2718 is not accepted by app
+2025-12-22 12:29:53.476           endpoint     thread_3  Response msg 404/SUBSCRIBE/cseq=432987 (tdta0x7f6c005c10) created
+2025-12-22 12:29:53.476    dlg0x7f6400be58     thread_3  .Sending Response msg 404/SUBSCRIBE/cseq=432987 (tdta0x7f6c005c10)
+2025-12-22 12:29:53.476    tsx0x7f6400d2c8     thread_3  .Sending Response msg 404/SUBSCRIBE/cseq=432987 (tdta0x7f6c005c10) in state Trying
+2025-12-22 12:29:53.476    tsx0x7f6400d2c8     thread_3  ..State changed from Trying to Completed, event=TX_MSG
+2025-12-22 12:29:53.476    dlg0x7f6400be58     thread_3  ...Transaction tsx0x7f6400d2c8 state changed to Completed
+2025-12-22 12:29:53.476  evsub0x7f6400eba8     thread_3  Subscription state changed NULL --> TERMINATED
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_free_ext: BLF sub 2718. Free is pended (usage: 1) 
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_usage_dec_ext: BLF sub 2718. usage dec [0] (sub_subscribe_status_proc_ipc:1319)
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_usage_dec_ext: BLF sub 2718. aquire pended free
+2025-12-22 12:29:53.476 mod_pa_subscriptio     thread_3  sub_free_ext: BLF sub 2718 freed 

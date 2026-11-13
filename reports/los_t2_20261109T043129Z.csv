@@ -1,0 +1,12 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-09T04:31:29.122Z,1794198689122,t2,phase,"T2: register"
+2026-11-09T04:31:29.136Z,1794198689136,t2,phase,"T2: subscribe event-list"
+2026-11-09T04:31:29.147Z,1794198689147,t2,phase,"stim_start"
+2026-11-09T04:31:29.148Z,1794198689148,t2,notify,"NOTIFY → 192.168.80.157:5060 cid=losmem-cc8b6725070b5f1edc8a cseq=2 NOTIFY tags=los-b888482b82e1/— event=— ct=application/simple-list+xml body=23224B"
+2026-11-09T04:31:30.150Z,1794198690150,t2,notify,"NOTIFY → 192.168.80.157:5060 cid=losmem-cc8b6725070b5f1edc8a cseq=3 NOTIFY tags=los-b888482b82e1/— event=— ct=application/simple-list+xml body=23224B"
+2026-11-09T04:31:31.153Z,1794198691153,t2,notify,"NOTIFY → 192.168.80.157:5060 cid=losmem-cc8b6725070b5f1edc8a cseq=4 NOTIFY tags=los-b888482b82e1/— event=— ct=application/simple-list+xml body=23224B"
+2026-11-09T04:31:32.155Z,1794198692155,t2,notify,"NOTIFY → 192.168.80.157:5060 cid=losmem-cc8b6725070b5f1edc8a cseq=5 NOTIFY tags=los-b888482b82e1/— event=— ct=application/simple-list+xml body=23224B"
+2026-11-09T04:31:33.157Z,1794198693157,t2,notify,"NOTIFY → 192.168.80.157:5060 cid=losmem-cc8b6725070b5f1edc8a cseq=6 NOTIFY tags=los-b888482b82e1/— event=— ct=application/simple-list+xml body=23224B"
+2026-11-09T04:31:34.159Z,1794198694159,t2,notify,"NOTIFY → 192.168.80.157:5060 cid=losmem-cc8b6725070b5f1edc8a cseq=7 NOTIFY tags=los-b888482b82e1/— event=— ct=application/simple-list+xml body=23224B"
+2026-11-09T04:31:35.159Z,1794198695159,t2,phase,"stim_stop"
+2026-11-09T04:31:35.160Z,1794198695160,t2,summary,"NOTIFY отправлено 6 (kind=hybrid, props=100; свойств всего 600), тело 23224 байт, в диалоги станции 0 (её подписок: 0, пакеты: —); ответы станции: NOTIFY 500×6, REGISTER 200×1, SUBSCRIBE 489×1"

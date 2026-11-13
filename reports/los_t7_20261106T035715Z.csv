@@ -1,0 +1,4 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-06T03:57:15.923Z,1793937435923,t7,phase,"stim_start"
+2026-11-06T03:58:15.949Z,1793937495949,t7,phase,"stim_stop"
+2026-11-06T03:58:15.949Z,1793937495949,t7,summary,"запросов на доменные RURI отправлено 2028 @ 35/с (domain=losmem-storm.invalid); ответы станции: нет"

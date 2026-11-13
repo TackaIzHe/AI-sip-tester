@@ -1,0 +1,312 @@
+{
+  "id": "20261028T072317Z_case_7_caller_number",
+  "generated_at": "2026-10-28T07:23:17.973Z",
+  "meta": {
+    "case": "case_7_caller_number",
+    "verdict": "PASS",
+    "verdict_text": "Calling party number у 52: входящий INVITE (цепочка 9404→3203→52) содержит номер вызывающего 9404",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "9404",
+      "52",
+      "3203"
+    ],
+    "calls": [
+      {
+        "from": "9404",
+        "to": "3203",
+        "direction": "out"
+      }
+    ]
+  },
+  "events": [
+    {
+      "ts": 1793172196285,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196294,
+      "session": "9404",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 9404",
+      "call_id": "uv936daqqaljhacfqloo"
+    },
+    {
+      "ts": 1793172196305,
+      "session": "9404",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "uv936daqqaljhacfqloo",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793172196312,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196312,
+      "session": "52",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196314,
+      "session": "52",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 52",
+      "call_id": "q7q68nqtghriujuk9fhb"
+    },
+    {
+      "ts": 1793172196322,
+      "session": "52",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "q7q68nqtghriujuk9fhb",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793172196325,
+      "session": "52",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, REGISTER отправлен",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196326,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние CALL_OUT, собеседник 3203",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196327,
+      "session": "9404",
+      "direction": "out",
+      "kind": "invite",
+      "detail": "INVITE → 3203 от 9404",
+      "call_id": "uv9360kpbvdn2r7t2poj"
+    },
+    {
+      "ts": 1793172196333,
+      "session": "9404",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "100 Trying для INVITE",
+      "call_id": "uv9360kpbvdn2r7t2poj",
+      "sip_code": 100
+    },
+    {
+      "ts": 1793172196337,
+      "session": "9404",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "183 Session Progress для INVITE",
+      "call_id": "uv9360kpbvdn2r7t2poj",
+      "sip_code": 183
+    },
+    {
+      "ts": 1793172196345,
+      "session": "9404",
+      "direction": "in",
+      "kind": "ringing",
+      "detail": "180 Ringing",
+      "call_id": "",
+      "sip_code": 180
+    },
+    {
+      "ts": 1793172196345,
+      "session": "9404",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "180 Ringing для INVITE",
+      "call_id": "uv9360kpbvdn2r7t2poj",
+      "sip_code": 180
+    },
+    {
+      "ts": 1793172196351,
+      "session": "9404",
+      "direction": "in",
+      "kind": "ringing",
+      "detail": "180 Ringing",
+      "call_id": "",
+      "sip_code": 180
+    },
+    {
+      "ts": 1793172196518,
+      "session": "52",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "INVITE → 52 от 9404",
+      "call_id": "qdKO3SRuHovexwrizxDxRFRKaWOzBp97"
+    },
+    {
+      "ts": 1793172196527,
+      "session": "52",
+      "direction": "out",
+      "kind": "invite",
+      "detail": "100 Trying для INVITE",
+      "call_id": "qdKO3SRuHovexwrizxDxRFRKaWOzBp97",
+      "sip_code": 100
+    },
+    {
+      "ts": 1793172196527,
+      "session": "52",
+      "direction": "out",
+      "kind": "invite",
+      "detail": "180 Ringing для INVITE",
+      "call_id": "qdKO3SRuHovexwrizxDxRFRKaWOzBp97",
+      "sip_code": 180
+    },
+    {
+      "ts": 1793172196527,
+      "session": "52",
+      "direction": "in",
+      "kind": "call-in",
+      "detail": "INVITE от 9404 — входящий вызов",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196528,
+      "session": "52",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние CALL_IN, собеседник 9404",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196529,
+      "session": "52",
+      "direction": "out",
+      "kind": "invite",
+      "detail": "486 Busy Here для INVITE",
+      "call_id": "qdKO3SRuHovexwrizxDxRFRKaWOzBp97",
+      "sip_code": 486
+    },
+    {
+      "ts": 1793172196530,
+      "session": "52",
+      "direction": "internal",
+      "kind": "call-ended",
+      "detail": "завершён (BYE)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196530,
+      "session": "52",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172196534,
+      "session": "52",
+      "direction": "in",
+      "kind": "ack",
+      "detail": "ACK → 52 от 9404",
+      "call_id": "qdKO3SRuHovexwrizxDxRFRKaWOzBp97"
+    },
+    {
+      "ts": 1793172197521,
+      "session": "9404",
+      "direction": "in",
+      "kind": "invite",
+      "detail": "486 Busy Here для INVITE",
+      "call_id": "uv9360kpbvdn2r7t2poj",
+      "sip_code": 486
+    },
+    {
+      "ts": 1793172197526,
+      "session": "9404",
+      "direction": "out",
+      "kind": "ack",
+      "detail": "ACK → 3203 от 9404",
+      "call_id": "uv9360kpbvdn2r7t2poj"
+    },
+    {
+      "ts": 1793172197528,
+      "session": "9404",
+      "direction": "in",
+      "kind": "call-ended",
+      "detail": "завершён с кодом 486",
+      "call_id": "",
+      "sip_code": 486
+    },
+    {
+      "ts": 1793172197528,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние REGISTERED, ошибка: 486 — Абонент занят",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172197938,
+      "session": "9404",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 9404",
+      "call_id": "uv936daqqaljhacfqloo"
+    },
+    {
+      "ts": 1793172197948,
+      "session": "9404",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "uv936daqqaljhacfqloo",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793172197955,
+      "session": "9404",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793172197955,
+      "session": "52",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 52",
+      "call_id": "q7q68nqtghriujuk9fhb"
+    },
+    {
+      "ts": 1793172197964,
+      "session": "52",
+      "direction": "in",
+      "kind": "register",
+      "detail": "200 OK для REGISTER",
+      "call_id": "q7q68nqtghriujuk9fhb",
+      "sip_code": 200
+    },
+    {
+      "ts": 1793172197971,
+      "session": "52",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    }
+  ]
+}

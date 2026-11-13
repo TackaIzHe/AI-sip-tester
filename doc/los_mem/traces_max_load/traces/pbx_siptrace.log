@@ -1,0 +1,30 @@
+2026-08-19 10:46:48:149275 DEBUG <0.301.0> [isup_ss7:95] 
++------------------------
+| >>> SIP -> CNode: 
+| {mediaData,{32770,-1,[{119,1}]}} 
+|
+2026-08-19 10:46:53:152092 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:46:58:155460 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:03:160479 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:08:164114 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:13:168384 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:18:170657 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:23:173599 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:28:176714 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:33:181758 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:38:185532 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:43:190897 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:48:193781 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:53:196938 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:47:58:200004 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:03:203171 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:08:205715 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:13:208635 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:18:211673 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:23:215097 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:28:217620 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:33:222828 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:38:226041 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:43:228630 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:48:235156 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}
+2026-08-19 10:48:53:243083 DEBUG <0.301.0> [isup_ss7:144] SIP <- CNode: {ping,0}

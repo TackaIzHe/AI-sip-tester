@@ -1,0 +1,617 @@
+{
+  "id": "20261106T035124Z_case_8a_batch_reg_24_47",
+  "generated_at": "2026-11-06T03:51:24.331Z",
+  "meta": {
+    "case": "case_8a_batch_reg_24_47",
+    "verdict": "FAIL",
+    "verdict_text": "не зарегистрировались 24 из 24: 24: Станция не ответила на REGISTER (тайм-аут); 25: Станция не ответила на REGISTER (тайм-аут); 26: Станция не ответила на REGISTER (тайм-аут); 27: Станция не ответила на REGISTER (тайм-аут); 28: Станция не ответила на REGISTER (тайм-аут); 29: Станция не ответила на REGISTER (тайм-аут); 30: Станция не ответила на REGISTER (тайм-аут); 31: Станция не ответила на REGISTER (тайм-аут); 32: Станция не ответила на REGISTER (тайм-аут); 33: Станция не ответила на REGISTER (тайм-аут); 34: Станция не ответила на REGISTER (тайм-аут); 35: Станция не ответила на REGISTER (тайм-аут); 36: Станция не ответила на REGISTER (тайм-аут); 37: Станция не ответила на REGISTER (тайм-аут); 38: Станция не ответила на REGISTER (тайм-аут); 39: Станция не ответила на REGISTER (тайм-аут); 40: Станция не ответила на REGISTER (тайм-аут); 41: Станция не ответила на REGISTER (тайм-аут); 42: Станция не ответила на REGISTER (тайм-аут); 43: Станция не ответила на REGISTER (тайм-аут); 44: Станция не ответила на REGISTER (тайм-аут); 45: Станция не ответила на REGISTER (тайм-аут); 46: Станция не ответила на REGISTER (тайм-аут); 47: Станция не ответила на REGISTER (тайм-аут) — снятие зарегистрированного: кейс batch24unreg",
+    "pbx_host": "192.168.80.157",
+    "pbx_port": 5060,
+    "sip_protocol": "udp",
+    "subscribers": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47"
+    ],
+    "calls": []
+  },
+  "events": [
+    {
+      "ts": 1793936316216,
+      "session": "24",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936316225,
+      "session": "24",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 24",
+      "call_id": "2altvit5e7fk9dd3pg0c"
+    },
+    {
+      "ts": 1793936348229,
+      "session": "24",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936348230,
+      "session": "25",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936348232,
+      "session": "25",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 25",
+      "call_id": "g77le9fqd1srv1s66keo"
+    },
+    {
+      "ts": 1793936380233,
+      "session": "25",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936380234,
+      "session": "26",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936380237,
+      "session": "26",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 26",
+      "call_id": "q111cfnl0mrb6jisjvpf"
+    },
+    {
+      "ts": 1793936412238,
+      "session": "26",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936412238,
+      "session": "27",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936412242,
+      "session": "27",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 27",
+      "call_id": "f6q9sdf47fl6lb9mjc43"
+    },
+    {
+      "ts": 1793936444243,
+      "session": "27",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936444244,
+      "session": "28",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936444248,
+      "session": "28",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 28",
+      "call_id": "8a8emjfka83gt00vmq5n"
+    },
+    {
+      "ts": 1793936476249,
+      "session": "28",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936476250,
+      "session": "29",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936476253,
+      "session": "29",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 29",
+      "call_id": "mnhafrjc8bcoofskfvfu"
+    },
+    {
+      "ts": 1793936508254,
+      "session": "29",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936508254,
+      "session": "30",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936508257,
+      "session": "30",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 30",
+      "call_id": "tm167u3shf6o6lb7a7l1"
+    },
+    {
+      "ts": 1793936540259,
+      "session": "30",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936540259,
+      "session": "31",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936540264,
+      "session": "31",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 31",
+      "call_id": "5pdpcbubi4rf70n7v7js"
+    },
+    {
+      "ts": 1793936572266,
+      "session": "31",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936572266,
+      "session": "32",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936572270,
+      "session": "32",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 32",
+      "call_id": "cmqdcl10t4paqr8h40r1"
+    },
+    {
+      "ts": 1793936604272,
+      "session": "32",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936604273,
+      "session": "33",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936604278,
+      "session": "33",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 33",
+      "call_id": "2aqet46cgv9lcger385q"
+    },
+    {
+      "ts": 1793936636278,
+      "session": "33",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936636279,
+      "session": "34",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936636280,
+      "session": "34",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 34",
+      "call_id": "ama8bhu45rfise550s9g"
+    },
+    {
+      "ts": 1793936668280,
+      "session": "34",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936668280,
+      "session": "35",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936668283,
+      "session": "35",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 35",
+      "call_id": "rvl67ktbpdpi6t6dvpsq"
+    },
+    {
+      "ts": 1793936700283,
+      "session": "35",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936700283,
+      "session": "36",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936700286,
+      "session": "36",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 36",
+      "call_id": "s4lrltrube3iuld98fra"
+    },
+    {
+      "ts": 1793936732287,
+      "session": "36",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936732287,
+      "session": "37",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936732292,
+      "session": "37",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 37",
+      "call_id": "8lupuf39qrcl1jfqsdn1"
+    },
+    {
+      "ts": 1793936764291,
+      "session": "37",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936764292,
+      "session": "38",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936764292,
+      "session": "38",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 38",
+      "call_id": "963k0bv777cb73fpb7pk"
+    },
+    {
+      "ts": 1793936796292,
+      "session": "38",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936796292,
+      "session": "39",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936796293,
+      "session": "39",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 39",
+      "call_id": "sqiqdjtostj80a2b9qof"
+    },
+    {
+      "ts": 1793936828294,
+      "session": "39",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936828294,
+      "session": "40",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936828298,
+      "session": "40",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 40",
+      "call_id": "5gdl8p2a3568j7ugeanu"
+    },
+    {
+      "ts": 1793936860299,
+      "session": "40",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936860300,
+      "session": "41",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936860303,
+      "session": "41",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 41",
+      "call_id": "2se8g22d42kgqoon1kbo"
+    },
+    {
+      "ts": 1793936892304,
+      "session": "41",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936892305,
+      "session": "42",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936892307,
+      "session": "42",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 42",
+      "call_id": "go74l9vq5kurekltquvc"
+    },
+    {
+      "ts": 1793936924309,
+      "session": "42",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936924309,
+      "session": "43",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936924313,
+      "session": "43",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 43",
+      "call_id": "5akgvdop3q66ric51lda"
+    },
+    {
+      "ts": 1793936956314,
+      "session": "43",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936956315,
+      "session": "44",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936956318,
+      "session": "44",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 44",
+      "call_id": "2e0n874pegjg33go6saf"
+    },
+    {
+      "ts": 1793936988318,
+      "session": "44",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936988318,
+      "session": "45",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793936988323,
+      "session": "45",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 45",
+      "call_id": "co8e053uouvdhge14asb"
+    },
+    {
+      "ts": 1793937020323,
+      "session": "45",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937020323,
+      "session": "46",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937020326,
+      "session": "46",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 46",
+      "call_id": "s7cf25p8ekr407t3pmme"
+    },
+    {
+      "ts": 1793937052326,
+      "session": "46",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937052326,
+      "session": "47",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED",
+      "call_id": ""
+    },
+    {
+      "ts": 1793937052329,
+      "session": "47",
+      "direction": "out",
+      "kind": "register",
+      "detail": "REGISTER от 47",
+      "call_id": "93etfkcqkdak2pratem5"
+    },
+    {
+      "ts": 1793937084329,
+      "session": "47",
+      "direction": "internal",
+      "kind": "state",
+      "detail": "состояние UNREGISTERED, REGISTER отправлен, ошибка: Станция не ответила на REGISTER (тайм-аут)",
+      "call_id": ""
+    }
+  ]
+}

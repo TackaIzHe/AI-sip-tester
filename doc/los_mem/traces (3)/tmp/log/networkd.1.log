@@ -1,0 +1,1626 @@
+ 12:38:36.876359  [INFO] networkd:  [main][2324] start networkd build: Oct 30 2026 18:09:54
+ 12:38:36.877176  [????] networkd:  <lib_IPC_init> /tmp/ntwrkd.sock
+ 12:38:37.077814  [INFO] networkd:  peer: info: Moduleport[7013] kernel_port[7013] kernelhost[127.0.0.1] socket_file[/tmp/ntwrkd.sock]
+ 12:38:37.118713  [INFO] networkd:  [if_set_ip] lo addr 127.0.0.1 mask 0.0.0.0/0 bcast 0.0.0.0/0
+ 12:38:37.118908  [INFO] networkd:  [if_set_flag] lo UP
+ 12:38:37.119052  [INFO] networkd:  [if_set_ip] bond1.4094 addr 1.255.254.250 mask 255.255.255.240 bcast 0.0.0.0/0
+ 12:38:37.121058  [INFO] networkd:  [if_set_flag] bond1.4094 UP
+ 12:38:37.125483  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:37.128749  [INFO] networkd:  system: 'fr WAN > /tmp/.factory_mac'
+ 12:38:37.152920  [INFO] networkd:  [if_del_ip] bond1.1
+ 12:38:37.153044  [INFO] networkd:  [if_clear_flag] bond1.1 UP
+ 12:38:37.153115  [INFO] networkd:  [if_set_mac] bond1.1 mac e4:5a:d4:fa:99:a3
+ 12:38:37.153231  [INFO] networkd:  [if_set_flag] bond1.1 UP
+ 12:38:37.160881  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: Module not connected. Connection with module lost.[15]; result -1
+ 12:38:37.661303  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: Module not connected. Connection with module lost.[15]; result -1
+ 12:38:38.011928  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:38.126151  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:38.161738  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:38.662142  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:39.012326  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:39.126723  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:39.162510  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:39.662945  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:40.012743  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:40.127190  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:40.163353  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:40.181152  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:38:40.663754  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:41.013133  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:41.127720  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:41.164167  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:41.182619  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:41.664600  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:42.013619  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:42.128261  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:42.165066  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:42.186494  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:42.665555  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:43.014071  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:43.128799  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:43.166120  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:43.188319  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:43.666508  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:44.014495  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:44.129333  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:44.166899  [ERR ] networkd:  [checkLicense][784] Failed to check USER_SERVICE_ENABLE license: cfgmngr is not ready yet[43]; result -1
+ 12:38:44.192691  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:44.667334  [INFO] networkd:  [checkLicense][788] USER_SERVICE_ENABLE license disabled
+ 12:38:44.667474  [INFO] networkd:  [UpdatePamConfig][1544] Reset PAM dir.
+ 12:38:44.667530  [INFO] networkd:  exec: 'mkdir -p /etc/pam.d'
+ 12:38:44.674093  [INFO] networkd:  exec: 'rm -f /etc/pam.d/*'
+ 12:38:44.680029  [INFO] networkd:  [UpdatePamConfig][1548] use LOCAL authorization
+ 12:38:44.680226  [INFO] networkd:  exec: 'cp -f /etc/pam.d/login /etc/pam.d/sshd'
+ 12:38:44.687951  [INFO] networkd:  [UpdatePamConfig][1576] Restart SSHD app.
+ 12:38:44.688035  [INFO] networkd:  exec: 'killall sshd'
+ 12:38:44.702658  [WARN] networkd:  exec: result NOK [1] for 'killall sshd'
+ 12:38:45.014943  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:45.129810  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:45.194586  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:45.204885  [INFO] networkd:  [main][2413] Reserve not enabled; CFG is not ready! [CFG ready count 0]
+ 12:38:46.015401  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:46.130336  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:46.196705  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:47.015753  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:47.130891  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:47.198277  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:48.016185  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:48.131376  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:48.203134  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:48.206594  [INFO] networkd:  [main][2413] Reserve not enabled; CFG is ready! [CFG ready count 0]
+ 12:38:48.206764  [INFO] networkd:  [main][2440] Start networkd
+ 12:38:48.206923  [INFO] networkd:  [GetPlatformName][843] platform name updated: 'CSPG3000'
+ 12:38:48.206997  [INFO] networkd:  system: 'echo 1048576 > /proc/sys/net/core/rmem_max'
+ 12:38:48.209154  [INFO] networkd:  system: 'echo 1048576 > /proc/sys/net/core/wmem_max'
+ 12:38:48.211315  [INFO] networkd:  [networkd_set_sock_buf_size][23] try set send buffer size: 3145728
+ 12:38:48.211460  [INFO] networkd:  [networkd_set_sock_buf_size][28] socket send buffer size: 524288
+ 12:38:48.211520  [ERR ] networkd:  [networkd_set_sock_buf_size][49] socket send buffer size not changed(2097152 but need 3145728x2) but setsockopt returned 'OK'
+ 12:38:48.211565  [INFO] networkd:  [networkd_set_sock_buf_size][23] try set recv buffer size: 3145728
+ 12:38:48.211606  [INFO] networkd:  [networkd_set_sock_buf_size][28] socket recv buffer size: 524288
+ 12:38:48.211710  [ERR ] networkd:  [networkd_set_sock_buf_size][49] socket recv buffer size not changed(2097152 but need 3145728x2) but setsockopt returned 'OK'
+ 12:38:48.211772  [INFO] networkd:  exec: 'ip rule flush'
+ 12:38:48.217769  [INFO] networkd:  [iprt2_rule_flush][1723]: ip rule: flush all tables
+ 12:38:48.217938  [INFO] networkd:  exec: 'ip rule add table main pref 32766'
+ 12:38:48.223709  [INFO] networkd:  [iprt2_rule_flush][1728]: ip rule: flush add main table
+ 12:38:48.223849  [INFO] networkd:  exec: 'ip rule add table default pref 32767'
+ 12:38:48.229619  [INFO] networkd:  [iprt2_rule_flush][1735]: ip rule: flush add default table
+ 12:38:48.229815  [INFO] networkd:  [iprt2_lists_init][169] inited: done
+ 12:38:48.229865  [INFO] networkd:  [iprt2_route_flush][1704]: try flush '/etc/config/iproute2/rt_tables'
+ 12:38:48.229974  [INFO] networkd:  [iprt2_route_flush][1713]: flush '/etc/config/iproute2/rt_tables': done
+ 12:38:48.230056  [INFO] networkd:  exec: 'iptables -N SRV_IN'
+ 12:38:48.237549  [INFO] networkd:  exec: 'iptables -I INPUT -j SRV_IN'
+ 12:38:48.243795  [INFO] networkd:  exec: 'iptables -N SRV_OUT'
+ 12:38:48.249978  [INFO] networkd:  exec: 'iptables -I OUTPUT -j SRV_OUT'
+ 12:38:48.256792  [INFO] networkd:  exec: 'iptables -A SRV_OUT -o lo -j ACCEPT'
+ 12:38:48.263236  [INFO] networkd:  exec: 'iptables -A SRV_IN -i lo -j ACCEPT'
+ 12:38:48.269870  [INFO] networkd:  exec: 'iptables -N NO_PROF_IN'
+ 12:38:48.276172  [INFO] networkd:  exec: 'iptables -A INPUT -j NO_PROF_IN'
+ 12:38:48.282285  [INFO] networkd:  exec: 'iptables -N NO_PROF_OUT'
+ 12:38:48.288512  [INFO] networkd:  exec: 'iptables -A OUTPUT -j NO_PROF_OUT'
+ 12:38:48.294770  [INFO] networkd:  exec: 'iptables -N FW_INPUT'
+ 12:38:48.300847  [INFO] networkd:  exec: 'iptables -A INPUT -j FW_INPUT'
+ 12:38:48.307148  [INFO] networkd:  exec: 'iptables -N FW_OUTPUT'
+ 12:38:48.313418  [INFO] networkd:  exec: 'iptables -A OUTPUT -j FW_OUTPUT'
+ 12:38:48.319739  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT'
+ 12:38:48.326397  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT'
+ 12:38:48.333275  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type time-exceeded -j ACCEPT'
+ 12:38:48.339863  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT'
+ 12:38:48.346315  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT'
+ 12:38:48.353256  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type destination-unreachable -j ACCEPT'
+ 12:38:48.362113  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type time-exceeded -j ACCEPT'
+ 12:38:48.368774  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT'
+ 12:38:48.375512  [INFO] networkd:  exec: 'iptables -t mangle -N IP_MARK'
+ 12:38:48.381475  [INFO] networkd:  exec: 'iptables -t mangle -I OUTPUT -j IP_MARK'
+ 12:38:48.387704  [INFO] networkd:  exec: 'ip6tables -A INPUT -j DROP'
+ 12:38:48.394098  [INFO] networkd:  exec: 'ip6tables -A OUTPUT -j DROP'
+ 12:38:48.400438  [INFO] networkd:  exec: 'iptables -A FORWARD -j DROP'
+ 12:38:48.406763  [INFO] networkd:  exec: 'ip6tables -A FORWARD -j DROP'
+ 12:38:48.413617  [INFO] networkd:  exec: 'iptables -N UDP-DNS-LIMIT'
+ 12:38:48.420597  [INFO] networkd:  exec: 'iptables -N TCP-DNS-LIMIT'
+ 12:38:48.427367  [INFO] networkd:  exec: 'iptables -A UDP-DNS-LIMIT -p udp --sport 53 -m length --length 0:512 -j ACCEPT'
+ 12:38:48.434854  [INFO] networkd:  exec: 'iptables -A UDP-DNS-LIMIT -p udp --sport 53 -j DROP'
+ 12:38:48.442450  [INFO] networkd:  exec: 'iptables -A TCP-DNS-LIMIT -p tcp --sport 53 -m length --length 0:1024 -j ACCEPT'
+ 12:38:48.449551  [INFO] networkd:  exec: 'iptables -A TCP-DNS-LIMIT -p tcp --sport 53 -j DROP'
+ 12:38:48.458513  [INFO] networkd:  exec: 'iptables -I INPUT -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:38:48.465798  [INFO] networkd:  exec: 'iptables -I INPUT -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:38:48.472937  [INFO] networkd:  exec: 'ip6tables -N UDP-DNS-LIMIT'
+ 12:38:48.479412  [INFO] networkd:  exec: 'ip6tables -N TCP-DNS-LIMIT'
+ 12:38:48.485774  [INFO] networkd:  exec: 'ip6tables -A UDP-DNS-LIMIT -p udp --sport 53 -m length --length 0:512 -j ACCEPT'
+ 12:38:48.492808  [INFO] networkd:  exec: 'ip6tables -A UDP-DNS-LIMIT -p udp --sport 53 -j DROP'
+ 12:38:48.500042  [INFO] networkd:  exec: 'ip6tables -A TCP-DNS-LIMIT -p tcp --sport 53 -m length --length 0:1024 -j ACCEPT'
+ 12:38:48.506999  [INFO] networkd:  exec: 'ip6tables -A TCP-DNS-LIMIT -p tcp --sport 53 -j DROP'
+ 12:38:48.513870  [INFO] networkd:  exec: 'ip6tables -I INPUT -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:38:48.520703  [INFO] networkd:  exec: 'ip6tables -I INPUT -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:38:48.527884  [INFO] networkd:  [WhiteListInit][314] Get object type 55
+ 12:38:48.528279  [INFO] networkd:  [WhiteListUpdate][268]: start. new_list: none type: BACKUP
+ 12:38:48.528355  [INFO] networkd:  [WhiteListUpdate][304]: White list BACKUP updated. IP count: 1
+ 12:38:48.528399  [INFO] networkd:  [WhiteListUpdate][268]: start. new_list: yes type: CONFIRMED
+ 12:38:48.528440  [INFO] networkd:  [WhiteListUpdate][304]: White list CONFIRMED updated. IP count: 0
+ 12:38:48.528479  [INFO] networkd:  [initTimer][12]: Initting timer 'WHITE_LIST_TIMER'
+ 12:38:48.528617  [INFO] networkd:  [GetAllInterfaces][1678] Get all interfaces type 88 count 3
+ 12:38:48.528858  [INFO] networkd:  [CreateIntf][1004] Create IPv4 interface. ID [1] ifname bond1.1 type UNTAGGED ip 0.0.0.0/0 (STATIC) gw 192.168.111.1
+ 12:38:48.528923  [INFO] networkd:  [if_set_flag] bond1.1 UP
+ 12:38:48.531348  [INFO] networkd:  [if_set_ip] bond1.1 addr 192.168.111.211 mask 255.255.255.0 bcast 192.168.111.255
+ 12:38:48.531571  [INFO] networkd:  [AddIntfToList][1085] ifname bond1.1 id[1]
+ 12:38:48.531898  [INFO] networkd:  [CreateIntf][1004] Create IPv4 interface. ID [2] ifname bond1.1:1 type UNTAGGED ip 0.0.0.0/0 (STATIC) gw 0.0.0.0/0
+ 12:38:48.531964  [INFO] networkd:  [if_set_flag] bond1.1:1 UP
+ 12:38:48.532026  [ERR ] networkd:  [if_set_flag] device bond1.1:1: SIOCSIFFLAGS failed (Cannot assign requested address)
+ 12:38:48.532074  [INFO] networkd:  [if_set_ip] bond1.1:1 addr 192.168.111.213 mask 255.255.255.0 bcast 192.168.111.255
+ 12:38:48.532179  [INFO] networkd:  [AddIntfToList][1085] ifname bond1.1:1 id[2]
+ 12:38:48.535843  [INFO] networkd:  [CreateIntf][1004] Create IPv4 interface. ID [3] ifname bond1.4091 type TAGGED ip 0.0.0.0/0 (STATIC) gw 192.168.60.1
+ 12:38:48.535963  [INFO] networkd:  [VconfigAdd] Interface ID [3] bond1: vconfig add 4091
+ 12:38:48.536058  [INFO] networkd:  system: 'vconfig add bond1 4091'
+ 12:38:48.540207  [INFO] networkd:  [if_set_flag] bond1.4091 UP
+ 12:38:48.546685  [INFO] networkd:  [if_set_ip] bond1.4091 addr 192.168.60.11 mask 255.255.255.0 bcast 192.168.60.255
+ 12:38:48.547834  [INFO] networkd:  [if_set_mtu] bond1.4091 mtu 1496
+ 12:38:48.547980  [INFO] networkd:  [AddIntfToList][1085] ifname bond1.4091 id[3]
+ 12:38:48.548041  [INFO] networkd:  [DumpIntfList][313] [00] ifname bond1.1 id [1]
+ 12:38:48.548085  [INFO] networkd:  [DumpIntfList][313] [01] ifname bond1.1:1 id [2]
+ 12:38:48.548125  [INFO] networkd:  [DumpIntfList][313] [02] ifname bond1.4091 id [3]
+ 12:38:48.548173  [INFO] networkd:  [UpdateIfaceCommon][1527] Get common network settings
+ 12:38:48.548437  [INFO] networkd:  exec: 'hostname cspg3000'
+ 12:38:48.556338  [INFO] networkd:  system: 'cat /etc/hosts | grep -w cspg3000'
+ 12:38:48.560312  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:38:48.560478  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:38:48.560538  [INFO] networkd:  exec: 'route del default gw 0.0.0.0'
+ 12:38:48.566506  [WARN] networkd:  exec: result NOK [1] for 'route del default gw 0.0.0.0'
+ 12:38:48.566713  [INFO] networkd:  exec: 'route add default gw 192.168.111.1'
+ 12:38:48.572919  [INFO] networkd:  system: '/sbin/sntp.sh 192.168.111.1 240 &'
+ 12:38:48.575070  [INFO] networkd:  system: '/sbin/telnetd.sh 23 &'
+ 12:38:48.577202  [INFO] networkd:  [WriteSshConfig][1461] Write sshd-config
+ 12:38:48.577369  [INFO] networkd:  system: '/sbin/sshd.sh 22 &'
+ 12:38:48.593920  [INFO] networkd:  [GetAllRoutes][335] Get routes type 66
+ 12:38:48.594329  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 66.
+ 12:38:48.594424  [INFO] networkd:  [FW_Start][2677] enter
+ 12:38:48.594474  [INFO] networkd:  [FW_UpdateServicesAccess][939] Drop access
+ 12:38:48.594516  [INFO] networkd:  [FW_Init][2513] Init firewall...
+ 12:38:48.594557  [INFO] networkd:  [FW_Init][2515] Start get firewall config...
+ 12:38:48.594893  [INFO] networkd:  [FW_Init][2519] Start get interface list...
+ 12:38:48.594985  [INFO] networkd:  [FW_Init][2525] Start init firewall...
+ 12:38:48.595031  [INFO] networkd:  [FW_Init][2535] Start init profile id: 1...
+ 12:38:48.595071  [INFO] networkd:  Start init profile chain...
+ 12:38:48.595125  [INFO] networkd:  exec: 'iptables -N FW_INPUT_1'
+ 12:38:50.358147  [INFO] networkd:  exec: 'iptables -N FW_INPUT_TMP_1'
+ 12:38:50.367746  [INFO] networkd:  exec: 'iptables -N FW_OUTPUT_1'
+ 12:38:50.377731  [INFO] networkd:  exec: 'iptables -N FW_OUTPUT_TMP_1'
+ 12:38:50.384159  [INFO] networkd:  [InitRules][1625] Start init rules...
+ 12:38:50.384329  [INFO] networkd:  [FW_Init][2542] Start get DOS protection config...
+ 12:38:50.384590  [INFO] networkd:  [FW_Init][2550] Start init DOS protection...
+ 12:38:50.384666  [INFO] networkd:  [FW_Start][2685] exit
+ 12:38:50.384711  [INFO] networkd:  [l2tp_init_conf][610] try init config file
+ 12:38:50.384854  [INFO] networkd:  [l2tp_local_conf_init][560] listen IP '', new ''
+ 12:38:50.384944  [INFO] networkd:  [l2tp_local_conf_init][574] l2tp listen ip now is ''
+ 12:38:50.385079  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 48.
+ 12:38:50.385153  [INFO] networkd:  [l2tp_client_conf_init][605] l2tp clients: 0
+ 12:38:50.385244  [INFO] networkd:  [pptp_init_conf][487] try init config file
+ 12:38:50.385400  [INFO] networkd:  [pptp_local_conf_init][467] listen IP '0.0.0.0/0', new '0.0.0.0/0'
+ 12:38:50.385460  [INFO] networkd:  [pptp_local_conf_init][482] pptp listen ip now is '0.0.0.0/0'
+ 12:38:50.385502  [ERR ] networkd:  vpn_write_conf_server:88 Server is not running
+ 12:38:50.385542  [WARN] networkd:  [vpn_write_conf_server][180] Fail to create config files
+ 12:38:50.385684  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 48.
+ 12:38:50.385756  [INFO] networkd:  [ipsec_init_conf][466] try init config file
+ 12:38:50.385947  [INFO] networkd:  'asdasdasd' [01]:  
+			 enable:          no
+			 interface:       0
+			 remote subnet:   ''
+			 remote netmask:  ''
+			 remote gateway:  ''
+			 security proto:  0
+			 exchange method: auto
+			 encrypt:         0
+			     key:         ''
+			 auth:            0
+			     key:         ''
+			 dest ip:         ''(0)
+			 SPI:             0
+			 NAT-T:           0
+			 aggressive:      no
+			 identifier:      
+			     type:        0
+			 Phase 1(ike):      
+			     key:         ''
+			     encrypt:     0
+			     auth:        0
+			     DH group:    1
+			     lifetime:    86400
+			 Phase 2(IPsec):    
+			     encrypt:     0
+			     auth:        0
+			     PFS group:   1
+			     lifetime:    3600
+ 12:38:50.386034  [INFO] networkd:  'asdasdasd' [01]:  
+			 enable:          no
+			 interface:       0
+			 remote subnet:   ''
+			 remote netmask:  ''
+			 remote gateway:  ''
+			 security proto:  0
+			 exchange method: auto
+			 encrypt:         0
+			     key:         ''
+			 auth:            0
+			     key:         ''
+			 dest ip:         ''(0)
+			 SPI:             0
+			 NAT-T:           0
+			 aggressive:      no
+			 identifier:      
+			     type:        0
+			 Phase 1(ike):      
+			     key:         ''
+			     encrypt:     0
+			     auth:        0
+			     DH group:    1
+			     lifetime:    86400
+			 Phase 2(IPsec):    
+			     encrypt:     0
+			     auth:        0
+			     PFS group:   1
+			     lifetime:    3600
+ 12:38:50.386077  [INFO] networkd:  system: 'mkdir -p /etc/racoon'
+ 12:38:50.389582  [INFO] networkd:  Open '/etc/racoon/racoon.cfg'.
+ 12:38:50.389748  [INFO] networkd:  Write '/etc/racoon/racoon.cfg'.
+ 12:38:50.389818  [INFO] networkd:  Open '/etc/racoon/setkey.conf'.
+ 12:38:50.389873  [INFO] networkd:  Write '/etc/racoon/setkey.conf'.
+ 12:38:50.389955  [INFO] networkd:  Open '/etc/racoon/psk.txt'.
+ 12:38:50.390012  [INFO] networkd:  Write '/etc/racoon/psk.txt'.
+ 12:38:50.390285  [WARN] networkd:  Update stack WAN iface ID 65535 -> 2
+ 12:38:50.390349  [INFO] networkd:  Shutting down WAN interface ID[2]
+ 12:38:50.390392  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 2
+ 12:38:50.390433  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[2] ifname 'bond1.1:1'
+ 12:38:50.390472  [INFO] networkd:  [if_del_ip] bond1.1:1
+ 12:38:50.392335  [INFO] networkd:  [InitFtpdConf][98] Try to get ftpd config
+ 12:38:50.392613  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:38:50.392682  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:38:50.392724  [INFO] networkd:  [FtpdSetNetiface][74] Set ftpd interface bond1.1 ip: 0.0.0.0/0
+ 12:38:50.392990  [INFO] networkd:  [StartFtpd][320] FTP server is disabled
+ 12:38:50.393061  [INFO] networkd:  [InitDhcpdConf][118] Try to get dhcpd config
+ 12:38:50.393202  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:38:50.393258  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:38:50.393303  [INFO] networkd:  [DhcpdSetNetiface][74] Set dhcpd interface bond1.1 ip: 0.0.0.0/0
+ 12:38:50.393344  [INFO] networkd:  [FindIntfByIfname][1240] search interface by ifname bond1.1
+ 12:38:50.393383  [INFO] networkd:  [FindIntfByIfname][1248] got iface-id[1] ifname 'bond1.1'
+ 12:38:50.393422  [INFO] networkd:  [FW_UpdateAccessDhcpd][1039] Update dhcpd access for interface bond1.1 ip: 0.0.0.0/0
+ 12:38:50.393463  [INFO] networkd:  [FW_DelIfaceAccessDhcpd][981] Del dhcpd access for interface bond1.1 ip: 0.0.0.0/0
+ 12:38:50.393591  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 52.
+ 12:38:50.393656  [WARN] networkd:  [StartDhcpd][375] dhcpd is disabled
+ 12:38:50.393782  [INFO] networkd:  system: '/sbin/hostping.sh stop'
+ 12:38:50.400455  [INFO] networkd:  [RestartSshGuardFireWall][2758] Sshguard: firewall restarted.
+ 12:38:50.400590  [INFO] networkd:  [syslogd_init_conf][96] try init config file
+ 12:38:50.400766  [INFO] networkd:  [syslogd_write_conf][11] try init config file
+ 12:38:50.400918  [INFO] networkd:  exec: '/sbin/authlog.sh stop'
+ 12:38:50.411866  [INFO] networkd:  PCMdump: <InitPCMdump> Init PCM-dump.
+ 12:38:50.412061  [INFO] networkd:  exec: 'killall pcmdump'
+ 12:38:50.425679  [WARN] networkd:  exec: result NOK [1] for 'killall pcmdump'
+ 12:38:50.425857  [INFO] networkd:  PCMdump: <UpdatePCMdump> Update all instances (ID: 0x0).
+ 12:38:50.426175  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 102.
+ 12:38:50.439898  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:38:50.440077  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:38:50.440122  [INFO] networkd:  [UpdatePamConfig][1544] Reset PAM dir.
+ 12:38:50.440161  [INFO] networkd:  exec: 'mkdir -p /etc/pam.d'
+ 12:38:50.446010  [INFO] networkd:  exec: 'rm -f /etc/pam.d/*'
+ 12:38:50.451927  [INFO] networkd:  [UpdatePamConfig][1548] use LOCAL authorization
+ 12:38:50.452130  [INFO] networkd:  exec: 'cp -f /etc/pam.d/login /etc/pam.d/sshd'
+ 12:38:50.458296  [INFO] networkd:  [au_init][1364] au 1567: factory MAC: E4:5A:D4:FA:99:A3
+ 12:38:50.458380  [INFO] networkd:  [au_init][1379] au 1567: default server: update.local
+ 12:38:50.458422  [INFO] networkd:  [au_init][1380] au 1567: default config: E4.5A.D4.FA.99.A3.cfg
+ 12:38:50.458461  [INFO] networkd:  [au_init][1381] au 1567: default firmware: unknown
+ 12:38:50.458500  [INFO] networkd:  [initTimer][12]: Initting timer 'auto_update_restart_timer'
+ 12:38:50.458539  [INFO] networkd:  [initTimer][12]: Initting timer 'auto_update_config_timer'
+ 12:38:50.458598  [INFO] networkd:  [au_timer_init][485] au 1567: auto_update_config_timer inited
+ 12:38:50.458643  [INFO] networkd:  [initTimer][12]: Initting timer 'auto_update_firmware_timer'
+ 12:38:50.458687  [INFO] networkd:  [au_timer_init][485] au 1567: auto_update_firmware_timer inited
+ 12:38:50.459577  [INFO] networkd:  [au_lock_ext][237] au 1567: try lock on 1314; processed 1
+ 12:38:50.461081  [INFO] networkd:  [au_timer_stop][519] au 1567: auto_update_config_timer was stopped
+ 12:38:50.461145  [INFO] networkd:  [au_timer_stop][519] au 1567: auto_update_firmware_timer was stopped
+ 12:38:50.461187  [INFO] networkd:  [au_unlock_ext][255] au 1567: unlock on 1321; processed 0
+ 12:38:50.461225  [INFO] networkd:  [au_config_update][1325] au 1567: config updated
+ 12:38:50.461262  [INFO] networkd:  [au_init][1398] au 1567: inited
+ 12:38:50.461324  [INFO] networkd:  [main][2467] System is ready. Begin cmd-loop
+ 12:38:50.461603  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_PROC_STACK_STATE_REPLY' cmd from 23
+ 12:38:50.461685  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_PROC_STACK_STATE_REPLY'(27) for '-'[0], ptr <0x7f780008e0>
+ 12:38:50.461731  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:50.567040  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:38:50.572953  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 0, budget 9)
+ 12:38:50.573113  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_PROC_STACK_STATE_REPLY' (27)
+ 12:38:50.573208  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.1' 
+			ifa_local:'192.168.111.211'
+			ifa_addr: '192.168.111.211'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    80 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:38:50.573271  [INFO] networkd:  [if_get_ip] bond1.1
+ 12:38:50.573331  [INFO] networkd:  [if_get_ip] bond1.1 <192.168.111.211> <255.255.255.0> bcast <192.168.111.255>
+ 12:38:50.573379  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'down'): event ifname 'bond1.1'; WAN 2 state 'not inited'
+ 12:38:50.573422  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'down')
+ 12:38:50.573464  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 proc up (addr 0.0.0.0/0)
+ 12:38:50.573535  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 change ip from 0.0.0.0/0 to 192.168.111.211
+ 12:38:50.573589  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 proc up (ipaddr 192.168.111.211, gateway 192.168.111.1) update iproute2
+ 12:38:50.573630  [INFO] networkd:  [iprt2_route_add][1048]: START PROCESSING [IFACE]:
+ 12:38:50.573675  [INFO] networkd:  [iprt2_table_writes_add][498]: bond1.1 need to create
+ 12:38:50.573769  [INFO] networkd:  [iprt2_busy_elem_set][314]: add bond1.1 item
+ 12:38:50.573814  [INFO] networkd:  [iprt2_table_add][399]: add table [1 bond1.1] done
+ 12:38:50.573861  [INFO] networkd:  exec: 'ip route add 192.168.111.0/24 dev bond1.1 table bond1.1 src 192.168.111.211'
+ 12:38:50.579934  [INFO] networkd:  [iprt2_iface_params_set][53] ID [1] set busy
+ 12:38:50.580088  [INFO] networkd:  exec: 'ip route add  default via 192.168.111.1 dev bond1.1 table bond1.1'
+ 12:38:50.586018  [INFO] networkd:  [iprt2_route_add][1226]: add via for bond1.1: done
+ 12:38:50.586171  [INFO] networkd:  [iprt2_rule_add][1464]: START [IFACE]:
+ 12:38:50.586229  [INFO] networkd:  [iprt2_busy_elem_check][329]: try find bond1.1
+ 12:38:50.586272  [INFO] networkd:  [iprt2_busy_elem_check][335]: bond1.1 was found
+ 12:38:50.586328  [INFO] networkd:  exec: 'ip rule add fwmark 0xfff table bond1.1 pref 16383'
+ 12:38:50.592030  [INFO] networkd:  [iprt2_rule_add][1530]: add via rule for bond1.1: done
+ 12:38:50.592165  [INFO] networkd:  exec: 'ip route flush cache'
+ 12:38:50.597993  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 (ipaddr 192.168.111.211) updated iproute2
+ 12:38:50.598143  [INFO] networkd:  exec: 'iptables -A NO_PROF_IN -d 192.168.111.211 -j ACCEPT'
+ 12:38:50.604472  [INFO] networkd:  exec: 'iptables -A NO_PROF_OUT -s 192.168.111.211 -j ACCEPT'
+ 12:38:50.615060  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 (ipaddr 192.168.111.211) added no-profile firewall rule
+ 12:38:50.615215  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 white list count: 1
+ 12:38:50.615281  [INFO] networkd:  [FW_AddIfaceAccess][799] ID:01
+ 12:38:50.619318  [INFO] networkd:  *filter
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 80 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 443 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 22 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 23 -j ACCEPT
+-I SRV_IN -p udp -s 0.0.0.0/0 -d 192.168.111.211 --dport 161 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 80 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 443 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 22 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 23 -j ACCEPT
+-I SRV_OUT -p udp -d 0.0.0.0/0 -s 192.168.111.211 --sport 161 -j ACCEPT
+COMMIT
+ 12:38:50.625596  [INFO] networkd:  exec: 'iptables -t mangle -I IP_MARK -o bond1.1 -j MARK --set-mark 0xfff'
+ 12:38:50.631754  [INFO] networkd:  exec: 'iptables -t mangle -A IP_MARK -s 192.168.111.211 -j MARK --set-mark 0xfff'
+ 12:38:50.639206  [INFO] networkd:  [FW_AddIfaceAccessFtpd][1085] Add ftpd access for interface bond1.1 ip: 192.168.111.211
+ 12:38:50.639353  [INFO] networkd:  exec: 'iptables -I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 21 -j REJECT'
+ 12:38:50.648591  [INFO] networkd:  exec: 'iptables -I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 21 -j REJECT'
+ 12:38:50.655434  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 (ipaddr 192.168.111.211) update FW, default-gw and routes
+ 12:38:50.655568  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:38:50.655620  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:38:50.655670  [INFO] networkd:  exec: 'route del default gw 0.0.0.0'
+ 12:38:50.661272  [INFO] networkd:  exec: 'route del default gw 0.0.0.0'
+ 12:38:50.667231  [WARN] networkd:  exec: result NOK [1] for 'route del default gw 0.0.0.0'
+ 12:38:50.667380  [INFO] networkd:  exec: 'route add default gw 192.168.111.1'
+ 12:38:50.673156  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:38:50.673319  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:38:50.673368  [INFO] networkd:  [FW_UpdateIntf][2027] Network interface doesn't match any profile ifname: bond1.1
+ 12:38:50.673412  [INFO] networkd:  [CreateInterface][1458] Create stIntf object id:1 type:1 profID: 0
+ 12:38:50.673455  [INFO] networkd:  [FW_CheckIntf][1980] Current interface type: 1 id: 1 is new with prof id: 0
+ 12:38:50.673495  [INFO] networkd:  [FW_CheckIntf][1991] Current interface type: 1 id: 1 did not match any profile
+ 12:38:50.673552  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.1'; WAN 2 state 'not inited'
+ 12:38:50.673597  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'down'): event ifname 'bond1.1'; WAN 2 state 'not inited'
+ 12:38:50.767958  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:50.768123  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:50.768176  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:50.773731  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 1, budget 9)
+ 12:38:50.773928  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:50.773982  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:50.774022  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:50.774067  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:50.774108  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:50.774147  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:50.774191  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 0.0.0.0/0 addr 192.168.60.11 is not active
+ 12:38:50.774239  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [1] and non-active [1]
+ 12:38:50.774284  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'no'; Notification: 7453294859326944278s ago; 
+ 12:38:50.774376  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.1:1' 
+			ifa_local:'192.168.111.213'
+			ifa_addr: '192.168.111.213'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    81 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:38:50.774437  [INFO] networkd:  [if_get_ip] bond1.1:1
+ 12:38:50.774498  [ERR ] networkd:  [if_get_ip] device bond1.1:1: SIOCGIFADDR failed (Cannot assign requested address)
+ 12:38:50.874640  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 1002
+ 12:38:50.883231  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:50.883389  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:50.883435  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:50.974883  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 2, budget 9)
+ 12:38:50.975046  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:50.975086  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:50.975124  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:50.975164  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:50.975201  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:50.975237  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:50.975276  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 0.0.0.0/0 addr 192.168.60.11 is not active
+ 12:38:50.975312  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [1] and non-active [1]
+ 12:38:50.975348  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'no'; Notification: 7453294859326944278s ago; 
+ 12:38:50.975420  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1 ifi_index: 10 ifi_type: 1 ifi_flags: 11443
+ 12:38:50.995186  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:50.995296  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:50.995338  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:51.075536  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 3, budget 9)
+ 12:38:51.075678  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:51.075720  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:51.075758  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:51.075799  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:51.075836  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:51.075873  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:51.075936  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 0.0.0.0/0 addr 192.168.60.11 is not active
+ 12:38:51.075975  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [1] and non-active [1]
+ 12:38:51.076012  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'no'; Notification: 7453294859326944278s ago; 
+ 12:38:51.076099  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1 ifi_index: 10 ifi_type: 1 ifi_flags: 11443
+ 12:38:51.180966  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:38:51.186944  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11043
+ 12:38:51.287136  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11043
+ 12:38:51.387397  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.4091' 
+			ifa_local:'192.168.60.11'
+			ifa_addr: '192.168.60.11'
+			bcast:    '192.168.60.255'
+			anycast:  'NONE'
+			flags:    80 index: 13 family: 2 scope: 00 prefixlen: 24
+ 12:38:51.387537  [INFO] networkd:  [if_get_ip] bond1.4091
+ 12:38:51.387598  [INFO] networkd:  [if_get_ip] bond1.4091 <192.168.60.11> <255.255.255.0> bcast <192.168.60.255>
+ 12:38:51.387642  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'up'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:38:51.387682  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:38:51.387719  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'down'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:38:51.387755  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'down')
+ 12:38:51.387793  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 proc up (addr 0.0.0.0/0)
+ 12:38:51.387866  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 change ip from 0.0.0.0/0 to 192.168.60.11
+ 12:38:51.387939  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091: tagged, alias: 0, COS: 0, rtp N
+ 12:38:51.387983  [INFO] networkd:  system: '/sbin/vconfig set_egress_map bond1.4091 0 0'
+ 12:38:51.391169  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 proc up (ipaddr 192.168.60.11, gateway 192.168.60.1) update iproute2
+ 12:38:51.391291  [INFO] networkd:  [iprt2_route_add][1048]: START PROCESSING [IFACE]:
+ 12:38:51.391339  [INFO] networkd:  [iprt2_table_writes_add][498]: bond1.4091 need to create
+ 12:38:51.391422  [INFO] networkd:  [iprt2_busy_elem_set][314]: add bond1.4091 item
+ 12:38:51.391462  [INFO] networkd:  [iprt2_table_add][399]: add table [2 bond1.4091] done
+ 12:38:51.391502  [INFO] networkd:  exec: 'ip route add 192.168.60.0/24 dev bond1.4091 table bond1.4091 src 192.168.60.11'
+ 12:38:51.397145  [INFO] networkd:  [iprt2_iface_params_set][53] ID [3] set busy
+ 12:38:51.397289  [INFO] networkd:  exec: 'ip route add  default via 192.168.60.1 dev bond1.4091 table bond1.4091'
+ 12:38:51.402758  [INFO] networkd:  [iprt2_route_add][1226]: add via for bond1.4091: done
+ 12:38:51.402888  [INFO] networkd:  [iprt2_rule_add][1464]: START [IFACE]:
+ 12:38:51.402950  [INFO] networkd:  [iprt2_busy_elem_check][329]: try find bond1.4091
+ 12:38:51.402990  [INFO] networkd:  [iprt2_busy_elem_check][335]: bond1.4091 was found
+ 12:38:51.403033  [INFO] networkd:  exec: 'ip rule add fwmark 0xffb table bond1.4091 pref 16382'
+ 12:38:51.408717  [INFO] networkd:  [iprt2_rule_add][1530]: add via rule for bond1.4091: done
+ 12:38:51.408879  [INFO] networkd:  exec: 'ip route flush cache'
+ 12:38:51.413986  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 (ipaddr 192.168.60.11) updated iproute2
+ 12:38:51.414122  [INFO] networkd:  exec: 'iptables -A NO_PROF_IN -d 192.168.60.11 -j ACCEPT'
+ 12:38:51.419818  [INFO] networkd:  exec: 'iptables -A NO_PROF_OUT -s 192.168.60.11 -j ACCEPT'
+ 12:38:51.425788  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 (ipaddr 192.168.60.11) added no-profile firewall rule
+ 12:38:51.425944  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 white list count: 1
+ 12:38:51.425996  [INFO] networkd:  [FW_AddIfaceAccess][799] ID:03
+ 12:38:51.429634  [INFO] networkd:  *filter
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 80 -j REJECT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 443 -j REJECT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 22 -j REJECT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 23 -j REJECT
+-I SRV_IN -p udp -s 0.0.0.0/0 -d 192.168.60.11 --dport 161 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 80 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 443 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 22 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 23 -j REJECT
+-I SRV_OUT -p udp -d 0.0.0.0/0 -s 192.168.60.11 --sport 161 -j REJECT
+COMMIT
+ 12:38:51.434738  [INFO] networkd:  exec: 'iptables -t mangle -I IP_MARK -o bond1.4091 -j MARK --set-mark 0xffb'
+ 12:38:51.440752  [INFO] networkd:  exec: 'iptables -t mangle -A IP_MARK -s 192.168.60.11 -j MARK --set-mark 0xffb'
+ 12:38:51.446381  [INFO] networkd:  [FW_AddIfaceAccessFtpd][1085] Add ftpd access for interface bond1.4091 ip: 192.168.60.11
+ 12:38:51.446501  [INFO] networkd:  exec: 'iptables -I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 21 -j REJECT'
+ 12:38:51.452403  [INFO] networkd:  exec: 'iptables -I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 21 -j REJECT'
+ 12:38:51.458522  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 (ipaddr 192.168.60.11) update FW, default-gw and routes
+ 12:38:51.458657  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 3
+ 12:38:51.458702  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[3] ifname 'bond1.4091'
+ 12:38:51.458740  [INFO] networkd:  [FW_UpdateIntf][2027] Network interface doesn't match any profile ifname: bond1.4091
+ 12:38:51.458777  [INFO] networkd:  [CreateInterface][1458] Create stIntf object id:3 type:2 profID: 0
+ 12:38:51.458815  [INFO] networkd:  [FW_CheckIntf][1980] Current interface type: 2 id: 3 is new with prof id: 0
+ 12:38:51.458852  [INFO] networkd:  [FW_CheckIntf][1991] Current interface type: 2 id: 3 did not match any profile
+ 12:38:51.558985  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11043
+ 12:38:51.659199  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11043
+ 12:38:51.759413  [INFO] networkd:  [nl_proc_af_inet_msg][265] DELADDR label:'bond1.1:1' 
+			ifa_local:'192.168.111.213'
+			ifa_addr: '192.168.111.213'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    81 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:38:51.759527  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'up'): event ifname 'bond1.1:1'; WAN 2 state 'not inited'
+ 12:38:51.759568  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.1:1'; WAN 2 state 'not inited'
+ 12:38:51.759607  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'up'): event ifname 'bond1.1:1'; WAN 2 state 'not inited'
+ 12:38:51.774828  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:51.774969  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:51.775029  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:51.859723  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 4, budget 9)
+ 12:38:51.859866  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:51.859936  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:51.859982  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:51.860026  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:51.860066  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:51.860105  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:51.860146  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:51.860185  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:51.860231  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 1s ago; 
+ 12:38:51.860333  [INFO] networkd:  [nl_proc_af_inet6_msg][342] NEWADDR
+			ifa_addr: 'fe80::e65a:d4ff:fefa:99a3'
+			flags:    80 index: 13 family: 10 scope: 253 prefixlen: 64
+ 12:38:51.975727  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:51.975869  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:51.975928  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:52.076500  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:52.076604  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:52.076649  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:52.160639  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 5, budget 9)
+ 12:38:52.160772  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:52.160813  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:52.160851  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:52.160892  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:52.160950  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:52.160987  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:52.161027  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:52.161063  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:52.161099  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 1s ago; 
+ 12:38:52.161153  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 6, budget 8)
+ 12:38:52.161193  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:52.161232  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:52.161268  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:52.161306  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:52.161342  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:52.161377  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:52.161414  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:52.161449  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:52.161484  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 1s ago; 
+ 12:38:52.566942  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:38:52.860555  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:52.860705  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:52.860748  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:52.976300  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 7, budget 9)
+ 12:38:52.976460  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:52.976504  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:52.976542  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:52.976585  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:52.976629  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:52.976667  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:52.976705  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:52.976740  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:52.976776  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 2s ago; 
+ 12:38:53.161472  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:53.161611  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:53.161652  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:53.161819  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:53.161877  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:53.161937  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:53.177007  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 8, budget 9)
+ 12:38:53.177088  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:53.177128  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:53.177164  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:53.177204  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:53.177239  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:53.177275  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:53.177312  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:53.177347  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:53.177383  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 2s ago; 
+ 12:38:53.177433  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 9, budget 8)
+ 12:38:53.177474  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:53.177515  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:53.177552  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:53.177593  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:53.177629  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:53.177665  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:53.177701  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:53.177736  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:53.177771  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 2s ago; 
+ 12:38:53.977076  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:53.977215  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:53.977258  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:53.978540  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 10, budget 9)
+ 12:38:53.978625  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:53.978666  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:53.978710  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:53.978752  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:53.978789  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:53.978825  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:53.978863  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:53.978924  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:53.978963  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 3s ago; 
+ 12:38:54.177715  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:54.177851  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:54.177892  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:54.178140  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:54.178217  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:54.178260  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:54.179193  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 11, budget 9)
+ 12:38:54.179243  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:54.179280  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:54.179316  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:54.179356  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:54.179392  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:54.179427  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:54.179465  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:54.179501  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:54.179536  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 3s ago; 
+ 12:38:54.179584  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 12, budget 8)
+ 12:38:54.179624  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:54.179663  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:54.179700  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:54.179741  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:54.179777  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:54.179812  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:54.179849  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:54.179884  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:54.179937  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 3s ago; 
+ 12:38:54.979219  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:54.979363  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:54.979407  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:54.980706  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 13, budget 9)
+ 12:38:54.980759  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:54.980797  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:54.980834  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:54.980875  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:54.980924  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:54.980961  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:54.980999  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:54.981034  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:54.981069  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 4s ago; 
+ 12:38:55.179991  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:55.180376  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:55.180422  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:55.180533  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:55.180626  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:55.180669  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:55.181311  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 14, budget 9)
+ 12:38:55.181442  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:55.181496  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:55.181536  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:55.181617  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:55.181659  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:55.181697  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:55.181736  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:55.181774  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:55.181813  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 4s ago; 
+ 12:38:55.181914  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 15, budget 8)
+ 12:38:55.181984  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:55.182038  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:55.182079  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:55.182134  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:55.182179  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:55.182232  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:55.182275  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:55.182322  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:55.182373  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 4s ago; 
+ 12:38:55.981320  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:55.981464  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:55.981508  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:55.983181  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 16, budget 9)
+ 12:38:55.983228  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:55.983266  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:55.983303  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:55.983343  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:55.983379  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:55.983415  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:55.983452  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:55.983487  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:55.983523  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 5s ago; 
+ 12:38:56.182481  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:56.182628  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:56.182674  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:56.182857  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:56.182940  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:56.182984  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:56.183757  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 17, budget 9)
+ 12:38:56.183805  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:56.183843  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:56.183880  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:56.183936  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:56.183974  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:56.184010  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:56.184050  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:56.184087  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:56.184124  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 5s ago; 
+ 12:38:56.184173  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 18, budget 8)
+ 12:38:56.184214  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:56.184252  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:56.184289  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:56.184330  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:56.184366  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:56.184401  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:56.184439  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:56.184475  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:56.184510  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 5s ago; 
+ 12:38:56.983776  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:56.983943  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:56.983989  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:56.985293  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 19, budget 9)
+ 12:38:56.985339  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:56.985376  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:56.985413  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:56.985454  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:56.985489  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:56.985525  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:56.985563  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:56.985597  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:56.985643  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 6s ago; 
+ 12:38:57.184454  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:57.184596  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:57.184637  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:57.184813  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:57.184863  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:57.184920  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:57.185870  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 20, budget 9)
+ 12:38:57.185926  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:57.185964  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:57.186000  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:57.186039  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:57.186075  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:57.186111  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:57.186149  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:57.186184  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:57.186219  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 6s ago; 
+ 12:38:57.186265  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 21, budget 8)
+ 12:38:57.186305  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:57.186343  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:57.186380  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:57.186420  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:57.186455  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:57.186490  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:57.186526  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:57.186567  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:57.186605  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 6s ago; 
+ 12:38:57.393932  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:38:57.985919  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 5
+ 12:38:57.986069  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:57.986112  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:58.003458  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 22, budget 9)
+ 12:38:58.003528  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:58.003567  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:58.003604  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:58.003644  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:58.003680  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:58.003716  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:58.003754  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:58.003789  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:58.003825  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 7s ago; 
+ 12:38:58.186534  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 16
+ 12:38:58.186673  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:38:58.186713  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:38:58.186933  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 23
+ 12:38:58.186994  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f78000940>
+ 12:38:58.187037  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:38:58.204056  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 23, budget 9)
+ 12:38:58.204121  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:58.204159  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:58.204195  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:58.204235  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:58.204270  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:58.204306  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:58.204343  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:58.204377  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:58.204413  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 7s ago; 
+ 12:38:58.204464  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 24, budget 8)
+ 12:38:58.204504  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:38:58.204542  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:38:58.204579  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:38:58.204619  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:38:58.204663  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:38:58.204703  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:38:58.204744  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:38:58.204782  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:38:58.204817  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 7s ago; 
+ 12:39:05.299392  [INFO] networkd:  [MessageCmdAdd][1153] add 'CFG_INFO_REMOVED' cmd from 2
+ 12:39:05.299549  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CFG_INFO_REMOVED'(5) for 'FireWallProfile'[65535], ptr <0x7f78000940>
+ 12:39:05.299600  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:05.299657  [INFO] networkd:  [MessageCmdAdd][1230] send cmd 'CFG_INFO_REMOVED' OK-reply. res [0]
+ 12:39:05.301067  [INFO] networkd:  [MessageCmdAdd][1153] add 'CFG_INFO_REMOVED' cmd from 2
+ 12:39:05.301141  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CFG_INFO_REMOVED'(5) for 'FTPD-USERS'[65535], ptr <0x7f780008e0>
+ 12:39:05.301185  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [2]
+ 12:39:05.301236  [INFO] networkd:  [MessageCmdAdd][1230] send cmd 'CFG_INFO_REMOVED' OK-reply. res [0]
+ 12:39:05.301417  [INFO] networkd:  [MessageCmdAdd][1153] add 'CFG_INFO_REMOVED' cmd from 2
+ 12:39:05.301468  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CFG_INFO_REMOVED'(5) for 'Network routes'[65535], ptr <0x7f78000980>
+ 12:39:05.301507  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [3]
+ 12:39:05.301551  [INFO] networkd:  [MessageCmdAdd][1230] send cmd 'CFG_INFO_REMOVED' OK-reply. res [0]
+ 12:39:05.301695  [INFO] networkd:  [MessageCmdAdd][1153] add 'CFG_INFO_REMOVED' cmd from 2
+ 12:39:05.301746  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CFG_INFO_REMOVED'(5) for 'DHCPD LEASE'[65535], ptr <0x7f780009c0>
+ 12:39:05.301785  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [4]
+ 12:39:05.301828  [INFO] networkd:  [MessageCmdAdd][1230] send cmd 'CFG_INFO_REMOVED' OK-reply. res [0]
+ 12:39:05.302009  [INFO] networkd:  [MessageCmdAdd][1153] add 'CFG_INFO_REMOVED' cmd from 2
+ 12:39:05.302069  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CFG_INFO_REMOVED'(5) for 'NET_IFACE'[65535], ptr <0x7f78000a00>
+ 12:39:05.302109  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [5]
+ 12:39:05.422640  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000940> (idx 25, budget 9)
+ 12:39:05.422775  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CFG_INFO_REMOVED' (5)
+ 12:39:05.422816  [INFO] networkd:  [CmdProc][1746] Cmd  obj: 'FireWallProfile' (72)
+ 12:39:05.422854  [INFO] networkd:  [FW_PrepareProfToDel][1555] Prepare prof id: 1 to del
+ 12:39:05.422892  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 26, budget 8)
+ 12:39:05.422953  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CFG_INFO_REMOVED' (5)
+ 12:39:05.422990  [INFO] networkd:  [CmdProc][1746] Cmd  obj: 'FTPD-USERS' (82)
+ 12:39:05.423048  [INFO] networkd:  [StartFtpd][320] FTP server is disabled
+ 12:39:05.423086  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000980> (idx 27, budget 7)
+ 12:39:05.423122  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CFG_INFO_REMOVED' (5)
+ 12:39:05.423157  [INFO] networkd:  [CmdProc][1746] Cmd  obj: 'Network routes' (66)
+ 12:39:05.423194  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780009c0> (idx 28, budget 6)
+ 12:39:05.423230  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CFG_INFO_REMOVED' (5)
+ 12:39:05.423265  [INFO] networkd:  [CmdProc][1746] Cmd  obj: 'DHCPD LEASE' (52)
+ 12:39:05.423302  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000a00> (idx 29, budget 5)
+ 12:39:05.423337  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CFG_INFO_REMOVED' (5)
+ 12:39:05.423372  [INFO] networkd:  [CmdProc][1746] Cmd  obj: 'NET_IFACE' (88)
+ 12:39:05.423407  [INFO] networkd:  [FW_MarkToDel][1495] Prepare intf to del type: 88 id: 2
+ 12:39:05.423449  [INFO] networkd:  [DelInterface][2141] del interface ID[2]
+ 12:39:05.423486  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 2
+ 12:39:05.423522  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[2] ifname 'bond1.1:1'
+ 12:39:05.423558  [INFO] networkd:  [if_del_ip] bond1.1:1
+ 12:39:05.423603  [INFO] networkd:  [if_clear_flag] bond1.1:1 UP
+ 12:39:05.423648  [ERR ] networkd:  [if_clear_flag] device bond1.1:1: SIOCSIFFLAGS failed (Cannot assign requested address)
+ 12:39:05.423688  [INFO] networkd:  [InterfaceProcDown] Interface bond1.1:1 proc down (addr 0.0.0.0/0)
+ 12:39:05.423723  [INFO] networkd:  [DelIntfFromList][1098] ifname bond1.1:1 id[2]
+ 12:39:05.423761  [INFO] networkd:  [FW_MarkToDel][1495] Prepare intf to del type: 88 id: 3
+ 12:39:05.423798  [INFO] networkd:  [DelInterface][2141] del interface ID[3]
+ 12:39:05.423832  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 3
+ 12:39:05.423866  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[3] ifname 'bond1.4091'
+ 12:39:05.423913  [INFO] networkd:  [if_del_ip] bond1.4091
+ 12:39:05.425729  [INFO] networkd:  [if_clear_flag] bond1.4091 UP
+ 12:39:05.432516  [INFO] networkd:  [InterfaceProcDown] Interface bond1.4091 proc down (addr 192.168.60.11)
+ 12:39:05.432662  [INFO] networkd:  exec: 'iptables -D NO_PROF_IN -d 192.168.60.11 -j ACCEPT'
+ 12:39:05.438083  [INFO] networkd:  exec: 'iptables -D NO_PROF_OUT -s 192.168.60.11 -j ACCEPT'
+ 12:39:05.443626  [INFO] networkd:  [FW_DelIfaceAccess][651] ID:03
+ 12:39:05.451824  [INFO] networkd:  exec: 'iptables -t mangle -D IP_MARK -o bond1.4091 -j MARK --set-mark 0xffb'
+ 12:39:05.457269  [INFO] networkd:  exec: 'iptables -t mangle -D IP_MARK -s 192.168.60.11 -j MARK --set-mark 0xffb'
+ 12:39:05.462621  [INFO] networkd:  [FW_DelIfaceAccessDhcpd][981] Del dhcpd access for interface bond1.4091 ip: 192.168.60.11
+ 12:39:05.462727  [INFO] networkd:  [FW_DelIfaceAccessFtpd][1066] Del ftpd access for interface bond1.4091 ip: 192.168.60.11
+ 12:39:05.462771  [INFO] networkd:  exec: 'iptables -D SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 21 -j REJECT'
+ 12:39:05.468464  [INFO] networkd:  exec: 'iptables -D SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 21 -j REJECT'
+ 12:39:05.474629  [INFO] networkd:  [DelIntfFromList][1098] ifname bond1.4091 id[3]
+ 12:39:05.474741  [INFO] networkd:  exec: 'ip rule flush'
+ 12:39:05.479768  [INFO] networkd:  [iprt2_rule_flush][1723]: ip rule: flush all tables
+ 12:39:05.479870  [INFO] networkd:  exec: 'ip rule add table main pref 32766'
+ 12:39:05.484743  [INFO] networkd:  [iprt2_rule_flush][1728]: ip rule: flush add main table
+ 12:39:05.484835  [INFO] networkd:  exec: 'ip rule add table default pref 32767'
+ 12:39:05.489741  [INFO] networkd:  [iprt2_rule_flush][1735]: ip rule: flush add default table
+ 12:39:05.489829  [INFO] networkd:  exec: 'ip route flush table bond1.1'
+ 12:39:05.494955  [INFO] networkd:  [iprt2_route_flush][1671]: clean bond1.1 table: done
+ 12:39:05.495054  [INFO] networkd:  exec: 'ip route flush table bond1.4091'
+ 12:39:05.499994  [INFO] networkd:  [iprt2_route_flush][1671]: clean bond1.4091 table: done
+ 12:39:05.500111  [INFO] networkd:  [iprt2_lists_init][169] inited: done
+ 12:39:05.500151  [INFO] networkd:  [iprt2_route_flush][1704]: try flush '/etc/config/iproute2/rt_tables'
+ 12:39:05.500230  [INFO] networkd:  [iprt2_route_flush][1713]: flush '/etc/config/iproute2/rt_tables': done
+ 12:39:05.500313  [INFO] networkd:  [nl_proc_af_inet_msg][265] DELADDR label:'bond1.4091' 
+			ifa_local:'192.168.60.11'
+			ifa_addr: '192.168.60.11'
+			bcast:    '192.168.60.255'
+			anycast:  'NONE'
+			flags:    80 index: 13 family: 2 scope: 00 prefixlen: 24
+ 12:39:05.500365  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'up'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:39:05.500743  [INFO] networkd:  [MessageCmdAdd][1153] add 'CFG_CMD_APPLY_ID' cmd from 2
+ 12:39:05.500836  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CFG_CMD_APPLY_ID'(2) for 'none'[0], ptr <0x7f78000a00>
+ 12:39:05.500886  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:05.500952  [INFO] networkd:  [MessageCmdAdd][1230] send cmd 'CFG_CMD_APPLY_ID' OK-reply. res [0]
+ 12:39:05.600521  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f78000a00> (idx 30, budget 9)
+ 12:39:05.600759  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CFG_CMD_APPLY_ID' (2) Apply all
+ 12:39:05.600809  [INFO] networkd:  [l2tpd_stop][704] stop l2tp server
+ 12:39:05.603378  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 66.
+ 12:39:05.603464  [INFO] networkd:  [DelInterface][2141] del interface ID[65530]
+ 12:39:05.603503  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 65530
+ 12:39:05.603541  [INFO] networkd:  [FindIntfByID_trace][1224] no interface found!
+ 12:39:05.603576  [INFO] networkd:  [DelInterface][2156] no interface with ID[65530] found!
+ 12:39:05.603612  [INFO] networkd:  system: '/sbin/xl2tpd.setup stop'
+ 12:39:05.620613  [INFO] networkd:  [pptpd_stop][578] stop vpn server
+ 12:39:05.620949  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 66.
+ 12:39:05.621032  [INFO] networkd:  [DelInterface][2141] del interface ID[65531]
+ 12:39:05.621073  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 65531
+ 12:39:05.621111  [INFO] networkd:  [FindIntfByID_trace][1224] no interface found!
+ 12:39:05.621147  [INFO] networkd:  [DelInterface][2156] no interface with ID[65531] found!
+ 12:39:05.621194  [INFO] networkd:  system: '/sbin/pptpd_serv stop 100'
+ 12:39:05.638469  [INFO] networkd:  [destroyTimer][26]: Destroying timer 'auto_update_config_timer'
+ 12:39:05.638603  [INFO] networkd:  [au_timer_destroy][496] au 1567: auto_update_config_timer destroyed
+ 12:39:05.638657  [INFO] networkd:  [destroyTimer][26]: Destroying timer 'auto_update_firmware_timer'
+ 12:39:05.638699  [INFO] networkd:  [au_timer_destroy][496] au 1567: auto_update_firmware_timer destroyed
+ 12:39:05.638736  [INFO] networkd:  [destroyTimer][26]: Destroying timer 'auto_update_restart_timer'
+ 12:39:05.638772  [INFO] networkd:  [au_close][1417] au 1567: closed
+ 12:39:05.638807  [INFO] networkd:  [FW_Stop][2693] enter
+ 12:39:05.638853  [INFO] networkd:  exec: 'iptables -F SRV_IN'
+ 12:39:05.644373  [INFO] networkd:  exec: 'iptables -F SRV_OUT'
+ 12:39:05.649729  [INFO] networkd:  Start deinit profile chain...
+ 12:39:05.649838  [INFO] networkd:  [InitProfile][1664] Deinit profile
+ 12:39:05.649881  [INFO] networkd:  exec: 'iptables -F FW_INPUT_1'
+ 12:39:05.655197  [INFO] networkd:  exec: 'iptables -F FW_INPUT_TMP_1'
+ 12:39:05.660730  [INFO] networkd:  exec: 'iptables -X FW_INPUT_1'
+ 12:39:05.666098  [INFO] networkd:  exec: 'iptables -X FW_INPUT_TMP_1'
+ 12:39:05.671400  [INFO] networkd:  [InitProfile][1664] Deinit profile
+ 12:39:05.671515  [INFO] networkd:  exec: 'iptables -F FW_OUTPUT_1'
+ 12:39:05.676664  [INFO] networkd:  exec: 'iptables -F FW_OUTPUT_TMP_1'
+ 12:39:05.681990  [INFO] networkd:  exec: 'iptables -X FW_OUTPUT_1'
+ 12:39:05.687313  [INFO] networkd:  exec: 'iptables -X FW_OUTPUT_TMP_1'
+ 12:39:05.692569  [INFO] networkd:  exec: 'iptables -D INPUT -j SRV_IN'
+ 12:39:05.697875  [INFO] networkd:  exec: 'iptables -X SRV_IN'
+ 12:39:05.703171  [INFO] networkd:  exec: 'iptables -D OUTPUT -j SRV_OUT'
+ 12:39:05.708488  [INFO] networkd:  exec: 'iptables -X SRV_OUT'
+ 12:39:05.713688  [INFO] networkd:  exec: 'iptables -D INPUT -j NO_PROF_IN'
+ 12:39:05.718882  [INFO] networkd:  exec: 'iptables -F NO_PROF_IN'
+ 12:39:05.724101  [INFO] networkd:  exec: 'iptables -X NO_PROF_IN'
+ 12:39:05.729517  [INFO] networkd:  exec: 'iptables -D OUTPUT -j NO_PROF_OUT'
+ 12:39:05.735538  [INFO] networkd:  exec: 'iptables -F NO_PROF_OUT'
+ 12:39:05.740712  [INFO] networkd:  exec: 'iptables -X NO_PROF_OUT'
+ 12:39:05.745966  [INFO] networkd:  exec: 'iptables -D INPUT -j FW_INPUT'
+ 12:39:05.751186  [INFO] networkd:  exec: 'iptables -X FW_INPUT'
+ 12:39:05.756416  [INFO] networkd:  exec: 'iptables -D OUTPUT -j FW_OUTPUT'
+ 12:39:05.762044  [INFO] networkd:  exec: 'iptables -X FW_OUTPUT'
+ 12:39:05.767241  [INFO] networkd:  exec: 'iptables -D INPUT -p icmp --icmp-type echo-reply -j ACCEPT'
+ 12:39:05.772780  [INFO] networkd:  exec: 'iptables -D INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT'
+ 12:39:05.778380  [INFO] networkd:  exec: 'iptables -D INPUT -p icmp --icmp-type time-exceeded -j ACCEPT'
+ 12:39:05.783860  [INFO] networkd:  exec: 'iptables -D INPUT -p icmp --icmp-type echo-request -j ACCEPT'
+ 12:39:05.789379  [INFO] networkd:  exec: 'iptables -D OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT'
+ 12:39:05.794896  [INFO] networkd:  exec: 'iptables -D OUTPUT -p icmp --icmp-type destination-unreachable -j ACCEPT'
+ 12:39:05.800269  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:05.800361  [INFO] networkd:  exec: 'iptables -D OUTPUT -p icmp --icmp-type time-exceeded -j ACCEPT'
+ 12:39:05.805920  [INFO] networkd:  exec: 'iptables -D OUTPUT -p icmp --icmp-type echo-request -j ACCEPT'
+ 12:39:05.811234  [INFO] networkd:  exec: 'iptables -t mangle -D OUTPUT -j IP_MARK'
+ 12:39:05.816464  [INFO] networkd:  exec: 'iptables -t mangle -F IP_MARK'
+ 12:39:05.821794  [INFO] networkd:  exec: 'iptables -t mangle -X IP_MARK'
+ 12:39:05.827021  [INFO] networkd:  exec: 'ip6tables -D INPUT -j DROP'
+ 12:39:05.832739  [INFO] networkd:  exec: 'ip6tables -D OUTPUT -j DROP'
+ 12:39:05.837890  [INFO] networkd:  exec: 'iptables -F UDP-DNS-LIMIT'
+ 12:39:05.843097  [INFO] networkd:  exec: 'iptables -F TCP-DNS-LIMIT'
+ 12:39:05.848236  [INFO] networkd:  exec: 'iptables -D INPUT -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:05.853754  [INFO] networkd:  exec: 'iptables -D INPUT -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:05.859514  [INFO] networkd:  exec: 'iptables -D FORWARD -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:05.864979  [WARN] networkd:  exec: result NOK [1] for 'iptables -D FORWARD -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:05.865087  [INFO] networkd:  exec: 'iptables -D FORWARD -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:05.870648  [WARN] networkd:  exec: result NOK [1] for 'iptables -D FORWARD -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:05.870798  [INFO] networkd:  exec: 'iptables -X UDP-DNS-LIMIT'
+ 12:39:05.875948  [INFO] networkd:  exec: 'iptables -X TCP-DNS-LIMIT'
+ 12:39:05.881006  [INFO] networkd:  exec: 'ip6tables -F UDP-DNS-LIMIT'
+ 12:39:05.886195  [INFO] networkd:  exec: 'ip6tables -F TCP-DNS-LIMIT'
+ 12:39:05.891349  [INFO] networkd:  exec: 'ip6tables -D INPUT -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:05.896782  [INFO] networkd:  exec: 'ip6tables -D INPUT -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:05.902588  [INFO] networkd:  exec: 'ip6tables -D FORWARD -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:05.908021  [WARN] networkd:  exec: result NOK [1] for 'ip6tables -D FORWARD -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:05.908129  [INFO] networkd:  exec: 'ip6tables -D FORWARD -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:05.913792  [WARN] networkd:  exec: result NOK [1] for 'ip6tables -D FORWARD -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:05.913919  [INFO] networkd:  exec: 'ip6tables -X UDP-DNS-LIMIT'
+ 12:39:05.919022  [INFO] networkd:  exec: 'ip6tables -X TCP-DNS-LIMIT'
+ 12:39:05.924050  [INFO] networkd:  [FW_Stop][2701] exit
+ 12:39:05.924153  [INFO] networkd:  [DelIntfList][275] enter
+ 12:39:05.924195  [INFO] networkd:  [destroyTimer][26]: Destroying timer 'WHITE_LIST_TIMER'
+ 12:39:05.924233  [INFO] networkd:  [DelIntfList][288] ifname bond1.1 set down
+ 12:39:05.924270  [INFO] networkd:  [StopDhcp][329]
+ 12:39:05.924322  [INFO] networkd:  [if_del_ip] bond1.1
+ 12:39:05.926154  [INFO] networkd:  [if_set_flag] bond1.1 UP
+ 12:39:05.928576  [INFO] networkd:  [DelIntfList][301] exit
+ 12:39:05.928691  [INFO] networkd:  exec: 'ip rule flush'
+ 12:39:05.933545  [INFO] networkd:  [iprt2_rule_flush][1723]: ip rule: flush all tables
+ 12:39:05.933658  [INFO] networkd:  exec: 'ip rule add table main pref 32766'
+ 12:39:05.938554  [INFO] networkd:  [iprt2_rule_flush][1728]: ip rule: flush add main table
+ 12:39:05.938646  [INFO] networkd:  exec: 'ip rule add table default pref 32767'
+ 12:39:05.943587  [INFO] networkd:  [iprt2_rule_flush][1735]: ip rule: flush add default table
+ 12:39:05.943707  [INFO] networkd:  [iprt2_lists_init][169] inited: done
+ 12:39:05.943746  [INFO] networkd:  [iprt2_route_flush][1704]: try flush '/etc/config/iproute2/rt_tables'
+ 12:39:05.943820  [INFO] networkd:  [iprt2_route_flush][1713]: flush '/etc/config/iproute2/rt_tables': done
+ 12:39:05.943921  [INFO] networkd:  PCMdump: <DeinitPCMdump> Deinit PCM-dump.
+ 12:39:05.943965  [INFO] networkd:  exec: 'killall pcmdump'
+ 12:39:05.956057  [WARN] networkd:  exec: result NOK [1] for 'killall pcmdump'
+ 12:39:06.301304  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:06.456388  [INFO] networkd:  [main][2440] Start networkd
+ 12:39:06.456472  [INFO] networkd:  system: 'echo 1048576 > /proc/sys/net/core/rmem_max'
+ 12:39:06.458204  [INFO] networkd:  system: 'echo 1048576 > /proc/sys/net/core/wmem_max'
+ 12:39:06.459843  [INFO] networkd:  [networkd_set_sock_buf_size][23] try set send buffer size: 3145728
+ 12:39:06.459969  [INFO] networkd:  [networkd_set_sock_buf_size][28] socket send buffer size: 524288
+ 12:39:06.460017  [ERR ] networkd:  [networkd_set_sock_buf_size][49] socket send buffer size not changed(2097152 but need 3145728x2) but setsockopt returned 'OK'
+ 12:39:06.460057  [INFO] networkd:  [networkd_set_sock_buf_size][23] try set recv buffer size: 3145728
+ 12:39:06.460094  [INFO] networkd:  [networkd_set_sock_buf_size][28] socket recv buffer size: 524288
+ 12:39:06.460132  [ERR ] networkd:  [networkd_set_sock_buf_size][49] socket recv buffer size not changed(2097152 but need 3145728x2) but setsockopt returned 'OK'
+ 12:39:06.460179  [INFO] networkd:  exec: 'ip rule flush'
+ 12:39:06.464921  [INFO] networkd:  [iprt2_rule_flush][1723]: ip rule: flush all tables
+ 12:39:06.465026  [INFO] networkd:  exec: 'ip rule add table main pref 32766'
+ 12:39:06.470196  [INFO] networkd:  [iprt2_rule_flush][1728]: ip rule: flush add main table
+ 12:39:06.470322  [INFO] networkd:  exec: 'ip rule add table default pref 32767'
+ 12:39:06.475376  [INFO] networkd:  [iprt2_rule_flush][1735]: ip rule: flush add default table
+ 12:39:06.475503  [INFO] networkd:  [iprt2_lists_init][169] inited: done
+ 12:39:06.475544  [INFO] networkd:  [iprt2_route_flush][1704]: try flush '/etc/config/iproute2/rt_tables'
+ 12:39:06.475622  [INFO] networkd:  [iprt2_route_flush][1713]: flush '/etc/config/iproute2/rt_tables': done
+ 12:39:06.475681  [INFO] networkd:  exec: 'iptables -N SRV_IN'
+ 12:39:06.480831  [INFO] networkd:  exec: 'iptables -I INPUT -j SRV_IN'
+ 12:39:06.485958  [INFO] networkd:  exec: 'iptables -N SRV_OUT'
+ 12:39:06.491126  [INFO] networkd:  exec: 'iptables -I OUTPUT -j SRV_OUT'
+ 12:39:06.496223  [INFO] networkd:  exec: 'iptables -A SRV_OUT -o lo -j ACCEPT'
+ 12:39:06.501363  [INFO] networkd:  exec: 'iptables -A SRV_IN -i lo -j ACCEPT'
+ 12:39:06.506407  [INFO] networkd:  exec: 'iptables -N NO_PROF_IN'
+ 12:39:06.511565  [INFO] networkd:  exec: 'iptables -A INPUT -j NO_PROF_IN'
+ 12:39:06.516701  [INFO] networkd:  exec: 'iptables -N NO_PROF_OUT'
+ 12:39:06.521811  [INFO] networkd:  exec: 'iptables -A OUTPUT -j NO_PROF_OUT'
+ 12:39:06.526966  [INFO] networkd:  exec: 'iptables -N FW_INPUT'
+ 12:39:06.532576  [INFO] networkd:  exec: 'iptables -A INPUT -j FW_INPUT'
+ 12:39:06.537883  [INFO] networkd:  exec: 'iptables -N FW_OUTPUT'
+ 12:39:06.543031  [INFO] networkd:  exec: 'iptables -A OUTPUT -j FW_OUTPUT'
+ 12:39:06.548286  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT'
+ 12:39:06.553841  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type destination-unreachable -j ACCEPT'
+ 12:39:06.559470  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type time-exceeded -j ACCEPT'
+ 12:39:06.565091  [INFO] networkd:  exec: 'iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT'
+ 12:39:06.570596  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT'
+ 12:39:06.576329  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type destination-unreachable -j ACCEPT'
+ 12:39:06.581776  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type time-exceeded -j ACCEPT'
+ 12:39:06.587420  [INFO] networkd:  exec: 'iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT'
+ 12:39:06.592873  [INFO] networkd:  exec: 'iptables -t mangle -N IP_MARK'
+ 12:39:06.598060  [INFO] networkd:  exec: 'iptables -t mangle -I OUTPUT -j IP_MARK'
+ 12:39:06.603117  [INFO] networkd:  exec: 'ip6tables -A INPUT -j DROP'
+ 12:39:06.608348  [INFO] networkd:  exec: 'ip6tables -A OUTPUT -j DROP'
+ 12:39:06.613415  [INFO] networkd:  exec: 'iptables -A FORWARD -j DROP'
+ 12:39:06.618693  [INFO] networkd:  exec: 'ip6tables -A FORWARD -j DROP'
+ 12:39:06.623932  [INFO] networkd:  exec: 'iptables -N UDP-DNS-LIMIT'
+ 12:39:06.629258  [INFO] networkd:  exec: 'iptables -N TCP-DNS-LIMIT'
+ 12:39:06.634800  [INFO] networkd:  exec: 'iptables -A UDP-DNS-LIMIT -p udp --sport 53 -m length --length 0:512 -j ACCEPT'
+ 12:39:06.640665  [INFO] networkd:  exec: 'iptables -A UDP-DNS-LIMIT -p udp --sport 53 -j DROP'
+ 12:39:06.646501  [INFO] networkd:  exec: 'iptables -A TCP-DNS-LIMIT -p tcp --sport 53 -m length --length 0:1024 -j ACCEPT'
+ 12:39:06.652119  [INFO] networkd:  exec: 'iptables -A TCP-DNS-LIMIT -p tcp --sport 53 -j DROP'
+ 12:39:06.657814  [INFO] networkd:  exec: 'iptables -I INPUT -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:06.663426  [INFO] networkd:  exec: 'iptables -I INPUT -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:06.669226  [INFO] networkd:  exec: 'ip6tables -N UDP-DNS-LIMIT'
+ 12:39:06.674523  [INFO] networkd:  exec: 'ip6tables -N TCP-DNS-LIMIT'
+ 12:39:06.679691  [INFO] networkd:  exec: 'ip6tables -A UDP-DNS-LIMIT -p udp --sport 53 -m length --length 0:512 -j ACCEPT'
+ 12:39:06.685456  [INFO] networkd:  exec: 'ip6tables -A UDP-DNS-LIMIT -p udp --sport 53 -j DROP'
+ 12:39:06.691147  [INFO] networkd:  exec: 'ip6tables -A TCP-DNS-LIMIT -p tcp --sport 53 -m length --length 0:1024 -j ACCEPT'
+ 12:39:06.696615  [INFO] networkd:  exec: 'ip6tables -A TCP-DNS-LIMIT -p tcp --sport 53 -j DROP'
+ 12:39:06.702073  [INFO] networkd:  exec: 'ip6tables -I INPUT -p tcp --sport 53 -j TCP-DNS-LIMIT'
+ 12:39:06.707486  [INFO] networkd:  exec: 'ip6tables -I INPUT -p udp --sport 53 -j UDP-DNS-LIMIT'
+ 12:39:06.713174  [INFO] networkd:  [WhiteListInit][314] Get object type 55
+ 12:39:06.713468  [INFO] networkd:  [WhiteListUpdate][268]: start. new_list: none type: BACKUP
+ 12:39:06.713526  [INFO] networkd:  [WhiteListUpdate][304]: White list BACKUP updated. IP count: 1
+ 12:39:06.713566  [INFO] networkd:  [WhiteListUpdate][268]: start. new_list: yes type: CONFIRMED
+ 12:39:06.713604  [INFO] networkd:  [WhiteListUpdate][304]: White list CONFIRMED updated. IP count: 0
+ 12:39:06.713642  [INFO] networkd:  [initTimer][12]: Initting timer 'WHITE_LIST_TIMER'
+ 12:39:06.713763  [INFO] networkd:  [GetAllInterfaces][1678] Get all interfaces type 88 count 3
+ 12:39:06.713936  [INFO] networkd:  [CreateIntf][1004] Create IPv4 interface. ID [1] ifname bond1.1 type UNTAGGED ip 0.0.0.0/0 (STATIC) gw 192.168.111.1
+ 12:39:06.713992  [INFO] networkd:  [if_set_flag] bond1.1 UP
+ 12:39:06.716376  [INFO] networkd:  [if_set_ip] bond1.1 addr 192.168.111.211 mask 255.255.255.0 bcast 192.168.111.255
+ 12:39:06.716523  [INFO] networkd:  [AddIntfToList][1085] ifname bond1.1 id[1]
+ 12:39:06.716694  [INFO] networkd:  [CreateIntf][1004] Create IPv4 interface. ID [2] ifname bond1.1:1 type UNTAGGED ip 0.0.0.0/0 (STATIC) gw 0.0.0.0/0
+ 12:39:06.716749  [INFO] networkd:  [if_set_flag] bond1.1:1 UP
+ 12:39:06.716794  [ERR ] networkd:  [if_set_flag] device bond1.1:1: SIOCSIFFLAGS failed (Cannot assign requested address)
+ 12:39:06.716836  [INFO] networkd:  [if_set_ip] bond1.1:1 addr 192.168.111.213 mask 255.255.255.0 bcast 192.168.111.255
+ 12:39:06.716942  [INFO] networkd:  [AddIntfToList][1085] ifname bond1.1:1 id[2]
+ 12:39:06.717114  [INFO] networkd:  [CreateIntf][1004] Create IPv4 interface. ID [3] ifname bond1.4091 type TAGGED ip 0.0.0.0/0 (STATIC) gw 192.168.60.1
+ 12:39:06.717166  [INFO] networkd:  [VconfigAdd] Interface ID [3] bond1: vconfig add 4091
+ 12:39:06.717245  [INFO] networkd:  [VconfigAdd] Interface ID [3] bond1: vid exists 4091
+ 12:39:06.717296  [INFO] networkd:  [if_set_flag] bond1.4091 UP
+ 12:39:06.725150  [INFO] networkd:  [if_set_ip] bond1.4091 addr 192.168.60.11 mask 255.255.255.0 bcast 192.168.60.255
+ 12:39:06.726917  [INFO] networkd:  [if_set_mtu] bond1.4091 mtu 1496
+ 12:39:06.726982  [INFO] networkd:  [AddIntfToList][1085] ifname bond1.4091 id[3]
+ 12:39:06.727024  [INFO] networkd:  [DumpIntfList][313] [00] ifname bond1.1 id [1]
+ 12:39:06.727062  [INFO] networkd:  [DumpIntfList][313] [01] ifname bond1.1:1 id [2]
+ 12:39:06.727099  [INFO] networkd:  [DumpIntfList][313] [02] ifname bond1.4091 id [3]
+ 12:39:06.727136  [INFO] networkd:  [UpdateIfaceCommon][1527] Get common network settings
+ 12:39:06.727280  [INFO] networkd:  exec: 'hostname cspg3000'
+ 12:39:06.733629  [INFO] networkd:  system: 'cat /etc/hosts | grep -w cspg3000'
+ 12:39:06.737170  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:39:06.737301  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:39:06.737348  [INFO] networkd:  exec: 'route del default gw 0.0.0.0'
+ 12:39:06.742159  [WARN] networkd:  exec: result NOK [1] for 'route del default gw 0.0.0.0'
+ 12:39:06.742261  [INFO] networkd:  exec: 'route add default gw 192.168.111.1'
+ 12:39:06.747092  [INFO] networkd:  exec: 'killall sntp.sh sntp'
+ 12:39:06.765933  [WARN] networkd:  exec: result NOK [1] for 'killall sntp.sh sntp'
+ 12:39:06.766105  [INFO] networkd:  system: '/sbin/sntp.sh 192.168.111.1 240 &'
+ 12:39:06.767882  [INFO] networkd:  exec: 'killall telnetd.sh telnetd'
+ 12:39:06.788290  [INFO] networkd:  system: '/sbin/telnetd.sh 23 &'
+ 12:39:06.790086  [INFO] networkd:  exec: 'killall sshd.sh sshd'
+ 12:39:06.802324  [INFO] networkd:  [MessageCmdAdd][1113] ignore 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:06.810183  [INFO] networkd:  [WriteSshConfig][1461] Write sshd-config
+ 12:39:06.810303  [INFO] networkd:  system: '/sbin/sshd.sh 22 &'
+ 12:39:06.821484  [INFO] networkd:  [GetAllRoutes][335] Get routes type 66
+ 12:39:06.821755  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 66.
+ 12:39:06.821825  [INFO] networkd:  [FW_Start][2677] enter
+ 12:39:06.821886  [INFO] networkd:  [FW_UpdateServicesAccess][939] Drop access
+ 12:39:06.821926  [INFO] networkd:  [FW_Init][2513] Init firewall...
+ 12:39:06.821964  [INFO] networkd:  [FW_Init][2515] Start get firewall config...
+ 12:39:06.822167  [INFO] networkd:  [FW_Init][2519] Start get interface list...
+ 12:39:06.822216  [INFO] networkd:  [FW_Init][2525] Start init firewall...
+ 12:39:06.822254  [INFO] networkd:  [FW_Init][2535] Start init profile id: 1...
+ 12:39:06.822290  [INFO] networkd:  Start init profile chain...
+ 12:39:06.822333  [INFO] networkd:  exec: 'iptables -N FW_INPUT_1'
+ 12:39:06.827789  [INFO] networkd:  exec: 'iptables -N FW_INPUT_TMP_1'
+ 12:39:06.833719  [INFO] networkd:  exec: 'iptables -N FW_OUTPUT_1'
+ 12:39:06.839058  [INFO] networkd:  exec: 'iptables -N FW_OUTPUT_TMP_1'
+ 12:39:06.844365  [INFO] networkd:  [InitRules][1625] Start init rules...
+ 12:39:06.844471  [INFO] networkd:  [FW_Init][2542] Start get DOS protection config...
+ 12:39:06.844691  [INFO] networkd:  [FW_Init][2550] Start init DOS protection...
+ 12:39:06.844744  [INFO] networkd:  [FW_Start][2685] exit
+ 12:39:06.844783  [INFO] networkd:  [l2tp_init_conf][610] try init config file
+ 12:39:06.844919  [INFO] networkd:  [l2tp_local_conf_init][560] listen IP '', new ''
+ 12:39:06.844969  [INFO] networkd:  [l2tp_local_conf_init][574] l2tp listen ip now is ''
+ 12:39:06.845085  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 48.
+ 12:39:06.845147  [INFO] networkd:  [l2tp_client_conf_init][605] l2tp clients: 0
+ 12:39:06.845225  [INFO] networkd:  [pptp_init_conf][487] try init config file
+ 12:39:06.845346  [INFO] networkd:  [pptp_local_conf_init][467] listen IP '0.0.0.0/0', new '0.0.0.0/0'
+ 12:39:06.845392  [INFO] networkd:  [pptp_local_conf_init][482] pptp listen ip now is '0.0.0.0/0'
+ 12:39:06.845429  [ERR ] networkd:  vpn_write_conf_server:88 Server is not running
+ 12:39:06.845465  [WARN] networkd:  [vpn_write_conf_server][180] Fail to create config files
+ 12:39:06.845591  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 48.
+ 12:39:06.845652  [INFO] networkd:  [ipsec_init_conf][466] try init config file
+ 12:39:06.845794  [INFO] networkd:  'asdasdasd' [01]:  
+			 enable:          no
+			 interface:       0
+			 remote subnet:   ''
+			 remote netmask:  ''
+			 remote gateway:  ''
+			 security proto:  0
+			 exchange method: auto
+			 encrypt:         0
+			     key:         ''
+			 auth:            0
+			     key:         ''
+			 dest ip:         ''(0)
+			 SPI:             0
+			 NAT-T:           0
+			 aggressive:      no
+			 identifier:      
+			     type:        0
+			 Phase 1(ike):      
+			     key:         ''
+			     encrypt:     0
+			     auth:        0
+			     DH group:    1
+			     lifetime:    86400
+			 Phase 2(IPsec):    
+			     encrypt:     0
+			     auth:        0
+			     PFS group:   1
+			     lifetime:    3600
+ 12:39:06.845870  [INFO] networkd:  'asdasdasd' [01]:  
+			 enable:          no
+			 interface:       0
+			 remote subnet:   ''
+			 remote netmask:  ''
+			 remote gateway:  ''
+			 security proto:  0
+			 exchange method: auto
+			 encrypt:         0
+			     key:         ''
+			 auth:            0
+			     key:         ''
+			 dest ip:         ''(0)
+			 SPI:             0
+			 NAT-T:           0
+			 aggressive:      no
+			 identifier:      
+			     type:        0
+			 Phase 1(ike):      
+			     key:         ''
+			     encrypt:     0
+			     auth:        0
+			     DH group:    1
+			     lifetime:    86400
+			 Phase 2(IPsec):    
+			     encrypt:     0
+			     auth:        0
+			     PFS group:   1
+			     lifetime:    3600
+ 12:39:06.845910  [INFO] networkd:  system: 'mkdir -p /etc/racoon'
+ 12:39:06.848748  [INFO] networkd:  Open '/etc/racoon/racoon.cfg'.
+ 12:39:06.848905  [INFO] networkd:  Write '/etc/racoon/racoon.cfg'.
+ 12:39:06.848968  [INFO] networkd:  Open '/etc/racoon/setkey.conf'.
+ 12:39:06.849018  [INFO] networkd:  Write '/etc/racoon/setkey.conf'.
+ 12:39:06.849071  [INFO] networkd:  Open '/etc/racoon/psk.txt'.
+ 12:39:06.849119  [INFO] networkd:  Write '/etc/racoon/psk.txt'.
+ 12:39:06.849333  [WARN] networkd:  Update stack WAN iface ID 2 -> 2
+ 12:39:06.849395  [INFO] networkd:  Shutting down WAN interface ID[2]
+ 12:39:06.849434  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 2
+ 12:39:06.849472  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[2] ifname 'bond1.1:1'
+ 12:39:06.849509  [INFO] networkd:  [if_del_ip] bond1.1:1
+ 12:39:06.851336  [INFO] networkd:  [InitFtpdConf][98] Try to get ftpd config
+ 12:39:06.851514  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:39:06.851563  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:39:06.851602  [INFO] networkd:  [FtpdSetNetiface][74] Set ftpd interface bond1.1 ip: 0.0.0.0/0
+ 12:39:06.851817  [INFO] networkd:  [StartFtpd][320] FTP server is disabled
+ 12:39:06.851879  [INFO] networkd:  [InitDhcpdConf][118] Try to get dhcpd config
+ 12:39:06.852003  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:39:06.852047  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:39:06.852086  [INFO] networkd:  [DhcpdSetNetiface][74] Set dhcpd interface bond1.1 ip: 0.0.0.0/0
+ 12:39:06.852122  [INFO] networkd:  [FindIntfByIfname][1240] search interface by ifname bond1.1
+ 12:39:06.852158  [INFO] networkd:  [FindIntfByIfname][1248] got iface-id[1] ifname 'bond1.1'
+ 12:39:06.852194  [INFO] networkd:  [FW_UpdateAccessDhcpd][1039] Update dhcpd access for interface bond1.1 ip: 0.0.0.0/0
+ 12:39:06.852231  [INFO] networkd:  [FW_DelIfaceAccessDhcpd][981] Del dhcpd access for interface bond1.1 ip: 0.0.0.0/0
+ 12:39:06.852342  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 52.
+ 12:39:06.852396  [WARN] networkd:  [StartDhcpd][375] dhcpd is disabled
+ 12:39:06.852508  [INFO] networkd:  system: '/sbin/hostping.sh stop'
+ 12:39:06.857981  [INFO] networkd:  [RestartSshGuardFireWall][2758] Sshguard: firewall restarted.
+ 12:39:06.858085  [INFO] networkd:  [syslogd_init_conf][96] try init config file
+ 12:39:06.858259  [INFO] networkd:  [syslogd_write_conf][11] try init config file
+ 12:39:06.858390  [INFO] networkd:  exec: '/sbin/authlog.sh stop'
+ 12:39:06.865518  [INFO] networkd:  PCMdump: <InitPCMdump> Init PCM-dump.
+ 12:39:06.865662  [INFO] networkd:  exec: 'killall pcmdump'
+ 12:39:06.878165  [WARN] networkd:  exec: result NOK [1] for 'killall pcmdump'
+ 12:39:06.878293  [INFO] networkd:  PCMdump: <UpdatePCMdump> Update all instances (ID: 0x0).
+ 12:39:06.878546  [INFO] networkd:  [GetObjCnt][680] There are no objects of type 102.
+ 12:39:06.890206  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:39:06.890318  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:39:06.890358  [INFO] networkd:  [UpdatePamConfig][1544] Reset PAM dir.
+ 12:39:06.890396  [INFO] networkd:  exec: 'mkdir -p /etc/pam.d'
+ 12:39:06.895177  [INFO] networkd:  exec: 'rm -f /etc/pam.d/*'
+ 12:39:06.899918  [INFO] networkd:  [UpdatePamConfig][1548] use LOCAL authorization
+ 12:39:06.900054  [INFO] networkd:  exec: 'cp -f /etc/pam.d/login /etc/pam.d/sshd'
+ 12:39:06.904934  [INFO] networkd:  [au_init][1364] au 1567: factory MAC: E4:5A:D4:FA:99:A3
+ 12:39:06.904997  [INFO] networkd:  [au_init][1379] au 1567: default server: update.local
+ 12:39:06.905034  [INFO] networkd:  [au_init][1380] au 1567: default config: E4.5A.D4.FA.99.A3.cfg
+ 12:39:06.905071  [INFO] networkd:  [au_init][1381] au 1567: default firmware: unknown
+ 12:39:06.905107  [INFO] networkd:  [initTimer][12]: Initting timer 'auto_update_restart_timer'
+ 12:39:06.905143  [INFO] networkd:  [initTimer][12]: Initting timer 'auto_update_config_timer'
+ 12:39:06.905181  [INFO] networkd:  [au_timer_init][485] au 1567: auto_update_config_timer inited
+ 12:39:06.905215  [INFO] networkd:  [initTimer][12]: Initting timer 'auto_update_firmware_timer'
+ 12:39:06.905251  [INFO] networkd:  [au_timer_init][485] au 1567: auto_update_firmware_timer inited
+ 12:39:06.905463  [INFO] networkd:  [au_lock_ext][237] au 1567: try lock on 1314; processed 1
+ 12:39:06.905518  [INFO] networkd:  [au_timer_stop][519] au 1567: auto_update_config_timer was stopped
+ 12:39:06.905556  [INFO] networkd:  [au_timer_stop][519] au 1567: auto_update_firmware_timer was stopped
+ 12:39:06.905592  [INFO] networkd:  [au_unlock_ext][255] au 1567: unlock on 1321; processed 0
+ 12:39:06.905628  [INFO] networkd:  [au_config_update][1325] au 1567: config updated
+ 12:39:06.905665  [INFO] networkd:  [au_init][1398] au 1567: inited
+ 12:39:06.905706  [INFO] networkd:  [main][2467] System is ready. Begin cmd-loop
+ 12:39:06.905928  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_PROC_STACK_STATE_REPLY' cmd from 23
+ 12:39:06.905985  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_PROC_STACK_STATE_REPLY'(27) for '-'[0], ptr <0x7f780008e0>
+ 12:39:06.906031  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:07.010882  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:39:07.019853  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 0, budget 9)
+ 12:39:07.019913  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_PROC_STACK_STATE_REPLY' (27)
+ 12:39:07.019973  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.1' 
+			ifa_local:'192.168.111.211'
+			ifa_addr: '192.168.111.211'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    80 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:39:07.020025  [INFO] networkd:  [if_get_ip] bond1.1
+ 12:39:07.020070  [INFO] networkd:  [if_get_ip] bond1.1 <192.168.111.211> <255.255.255.0> bcast <192.168.111.255>
+ 12:39:07.020109  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'down'): event ifname 'bond1.1'; WAN 2 state 'not inited'
+ 12:39:07.020146  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'down')
+ 12:39:07.020184  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 proc up (addr 0.0.0.0/0)
+ 12:39:07.020244  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 change ip from 0.0.0.0/0 to 192.168.111.211
+ 12:39:07.020287  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 proc up (ipaddr 192.168.111.211, gateway 192.168.111.1) update iproute2
+ 12:39:07.020324  [INFO] networkd:  [iprt2_route_add][1048]: START PROCESSING [IFACE]:
+ 12:39:07.020364  [INFO] networkd:  [iprt2_table_writes_add][498]: bond1.1 need to create
+ 12:39:07.020440  [INFO] networkd:  [iprt2_busy_elem_set][314]: add bond1.1 item
+ 12:39:07.020478  [INFO] networkd:  [iprt2_table_add][399]: add table [1 bond1.1] done
+ 12:39:07.020517  [INFO] networkd:  exec: 'ip route add 192.168.111.0/24 dev bond1.1 table bond1.1 src 192.168.111.211'
+ 12:39:07.025640  [INFO] networkd:  [iprt2_iface_params_set][53] ID [1] set busy
+ 12:39:07.025747  [INFO] networkd:  exec: 'ip route add  default via 192.168.111.1 dev bond1.1 table bond1.1'
+ 12:39:07.031141  [INFO] networkd:  [iprt2_route_add][1226]: add via for bond1.1: done
+ 12:39:07.031247  [INFO] networkd:  [iprt2_rule_add][1464]: START [IFACE]:
+ 12:39:07.031291  [INFO] networkd:  [iprt2_busy_elem_check][329]: try find bond1.1
+ 12:39:07.031330  [INFO] networkd:  [iprt2_busy_elem_check][335]: bond1.1 was found
+ 12:39:07.031377  [INFO] networkd:  exec: 'ip rule add fwmark 0xfff table bond1.1 pref 16383'
+ 12:39:07.036414  [INFO] networkd:  [iprt2_rule_add][1530]: add via rule for bond1.1: done
+ 12:39:07.036514  [INFO] networkd:  exec: 'ip route flush cache'
+ 12:39:07.041322  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 (ipaddr 192.168.111.211) updated iproute2
+ 12:39:07.041428  [INFO] networkd:  exec: 'iptables -A NO_PROF_IN -d 192.168.111.211 -j ACCEPT'
+ 12:39:07.046706  [INFO] networkd:  exec: 'iptables -A NO_PROF_OUT -s 192.168.111.211 -j ACCEPT'
+ 12:39:07.052161  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 (ipaddr 192.168.111.211) added no-profile firewall rule
+ 12:39:07.052268  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 white list count: 1
+ 12:39:07.052311  [INFO] networkd:  [FW_AddIfaceAccess][799] ID:01
+ 12:39:07.055815  [INFO] networkd:  *filter
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 80 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 443 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 22 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 23 -j ACCEPT
+-I SRV_IN -p udp -s 0.0.0.0/0 -d 192.168.111.211 --dport 161 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 80 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 443 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 22 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 23 -j ACCEPT
+-I SRV_OUT -p udp -d 0.0.0.0/0 -s 192.168.111.211 --sport 161 -j ACCEPT
+COMMIT
+ 12:39:07.060446  [INFO] networkd:  exec: 'iptables -t mangle -I IP_MARK -o bond1.1 -j MARK --set-mark 0xfff'
+ 12:39:07.065871  [INFO] networkd:  exec: 'iptables -t mangle -A IP_MARK -s 192.168.111.211 -j MARK --set-mark 0xfff'
+ 12:39:07.071595  [INFO] networkd:  [FW_AddIfaceAccessFtpd][1085] Add ftpd access for interface bond1.1 ip: 192.168.111.211
+ 12:39:07.071704  [INFO] networkd:  exec: 'iptables -I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.211 --dport 21 -j REJECT'
+ 12:39:07.077449  [INFO] networkd:  exec: 'iptables -I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.211 --sport 21 -j REJECT'
+ 12:39:07.083111  [INFO] networkd:  [InterfaceProcUp] Interface ID [1] bond1.1 (ipaddr 192.168.111.211) update FW, default-gw and routes
+ 12:39:07.083212  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:39:07.083253  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:39:07.083298  [INFO] networkd:  exec: 'route del default gw 0.0.0.0'
+ 12:39:07.088033  [INFO] networkd:  exec: 'route del default gw 0.0.0.0'
+ 12:39:07.092781  [WARN] networkd:  exec: result NOK [1] for 'route del default gw 0.0.0.0'
+ 12:39:07.092895  [INFO] networkd:  exec: 'route add default gw 192.168.111.1'
+ 12:39:07.097690  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 1
+ 12:39:07.097796  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[1] ifname 'bond1.1'
+ 12:39:07.097863  [INFO] networkd:  [FW_UpdateIntf][2027] Network interface doesn't match any profile ifname: bond1.1
+ 12:39:07.097908  [INFO] networkd:  [CreateInterface][1458] Create stIntf object id:1 type:1 profID: 0
+ 12:39:07.097946  [INFO] networkd:  [FW_CheckIntf][1980] Current interface type: 1 id: 1 is new with prof id: 0
+ 12:39:07.097984  [INFO] networkd:  [FW_CheckIntf][1991] Current interface type: 1 id: 1 did not match any profile
+ 12:39:07.098024  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.1'; WAN 2 state 'not inited'
+ 12:39:07.098063  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'down'): event ifname 'bond1.1'; WAN 2 state 'not inited'
+ 12:39:07.198206  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.1:1' 
+			ifa_local:'192.168.111.213'
+			ifa_addr: '192.168.111.213'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    81 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:39:07.198341  [INFO] networkd:  [if_get_ip] bond1.1:1
+ 12:39:07.198395  [ERR ] networkd:  [if_get_ip] device bond1.1:1: SIOCGIFADDR failed (Cannot assign requested address)
+ 12:39:07.298520  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11003
+ 12:39:07.303195  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:07.303300  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:07.303348  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:07.398712  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 1, budget 9)
+ 12:39:07.398871  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:07.398916  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:07.398954  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:07.398996  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:07.399033  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:07.399069  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:07.399108  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 0.0.0.0/0 addr 192.168.60.11 is not active
+ 12:39:07.399143  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [1] and non-active [1]
+ 12:39:07.399179  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'no'; Notification: -41s ago; 
+ 12:39:07.399245  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11003
+ 12:39:07.499372  [INFO] networkd:  [InterfaceStateChanged][392] nlmsg_type: NEWLINK label bond1.4091 ifi_index: 13 ifi_type: 1 ifi_flags: 11043
+ 12:39:07.603868  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:39:07.612872  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.4091' 
+			ifa_local:'192.168.60.11'
+			ifa_addr: '192.168.60.11'
+			bcast:    '192.168.60.255'
+			anycast:  'NONE'
+			flags:    80 index: 13 family: 2 scope: 00 prefixlen: 24
+ 12:39:07.612940  [INFO] networkd:  [if_get_ip] bond1.4091
+ 12:39:07.612989  [INFO] networkd:  [if_get_ip] bond1.4091 <192.168.60.11> <255.255.255.0> bcast <192.168.60.255>
+ 12:39:07.613027  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'up'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:39:07.613066  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:39:07.613108  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'down'): event ifname 'bond1.4091'; WAN 2 state 'not inited'
+ 12:39:07.613145  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'down')
+ 12:39:07.613183  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 proc up (addr 0.0.0.0/0)
+ 12:39:07.613237  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 change ip from 0.0.0.0/0 to 192.168.60.11
+ 12:39:07.613275  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091: tagged, alias: 0, COS: 0, rtp N
+ 12:39:07.613313  [INFO] networkd:  system: '/sbin/vconfig set_egress_map bond1.4091 0 0'
+ 12:39:07.616354  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 proc up (ipaddr 192.168.60.11, gateway 192.168.60.1) update iproute2
+ 12:39:07.616458  [INFO] networkd:  [iprt2_route_add][1048]: START PROCESSING [IFACE]:
+ 12:39:07.616505  [INFO] networkd:  [iprt2_table_writes_add][498]: bond1.4091 need to create
+ 12:39:07.616586  [INFO] networkd:  [iprt2_busy_elem_set][314]: add bond1.4091 item
+ 12:39:07.616625  [INFO] networkd:  [iprt2_table_add][399]: add table [2 bond1.4091] done
+ 12:39:07.616669  [INFO] networkd:  exec: 'ip route add 192.168.60.0/24 dev bond1.4091 table bond1.4091 src 192.168.60.11'
+ 12:39:07.621800  [INFO] networkd:  [iprt2_iface_params_set][53] ID [3] set busy
+ 12:39:07.621923  [INFO] networkd:  exec: 'ip route add  default via 192.168.60.1 dev bond1.4091 table bond1.4091'
+ 12:39:07.626994  [INFO] networkd:  [iprt2_route_add][1226]: add via for bond1.4091: done
+ 12:39:07.627094  [INFO] networkd:  [iprt2_rule_add][1464]: START [IFACE]:
+ 12:39:07.627136  [INFO] networkd:  [iprt2_busy_elem_check][329]: try find bond1.4091
+ 12:39:07.627173  [INFO] networkd:  [iprt2_busy_elem_check][335]: bond1.4091 was found
+ 12:39:07.627214  [INFO] networkd:  exec: 'ip rule add fwmark 0xffb table bond1.4091 pref 16382'
+ 12:39:07.632524  [INFO] networkd:  [iprt2_rule_add][1530]: add via rule for bond1.4091: done
+ 12:39:07.632628  [INFO] networkd:  exec: 'ip route flush cache'
+ 12:39:07.637373  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 (ipaddr 192.168.60.11) updated iproute2
+ 12:39:07.637480  [INFO] networkd:  exec: 'iptables -A NO_PROF_IN -d 192.168.60.11 -j ACCEPT'
+ 12:39:07.642660  [INFO] networkd:  exec: 'iptables -A NO_PROF_OUT -s 192.168.60.11 -j ACCEPT'
+ 12:39:07.648111  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 (ipaddr 192.168.60.11) added no-profile firewall rule
+ 12:39:07.648223  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 white list count: 1
+ 12:39:07.648265  [INFO] networkd:  [FW_AddIfaceAccess][799] ID:03
+ 12:39:07.651669  [INFO] networkd:  *filter
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 80 -j REJECT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 443 -j REJECT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 22 -j REJECT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 23 -j REJECT
+-I SRV_IN -p udp -s 0.0.0.0/0 -d 192.168.60.11 --dport 161 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 80 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 443 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 22 -j REJECT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 23 -j REJECT
+-I SRV_OUT -p udp -d 0.0.0.0/0 -s 192.168.60.11 --sport 161 -j REJECT
+COMMIT
+ 12:39:07.656411  [INFO] networkd:  exec: 'iptables -t mangle -I IP_MARK -o bond1.4091 -j MARK --set-mark 0xffb'
+ 12:39:07.661767  [INFO] networkd:  exec: 'iptables -t mangle -A IP_MARK -s 192.168.60.11 -j MARK --set-mark 0xffb'
+ 12:39:07.667164  [INFO] networkd:  [FW_AddIfaceAccessFtpd][1085] Add ftpd access for interface bond1.4091 ip: 192.168.60.11
+ 12:39:07.667274  [INFO] networkd:  exec: 'iptables -I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.60.11 --dport 21 -j REJECT'
+ 12:39:07.672985  [INFO] networkd:  exec: 'iptables -I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.60.11 --sport 21 -j REJECT'
+ 12:39:07.678815  [INFO] networkd:  [InterfaceProcUp] Interface ID [3] bond1.4091 (ipaddr 192.168.60.11) update FW, default-gw and routes
+ 12:39:07.678944  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 3
+ 12:39:07.678986  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[3] ifname 'bond1.4091'
+ 12:39:07.679024  [INFO] networkd:  [FW_UpdateIntf][2027] Network interface doesn't match any profile ifname: bond1.4091
+ 12:39:07.679062  [INFO] networkd:  [CreateInterface][1458] Create stIntf object id:3 type:2 profID: 0
+ 12:39:07.679100  [INFO] networkd:  [FW_CheckIntf][1980] Current interface type: 2 id: 3 is new with prof id: 0
+ 12:39:07.679136  [INFO] networkd:  [FW_CheckIntf][1991] Current interface type: 2 id: 3 did not match any profile
+ 12:39:07.779283  [INFO] networkd:  [nl_proc_af_inet_msg][265] DELADDR label:'bond1.1:1' 
+			ifa_local:'192.168.111.213'
+			ifa_addr: '192.168.111.213'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    81 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:39:07.779414  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'up'): event ifname 'bond1.1:1'; WAN 2 state 'not inited'
+ 12:39:07.779457  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.1:1'; WAN 2 state 'not inited'
+ 12:39:07.779495  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'up'): event ifname 'bond1.1:1'; WAN 2 state 'not inited'
+ 12:39:07.900165  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:07.900296  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:07.900339  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:07.915893  [INFO] networkd:  [nl_proc_af_inet6_msg][342] NEWADDR
+			ifa_addr: 'fe80::e65a:d4ff:fefa:99a3'
+			flags:    80 index: 13 family: 10 scope: 253 prefixlen: 64
+ 12:39:08.016046  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 2, budget 9)
+ 12:39:08.016192  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:08.016236  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:08.016275  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:08.016317  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:08.016355  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:08.016392  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:08.016433  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:08.016469  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:39:08.016506  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 0s ago; 
+ 12:39:08.517447  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:08.517592  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:08.517634  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:08.617123  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 3, budget 9)
+ 12:39:08.617282  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:08.617328  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:08.617368  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:08.617412  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:08.617452  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:08.617491  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:08.617539  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:08.617579  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:39:08.617615  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 1s ago; 
+ 12:39:09.118541  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:09.118645  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:09.118688  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:09.218232  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 4, budget 9)
+ 12:39:09.218320  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:09.218363  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:09.218401  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:09.218443  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:09.218481  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:09.218517  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:09.218556  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:09.218590  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:39:09.218627  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 1s ago; 
+ 12:39:09.423878  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:39:09.719542  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:09.719632  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:09.719675  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:09.830231  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 5, budget 9)
+ 12:39:09.830310  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:09.830351  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:09.830389  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:09.830430  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:09.830470  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:09.830516  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:09.830557  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:09.830593  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:39:09.830631  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 2s ago; 
+ 12:39:10.331571  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:10.331683  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:10.331725  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:10.431243  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 6, budget 9)
+ 12:39:10.431334  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:10.431377  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:10.431416  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:10.431459  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:10.431501  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:10.431539  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:10.431579  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:10.431614  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:39:10.431650  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 2s ago; 
+ 12:39:10.932565  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:10.932673  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:10.932715  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:11.032272  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 7, budget 9)
+ 12:39:11.032353  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:11.032395  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:11.032434  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; NOT master
+ 12:39:11.032476  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:11.032514  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; NOT master
+ 12:39:11.032551  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; NOT master
+ 12:39:11.032590  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:11.032627  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [2] and non-active [0]
+ 12:39:11.032664  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 3s ago; 
+ 12:39:14.239872  [ERR ] networkd:  [send_gratuitous_arp][bond1.1:1] ioctl() failed to get source IP address: Cannot assign requested address
+ 12:39:18.053092  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:18.053178  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:18.053224  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:18.062681  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 8, budget 9)
+ 12:39:18.062870  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:18.062928  [INFO] networkd:  Stack state changed from 'not inited'(0) to 'undef  '(1)
+ 12:39:18.062969  [INFO] networkd:  [set_stack_state][112] stack state changed 'not inited' -> 'undef  '
+ 12:39:23.211028  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:23.211144  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:23.211187  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:23.267854  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 9, budget 9)
+ 12:39:23.268002  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:28.376866  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:28.377001  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:28.377054  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:28.483924  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 10, budget 9)
+ 12:39:28.484043  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:28.484086  [INFO] networkd:  Stack state changed from 'undef  '(1) to 'master '(3)
+ 12:39:28.484125  [INFO] networkd:  [set_stack_state][112] stack state changed 'undef  ' -> 'master '
+ 12:39:28.484169  [INFO] networkd:  Bringing up WAN interface ID[2]
+ 12:39:28.484207  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 2
+ 12:39:28.484244  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[2] ifname 'bond1.1:1'
+ 12:39:28.484285  [INFO] networkd:  [if_set_ip] bond1.1:1 addr 192.168.111.213 mask 255.255.255.0 bcast 192.168.111.255
+ 12:39:28.484425  [INFO] networkd:  [nl_proc_af_inet_msg][265] NEWADDR label:'bond1.1:1' 
+			ifa_local:'192.168.111.213'
+			ifa_addr: '192.168.111.213'
+			bcast:    '192.168.111.255'
+			anycast:  'NONE'
+			flags:    81 index: 11 family: 2 scope: 00 prefixlen: 24
+ 12:39:28.484479  [INFO] networkd:  [if_get_ip] bond1.1:1
+ 12:39:28.484526  [INFO] networkd:  [if_get_ip] bond1.1:1 <192.168.111.213> <255.255.255.0> bcast <192.168.111.255>
+ 12:39:28.484563  [INFO] networkd:  [CheckIp] Interface ID [1] bond1.1 is up (state 'up'): event ifname 'bond1.1:1'; WAN 2 state 'master '
+ 12:39:28.484600  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down'): event ifname 'bond1.1:1'; WAN 2 state 'master '
+ 12:39:28.484636  [INFO] networkd:  [CheckIp] Interface ID [2] bond1.1:1 is up (state 'down')
+ 12:39:28.484674  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 proc up (addr 0.0.0.0/0)
+ 12:39:28.484737  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 change ip from 0.0.0.0/0 to 192.168.111.213
+ 12:39:28.484777  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 proc up (ipaddr 192.168.111.213, gateway 0.0.0.0/0) update iproute2
+ 12:39:28.484814  [INFO] networkd:  [iprt2_route_add][1048]: START PROCESSING [IFACE]:
+ 12:39:28.484892  [INFO] networkd:  exec: 'ip route add 192.168.111.0/24 dev bond1.1 table bond1.1 src 192.168.111.213'
+ 12:39:28.490285  [WARN] networkd:  exec: result NOK [2] for 'ip route add 192.168.111.0/24 dev bond1.1 table bond1.1 src 192.168.111.213'
+ 12:39:28.490395  [WARN] networkd:  [iprt2_route_add][1129]: add subnet error - No such file or directory
+ 12:39:28.490444  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 (ipaddr 192.168.111.213) updated iproute2
+ 12:39:28.490492  [INFO] networkd:  exec: 'iptables -A NO_PROF_IN -d 192.168.111.213 -j ACCEPT'
+ 12:39:28.496006  [INFO] networkd:  exec: 'iptables -A NO_PROF_OUT -s 192.168.111.213 -j ACCEPT'
+ 12:39:28.501570  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 (ipaddr 192.168.111.213) added no-profile firewall rule
+ 12:39:28.501677  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 white list count: 1
+ 12:39:28.501720  [INFO] networkd:  [FW_AddIfaceAccess][799] ID:02
+ 12:39:28.505270  [INFO] networkd:  *filter
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.213 --dport 80 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.213 --dport 443 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.213 --dport 22 -j ACCEPT
+-I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.213 --dport 23 -j ACCEPT
+-I SRV_IN -p udp -s 0.0.0.0/0 -d 192.168.111.213 --dport 161 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.213 --sport 80 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.213 --sport 443 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.213 --sport 22 -j ACCEPT
+-I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.213 --sport 23 -j ACCEPT
+-I SRV_OUT -p udp -d 0.0.0.0/0 -s 192.168.111.213 --sport 161 -j ACCEPT
+COMMIT
+ 12:39:28.510145  [INFO] networkd:  exec: 'iptables -t mangle -A IP_MARK -s 192.168.111.213 -j MARK --set-mark 0xfff'
+ 12:39:28.515635  [INFO] networkd:  [FW_AddIfaceAccessFtpd][1085] Add ftpd access for interface bond1.1:1 ip: 192.168.111.213
+ 12:39:28.515747  [INFO] networkd:  exec: 'iptables -I SRV_IN -p tcp -s 0.0.0.0/0 -d 192.168.111.213 --dport 21 -j REJECT'
+ 12:39:28.521488  [INFO] networkd:  exec: 'iptables -I SRV_OUT -p tcp -d 0.0.0.0/0 -s 192.168.111.213 --sport 21 -j REJECT'
+ 12:39:28.527412  [INFO] networkd:  [InterfaceProcUp] Interface ID [2] bond1.1:1 (ipaddr 192.168.111.213) update FW, default-gw and routes
+ 12:39:28.527522  [INFO] networkd:  [FindIntfByID_trace][1209] search interface by ID 2
+ 12:39:28.527565  [INFO] networkd:  [FindIntfByID_trace][1218] got iface-id[2] ifname 'bond1.1:1'
+ 12:39:28.527603  [INFO] networkd:  [FW_UpdateIntf][2027] Network interface doesn't match any profile ifname: bond1.1:1
+ 12:39:28.527640  [INFO] networkd:  [CreateInterface][1458] Create stIntf object id:2 type:1 profID: 0
+ 12:39:28.527676  [INFO] networkd:  [FW_CheckIntf][1980] Current interface type: 1 id: 2 is new with prof id: 0
+ 12:39:28.527713  [INFO] networkd:  [FW_CheckIntf][1991] Current interface type: 1 id: 2 did not match any profile
+ 12:39:28.527753  [INFO] networkd:  [CheckIp] Interface ID [3] bond1.4091 is up (state 'up'): event ifname 'bond1.1:1'; WAN 2 state 'master '
+ 12:39:33.410060  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:33.410171  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:33.410218  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:33.486534  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 11, budget 9)
+ 12:39:33.486654  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:38.616492  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:38.616623  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:38.616670  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:38.720957  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 12, budget 9)
+ 12:39:38.721045  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:43.822750  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:43.822907  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:43.822956  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:43.925890  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 13, budget 9)
+ 12:39:43.926053  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:49.029519  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NEW_STACK_STATE' cmd from 23
+ 12:39:49.029618  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NEW_STACK_STATE'(26) for '-'[0], ptr <0x7f780008e0>
+ 12:39:49.029662  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:49.142152  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 14, budget 9)
+ 12:39:49.142267  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NEW_STACK_STATE' (26)
+ 12:39:56.500119  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_NETWORK_STATE' cmd from 1
+ 12:39:56.500222  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_NETWORK_STATE'(15) for '-'[0], ptr <0x7f780008e0>
+ 12:39:56.500266  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:39:56.548941  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 15, budget 9)
+ 12:39:56.549008  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_NETWORK_STATE' (15)
+ 12:39:56.549048  [INFO] networkd:  [CheckAllInterfacesSet][1736] enter
+ 12:39:56.549087  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1: type UNTAGGED: NOT stack iface; master
+ 12:39:56.549128  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1: iface addr 192.168.111.211 addr 192.168.111.211 is active
+ 12:39:56.549165  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.1:1: type UNTAGGED: stack iface; master
+ 12:39:56.549203  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.1:1: iface addr 192.168.111.213 addr 192.168.111.213 is active
+ 12:39:56.549239  [INFO] networkd:  [CheckAllInterfacesSet][1750] iface bond1.4091: type TAGGED: NOT stack iface; master
+ 12:39:56.549276  [INFO] networkd:  [CheckAllInterfacesSet][1811] iface bond1.4091: iface addr 192.168.60.11 addr 192.168.60.11 is active
+ 12:39:56.549311  [INFO] networkd:  [CheckAllInterfacesSet][1817] exit with active [3] and non-active [0]
+ 12:39:56.549354  [INFO] networkd:  [CmdProc] network-state: System ready 'yes'; Interfaces ready 'yes'; Notification: 28s ago; 
+ 12:40:32.945347  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 12:40:32.945451  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 12:40:32.945496  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:40:33.031455  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 16, budget 9)
+ 12:40:33.031595  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)
+ 12:41:15.467650  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 12:41:15.467763  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 12:41:15.467809  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 12:41:15.515886  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 17, budget 9)
+ 12:41:15.515969  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)
+ 14:48:59.764603  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 14:48:59.764707  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 14:48:59.764752  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 14:48:59.815871  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 18, budget 9)
+ 14:48:59.815962  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)
+ 15:24:55.133097  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 15:24:55.133196  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 15:24:55.133240  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 15:24:55.169685  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 19, budget 9)
+ 15:24:55.169772  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)
+ 17:02:58.644249  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 17:02:58.644360  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 17:02:58.644405  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 17:02:58.779722  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 20, budget 9)
+ 17:02:58.779865  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)
+ 17:12:08.369033  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 17:12:08.369176  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 17:12:08.369227  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 17:12:08.493944  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 21, budget 9)
+ 17:12:08.494053  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)
+ 10:15:05.993020  [INFO] networkd:  [MessageCmdAdd][1153] add 'CMD_GET_WHITE_IP_STATUS' cmd from 3
+ 10:15:05.993129  [INFO] networkd:  [MessageCmdAdd][1182] new  cmd 'CMD_GET_WHITE_IP_STATUS'(17) for '-'[0], ptr <0x7f780008e0>
+ 10:15:05.993175  [INFO] networkd:  [MessageCmdAdd][1197] cmd-queue size [1]
+ 10:15:06.124073  [INFO] networkd:  [CmdLoop][2214] got  cmd-ptr <0x7f780008e0> (idx 22, budget 9)
+ 10:15:06.124218  [INFO] networkd:  [CmdProc][1742] Proc cmd: 'CMD_GET_WHITE_IP_STATUS' (17)

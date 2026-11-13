@@ -1,0 +1,17 @@
+2026-09-28 11:55:09.842              app.c     thread_0  Coral pa_sip 3.402.0.100. Log started
+2026-09-28 11:55:09.842              app.c     thread_0  Stand Alone mode: yes
+2026-09-28 11:55:09.842              app.c     thread_0  set log_level 5
+2026-09-28 11:55:09.842              ipc.c     thread_0  pbx-ipc SIP: TX (005)
+2026-09-28 11:55:09.842              ipc.c     thread_0  		 15 56 01 00 05                                  .V...
+2026-09-28 11:55:09.842              ipc.c     thread_0  PBXIPC-SIP. TX. trace 
+2026-09-28 11:55:09.842              ipc.c     thread_0  		# trace-level [5] disk <no>
+2026-09-28 11:55:56.168              app.c     thread_1 !Memory trim
+2026-09-28 11:56:56.169              app.c     thread_0 !Memory trim
+2026-09-28 11:57:14.659              ipc.c pbxipcthread !pbx-ipc SIP: RX (005)
+2026-09-28 11:57:14.659              ipc.c pbxipcthread  		 15 56 01 00 00                                  .V...
+2026-09-28 11:57:14.659              ipc.c pbxipcthread  PBXIPC-SIP. RX. trace 
+2026-09-28 11:57:14.659              ipc.c pbxipcthread  		# trace-level [0] disk <no>
+2026-09-28 11:57:14.660          ipc_msg.c     thread_1 !ipc_msg_parse: msg type = trace [21]
+2026-09-28 11:57:14.660          ipc_msg.c     thread_1  get_ie: ie [86][trace-level] size [1]
+2026-09-28 11:57:14.660              ipc.c     thread_1  ipc_process: msg ptr = 0x7f5c0008c0. type [21]
+2026-09-28 11:57:14.660              app.c     thread_1  set log_level 0

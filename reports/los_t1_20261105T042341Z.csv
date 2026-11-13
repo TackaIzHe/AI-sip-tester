@@ -1,0 +1,6 @@
+ts_utc,ts_ms,scenario,kind,text
+2026-11-05T04:23:41.848Z,1793852621848,t1,phase,"T1: subscribe dialog-info"
+2026-11-05T04:23:41.853Z,1793852621853,t1,phase,"stim_start"
+2026-11-05T04:24:41.297Z,1793852681297,t1,tick,"90"
+2026-11-05T04:24:41.965Z,1793852681965,t1,phase,"stim_stop"
+2026-11-05T04:24:41.967Z,1793852681967,t1,summary,"NOTIFY отправлено 90 (variant=all, 1 мин @ 1.5/с); ответы станции: NOTIFY 481×90, SUBSCRIBE 489×1"
