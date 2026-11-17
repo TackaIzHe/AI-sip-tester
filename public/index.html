@@ -38,7 +38,13 @@
                       — POST /api/station/multiply_invite
                       (doc/task_37_plan_2.md): перенаправление уходит
                       десятью копиями разом (главный вызов + девять
-                      теневых, ход — на вкладке «Вызов»).
+                      теневых, ход — на вкладке «Вызов»); галочки блока
+                      SAS-режима «игнорировать регистрации (REGISTER)» и
+                      «игнорировать подписки (SUBSCRIBE)» — POST
+                      /api/station/ignore_register_sas и
+                      /api/station/ignore_subscribe_sas
+                      (doc/task_38_plan_2.md): в SAS-режиме соответствующие
+                      запросы пира остаются без ответа (тишина вместо 200).
   Панель «Вызов»   — исходящий вызов со станции на нижестоящую станцию
                       (doc/task_30_plan_2.md): INVITE номером из формы на
                       адрес последнего обращения пира (переопределяется
@@ -348,6 +354,17 @@
       <div id="sas-status" class="st-box"><span class="kv">загрузка…</span></div>
       <div class="hint">В SAS-режиме доступен исходящий вызов (вкладка «Вызов»):
         с полем «откуда пришёл» он уходит как ретрансляция с этого адреса.</div>
+      <!-- Игнорирование регистраций/подписок в SAS-режиме
+           (doc/task_38_plan_2.md): соответствующие запросы пира остаются
+           СОВСЕМ без ответа (тишина вместо 200) — её port-register/подписка
+           умирают по таймерам станции; вне SAS-режима галочки ни на что не
+           влияют. -->
+      <label class="st-check" title="В SAS-режиме REGISTER нижестоящей станции не получит никакого ответа (вместо 200); в таблицу регистраций не пишется; вне SAS-режима галочка ни на что не влияет">
+        <input type="checkbox" id="station-ignore-register-sas"> игнорировать регистрации (REGISTER) в SAS-режиме
+      </label>
+      <label class="st-check" title="В SAS-режиме SUBSCRIBE нижестоящей станции не получит никакого ответа (вместо 200); диалог подписки не заводится; вне SAS-режима галочка ни на что не влияет">
+        <input type="checkbox" id="station-ignore-subscribe-sas"> игнорировать подписки (SUBSCRIBE) в SAS-режиме
+      </label>
       <pre class="events" id="sas-log"></pre>
     </div>
     <div class="viewer" id="station-viewer"><div class="empty">Журнал обращений станции пуст.</div></div>
@@ -1064,6 +1081,10 @@ async function load_station() {
   if (!ign_cb.disabled) ign_cb.checked = !!st.ignore_provisional;
   const mul_cb = document.getElementById('station-multiply-invite');
   if (!mul_cb.disabled) mul_cb.checked = !!st.multiply_invite;
+  const igreg_cb = document.getElementById('station-ignore-register-sas');
+  if (!igreg_cb.disabled) igreg_cb.checked = !!st.ignore_register_sas;
+  const igsub_cb = document.getElementById('station-ignore-subscribe-sas');
+  if (!igsub_cb.disabled) igsub_cb.checked = !!st.ignore_subscribe_sas;
   void load_stimulus(); // тот же такт опроса (прогон фазится на сервере)
   void load_sas(); // SAS-подписки/NOTIFY — тем же тактом (план 6)
 }
@@ -1199,6 +1220,49 @@ async function multiply_invite_set(on) {
   cb.disabled = true;
   try {
     const r = await fetch('/api/station/multiply_invite', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ on: on }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) alert('Не переключить режим: ' + (d.error || 'HTTP ' + r.status));
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  cb.disabled = false;
+  await load_station();
+}
+
+// Игнорирование регистраций (REGISTER) в SAS-режиме — галочка блока
+// «SAS-режим» (doc/task_38_plan_2.md): тот же контракт, что у silent_invite
+// (флаг станции, POST возвращает полный статус); молчит станция в своей
+// SAS-ветке, вне SAS-режима галочка ни на что не влияет.
+async function ignore_register_sas_set(on) {
+  const cb = document.getElementById('station-ignore-register-sas');
+  cb.disabled = true;
+  try {
+    const r = await fetch('/api/station/ignore_register_sas', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ on: on }),
+    });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) alert('Не переключить режим: ' + (d.error || 'HTTP ' + r.status));
+  } catch (e) {
+    alert('Ошибка запроса: ' + e.message);
+  }
+  cb.disabled = false;
+  await load_station();
+}
+
+// Игнорирование подписок (SUBSCRIBE) в SAS-режиме — галочка того же блока
+// (doc/task_38_plan_2.md): контракт тот же; диалог подписки при этом не
+// заводится — SAS-движку слать NOTIFY некуда.
+async function ignore_subscribe_sas_set(on) {
+  const cb = document.getElementById('station-ignore-subscribe-sas');
+  cb.disabled = true;
+  try {
+    const r = await fetch('/api/station/ignore_subscribe_sas', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ on: on }),
@@ -1703,6 +1767,12 @@ document.getElementById('station-ignore-provisional').addEventListener('change',
 });
 document.getElementById('station-multiply-invite').addEventListener('change', (e) => {
   void multiply_invite_set(e.target.checked);
+});
+document.getElementById('station-ignore-register-sas').addEventListener('change', (e) => {
+  void ignore_register_sas_set(e.target.checked);
+});
+document.getElementById('station-ignore-subscribe-sas').addEventListener('change', (e) => {
+  void ignore_subscribe_sas_set(e.target.checked);
 });
 document.getElementById('stim-start').addEventListener('click', () => stim_action('start'));
 document.getElementById('stim-stop').addEventListener('click', () => stim_action('stop'));

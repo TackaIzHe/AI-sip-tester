@@ -29,6 +29,10 @@ class MockStation implements Station
     ignore_on = false;
     /** Флаг «умножать перенаправляемый INVITE ×10» (doc/task_37_plan_2.md). */
     multiply_on = false;
+    /** Флаг «игнорировать REGISTER в SAS-режиме» (doc/task_38_plan_2.md). */
+    ignore_reg_sas_on = false;
+    /** Флаг «игнорировать SUBSCRIBE в SAS-режиме» (doc/task_38_plan_2.md). */
+    ignore_sub_sas_on = false;
     readonly internal_events: StationEvent[] = [
         {
             ts: '2026-11-05T10:00:21.000Z',
@@ -104,6 +108,26 @@ class MockStation implements Station
         this.multiply_on = on;
     }
 
+    ignore_register_sas_mode(): boolean
+    {
+        return this.ignore_reg_sas_on;
+    }
+
+    set_ignore_register_sas(on: boolean): void
+    {
+        this.ignore_reg_sas_on = on;
+    }
+
+    ignore_subscribe_sas_mode(): boolean
+    {
+        return this.ignore_sub_sas_on;
+    }
+
+    set_ignore_subscribe_sas(on: boolean): void
+    {
+        this.ignore_sub_sas_on = on;
+    }
+
     status(): StationStatus
     {
         return {
@@ -124,6 +148,8 @@ class MockStation implements Station
             forward_invite: this.forward_on,
             ignore_provisional: this.ignore_on,
             multiply_invite: this.multiply_on,
+            ignore_register_sas: this.ignore_reg_sas_on,
+            ignore_subscribe_sas: this.ignore_sub_sas_on,
             last_downstream: '',
         };
     }
@@ -183,6 +209,8 @@ describe('GET /api/station', () =>
         expect(res.body.forward_invite).toBe(false); // настройка из task_32
         expect(res.body.ignore_provisional).toBe(false); // настройка из task_36
         expect(res.body.multiply_invite).toBe(false); // настройка из task_37
+        expect(res.body.ignore_register_sas).toBe(false); // настройка из task_38
+        expect(res.body.ignore_subscribe_sas).toBe(false); // настройка из task_38
     });
 });
 
@@ -301,6 +329,76 @@ describe('POST /api/station/multiply_invite (умножение INVITE ×10, doc
         expect(station.multiply_on).toBe(false);
     });
 });
+
+describe(
+    'POST /api/station/ignore_register_sas (игнор REGISTER в SAS, doc/task_38)',
+    () =>
+    {
+        it('{"on":true} → 200 ignore_register_sas=true, выкл. — обратно', async () =>
+        {
+            const on = await request(app)
+                .post('/api/station/ignore_register_sas')
+                .send({ on: true })
+                .expect(200);
+            expect(on.body.ignore_register_sas).toBe(true);
+            expect(station.ignore_reg_sas_on).toBe(true);
+            const off = await request(app)
+                .post('/api/station/ignore_register_sas')
+                .send({ on: false })
+                .expect(200);
+            expect(off.body.ignore_register_sas).toBe(false);
+            expect(station.ignore_reg_sas_on).toBe(false);
+        });
+
+        it('без on / on не boolean — 400, флаг не меняется', async () =>
+        {
+            await request(app)
+                .post('/api/station/ignore_register_sas')
+                .send({})
+                .expect(400);
+            await request(app)
+                .post('/api/station/ignore_register_sas')
+                .send({ on: 'да' })
+                .expect(400);
+            expect(station.ignore_reg_sas_on).toBe(false);
+        });
+    },
+);
+
+describe(
+    'POST /api/station/ignore_subscribe_sas (игнор SUBSCRIBE в SAS, doc/task_38)',
+    () =>
+    {
+        it('{"on":true} → 200 ignore_subscribe_sas=true, выкл. — обратно', async () =>
+        {
+            const on = await request(app)
+                .post('/api/station/ignore_subscribe_sas')
+                .send({ on: true })
+                .expect(200);
+            expect(on.body.ignore_subscribe_sas).toBe(true);
+            expect(station.ignore_sub_sas_on).toBe(true);
+            const off = await request(app)
+                .post('/api/station/ignore_subscribe_sas')
+                .send({ on: false })
+                .expect(200);
+            expect(off.body.ignore_subscribe_sas).toBe(false);
+            expect(station.ignore_sub_sas_on).toBe(false);
+        });
+
+        it('без on / on не boolean — 400, флаг не меняется', async () =>
+        {
+            await request(app)
+                .post('/api/station/ignore_subscribe_sas')
+                .send({})
+                .expect(400);
+            await request(app)
+                .post('/api/station/ignore_subscribe_sas')
+                .send({ on: 'да' })
+                .expect(400);
+            expect(station.ignore_sub_sas_on).toBe(false);
+        });
+    },
+);
 
 describe('POST /api/station/start и /stop', () =>
 {

@@ -2,7 +2,7 @@
 
 Источник истины по маршрутам — карта `server/routes.ts` (`build_api_router`),
 реализация — `server/controllers/*`. Этот документ покрывает **каждый** маршрут
-карты: задокументировано **41** endpoints == **41** маршрутов `routes.ts`
+карты: задокументировано **43** endpoints == **43** маршрутов `routes.ts`
 (критерий п.10; проверить: `grep -rE "router\.(get|post|delete)\(" server/controllers/ | wc -l`).
 
 Базовый URL примеров: `http://<host>:<SERVER_PORT>` (стенд:
@@ -30,7 +30,7 @@ JSON (`Content-Type: application/json`), UTF-8.
 - неизвестный маршрут → `404 {"error":"Маршрут не найден: <METHOD> <url>"}`;
 - прочее → `500 {"error":"<message>"}` (без стек-трейса).
 
-## Карта endpoints (41)
+## Карта endpoints (43)
 
 | # | Метод | Путь | Контроллер |
 |---|---|---|---|
@@ -75,6 +75,8 @@ JSON (`Content-Type: application/json`), UTF-8.
 | 39 | DELETE | `/api/station/registrations/:id` | station_controller |
 | 40 | POST | `/api/station/ignore_provisional` | station_controller |
 | 41 | POST | `/api/station/multiply_invite` | station_controller |
+| 42 | POST | `/api/station/ignore_register_sas` | station_controller |
+| 43 | POST | `/api/station/ignore_subscribe_sas` | station_controller |
 
 Маршруты 20–23 монтируются только при наличии станции в DI
 (`deps.station` в `build_api_router`, plan_4.md п.3) — в api-тестах без
@@ -98,6 +100,11 @@ doc/plan_6.md) дополнительно требуют движок SAS (`deps
 Trying/Ringing перенаправленного INVITE, doc/task_36_plan_2.md) — флаг самой
 станции: монтируется вместе с `/api/station` (409 тут нет); 100/180 фильтрует
 движок вызова, т. е. флаг действует при `deps.outbound` (в бою есть всегда).
+Маршруты 42–43 (игнор REGISTER/SUBSCRIBE в SAS-режиме,
+doc/task_38_plan_2.md) — флаги самой станции: монтируются вместе с
+`/api/station` (409 тут нет); замолчание работает только в SAS-режиме
+(`POST /api/station/sas/enable`), вне его REGISTER отвечает 405 мимикрии,
+а SUBSCRIBE — пассивный UAS (план 5).
 
 Вне карты — статика (не API, в счётчик не входит): `GET /` → `public/index.html`
 (страница, п.6) и `GET /reports/<файл>` → каталог `reports/` (HTML/MD-представления
@@ -693,6 +700,8 @@ curl -s localhost:3000/api/station
   "forward_invite": false,
   "ignore_provisional": false,
   "multiply_invite": false,
+  "ignore_register_sas": false,
+  "ignore_subscribe_sas": false,
   "last_downstream": "192.168.80.157:5060"
 }
 ```
@@ -704,6 +713,8 @@ curl -s localhost:3000/api/station
 регистраций» (п.35). `ignore_provisional` — флаг режима «игнорировать
 Trying/Ringing после перенаправленного INVITE» (п.40). `multiply_invite` —
 флаг режима «умножать перенаправляемый INVITE ×10» (п.41).
+`ignore_register_sas`/`ignore_subscribe_sas` — флаги режимов «игнорировать
+REGISTER/SUBSCRIBE в SAS-режиме» (п.42–43).
 `last_downstream` — адрес (`host:port`), с которого нижестоящая станция
 последний раз обращалась (REGISTER/OPTIONS/SUBSCRIBE); адресат вызова по
 умолчанию в п.32, `''` — пир ещё не обращался.
@@ -1229,6 +1240,56 @@ curl -s -X POST localhost:3000/api/station/multiply_invite \
 
 Ответ `200`: тот же JSON, что `GET /api/station`, с
 `"multiply_invite": true`.
+
+### 42. POST /api/station/ignore_register_sas
+
+Режим «игнорировать регистрации (REGISTER) в SAS-режиме» — галочка блока
+«SAS-режим (SSW)» вкладки «Станция» (doc/task_38_plan_2.md). Во включённом
+режиме REGISTER нижестоящей станции в SAS-режиме (п.28) не получает
+никакого ответа — тишина вместо 200 с эхом Contact; в журнал станции строка
+попадает с `code: 0`, в `requests_in` запрос считается, `answered` не
+двигается. В таблицу регистраций (п.36–39) REGISTER при этом НЕ пишется —
+для пира регистрация не состоялась. Вне SAS-режима флаг ни на что не
+влияет: REGISTER отвечает 405 мимикрии, как раньше. Флаг — настройка
+станции: живёт между `stop`/`start`, переключается в любом состоянии
+слушателя (409 нет).
+
+Тело: `{"on": true|false}` (обязательно, boolean).
+
+Коды: `200` (ответ — полный статус, как `GET /api/station`); `400` — `on`
+отсутствует или не boolean.
+
+```bash
+curl -s -X POST localhost:3000/api/station/ignore_register_sas \
+  -H 'Content-Type: application/json' -d '{"on":true}'
+```
+
+Ответ `200`: тот же JSON, что `GET /api/station`, с
+`"ignore_register_sas": true`.
+
+### 43. POST /api/station/ignore_subscribe_sas
+
+Режим «игнорировать подписки (SUBSCRIBE) в SAS-режиме» — галочка блока
+«SAS-режим (SSW)» вкладки «Станция» (doc/task_38_plan_2.md). Во включённом
+режиме SUBSCRIBE нижестоящей станции в SAS-режиме (п.28) не получает
+никакого ответа — тишина вместо 200; диалог подписки не заводится (не
+появляется в `subscriptions()` п.27), в журнале — строка с `code: 0`,
+`requests_in` считает, `answered` не двигает. Вне SAS-режима флаг ни на что
+не влияет: пакеты SUBSCRIBE по-прежнему принимает пассивный UAS подписок
+(план 5). Флаг — настройка станции: живёт между `stop`/`start`, 409 нет.
+
+Тело: `{"on": true|false}` (обязательно, boolean).
+
+Коды: `200` (ответ — полный статус, как `GET /api/station`); `400` — `on`
+отсутствует или не boolean.
+
+```bash
+curl -s -X POST localhost:3000/api/station/ignore_subscribe_sas \
+  -H 'Content-Type: application/json' -d '{"on":true}'
+```
+
+Ответ `200`: тот же JSON, что `GET /api/station`, с
+`"ignore_subscribe_sas": true`.
 
 ---
 

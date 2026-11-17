@@ -29,6 +29,12 @@
 // /api/station/multiply_invite {on} — галочка-флаг той же вкладки (контракт
 // silent_invite); фан-аут делает хук перенаправления StationOutbound
 // (копии — теневые диалоги), здесь только переключение флага станции.
+// Игнорирование регистраций/подписок в SAS-режиме
+// (doc/task_38_plan_2.md): POST /api/station/ignore_register_sas и
+// /ignore_subscribe_sas {on} — галочки-флаги блока «SAS-режим» вкладки
+// «Станция» (контракт silent_invite, 409 нет); молчание на REGISTER/
+// SUBSCRIBE делает сама станция в SAS-ветках, вне SAS-режима флаги ни на
+// что не влияют.
 // Таблица регистраций нижестоящей станции (doc/task_33_plan_2.md): GET/POST
 // /api/station/registrations, POST /registrations/:id/update, DELETE
 // /registrations/:id (registrations DI) — вкладка «Регистрации»: номер вводит
@@ -46,7 +52,8 @@
 // registrations.ts (RegistrationsApi), server/routes.ts,
 // doc/api.md (раздел «Станция»), doc/task_26_plan_2.md, doc/plan_6.md,
 // doc/task_29_plan_2.md, doc/task_30_plan_2.md, doc/task_32_plan_2.md,
-// doc/task_33_plan_2.md, doc/task_36_plan_2.md, doc/task_37_plan_2.md.
+// doc/task_33_plan_2.md, doc/task_36_plan_2.md, doc/task_37_plan_2.md,
+// doc/task_38_plan_2.md.
 
 import { Router } from 'express';
 import type { StationOutboundApi } from '../station/outbound';
@@ -198,6 +205,36 @@ export function station_controller(
             return res.status(400).json({ error: 'Ожидается {"on":true|false}' });
         }
         station.set_multiply_invite(on);
+        return res.json(station.status());
+    });
+
+    // Игнорирование регистраций (REGISTER) в SAS-режиме — галочка блока
+    // «SAS-режим» вкладки «Станция» (doc/task_38_plan_2.md). Контракт тот
+    // же, что у silent_invite; молчит станция в своей SAS-ветке REGISTER
+    // (200 с эхом Contact не уходит, таблица регистраций не пополняется).
+    router.post('/ignore_register_sas', (req, res) =>
+    {
+        const on = (req.body as { on?: unknown })?.on;
+        if (typeof on !== 'boolean')
+        {
+            return res.status(400).json({ error: 'Ожидается {"on":true|false}' });
+        }
+        station.set_ignore_register_sas(on);
+        return res.json(station.status());
+    });
+
+    // Игнорирование подписок (SUBSCRIBE) в SAS-режиме — галочка того же
+    // блока (doc/task_38_plan_2.md). Тот же контракт; диалог подписки при
+    // этом не заводится (NOTIFY слать некуда). Вне SAS-режима флаг молчит:
+    // пассивный UAS плана 5 принимает пакеты как раньше.
+    router.post('/ignore_subscribe_sas', (req, res) =>
+    {
+        const on = (req.body as { on?: unknown })?.on;
+        if (typeof on !== 'boolean')
+        {
+            return res.status(400).json({ error: 'Ожидается {"on":true|false}' });
+        }
+        station.set_ignore_subscribe_sas(on);
         return res.json(station.status());
     });
 

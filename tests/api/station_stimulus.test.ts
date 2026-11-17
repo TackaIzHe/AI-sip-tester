@@ -127,6 +127,26 @@ class MockStation implements Station
         /* мок: умножение INVITE ×10 здесь не ассертится */
     }
 
+    ignore_register_sas_mode(): boolean
+    {
+        return false;
+    }
+
+    set_ignore_register_sas(_on: boolean): void
+    {
+        /* мок: игнор REGISTER в SAS-режиме здесь не ассертится */
+    }
+
+    ignore_subscribe_sas_mode(): boolean
+    {
+        return false;
+    }
+
+    set_ignore_subscribe_sas(_on: boolean): void
+    {
+        /* мок: игнор SUBSCRIBE в SAS-режиме здесь не ассертится */
+    }
+
     status(): StationStatus
     {
         return {
@@ -142,6 +162,8 @@ class MockStation implements Station
             forward_invite: false,
             ignore_provisional: false,
             multiply_invite: false,
+            ignore_register_sas: false,
+            ignore_subscribe_sas: false,
             last_downstream: '',
         };
     }

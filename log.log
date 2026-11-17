@@ -1,0 +1,34 @@
+tackaizhe@Mihailov-Vitalia-PC:~/AI-sip-tester (0.0.1)$ npm run start
+
+> sip-atc-test-server@0.1.0 start
+> tsx server/main.ts
+
+/home/tackaizhe/AI-sip-tester/server/config.ts:132
+    if (problems.length > 0) throw new ConfigError(problems);
+                                   ^
+
+ConfigError: Некорректная конфигурация: SERVER_PORT: целое 1–65535; PBX_HOST: IP или имя хоста обязательны; PBX_PORT: целое 1–65535; SIP_PROTOCOL: udp|tcp; BRIDGE_HOST: IP или имя хоста обязательны; BRIDGE_PORT: целое 1–65535; SIP_NUMBER_1: только цифры; SIP_PASS_1: обязателен; SIP_NUMBER_2: только цифры; SIP_PASS_2: обязателен; SIP_NUMBER_3: только цифры; SIP_PASS_3: обязателен
+    at load_config (/home/tackaizhe/AI-sip-tester/server/config.ts:132:36)
+    at load_config_from_env (/home/tackaizhe/AI-sip-tester/server/config.ts:165:12)
+    at <anonymous> (/home/tackaizhe/AI-sip-tester/server/main.ts:20:16)
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  problems: [
+    'SERVER_PORT: целое 1–65535',
+    'PBX_HOST: IP или имя хоста обязательны',
+    'PBX_PORT: целое 1–65535',
+    'SIP_PROTOCOL: udp|tcp',
+    'BRIDGE_HOST: IP или имя хоста обязательны',
+    'BRIDGE_PORT: целое 1–65535',
+    'SIP_NUMBER_1: только цифры',
+    'SIP_PASS_1: обязателен',
+    'SIP_NUMBER_2: только цифры',
+    'SIP_PASS_2: обязателен',
+    'SIP_NUMBER_3: только цифры',
+    'SIP_PASS_3: обязателен'
+  ]
+}
+
+Node.js v22.22.1
+

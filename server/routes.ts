@@ -29,6 +29,10 @@
 //                                        (doc/task_36_plan_2.md)
 //   POST   /api/station/multiply_invite {on} умножение перенаправляемого
 //                                        INVITE ×10 (doc/task_37_plan_2.md)
+//   POST   /api/station/ignore_register_sas {on} SAS REGISTER без ответа
+//                                        (doc/task_38_plan_2.md)
+//   POST   /api/station/ignore_subscribe_sas {on} SAS SUBSCRIBE без ответа
+//                                        (doc/task_38_plan_2.md)
 //   GET    /api/station/call              POST /api/station/call {callee,...}
 //   POST   /api/station/call/cancel       POST /api/station/call/hangup
 //                                        (outbound DI, doc/task_30_plan_2.md)

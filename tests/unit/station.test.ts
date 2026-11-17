@@ -12,7 +12,10 @@
 // INVITE без ответа, журнал code 0, прочие методы не затронуты); флаги
 // перенаправления (task_32), игнора Trying/Ringing (task_36) и умножения
 // перенаправляемого INVITE ×10 (doc/task_37) — без движка это только
-// настройка статуса, мимикрия отвечает как раньше.
+// настройка статуса, мимикрия отвечает как раньше; режимы «игнорировать
+// регистрации/подписки в SAS-режиме» (doc/task_38: SAS REGISTER/SUBSCRIBE
+// без ответа, журнал code 0, таблица регистраций и диалоги не заводятся;
+// вне SAS-режима флаги ни на что не влияют).
 // Запуск: npm run test:unit.
 // related: server/station/station.ts, server/los_mem/raw_sip.ts (клиент и
 // сборщик запроса), tests/unit/los_mem_raw.test.ts (образец синтетики),
@@ -27,6 +30,7 @@ import {
     parse_sip_response,
     RawSipClient,
 } from '../../server/los_mem/raw_sip';
+import { StationRegistrations } from '../../server/station/registrations';
 import { SipStation, type Station } from '../../server/station/station';
 
 function station_config(proto: 'udp' | 'tcp' | 'both'): AppConfig
@@ -684,5 +688,136 @@ describe('SipStation: флаг «умножать INVITE ×10» (doc/task_37)', 
         st.set_multiply_invite(true);
         const inv = await udp_request(st.status().port, request('INVITE'), 900);
         expect(parse_sip_response(inv ?? '')?.status).toBe(405);
+    });
+});
+
+// Режимы «игнорировать регистрации/подписки в SAS-режиме»
+// (doc/task_38_plan_2.md): в SAS-режиме соответствующий запрос пира
+// остаётся СОВСЕМ без ответа (тишина вместо 200, журнал code 0) — её
+// port-register/подписка умирают по таймерам. Таблица регистраций и диалоги
+// подписок при этом не заводятся; вне SAS-режима флаги ни на что не влияют
+// (мимикрия 405 / пассивный UAS плана 5 живы).
+describe('SipStation: SAS-режимы «игнор REGISTER/SUBSCRIBE» (doc/task_38)', () =>
+{
+    /** REGISTER вида port-register станции (11.log): Contact с extensions. */
+    function sas_register(port: number, call_id = 'ign-reg-1'): string
+    {
+        return build_sip_request('REGISTER', {
+            ruri: `sip:u00s00p00@127.0.0.1:${port}`,
+            from_uri: 'sip:u00s00p00@192.168.80.157:5060',
+            to_uri: 'sip:u00s00p00@192.168.80.157:5060',
+            call_id,
+            cseq: 22541,
+            from_tag: 'reg-tag',
+            contact: 'sip:u00s00p00@192.168.80.133:5060;extensions="answermode"',
+            via_host: '192.168.80.157',
+            extra_headers: ['Expires: 3600'],
+        });
+    }
+
+    /** SUBSCRIBE SSW-пакета (Event станции — в SAS-режиме любой). */
+    function ssw_subscribe(port: number, event = 'ssw-srvm'): string
+    {
+        return build_sip_request('SUBSCRIBE', {
+            ruri: `sip:u00s00p00@127.0.0.1:${port}`,
+            from_uri: 'sip:u00s00p00@192.168.80.157:5060',
+            to_uri: 'sip:u00s00p00@127.0.0.1',
+            call_id: 'ign-sub-1',
+            cseq: 22542,
+            from_tag: 'trunk-tag',
+            contact: 'sip:u00s00p00@192.168.80.133:5060',
+            via_host: '192.168.80.157',
+            extra_headers: [`Event: ${event}`, 'Expires: 7200'],
+        });
+    }
+
+    it('флаги по умолчанию false, переключение видно в статусе', async () =>
+    {
+        const st = await started_station('udp');
+        expect(st.ignore_register_sas_mode()).toBe(false);
+        expect(st.ignore_subscribe_sas_mode()).toBe(false);
+        expect(st.status().ignore_register_sas).toBe(false);
+        expect(st.status().ignore_subscribe_sas).toBe(false);
+        st.set_ignore_register_sas(true);
+        st.set_ignore_subscribe_sas(true);
+        expect(st.status().ignore_register_sas).toBe(true);
+        expect(st.status().ignore_subscribe_sas).toBe(true);
+        st.set_ignore_register_sas(false);
+        st.set_ignore_subscribe_sas(false);
+        expect(st.status().ignore_register_sas).toBe(false);
+        expect(st.status().ignore_subscribe_sas).toBe(false);
+    });
+
+    it('игнор REGISTER: SAS-регистрация молчит и не пишется в таблицу', async () =>
+    {
+        const st = await started_station('udp');
+        const port = st.status().port;
+        const store = new StationRegistrations();
+        st.attach_registrations(store);
+        st.set_sas_mode(true);
+        st.set_ignore_register_sas(true);
+        const reg = await udp_request(port, sas_register(port), 700);
+        expect(reg).toBeUndefined(); // ни 200, ни прочего
+        expect(st.status().counters.requests_in.REGISTER).toBe(1);
+        expect(st.status().counters.answered['200'] ?? 0).toBe(0);
+        const ev = st.events(1)[0];
+        expect(ev.method).toBe('REGISTER');
+        expect(ev.code).toBe(0);
+        // регистрация у пира не состоялась — справочная строка не заведена.
+        expect(store.list()).toEqual([]);
+        // режим действует точечно: SUBSCRIBE и OPTIONS не затронуты.
+        const sub = await udp_request(port, ssw_subscribe(port));
+        expect(parse_sip_response(sub ?? '')?.status).toBe(200);
+        const opt = await udp_request(port, request('OPTIONS'));
+        expect(parse_sip_response(opt ?? '')?.status).toBe(200);
+    });
+
+    it('игнор SUBSCRIBE: SAS-подписка молчит и не заводит диалог', async () =>
+    {
+        const st = await started_station('udp');
+        const port = st.status().port;
+        st.set_sas_mode(true);
+        st.set_ignore_subscribe_sas(true);
+        const sub = await udp_request(port, ssw_subscribe(port), 700);
+        expect(sub).toBeUndefined();
+        expect(st.subscriptions_count()).toBe(0);
+        const ev = st.events(1)[0];
+        expect(ev.method).toBe('SUBSCRIBE');
+        expect(ev.event).toBe('ssw-srvm');
+        expect(ev.code).toBe(0);
+        // REGISTER флагом не затронут: 200 с эхом Contact как в плане 6.
+        const reg = await udp_request(port, sas_register(port));
+        expect(parse_sip_response(reg ?? '')?.status).toBe(200);
+    });
+
+    it('выключение возвращает SAS-ответы: REGISTER/SUBSCRIBE снова 200', async () =>
+    {
+        const st = await started_station('udp');
+        const port = st.status().port;
+        st.set_sas_mode(true);
+        st.set_ignore_register_sas(true);
+        st.set_ignore_subscribe_sas(true);
+        st.set_ignore_register_sas(false);
+        st.set_ignore_subscribe_sas(false);
+        const reg = await udp_request(port, sas_register(port));
+        expect(parse_sip_response(reg ?? '')?.status).toBe(200);
+        const sub = await udp_request(port, ssw_subscribe(port));
+        expect(parse_sip_response(sub ?? '')?.status).toBe(200);
+        expect(st.subscriptions_count()).toBe(1);
+    });
+
+    it('вне SAS-режима флаги ни на что не влияют (405 / пассивный UAS)', async () =>
+    {
+        const st = await started_station('udp');
+        const port = st.status().port;
+        st.set_ignore_register_sas(true);
+        st.set_ignore_subscribe_sas(true);
+        // REGISTER вне SAS — прежняя мимикрия 405 (флаг про SAS-ветку).
+        const reg = await udp_request(port, sas_register(port), 900);
+        expect(parse_sip_response(reg ?? '')?.status).toBe(405);
+        // SUBSCRIBE пакета вне SAS — принимает пассивный UAS плана 5.
+        const sub = await udp_request(port, ssw_subscribe(port, 'event-list'));
+        expect(parse_sip_response(sub ?? '')?.status).toBe(200);
+        expect(st.subscriptions_count()).toBe(1);
     });
 });

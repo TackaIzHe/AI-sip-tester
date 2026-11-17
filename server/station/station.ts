@@ -61,6 +61,15 @@
 //   Call-ID/branch/From-tag, байты — прежний образец pimer.md). Флаг читает
 //   StationOutbound в своём хуке; без `forward_invite` ни на что не влияет
 //   (INVITE мимикрия отвечает 405/молчание как раньше);
+// - режимы «игнорировать регистрации/подписки в SAS-режиме»
+//   (doc/task_38_plan_2.md): переключаемые флаги `ignore_register_sas`/
+//   `ignore_subscribe_sas` — при включённом соответствующий SAS-запрос
+//   (port-register REGISTER / SUBSCRIBE) остаётся СОВСЕМ без ответа:
+//   тишина вместо 200 (в журнале `code: 0`), пир по таймерам pjsip теряет
+//   port-register/подписку. Регистрация при этом НЕ пишется в таблицу
+//   (у пира она не состоялась), подписка не заводит диалог. Флаги действуют
+//   только в SAS-режиме: вне его REGISTER → 405, а подписки пакетов
+//   принимает пассивный UAS (план 5) — они не затронуты;
 // - адрес нижестоящей станции (`last_downstream_peer`): src последнего
 //   REGISTER/OPTIONS/SUBSCRIBE пира — им пользуется движок исходящего вызова
 //   (server/station/outbound.ts) как адресат INVITE по умолчанию;
@@ -80,7 +89,8 @@
 // server/station/registrations.ts (таблица регистраций, attach_registrations),
 // doc/task_24_plan_2.md, doc/task_27_plan_2.md, doc/plan_6.md,
 // doc/task_29_plan_2.md, doc/task_30_plan_2.md, doc/task_32_plan_2.md,
-// doc/task_33_plan_2.md, doc/task_36_plan_2.md, doc/task_37_plan_2.md.
+// doc/task_33_plan_2.md, doc/task_36_plan_2.md, doc/task_37_plan_2.md,
+// doc/task_38_plan_2.md.
 
 import dgram from 'node:dgram';
 import net from 'node:net';
@@ -248,6 +258,12 @@ export interface StationStatus
     /** Режим «умножать перенаправляемый INVITE ×10»
      * (doc/task_37_plan_2.md). */
     multiply_invite: boolean;
+    /** Режим «игнорировать регистрации (REGISTER) в SAS-режиме»
+     * (doc/task_38_plan_2.md). */
+    ignore_register_sas: boolean;
+    /** Режим «игнорировать подписки (SUBSCRIBE) в SAS-режиме»
+     * (doc/task_38_plan_2.md). */
+    ignore_subscribe_sas: boolean;
     /** `host:port` последнего обращения нижестоящей станции (REGISTER/
      * OPTIONS/SUBSCRIBE); '' — пир ещё не обращался (doc/task_30_plan_2.md). */
     last_downstream: string;
@@ -320,6 +336,31 @@ export interface Station
      * может.
      */
     set_multiply_invite(on: boolean): void;
+    /**
+     * Флаг режима «игнорировать регистрации в SAS-режиме»
+     * (doc/task_38_plan_2.md): true — SAS REGISTER (port-register) от пира
+     * остаётся без ответа; false — прежний 200 с эхом Contact.
+     */
+    ignore_register_sas_mode(): boolean;
+    /**
+     * Включить/выключить игнорирование REGISTER в SAS-режиме; идемпотентно,
+     * живёт между start/stop (настройка станции, не слушателя), вне
+     * SAS-режима ни на что не влияет, бросать не может.
+     */
+    set_ignore_register_sas(on: boolean): void;
+    /**
+     * Флаг режима «игнорировать подписки в SAS-режиме»
+     * (doc/task_38_plan_2.md): true — SAS SUBSCRIBE от пира остаётся без
+     * ответа; false — прежний 200 с принятием диалога.
+     */
+    ignore_subscribe_sas_mode(): boolean;
+    /**
+     * Включить/выключить игнорирование SUBSCRIBE в SAS-режиме; идемпотентно,
+     * живёт между start/stop (настройка станции, не слушателя), вне
+     * SAS-режима ни на что не влияет (пассивный UAS плана 5 живёт), бросать
+     * не может.
+     */
+    set_ignore_subscribe_sas(on: boolean): void;
     /**
      * Журнал обращений, newest first; limit по умолчанию — вся ёмкость буфера.
      */
@@ -404,6 +445,12 @@ export class SipStation implements Station
     /** Режим «умножать перенаправляемый INVITE ×10»
      * (doc/task_37_plan_2.md): флаг читает StationOutbound. */
     private multiply_invite = false;
+    /** Режим «игнорировать регистрации в SAS-режиме»
+     * (doc/task_38_plan_2.md): SAS REGISTER без ответа, в таблицу не пишем. */
+    private ignore_register_sas = false;
+    /** Режим «игнорировать подписки в SAS-режиме»
+     * (doc/task_38_plan_2.md): SAS SUBSCRIBE без ответа, диалог не заводим. */
+    private ignore_subscribe_sas = false;
     /**
      * Src последнего REGISTER/OPTIONS/SUBSCRIBE пира — адрес нижестоящей
      * станции для исходящего INVITE (server/station/outbound.ts).
@@ -442,6 +489,8 @@ export class SipStation implements Station
             forward_invite: this.forward_invite,
             ignore_provisional: this.ignore_provisional,
             multiply_invite: this.multiply_invite,
+            ignore_register_sas: this.ignore_register_sas,
+            ignore_subscribe_sas: this.ignore_subscribe_sas,
             last_downstream: this.last_downstream
                 ? `${this.last_downstream.host}:${this.last_downstream.port}`
                 : '',
@@ -594,6 +643,45 @@ export class SipStation implements Station
     set_multiply_invite(on: boolean): void
     {
         this.multiply_invite = on;
+    }
+
+    /**
+     * Флаг режима «игнорировать регистрации в SAS-режиме» (контракт Station,
+     * doc/task_38_plan_2.md).
+     */
+    ignore_register_sas_mode(): boolean
+    {
+        return this.ignore_register_sas;
+    }
+
+    /**
+     * Включить/выключить игнорирование REGISTER в SAS-режиме; идемпотентно.
+     * Флаг живёт между start/stop — это настройка поведения станции, а не
+     * слушателя; вне SAS-режима ни на что не влияет.
+     */
+    set_ignore_register_sas(on: boolean): void
+    {
+        this.ignore_register_sas = on;
+    }
+
+    /**
+     * Флаг режима «игнорировать подписки в SAS-режиме» (контракт Station,
+     * doc/task_38_plan_2.md).
+     */
+    ignore_subscribe_sas_mode(): boolean
+    {
+        return this.ignore_subscribe_sas;
+    }
+
+    /**
+     * Включить/выключить игнорирование SUBSCRIBE в SAS-режиме; идемпотентно.
+     * Флаг живёт между start/stop — это настройка поведения станции, а не
+     * слушателя; вне SAS-режима ни на что не влияет (пассивный UAS плана 5
+     * принимает пакеты подписок как раньше).
+     */
+    set_ignore_subscribe_sas(on: boolean): void
+    {
+        this.ignore_subscribe_sas = on;
     }
 
     /**
@@ -839,6 +927,26 @@ export class SipStation implements Station
         }
         else if (head.method === 'REGISTER' && this.sas_enabled)
         {
+            if (this.ignore_register_sas)
+            {
+                // Режим «игнорировать регистрации в SAS-режиме»
+                // (doc/task_38_plan_2.md): port-register пира залипает без
+                // ответа — ни 200 с эхом Contact, ни записи в таблицу
+                // регистраций (регистрация у пира не состоялась, строка
+                // справочника была бы фиктивной). В журнале код 0 — как в
+                // молчании на INVITE (doc/task_29).
+                this.push_event(
+                    proto,
+                    peer_str,
+                    head.method,
+                    ruri,
+                    cseq,
+                    head.call_id,
+                    0,
+                    head.event,
+                );
+                return '';
+            }
             // SAS-режим (план 6 п.1, 11.log): port-register станции
             // (R-URI sip:u00sXXpXX@наш:5060, Contact телефона с параметрами
             // ;extensions="answermode"). 405 здесь = `port-register-status
@@ -868,6 +976,26 @@ export class SipStation implements Station
         }
         else if (head.method === 'SUBSCRIBE' && this.accepts_event(head.event))
         {
+            if (this.sas_enabled && this.ignore_subscribe_sas)
+            {
+                // Режим «игнорировать подписки в SAS-режиме»
+                // (doc/task_38_plan_2.md): SUBSCRIBE пира залипает без
+                // ответа — ни 200 с Contact/To-tag, ни диалога подписки
+                // (SAS-движку слать NOTIFY некуда, пир по таймерам pjsip
+                // теряет подписку). Только в SAS-режиме: вне его ветку
+                // принимает пассивный UAS плана 5 как раньше.
+                this.push_event(
+                    proto,
+                    peer_str,
+                    head.method,
+                    ruri,
+                    cseq,
+                    head.call_id,
+                    0,
+                    head.event,
+                );
+                return '';
+            }
             // Пассивный UAS (план 5 п.4a/4c): диалог запоминается, 200 уходит
             // СРАЗУ из этого же обработчика — без ожидания движка прогона
             // (иначе пир фиксирует cause 408 по таймерам pjsip, дамп №1).
